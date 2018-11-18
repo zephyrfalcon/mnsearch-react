@@ -20,6 +20,7 @@ for fn in yaml_files:
     with open(fn, 'r') as f:
         data = f.read()
     raw_data = yaml.load(data)
+    raw_data = [card for card in raw_data if 'name' in card]
     for card in raw_data:
         card['set'] = fn[:2]
         card['key'] = counter
