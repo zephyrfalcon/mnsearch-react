@@ -19,6 +19,8 @@ for fn in yaml_files:
     with open(fn, 'r') as f:
         data = f.read()
     raw_data = yaml.load(data)
+    for card in raw_data:
+        card['set'] = fn[:2]
     carddata.extend(raw_data)
 
 print("Writing output file...")
