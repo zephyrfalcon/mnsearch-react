@@ -1,0 +1,4 @@
+# TODO
+
+- Convert existing MN cards data to JSON
+- Load JSON
