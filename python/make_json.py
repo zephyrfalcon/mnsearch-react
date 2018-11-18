@@ -14,6 +14,7 @@ print(yaml_files)
 
 carddata = []
 
+counter = 1
 for fn in yaml_files:
     print("Loading:", fn, "...")
     with open(fn, 'r') as f:
@@ -21,6 +22,8 @@ for fn in yaml_files:
     raw_data = yaml.load(data)
     for card in raw_data:
         card['set'] = fn[:2]
+        card['key'] = counter
+        counter += 1
     carddata.extend(raw_data)
 
 print("Writing output file...")
