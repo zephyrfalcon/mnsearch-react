@@ -29,11 +29,17 @@ let regions = [
 ];
 
 let cardTypes = ["Creature", "Magi", "Spell", "Relic"];
-let rarities = ["Common", "Uncommon", "Rare", "Promo"];
+let rarities = {
+  "C": "Common", 
+  "U": "Uncommon", 
+  "R": "Rare", 
+  "P": "Promo",
+};
 
 /* props:
    ...give props that are callbacks?
    - onTextChange(event): callback for when text changes
+   - onRegionChange(event)
 */
 class QueryArea extends Component {
   constructor(props) {
@@ -42,8 +48,41 @@ class QueryArea extends Component {
   render() {
     return (
       <div className="QueryArea">
+        <div className="QueryArea-search">
         Name contains: <input className="QueryArea-text" type="text" size="40"
                               onChange={this.props.onTextChange} />
+        </div>
+        <div className="QueryArea-panels">
+          <div className="QueryArea-regions">
+            {regions.map(region =>
+              <div>
+                <input type="checkbox" name="region" value={region}
+                       onChange={this.props.onRegionChange} />{region}<br/>
+              </div>
+            )}
+          </div>
+          <div className="QueryArea-sets">
+            {Object.keys(sets).map(set =>
+              <div>
+                <input type="checkbox" name="set" value={set} />{sets[set]}<br/>
+              </div>
+            )}
+          </div>
+          <div className="QueryArea-cardtypes">
+            {cardTypes.map(cardType =>
+              <div>
+                <input type="checkbox" name="cardtype" value={cardType} />{cardType}<br/>
+              </div>
+            )}
+          </div>
+          <div className="QueryArea-rarities">
+            {Object.keys(rarities).map(rarity =>
+              <div>
+                <input type="checkbox" name="rarity" value={rarity} />{rarities[rarity]}<br/>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     );
   }
@@ -81,12 +120,21 @@ class App extends Component {
     };
 
     this.onTextChange = this.onTextChange.bind(this);
+    this.onRegionChange = this.onRegionChange.bind(this);
   }
 
   onTextChange(event) {
     this.setState({ textFilter: event.target.value.trim() }, 
                   () => this.updateSearchResults());
                   // callback is necessary to use the updated state
+  }
+
+  onRegionChange(event) {
+    let panel = event.target.parentElement.parentElement;
+    let coll = panel.getElementsByTagName('input');
+    let arr = [...coll];
+    let checkedRegions = arr.filter(inputElem => inputElem.checked);
+    checkedRegions.map(inputElem => alert(inputElem.value + " is checked"));
   }
 
   updateSearchResults() {
@@ -103,7 +151,8 @@ class App extends Component {
         <header>
           <img src="/magination-logo.jpg" />
         </header>
-        <QueryArea onTextChange={this.onTextChange} />
+        <QueryArea onTextChange={this.onTextChange}
+                   onRegionChange={this.onRegionChange} />
         <hr />
         <SearchResults cards={this.state.results} />
       </div>

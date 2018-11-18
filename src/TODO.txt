@@ -9,4 +9,9 @@
   (must be done in App)
 - Changing the text should filter the card list directly
   (implement this first)
+
+### data
+
+- regions need to be a list of names in cards.json
+  (right now there's a string 'region' containing one or two regions as text)
   
