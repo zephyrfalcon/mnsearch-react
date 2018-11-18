@@ -7,4 +7,6 @@
 - Show some filter/search/sort options
 - Figure out how to use those options to actually produce a sorted/filtered list
   (must be done in App)
+- Changing the text should filter the card list directly
+  (implement this first)
   

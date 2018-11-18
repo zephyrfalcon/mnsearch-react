@@ -12,7 +12,32 @@ let sets = {
   "TR": "Traitor's Reach",
 };
 
+let regions = [
+  "Arderial",
+  "Cald",
+  "Naroom",
+  "Orothe",
+  "Underneath",
+  "Universal",
+  "Core",
+  "Kybar's Teeth",
+  "Weave",
+  "Bograth",
+  "Paradwyn",
+  "d'Resh",
+  "Nar",
+];
+
+let cardTypes = ["Creature", "Magi", "Spell", "Relic"];
+let rarities = ["Common", "Uncommon", "Rare", "Promo"];
+
+/* props:
+   ...give props that are callbacks?
+*/
 class QueryArea extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div className="QueryArea">
@@ -45,11 +70,15 @@ class SearchResults extends Component {
 }
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    // ... set state...
+  }
   render() {
     return (
       <div className="App">
         <header>
-          Magi-Nation Search
+          <img src="/magination-logo.jpg" />
         </header>
         <QueryArea />
         <hr />
