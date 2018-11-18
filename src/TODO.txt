@@ -1,4 +1,10 @@
 # TODO
 
-- Convert existing MN cards data to JSON
-- Load JSON
+- We should pass SearchResults just the cards that it needs to display. Filtering
+  and sorting needs to be done beforehand, then the sorted/filtered array needs
+  to be passed to SearchResults.
+
+- Show some filter/search/sort options
+- Figure out how to use those options to actually produce a sorted/filtered list
+  (must be done in App)
+  

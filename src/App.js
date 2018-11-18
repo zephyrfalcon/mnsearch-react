@@ -2,9 +2,23 @@ import React, { Component } from 'react';
 import './App.css';
 import carddata from './cards.json';
 
+let sets = {
+  "BS": "Base Set",
+  "AW": "Awakening",
+  "DE": "Dream's End",
+  "ND": "Nightmare's Dawn",
+  "VS": "Voice of the Storms",
+  "PR": "Promos",
+  "TR": "Traitor's Reach",
+};
+
 class QueryArea extends Component {
   render() {
-    return '';
+    return (
+      <div className="QueryArea">
+        Name contains: <input className="QueryArea-text" type="text" size="40" />
+      </div>
+    );
   }
 }
 
@@ -34,11 +48,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <p>
-            Now with data for {carddata.length} cards!
-          </p>
-          <QueryArea />
-          <SearchResults cards={carddata} />
+        <header>
+          Magi-Nation Search
+        </header>
+        <QueryArea />
+        <hr />
+        <SearchResults cards={carddata} />
       </div>
     );
   }
