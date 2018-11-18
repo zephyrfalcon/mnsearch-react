@@ -33,6 +33,7 @@ let rarities = ["Common", "Uncommon", "Rare", "Promo"];
 
 /* props:
    ...give props that are callbacks?
+   - onTextChange(event): callback for when text changes
 */
 class QueryArea extends Component {
   constructor(props) {
@@ -41,7 +42,8 @@ class QueryArea extends Component {
   render() {
     return (
       <div className="QueryArea">
-        Name contains: <input className="QueryArea-text" type="text" size="40" />
+        Name contains: <input className="QueryArea-text" type="text" size="40"
+                              onChange={this.props.onTextChange} />
       </div>
     );
   }
@@ -73,16 +75,37 @@ class App extends Component {
   constructor(props) {
     super(props);
     // ... set state...
+    this.state = {
+      textFilter: '',
+      results: [].concat(carddata),
+    };
+
+    this.onTextChange = this.onTextChange.bind(this);
   }
+
+  onTextChange(event) {
+    this.setState({ textFilter: event.target.value.trim() }, 
+                  () => this.updateSearchResults());
+                  // callback is necessary to use the updated state
+  }
+
+  updateSearchResults() {
+    let results = [].concat(carddata);
+    if (this.state.textFilter > '') {
+      results = results.filter(card => card.name.toLowerCase().includes(this.state.textFilter.toLowerCase()));
+    };
+    this.setState({ results: results });
+  }
+
   render() {
     return (
       <div className="App">
         <header>
           <img src="/magination-logo.jpg" />
         </header>
-        <QueryArea />
+        <QueryArea onTextChange={this.onTextChange} />
         <hr />
-        <SearchResults cards={carddata} />
+        <SearchResults cards={this.state.results} />
       </div>
     );
   }
