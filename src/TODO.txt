@@ -10,6 +10,8 @@
 
 - regions need to be a list of names in cards.json
   (right now there's a string 'region' containing one or two regions as text)
+- some of the multi-region cards show up twice (like Bog Wellisk), while others
+  do not (Curse of the Abaquist)
 
 ### features
 
@@ -23,3 +25,6 @@
 
 - show checkbox panels properly, i.e. panels next to each other, aligned
   properly
+- multi-region cards show up twice in the results, do we need to remove
+  duplicates?
+  (tentative answer: no)

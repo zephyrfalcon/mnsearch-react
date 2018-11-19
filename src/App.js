@@ -36,6 +36,13 @@ let rarities = {
   "P": "Promo",
 };
 
+// return true if the card is in any of the given regions
+function cardInRegions(card, regions) {
+  console.log(card);
+  console.log(regions);
+  return card.regions.filter(region => regions.includes(region)).length > 0;
+}
+
 /* props:
    ...give props that are callbacks?
    - onTextChange(event): callback for when text changes
@@ -98,13 +105,24 @@ class SearchResults extends Component {
   render() {
     return (
       <table className="SearchResults-cards">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Region</td>
+          </tr>
+        </thead>
+        <tbody>
         {[].concat(this.props.cards)
          .sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1)
          .map(card => 
            <tr key={card.key}>
              <td>{card.name || "?!?"}</td>
+             <td>{card.regions.length > 1 ? 
+                  card.regions[0] + "/" + card.regions[1] 
+                  : card.regions[0]}</td>
            </tr>
         )}
+        </tbody>
       </table>
     );
   }
@@ -113,9 +131,9 @@ class SearchResults extends Component {
 class App extends Component {
   constructor(props) {
     super(props);
-    // ... set state...
     this.state = {
-      textFilter: '',
+      text: '',
+      regions: [],
       results: [].concat(carddata),
     };
 
@@ -124,7 +142,7 @@ class App extends Component {
   }
 
   onTextChange(event) {
-    this.setState({ textFilter: event.target.value.trim() }, 
+    this.setState({ text: event.target.value.trim() }, 
                   () => this.updateSearchResults());
                   // callback is necessary to use the updated state
   }
@@ -133,15 +151,20 @@ class App extends Component {
     let panel = event.target.parentElement.parentElement;
     let coll = panel.getElementsByTagName('input');
     let arr = [...coll];
-    let checkedRegions = arr.filter(inputElem => inputElem.checked);
-    checkedRegions.map(inputElem => alert(inputElem.value + " is checked"));
+    let checkedRegions = arr.filter(inputElem => inputElem.checked)
+                            .map(inputElem => inputElem.value);
+    this.setState({ regions: checkedRegions }, 
+                  () => this.updateSearchResults());
   }
 
   updateSearchResults() {
     let results = [].concat(carddata);
-    if (this.state.textFilter > '') {
-      results = results.filter(card => card.name.toLowerCase().includes(this.state.textFilter.toLowerCase()));
+    if (this.state.text > '') {
+      results = results.filter(card => card.name.toLowerCase().includes(this.state.text.toLowerCase()));
     };
+    if (this.state.regions.length > 0) {
+      results = results.filter(card => cardInRegions(card, this.state.regions));
+    }
     this.setState({ results: results });
   }
 
