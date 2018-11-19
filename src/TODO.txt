@@ -1,17 +1,14 @@
 # TODO
 
-- Show some filter/search/sort options
-- Figure out how to use those options to actually produce a sorted/filtered list
-  (must be done in App)
-- Changing the text should filter the card list directly
-  (implement this first)
-
 ### data
 
 - regions need to be a list of names in cards.json
   (right now there's a string 'region' containing one or two regions as text)
 - some of the multi-region cards show up twice (like Bog Wellisk), while others
   do not (Curse of the Abaquist)
+  - this is because we ignore references instead of handling them properly.
+    i.e. they are basically a copy of an existing card, but with the regions
+    switched!
 
 ### features
 
@@ -23,8 +20,7 @@
 
 ### display
 
-- show checkbox panels properly, i.e. panels next to each other, aligned
-  properly
 - multi-region cards show up twice in the results, do we need to remove
   duplicates?
   (tentative answer: no)
+  (in fact, we need to add them for some cards; see above)

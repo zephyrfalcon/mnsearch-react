@@ -60,7 +60,7 @@ class QueryArea extends Component {
                               onChange={this.props.onTextChange} />
         </div>
         <div className="QueryArea-panels">
-          <div className="QueryArea-regions">
+          <div className="QueryArea-regions column">
             {regions.map(region =>
               <div>
                 <input type="checkbox" name="region" value={region}
@@ -68,27 +68,28 @@ class QueryArea extends Component {
               </div>
             )}
           </div>
-          <div className="QueryArea-sets">
+          <div className="QueryArea-sets column">
             {Object.keys(sets).map(set =>
               <div>
                 <input type="checkbox" name="set" value={set} />{sets[set]}<br/>
               </div>
             )}
           </div>
-          <div className="QueryArea-cardtypes">
+          <div className="QueryArea-cardtypes column">
             {cardTypes.map(cardType =>
               <div>
                 <input type="checkbox" name="cardtype" value={cardType} />{cardType}<br/>
               </div>
             )}
           </div>
-          <div className="QueryArea-rarities">
+          <div className="QueryArea-rarities column">
             {Object.keys(rarities).map(rarity =>
               <div>
                 <input type="checkbox" name="rarity" value={rarity} />{rarities[rarity]}<br/>
               </div>
             )}
           </div>
+          <div className="lastcolumn">&nbsp;</div>
         </div>
       </div>
     );
