@@ -21,9 +21,12 @@ for fn in yaml_files:
         data = f.read()
     raw_data = yaml.load(data)
     raw_data = [card for card in raw_data if 'name' in card]
+    # nudge data a bit for JSON
     for card in raw_data:
         card['set'] = fn[:2]
         card['key'] = counter
+        card['regions'] = [s.strip() for s in card['region'].split(',') if s.strip()]
+        del card['region']
         counter += 1
     carddata.extend(raw_data)
 

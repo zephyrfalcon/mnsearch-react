@@ -1,9 +1,5 @@
 # TODO
 
-- We should pass SearchResults just the cards that it needs to display. Filtering
-  and sorting needs to be done beforehand, then the sorted/filtered array needs
-  to be passed to SearchResults.
-
 - Show some filter/search/sort options
 - Figure out how to use those options to actually produce a sorted/filtered list
   (must be done in App)
@@ -14,4 +10,16 @@
 
 - regions need to be a list of names in cards.json
   (right now there's a string 'region' containing one or two regions as text)
-  
+
+### features
+
+- later: add additional checkboxes not found in the old MNSearch?
+  [ ] multi-region
+  [ ] single-region   (hmm... sounds more like a set of radiobuttons)
+  [ ] include promos (but this is the same as checking PR)
+  [ ] include unreleased sets (but this is the same as checking TR)
+
+### display
+
+- show checkbox panels properly, i.e. panels next to each other, aligned
+  properly
