@@ -2,6 +2,9 @@
 
 ### data
 
+- add the image name
+  (in the Python version, this is generated on demand, but I don't want to do
+  that in Javascript right now)
 
 ### features
 
@@ -12,8 +15,10 @@
   [ ] single-region   (hmm... sounds more like a set of radiobuttons)
   [ ] include promos (but this is the same as checking PR)
   [ ] include unreleased sets (but this is the same as checking TR)
+- instead of checking if a string occurs in a card's name, we could be more
+  specific, i.e. check if it starts or ends with it.
+  - we could also search other fields, perhaps.
 
 ### display
 
-- show search results in alternating colors
 - if we can find icons, show the region icon?

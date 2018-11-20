@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+# Script to generate cards.json from existing YAML data.
 # Requires: PyYAML library
 
 import json
 import os
+import string
 #
 import yaml
 
@@ -13,6 +15,43 @@ yaml_files = [fn for fn in filenames if fn.endswith('.yaml')]
 print(yaml_files)
 
 carddata = []
+
+REGIONS = {
+    "Arderial": "AR",
+    "Cald": "CA",
+    "Naroom": "NM",
+    "Orothe": "OR",
+    "Underneath": "UD",
+    "Universal": "UV",
+    "Core": "CO",
+    "Kybar's Teeth": "KT",
+    "Weave": "WV",
+    "Bograth": "BG",
+    "Paradwyn": "PA",
+    "d'Resh": "DR",
+    "Nar": "NR",
+}
+
+KEEP = string.ascii_letters + string.digits + " -"
+REPLACE = { ' ': '_' }
+def normalize_cardname(name):
+    chars = [c for c in name if c in KEEP]
+    name = ''.join(chars)
+    for key, value in REPLACE.items():
+        name = name.replace(key, value)
+    name = name.replace("__", "_")
+    return name
+
+def cardname_to_image(card):
+    name = normalize_cardname(card['name'])
+
+    # add suffix for dual regions, if appropriate
+    suffix = ""
+    if len(card['regions']) > 1:
+        suffix = '_' + REGIONS[card['regions'][0]]
+
+    path = os.path.join("/images", card['set'], name + suffix + ".jpg")
+    return path
 
 counter = 1
 for fn in yaml_files:
@@ -33,6 +72,7 @@ for fn in yaml_files:
         card['key'] = counter
         card['regions'] = [s.strip() for s in card['region'].split(',') if s.strip()]
         del card['region']
+        card['image'] = cardname_to_image(card)
         counter += 1
     carddata.extend(raw_data)
 
