@@ -224,6 +224,7 @@ class App extends Component {
                    onCardTypeChange={this.onCardTypeChange} />
         <hr />
         <SearchResults cards={this.state.results} />
+        <footer></footer>
       </div>
     );
   }
