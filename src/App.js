@@ -47,6 +47,7 @@ function cardInRegions(card, regions) {
    - onTextChange(event): callback for when text changes
    - onRegionChange(event)
    - onSetChange(event)
+   - onSetCardType(event)
 */
 class QueryArea extends Component {
   constructor(props) {
@@ -79,7 +80,8 @@ class QueryArea extends Component {
           <div className="QueryArea-cardtypes column">
             {cardTypes.map(cardType =>
               <div>
-                <input type="checkbox" name="cardtype" value={cardType} />{cardType}<br/>
+                <input type="checkbox" name="cardtype" value={cardType} 
+                       onChange={this.props.onCardTypeChange} />{cardType}<br/>
               </div>
             )}
           </div>
@@ -98,7 +100,7 @@ class QueryArea extends Component {
 }
 
 /* props:
-   - cards: list of JSON card data
+   - cards: list of JSON card data, already filtered
 */
 class SearchResults extends Component {
   constructor(props) {
@@ -146,6 +148,7 @@ class App extends Component {
       text: '',
       regions: [],
       sets: [],
+      cardTypes: [],
       results: carddata,
     };
 
@@ -153,6 +156,7 @@ class App extends Component {
     this.onTextChange = this.onTextChange.bind(this);
     this.onRegionChange = this.onRegionChange.bind(this);
     this.onSetChange = this.onSetChange.bind(this);
+    this.onCardTypeChange = this.onCardTypeChange.bind(this);
   }
 
   onTextChange(event) {
@@ -181,6 +185,16 @@ class App extends Component {
                   () => this.updateSearchResults());
   }
 
+  onCardTypeChange(event) {
+    let panel = event.target.parentElement.parentElement;
+    let coll = panel.getElementsByTagName('input');
+    let arr = [...coll];  // HTMLCollection -> Array
+    let checkedCardTypes = arr.filter(inputElem => inputElem.checked)
+                              .map(inputElem => inputElem.value);
+    this.setState({ cardTypes: checkedCardTypes }, 
+                  () => this.updateSearchResults());
+  }
+
   updateSearchResults() {
     let results = carddata;
     if (this.state.text > '') {
@@ -191,6 +205,9 @@ class App extends Component {
     }
     if (this.state.sets.length > 0) {
       results = results.filter(card => this.state.sets.includes(card.set));
+    }
+    if (this.state.cardTypes.length > 0) {
+      results = results.filter(card => this.state.cardTypes.includes(card.type));
     }
     this.setState({ results: results });
   }
@@ -203,7 +220,8 @@ class App extends Component {
         </header>
         <QueryArea onTextChange={this.onTextChange}
                    onRegionChange={this.onRegionChange}
-                   onSetChange={this.onSetChange} />
+                   onSetChange={this.onSetChange}
+                   onCardTypeChange={this.onCardTypeChange} />
         <hr />
         <SearchResults cards={this.state.results} />
       </div>

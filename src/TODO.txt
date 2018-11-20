@@ -6,6 +6,8 @@
 ### features
 
 - click on search result to show card image and full info
+  - figure out how to do this
+  - should only one card be "open" at a time, or any number? (may be slow)
 - later: add additional checkboxes not found in the old MNSearch?
   [ ] multi-region
   [ ] single-region   (hmm... sounds more like a set of radiobuttons)
@@ -14,12 +16,15 @@
 - instead of checking if a string occurs in a card's name, we could be more
   specific, i.e. check if it starts or ends with it.
   - we could also search other fields, perhaps.
-- show cost/power in search results
-  - it makes sense to be able to sort by these later
+- possible filter: subtype (some cards have this)
+- sort by columns
+  - need some kind of indicator for the sort order, like an arrow
 
 ### display
 
 - if we can find icons, show the region icon?
+- same for sets
+- search results too close to the bottom of the page, leave some room there
 
 ### misc
 
