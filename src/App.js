@@ -44,9 +44,9 @@ function cardInRegions(card, regions) {
 }
 
 /* props:
-   ...give props that are callbacks?
    - onTextChange(event): callback for when text changes
    - onRegionChange(event)
+   - onSetChange(event)
 */
 class QueryArea extends Component {
   constructor(props) {
@@ -71,7 +71,8 @@ class QueryArea extends Component {
           <div className="QueryArea-sets column">
             {Object.keys(sets).map(set =>
               <div>
-                <input type="checkbox" name="set" value={set} />{sets[set]}<br/>
+                <input type="checkbox" name="set" value={set}
+                       onChange={this.props.onSetChange} />{sets[set]}<br/>
               </div>
             )}
           </div>
@@ -142,11 +143,14 @@ class App extends Component {
     this.state = {
       text: '',
       regions: [],
+      sets: [],
       results: [].concat(carddata),
     };
 
+    // stupid binding skulduggery
     this.onTextChange = this.onTextChange.bind(this);
     this.onRegionChange = this.onRegionChange.bind(this);
+    this.onSetChange = this.onSetChange.bind(this);
   }
 
   onTextChange(event) {
@@ -158,10 +162,20 @@ class App extends Component {
   onRegionChange(event) {
     let panel = event.target.parentElement.parentElement;
     let coll = panel.getElementsByTagName('input');
-    let arr = [...coll];
+    let arr = [...coll];  // HTMLCollection -> Array
     let checkedRegions = arr.filter(inputElem => inputElem.checked)
                             .map(inputElem => inputElem.value);
     this.setState({ regions: checkedRegions }, 
+                  () => this.updateSearchResults());
+  }
+
+  onSetChange(event) {
+    let panel = event.target.parentElement.parentElement;
+    let coll = panel.getElementsByTagName('input');
+    let arr = [...coll];  // HTMLCollection -> Array
+    let checkedSets = arr.filter(inputElem => inputElem.checked)
+                         .map(inputElem => inputElem.value);
+    this.setState({ sets: checkedSets }, 
                   () => this.updateSearchResults());
   }
 
@@ -173,6 +187,9 @@ class App extends Component {
     if (this.state.regions.length > 0) {
       results = results.filter(card => cardInRegions(card, this.state.regions));
     }
+    if (this.state.sets.length > 0) {
+      results = results.filter(card => this.state.sets.includes(card.set));
+    }
     this.setState({ results: results });
   }
 
@@ -183,7 +200,8 @@ class App extends Component {
           <img src="/magination-logo.jpg" />
         </header>
         <QueryArea onTextChange={this.onTextChange}
-                   onRegionChange={this.onRegionChange} />
+                   onRegionChange={this.onRegionChange}
+                   onSetChange={this.onSetChange} />
         <hr />
         <SearchResults cards={this.state.results} />
       </div>
