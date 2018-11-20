@@ -114,6 +114,7 @@ class SearchResults extends Component {
             <td style={{ width: '15%' }}>Set</td>
             <td style={{ width: '10%' }}>Type</td>
             <td style={{ width: '10%' }}>Rarity</td>
+            <td style={{ width: '5%' }}>Cost/Starting Energy</td>
           </tr>
         </thead>
         <tbody>
@@ -129,6 +130,7 @@ class SearchResults extends Component {
              <td>{sets[card.set]}</td>
              <td>{card.type}</td>
              <td>{rarities[card.rarity]}</td>
+             <td>{card.cost}</td>
            </tr>
         )}
         </tbody>
