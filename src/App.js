@@ -117,7 +117,7 @@ class SearchResults extends Component {
           </tr>
         </thead>
         <tbody>
-        {[].concat(this.props.cards)
+        {this.props.cards
          .sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1)
          .map(card => 
            <tr key={card.key}>
@@ -144,7 +144,7 @@ class App extends Component {
       text: '',
       regions: [],
       sets: [],
-      results: [].concat(carddata),
+      results: carddata,
     };
 
     // stupid binding skulduggery
@@ -180,7 +180,7 @@ class App extends Component {
   }
 
   updateSearchResults() {
-    let results = [].concat(carddata);
+    let results = carddata;
     if (this.state.text > '') {
       results = results.filter(card => card.name.toLowerCase().includes(this.state.text.toLowerCase()));
     };
