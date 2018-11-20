@@ -50,3 +50,7 @@
   text-align: left;
 }
 
+.SearchResults-cards thead {
+  font-weight: bold;
+}
+
