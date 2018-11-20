@@ -24,3 +24,5 @@
   duplicates?
   (tentative answer: no)
   (in fact, we need to add them for some cards; see above)
+- show search results in alternating colors
+- if we can find icons, show the region icon?

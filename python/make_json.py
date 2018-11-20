@@ -20,8 +20,14 @@ for fn in yaml_files:
     with open(fn, 'r') as f:
         data = f.read()
     raw_data = yaml.load(data)
-    raw_data = [card for card in raw_data if 'name' in card]
+    #raw_data = [card for card in raw_data if 'name' in card]
     # nudge data a bit for JSON
+    for idx, card in enumerate(raw_data):
+        if 'reference' in card:
+            region = card['region']
+            other_card = [c for c in raw_data if c.get('name') == card['reference']][0]
+            raw_data[idx] = other_card.copy()
+            raw_data[idx]['region'] = region
     for card in raw_data:
         card['set'] = fn[:2]
         card['key'] = counter
