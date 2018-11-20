@@ -47,7 +47,8 @@ function cardInRegions(card, regions) {
    - onTextChange(event): callback for when text changes
    - onRegionChange(event)
    - onSetChange(event)
-   - onSetCardType(event)
+   - onCardTypeChange(event)
+   - onRarityChange(event)
 */
 class QueryArea extends Component {
   constructor(props) {
@@ -88,7 +89,8 @@ class QueryArea extends Component {
           <div className="QueryArea-rarities column">
             {Object.keys(rarities).map(rarity =>
               <div>
-                <input type="checkbox" name="rarity" value={rarity} />{rarities[rarity]}<br/>
+                <input type="checkbox" name="rarity" value={rarity}
+                       onChange={this.props.onRarityChange} />{rarities[rarity]}<br/>
               </div>
             )}
           </div>
@@ -149,6 +151,7 @@ class App extends Component {
       regions: [],
       sets: [],
       cardTypes: [],
+      rarities: [],
       results: carddata,
     };
 
@@ -157,6 +160,7 @@ class App extends Component {
     this.onRegionChange = this.onRegionChange.bind(this);
     this.onSetChange = this.onSetChange.bind(this);
     this.onCardTypeChange = this.onCardTypeChange.bind(this);
+    this.onRarityChange = this.onRarityChange.bind(this);
   }
 
   onTextChange(event) {
@@ -195,6 +199,16 @@ class App extends Component {
                   () => this.updateSearchResults());
   }
 
+  onRarityChange(event) {
+    let panel = event.target.parentElement.parentElement;
+    let coll = panel.getElementsByTagName('input');
+    let arr = [...coll];  // HTMLCollection -> Array
+    let checkedRarities = arr.filter(inputElem => inputElem.checked)
+                             .map(inputElem => inputElem.value);
+    this.setState({ rarities: checkedRarities }, 
+                  () => this.updateSearchResults());
+  }
+
   updateSearchResults() {
     let results = carddata;
     if (this.state.text > '') {
@@ -209,6 +223,9 @@ class App extends Component {
     if (this.state.cardTypes.length > 0) {
       results = results.filter(card => this.state.cardTypes.includes(card.type));
     }
+    if (this.state.rarities.length > 0) {
+      results = results.filter(card => this.state.rarities.includes(card.rarity));
+    }
     this.setState({ results: results });
   }
 
@@ -221,7 +238,8 @@ class App extends Component {
         <QueryArea onTextChange={this.onTextChange}
                    onRegionChange={this.onRegionChange}
                    onSetChange={this.onSetChange}
-                   onCardTypeChange={this.onCardTypeChange} />
+                   onCardTypeChange={this.onCardTypeChange}
+                   onRarityChange={this.onRarityChange} />
         <hr />
         <SearchResults cards={this.state.results} />
         <footer></footer>
