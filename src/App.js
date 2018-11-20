@@ -109,11 +109,11 @@ class SearchResults extends Component {
       <table className="SearchResults-cards">
         <thead>
           <tr>
-            <td>Name</td>
-            <td>Region</td>
-            <td>Set</td>
-            <td>Type</td>
-            <td>Rarity</td>
+            <td style={{ width: '20%' }}>Name</td>
+            <td style={{ width: '20%' }}>Region</td>
+            <td style={{ width: '15%' }}>Set</td>
+            <td style={{ width: '10%' }}>Type</td>
+            <td style={{ width: '10%' }}>Rarity</td>
           </tr>
         </thead>
         <tbody>

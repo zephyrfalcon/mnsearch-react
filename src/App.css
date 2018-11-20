@@ -41,13 +41,24 @@
 }
 
 .SearchResults-cards {
+  border-collapse: collapse;
+  margin-left: 10px;
 }
 
 .SearchResults-cards tr {
 }
 
+.SearchResults-cards tbody tr:nth-child(even) {
+  background: #D0D0D0;
+}
+
+.SearchResults-cards tbody tr:nth-child(odd) {
+  background: #F0F0F0;
+}
+
 .SearchResults-cards tr td {
   text-align: left;
+  padding: 3px;
 }
 
 .SearchResults-cards thead {
