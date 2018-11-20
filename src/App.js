@@ -110,6 +110,9 @@ class SearchResults extends Component {
           <tr>
             <td>Name</td>
             <td>Region</td>
+            <td>Set</td>
+            <td>Type</td>
+            <td>Rarity</td>
           </tr>
         </thead>
         <tbody>
@@ -120,7 +123,11 @@ class SearchResults extends Component {
              <td>{card.name || "?!?"}</td>
              <td>{card.regions.length > 1 ? 
                   card.regions[0] + "/" + card.regions[1] 
-                  : card.regions[0]}</td>
+                  : card.regions[0]}
+             </td>
+             <td>{sets[card.set]}</td>
+             <td>{card.type}</td>
+             <td>{rarities[card.rarity]}</td>
            </tr>
         )}
         </tbody>
