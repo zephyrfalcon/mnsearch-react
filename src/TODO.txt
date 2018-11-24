@@ -25,6 +25,9 @@
 - if we can find icons, show the region icon?
 - same for sets
 - search results too close to the bottom of the page, leave some room there
+- use alternating colors for search results rows again.
+  - this got removed because of the extra <tr> that is used for card details
+  - adding it in CSS might not work, but we can add it in React
 
 ### misc
 
