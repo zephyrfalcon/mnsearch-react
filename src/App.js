@@ -103,6 +103,8 @@ class QueryArea extends Component {
 
 /* props:
    - cards: list of JSON card data, already filtered
+   - onSelectItem(id)
+   - isCardSelected(card)
 */
 class SearchResults extends Component {
   constructor(props) {
@@ -124,21 +126,36 @@ class SearchResults extends Component {
         <tbody>
         {this.props.cards
          .sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1)
-         .map(card => 
-           <tr key={card.key}>
-             <td>{card.name || "?!?"}</td>
-             <td>{card.regions.length > 1 ? 
-                  card.regions[0] + "/" + card.regions[1] 
-                  : card.regions[0]}
-             </td>
-             <td>{sets[card.set]}</td>
-             <td>{card.type}</td>
-             <td>{rarities[card.rarity]}</td>
-             <td>{card.cost}</td>
-           </tr>
-        )}
+         .map(card => <Card card={card} onSelectItem={this.props.onSelectItem} />
+         )}
         </tbody>
       </table>
+    );
+  }
+}
+
+/* props:
+   - card
+   - onSelectItem(key)
+*/
+class Card extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const card = this.props.card;
+    return (
+      <tr key={card.key} onClick={() => this.props.onSelectItem(card.key)}>
+        <td>{card.name || "?!?"}</td>
+        <td>{card.regions.length > 1 ? 
+            card.regions[0] + "/" + card.regions[1] 
+            : card.regions[0]}
+        </td>
+        <td>{sets[card.set]}</td>
+        <td>{card.type}</td>
+        <td>{rarities[card.rarity]}</td>
+        <td>{card.cost}</td>
+      </tr>
     );
   }
 }
@@ -153,6 +170,7 @@ class App extends Component {
       cardTypes: [],
       rarities: [],
       results: carddata,
+      selected: [],
     };
 
     // stupid binding skulduggery
@@ -161,6 +179,7 @@ class App extends Component {
     this.onSetChange = this.onSetChange.bind(this);
     this.onCardTypeChange = this.onCardTypeChange.bind(this);
     this.onRarityChange = this.onRarityChange.bind(this);
+    this.onSelectItem = this.onSelectItem.bind(this);
   }
 
   onTextChange(event) {
@@ -209,6 +228,15 @@ class App extends Component {
                   () => this.updateSearchResults());
   }
 
+  // XXX for now, we can only select one card.
+  onSelectItem(id) {
+    this.setState({ selected: [id] });
+  }
+
+  cardIsSelected(card) {
+    return this.state.selected.includes(card.key);
+  }
+
   updateSearchResults() {
     let results = carddata;
     if (this.state.text > '') {
@@ -241,7 +269,9 @@ class App extends Component {
                    onCardTypeChange={this.onCardTypeChange}
                    onRarityChange={this.onRarityChange} />
         <hr />
-        <SearchResults cards={this.state.results} />
+        <SearchResults cards={this.state.results} 
+                       onSelectItem={this.onSelectItem}
+                       isCardSelected={this.isCardSelected} />
         <footer></footer>
       </div>
     );
