@@ -57,13 +57,17 @@
   background: #F0F0F0;
 }
 
-.SearchResults-cards tbody tr.Card-line {
-  background: #ddd;
-}
-
 /* each row with search results has a top border */
 .Card-line {
   border-top: 1px solid #999;
+}
+
+/* search result lines have alternating colors */
+.Card-line-color-0 {
+  background-color: #ddd;
+}
+.Card-line-color-1 {
+  background-color: #F0F0F0;
 }
 
 /* show the final border line at the bottom of the table */

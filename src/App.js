@@ -126,9 +126,11 @@ class SearchResults extends Component {
         <tbody>
         {this.props.cards
          .sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1)
-         .map(card => <Card card={card} 
-                            onSelectItem={this.props.onSelectItem}
-                            isCardSelected={this.props.isCardSelected} />
+         .map((card, index) => 
+            <Card card={card} 
+                  index={index}
+                  onSelectItem={this.props.onSelectItem}
+                  isCardSelected={this.props.isCardSelected} />
          )}
         </tbody>
       </table>
@@ -138,6 +140,7 @@ class SearchResults extends Component {
 
 /* props:
    - card
+   - index (starting at 0)
    - onSelectItem(key)
    - isCardSelected(card)
 */
@@ -146,10 +149,11 @@ class Card extends Component {
     super(props);
   }
   render() {
-    const { card, onSelectItem, isCardSelected } = this.props;
+    const { card, onSelectItem, isCardSelected, index } = this.props;
     return (
       <React.Fragment>
-        <tr className="Card-line" key={card.key} onClick={() => onSelectItem(card.key)}>
+        <tr className={"Card-line Card-line-color-"+(index % 2)}
+            key={card.key} onClick={() => onSelectItem(card.key)}>
           <td>{card.name || "?!?"}</td>
           <td>{card.regions.length > 1 ? 
               card.regions[0] + "/" + card.regions[1] 

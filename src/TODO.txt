@@ -24,13 +24,11 @@
 
 - if we can find icons, show the region icon?
 - same for sets
-- search results too close to the bottom of the page, leave some room there
-- use alternating colors for search results rows again.
-  - this got removed because of the extra <tr> that is used for card details
-  - adding it in CSS might not work, but we can add it in React
 
 ### misc
 
 - add a link 'about' or something, which brings up (makes visible) a panel
   with information about the author, etc
   - close to make invisible again
+- everything seems a little too sluggish when we're dealing with a full
+  list of cards. figure out how we can improve that. 
