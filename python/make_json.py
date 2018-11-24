@@ -50,7 +50,7 @@ def cardname_to_image(card):
     if len(card['regions']) > 1:
         suffix = '_' + REGIONS[card['regions'][0]]
 
-    path = os.path.join("/images", card['set'], name + suffix + ".jpg")
+    path = os.path.join("/cardimages", card['set'], name + suffix + ".jpg")
     return path
 
 counter = 1
