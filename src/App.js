@@ -183,7 +183,62 @@ class CardDetails extends Component {
             <img src={card.image} />
           </div>
           <div className="CardDetails-text">
-            blah...
+            <table className="CardDetails-text-table">
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td>{card.name}</td>
+                </tr>
+                <tr>
+                  <td>Region(s)</td>
+                  <td>{card.regions.length == 1 ? 
+                       card.regions[0] : 
+                       card.regions[0] + "/" + card.regions[1]}</td>
+                </tr>
+                <tr>
+                  <td>Set</td>
+                  <td>{sets[card.set]}</td>
+                </tr>
+                <tr>
+                  <td>Card Type</td>
+                  <td>{card.type}</td>
+                </tr>
+                <tr>
+                  <td>Rarity</td>
+                  <td>{rarities[card.rarity]}</td>
+                </tr>
+                <tr>
+                  <td>{card.type == "Magi" ? "Starting Energy" : "Cost"}</td>
+                  <td>{card.cost}</td>
+                </tr>
+                {card.effects && 
+                  <tr>
+                    <td>Effects</td>
+                    <td>
+                      {card.effects.map(effect => 
+                        <span><strong>Effect - {effect.name}</strong>: {effect.text}<br/></span>
+                      )}
+                    </td>
+                  </tr>
+                }
+                {card.powers &&
+                  <tr>
+                    <td>Powers</td>
+                    <td>
+                      {card.powers.map(power =>
+                        <span><strong>Power -	{power.name}</strong>: {power.text}<br/></span>
+                      )}
+                    </td>
+                  </tr>
+                }
+                {card.flavor &&
+                  <tr>
+                    <td>Flavor Text</td>
+                    <td><em>{card.flavor}</em></td>
+                  </tr>
+                }
+              </tbody>
+            </table>
           </div>
         </div>
       </td>

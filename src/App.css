@@ -97,4 +97,11 @@ table.SearchResults-cards {
 
 .CardDetails-text {
   float: left;
+  max-width: 50%;  /* prevent it from floating under the image? */
+}
+
+.CardDetails-text-table td:first-child {
+  font-weight: bold;
+  width: 150px;
+  vertical-align: top;
 }

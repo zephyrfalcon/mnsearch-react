@@ -19,6 +19,10 @@
 - possible filter: subtype (some cards have this)
 - sort by columns
   - need some kind of indicator for the sort order, like an arrow
+- in card details:
+  - show subtype, if any (e.g. Bone Grag)
+  - show starting cards
+  - show energize
 
 ### display
 
@@ -32,3 +36,7 @@
   - close to make invisible again
 - everything seems a little too sluggish when we're dealing with a full
   list of cards. figure out how we can improve that. 
+- flavor text often contains newlines, which should really be rendered as
+  <br>s in HTML. 
+  - maybe look at https://stackoverflow.com/questions/23616226/insert-html-with-react-variable-statements-jsx
+  - also quotes need to be kept!
