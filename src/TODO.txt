@@ -5,9 +5,8 @@
 
 ### features
 
-- click on search result to show card image and full info
-  - figure out how to do this
-  - should only one card be "open" at a time, or any number? (may be slow)
+- sort by columns
+  - need some kind of indicator for the sort order, like an arrow
 - later: add additional checkboxes not found in the old MNSearch?
   [ ] multi-region
   [ ] single-region   (hmm... sounds more like a set of radiobuttons)
@@ -17,12 +16,12 @@
   specific, i.e. check if it starts or ends with it.
   - we could also search other fields, perhaps.
 - possible filter: subtype (some cards have this)
-- sort by columns
-  - need some kind of indicator for the sort order, like an arrow
 - in card details:
   - show subtype, if any (e.g. Bone Grag)
   - show starting cards
   - show energize
+- some cards, like O'Qua, have a cost associated with a power... we need to
+  show this. (use power.cost if it exists)
 
 ### display
 
