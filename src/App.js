@@ -160,9 +160,22 @@ class Card extends Component {
           <td>{rarities[card.rarity]}</td>
           <td>{card.cost}</td>
         </tr>
-        {isCardSelected(card) ? <tr><td colspan="6">bah</td></tr> : null}
+        {isCardSelected(card) ? <CardDetails card={card} /> : null}
       </React.Fragment>
     );
+  }
+}
+
+/* props:
+   - card
+*/
+class CardDetails extends Component {
+  render() {
+    return <tr>
+      <td colspan="6">
+        bah
+      </td>
+    </tr>
   }
 }
 
