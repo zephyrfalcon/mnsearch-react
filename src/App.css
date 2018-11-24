@@ -84,3 +84,17 @@ table.SearchResults-cards {
   font-weight: bold;
 }
 
+.CardDetails-panel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.CardDetails-image {
+  float: left;
+  width: 450px;
+}
+
+.CardDetails-text {
+  float: left;
+}

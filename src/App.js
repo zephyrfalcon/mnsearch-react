@@ -175,9 +175,17 @@ class Card extends Component {
 */
 class CardDetails extends Component {
   render() {
+    const { card } = this.props;
     return <tr>
       <td colspan="6">
-        bah
+        <div className="CardDetails-panel">
+          <div className="CardDetails-image">
+            <img src={card.image} />
+          </div>
+          <div className="CardDetails-text">
+            blah...
+          </div>
+        </div>
       </td>
     </tr>
   }
