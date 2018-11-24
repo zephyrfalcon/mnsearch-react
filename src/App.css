@@ -52,12 +52,16 @@
 .SearchResults-cards tr {
 }
 
-.SearchResults-cards tbody tr:nth-child(even) {
+.zzzSearchResults-cards tbody tr.Card-line:nth-child(even) {
   background: #D0D0D0;
 }
 
-.SearchResults-cards tbody tr:nth-child(odd) {
+.zzzSearchResults-cards tbody tr.Card-line:nth-child(odd) {
   background: #F0F0F0;
+}
+
+.SearchResults-cards tbody tr.Card-line {
+  background: #ddd;
 }
 
 .SearchResults-cards tr td {

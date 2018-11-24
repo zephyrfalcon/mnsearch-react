@@ -126,7 +126,9 @@ class SearchResults extends Component {
         <tbody>
         {this.props.cards
          .sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1)
-         .map(card => <Card card={card} onSelectItem={this.props.onSelectItem} />
+         .map(card => <Card card={card} 
+                            onSelectItem={this.props.onSelectItem}
+                            isCardSelected={this.props.isCardSelected} />
          )}
         </tbody>
       </table>
@@ -137,25 +139,29 @@ class SearchResults extends Component {
 /* props:
    - card
    - onSelectItem(key)
+   - isCardSelected(card)
 */
 class Card extends Component {
   constructor(props) {
     super(props);
   }
   render() {
-    const card = this.props.card;
+    const { card, onSelectItem, isCardSelected } = this.props;
     return (
-      <tr key={card.key} onClick={() => this.props.onSelectItem(card.key)}>
-        <td>{card.name || "?!?"}</td>
-        <td>{card.regions.length > 1 ? 
-            card.regions[0] + "/" + card.regions[1] 
-            : card.regions[0]}
-        </td>
-        <td>{sets[card.set]}</td>
-        <td>{card.type}</td>
-        <td>{rarities[card.rarity]}</td>
-        <td>{card.cost}</td>
-      </tr>
+      <React.Fragment>
+        <tr className="Card-line" key={card.key} onClick={() => onSelectItem(card.key)}>
+          <td>{card.name || "?!?"}</td>
+          <td>{card.regions.length > 1 ? 
+              card.regions[0] + "/" + card.regions[1] 
+              : card.regions[0]}
+          </td>
+          <td>{sets[card.set]}</td>
+          <td>{card.type}</td>
+          <td>{rarities[card.rarity]}</td>
+          <td>{card.cost}</td>
+        </tr>
+        {isCardSelected(card) ? <tr><td colspan="6">bah</td></tr> : null}
+      </React.Fragment>
     );
   }
 }
@@ -180,6 +186,7 @@ class App extends Component {
     this.onCardTypeChange = this.onCardTypeChange.bind(this);
     this.onRarityChange = this.onRarityChange.bind(this);
     this.onSelectItem = this.onSelectItem.bind(this);
+    this.isCardSelected = this.isCardSelected.bind(this);
   }
 
   onTextChange(event) {
@@ -230,10 +237,14 @@ class App extends Component {
 
   // XXX for now, we can only select one card.
   onSelectItem(id) {
-    this.setState({ selected: [id] });
+    if (this.state.selected.includes(id)) {
+      this.setState({ selected: [] });
+    } else {
+      this.setState({ selected: [id] });
+    };
   }
 
-  cardIsSelected(card) {
+  isCardSelected(card) {
     return this.state.selected.includes(card.key);
   }
 
