@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import carddata from './cards.json';
 
+carddata.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
+
 let sets = {
   "BS": "Base Set",
   "AW": "Awakening",
@@ -105,6 +107,7 @@ class QueryArea extends Component {
    - cards: list of JSON card data, already filtered
    - onSelectItem(id)
    - isCardSelected(card)
+   - toggleSort(field)
 */
 class SearchResults extends Component {
   constructor(props) {
@@ -115,7 +118,8 @@ class SearchResults extends Component {
       <table className="SearchResults-cards">
         <thead>
           <tr>
-            <td style={{ width: '20%' }}>Name</td>
+            <td onClick={() => this.props.toggleSort('name')} 
+                style={{ width: '20%' }}>Name</td>
             <td style={{ width: '20%' }}>Region</td>
             <td style={{ width: '15%' }}>Set</td>
             <td style={{ width: '10%' }}>Type</td>
@@ -125,7 +129,7 @@ class SearchResults extends Component {
         </thead>
         <tbody>
         {this.props.cards
-         .sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1)
+         //.sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1)
          .map((card, index) => 
             <Card card={card} 
                   index={index}
@@ -257,6 +261,7 @@ class App extends Component {
       rarities: [],
       results: carddata,
       selected: [],
+      sortBy: 'name',
     };
 
     // stupid binding skulduggery
@@ -267,6 +272,17 @@ class App extends Component {
     this.onRarityChange = this.onRarityChange.bind(this);
     this.onSelectItem = this.onSelectItem.bind(this);
     this.isCardSelected = this.isCardSelected.bind(this);
+    this.toggleSort = this.toggleSort.bind(this);
+  }
+
+  toggleSort(field) {
+    let newField = field;
+    if (this.state.sortBy == field) {
+      // field was already selected for ascending order, sort in descending order now
+      newField = "^" + field;
+    }
+    this.setState({ sortBy: newField },
+                  () => this.updateSearchResults());
   }
 
   onTextChange(event) {
@@ -345,6 +361,20 @@ class App extends Component {
     if (this.state.rarities.length > 0) {
       results = results.filter(card => this.state.rarities.includes(card.rarity));
     }
+    // sorting
+    let field = this.state.sortBy.startsWith('^') ? this.state.sortBy.slice(1) : this.state.sortBy;
+    let compareByField = (field) => {
+      let compare = (a, b) => {
+        let value1 = a[field], value2 = b[field];
+        if (value1 > value2) return 1;
+        if (value1 < value2) return -1;
+        return 0;
+      };
+      return compare;
+    };
+    results.sort(compareByField(field));
+    if (this.state.sortBy.startsWith("^")) results.reverse(); 
+
     this.setState({ results: results });
   }
 
@@ -362,7 +392,8 @@ class App extends Component {
         <hr />
         <SearchResults cards={this.state.results} 
                        onSelectItem={this.onSelectItem}
-                       isCardSelected={this.isCardSelected} />
+                       isCardSelected={this.isCardSelected} 
+                       toggleSort={this.toggleSort} />
         <footer></footer>
       </div>
     );

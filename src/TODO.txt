@@ -20,6 +20,7 @@
   - show subtype, if any (e.g. Bone Grag)
   - show starting cards
   - show energize
+  - there's also a shadow_play attribute
 - some cards, like O'Qua, have a cost associated with a power... we need to
   show this. (use power.cost if it exists)
 
@@ -29,6 +30,17 @@
 - same for sets
 
 ### misc
+
+- sorting is too slow!
+  - in fact, so is everything else :(
+- how do we sort by region? this is a list that sometimes contains 2 items
+  - we could sort by the first one?
+    - this means multi-region cards no longer appear next to each other, which
+      is probably good (in this case)
+- sorting of strings (names, mostly) should be done by lowercase, so names
+  starting with "d'" don't end up at the end.
+  - but, not every field we can sort on is a string. so we cannot simply use
+    toLowerCase()
 
 - add a link 'about' or something, which brings up (makes visible) a panel
   with information about the author, etc
