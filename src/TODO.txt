@@ -28,6 +28,7 @@
 
 - if we can find icons, show the region icon?
 - same for sets
+- show an arrow (up/down) next to the field we're sorting by
 
 ### misc
 
