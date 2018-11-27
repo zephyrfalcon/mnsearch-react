@@ -22,6 +22,10 @@
   - there's also a shadow_play attribute
 - some cards, like O'Qua, have a cost associated with a power... we need to
   show this. (use power.cost if it exists)
+- it would be useful to be able to click on a checkbox's *text* to select that
+  checkbox. 
+  - make a custom component that does this?
+- show the number of cards found?
 
 ### display
 
@@ -45,3 +49,5 @@
   <br>s in HTML. 
   - maybe look at https://stackoverflow.com/questions/23616226/insert-html-with-react-variable-statements-jsx
   - also quotes need to be kept!
+
+- add a version number somewhere

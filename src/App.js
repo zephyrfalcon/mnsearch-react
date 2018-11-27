@@ -69,9 +69,6 @@ function showSortArrow(field, sortKey) {
    - onRarityChange(event)
 */
 class QueryArea extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="QueryArea">
@@ -127,9 +124,6 @@ class QueryArea extends Component {
    - sortKey
 */
 class SearchResults extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <table className="SearchResults-cards">
@@ -171,9 +165,6 @@ class SearchResults extends Component {
    - isCardSelected(card)
 */
 class Card extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const { card, onSelectItem, isCardSelected, index } = this.props;
     return (
@@ -206,7 +197,7 @@ class CardDetails extends Component {
       <td colspan="6">
         <div className="CardDetails-panel">
           <div className="CardDetails-image">
-            <img src={card.image} />
+            <img src={card.image} alt="" />
           </div>
           <div className="CardDetails-text">
             <table className="CardDetails-text-table">
@@ -217,7 +208,7 @@ class CardDetails extends Component {
                 </tr>
                 <tr>
                   <td>Region(s)</td>
-                  <td>{card.regions.length == 1 ? 
+                  <td>{card.regions.length === 1 ? 
                        card.regions[0] : 
                        card.regions[0] + "/" + card.regions[1]}</td>
                 </tr>
@@ -234,7 +225,7 @@ class CardDetails extends Component {
                   <td>{rarities[card.rarity]}</td>
                 </tr>
                 <tr>
-                  <td>{card.type == "Magi" ? "Starting Energy" : "Cost"}</td>
+                  <td>{card.type === "Magi" ? "Starting Energy" : "Cost"}</td>
                   <td>{card.cost}</td>
                 </tr>
                 {card.effects && 
@@ -272,6 +263,36 @@ class CardDetails extends Component {
   }
 }
 
+class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      expanded: false,
+    };
+    this.toggleExpanded = this.toggleExpanded.bind(this);
+  }
+  toggleExpanded() {
+    this.setState({ expanded: !this.state.expanded });
+  }
+  render() {
+    return (
+      <div className="About">
+        <a onClick={() => this.toggleExpanded()}>About...</a>
+        <div className={this.state.expanded ? "visible" : "invisible"}>
+          <p>Magi-Nation Search was written by <a href="http://aquila.blue">Hans Nowak</a>.</p>
+          <p>Source code is available on&nbsp;
+            <a href="https://github.com/zephyrfalcon/mnsearch-react">Github</a>. 
+            If you find bugs, or have suggestions for new features, please add an 
+            issue there.</p>
+            <p>If you find Magi-Nation Search useful, please consider
+              buying me a <a href="https://ko-fi.com/zephyrfalcon">coffee</a>. :3
+            </p>
+        </div>
+      </div>
+    );
+  }
+}
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -299,7 +320,7 @@ class App extends Component {
 
   toggleSort(field) {
     let newField = field;
-    if (this.state.sortBy == field) {
+    if (this.state.sortBy === field) {
       // field was already selected for ascending order, sort in descending order now
       newField = "^" + field;
     }
@@ -398,7 +419,7 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <img src="/magination-logo.jpg" />
+          <img src="/magination-logo.jpg" alt="Magi-Nation Search" />
         </header>
         <QueryArea onTextChange={this.onTextChange}
                    onRegionChange={this.onRegionChange}
@@ -411,7 +432,9 @@ class App extends Component {
                        isCardSelected={this.isCardSelected} 
                        toggleSort={this.toggleSort}
                        sortKey={this.state.sortBy} />
-        <footer></footer>
+        <footer>
+          <About />
+        </footer>
       </div>
     );
   }

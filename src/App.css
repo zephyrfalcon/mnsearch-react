@@ -105,3 +105,29 @@ table.SearchResults-cards {
   width: 150px;
   vertical-align: top;
 }
+
+footer {
+  margin: 10px;
+  text-align: left;
+}
+
+/* make this look like a link */
+.About a {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+  display: none;
+}
+
+.About div {
+  margin-top: 10px;
+  max-width: 50%;
+}
