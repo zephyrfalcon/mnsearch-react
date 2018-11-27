@@ -50,8 +50,6 @@ let rarities = {
 
 // return true if the card is in any of the given regions
 function cardInRegions(card, regions) {
-  console.log(card);
-  console.log(regions);
   return card.regions.filter(region => regions.includes(region)).length > 0;
 }
 
@@ -144,13 +142,11 @@ class SearchResults extends Component {
           </tr>
         </thead>
         <tbody>
-        {this.props.cards
-         //.sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1)
-         .map((card, index) => 
-            <Card card={card} 
-                  index={index}
-                  onSelectItem={this.props.onSelectItem}
-                  isCardSelected={this.props.isCardSelected} />
+        {this.props.cards.map((card, index) => 
+          <Card card={card} 
+                index={index}
+                onSelectItem={this.props.onSelectItem}
+                isCardSelected={this.props.isCardSelected} />
          )}
         </tbody>
       </table>

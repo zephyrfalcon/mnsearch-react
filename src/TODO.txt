@@ -2,6 +2,8 @@
 
 ### data
 
+- update data so that the cards are sorted by name in cards.json, so we
+  don't need to sort them when initializing the app
 
 ### features
 
