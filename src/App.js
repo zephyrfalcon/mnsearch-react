@@ -7,7 +7,7 @@ carddata.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
 
 const SORTS = {
   name: list => sortBy(list, [(card) => card.name.toLowerCase()]),
-  region: list => sortBy(list, [(card) => card.regions[0]]),
+  region: list => sortBy(list, [(card) => card.regions[0].toLowerCase()]),
   set: list => sortBy(list, 'set'),
   type: list => sortBy(list, 'type'),
   rarity: list => sortBy(list, 'rarity'),
@@ -130,11 +130,16 @@ class SearchResults extends Component {
           <tr>
             <td onClick={() => this.props.toggleSort('name')} 
                 style={{ width: '20%' }}>Name</td>
-            <td style={{ width: '20%' }}>Region</td>
-            <td style={{ width: '15%' }}>Set</td>
-            <td style={{ width: '10%' }}>Type</td>
-            <td style={{ width: '10%' }}>Rarity</td>
-            <td style={{ width: '5%' }}>Cost/Starting Energy</td>
+            <td onClick={() => this.props.toggleSort('region')} 
+                style={{ width: '20%' }}>Region</td>
+            <td onClick={() => this.props.toggleSort('set')} 
+                style={{ width: '15%' }}>Set</td>
+            <td onClick={() => this.props.toggleSort('type')} 
+                style={{ width: '10%' }}>Type</td>
+            <td onClick={() => this.props.toggleSort('rarity')} 
+                style={{ width: '10%' }}>Rarity</td>
+            <td onClick={() => this.props.toggleSort('cost')} 
+                style={{ width: '5%' }}>Cost/Starting Energy</td>
           </tr>
         </thead>
         <tbody>
@@ -372,6 +377,7 @@ class App extends Component {
       results = results.filter(card => this.state.rarities.includes(card.rarity));
     }
     // sorting
+    /*
     let field = this.state.sortBy.startsWith('^') ? this.state.sortBy.slice(1) : this.state.sortBy;
     let compareByField = (field) => {
       let compare = (a, b) => {
@@ -384,6 +390,10 @@ class App extends Component {
     };
     results.sort(compareByField(field));
     if (this.state.sortBy.startsWith("^")) results.reverse(); 
+    */
+    const sortKey = this.state.sortBy.startsWith("^") ? this.state.sortBy.slice(1) : this.state.sortBy;
+    results = SORTS[sortKey](results);
+    if (this.state.sortBy.startsWith("^")) results.reverse();
 
     this.setState({ results: results });
   }

@@ -42,6 +42,9 @@
   starting with "d'" don't end up at the end.
   - but, not every field we can sort on is a string. so we cannot simply use
     toLowerCase()
+- when sorting by region, do we put the multi-regions together? or do we just
+  sort by the first region and then by original order (i.e. card name)?
+  - problem is, if you do a reverse sort, the names are *also* sorted in reverse.
 
 - add a link 'about' or something, which brings up (makes visible) a panel
   with information about the author, etc
