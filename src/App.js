@@ -55,6 +55,12 @@ function cardInRegions(card, regions) {
   return card.regions.filter(region => regions.includes(region)).length > 0;
 }
 
+function showSortArrow(field, sortKey) {
+  if (field === sortKey || "^"+field === sortKey) {
+    return sortKey.startsWith("^") ? "↓" : "↑";
+  } else return null;
+}
+
 /* props:
    - onTextChange(event): callback for when text changes
    - onRegionChange(event)
@@ -118,6 +124,7 @@ class QueryArea extends Component {
    - onSelectItem(id)
    - isCardSelected(card)
    - toggleSort(field)
+   - sortKey
 */
 class SearchResults extends Component {
   constructor(props) {
@@ -129,17 +136,17 @@ class SearchResults extends Component {
         <thead>
           <tr>
             <td onClick={() => this.props.toggleSort('name')} 
-                style={{ width: '20%' }}>Name</td>
+                style={{ width: '20%' }}>Name{showSortArrow("name", this.props.sortKey)}</td>
             <td onClick={() => this.props.toggleSort('region')} 
-                style={{ width: '20%' }}>Region</td>
+                style={{ width: '20%' }}>Region{showSortArrow("region", this.props.sortKey)}</td>
             <td onClick={() => this.props.toggleSort('set')} 
-                style={{ width: '15%' }}>Set</td>
+                style={{ width: '15%' }}>Set{showSortArrow("set", this.props.sortKey)}</td>
             <td onClick={() => this.props.toggleSort('type')} 
-                style={{ width: '10%' }}>Type</td>
+                style={{ width: '10%' }}>Type{showSortArrow("type", this.props.sortKey)}</td>
             <td onClick={() => this.props.toggleSort('rarity')} 
-                style={{ width: '10%' }}>Rarity</td>
+                style={{ width: '10%' }}>Rarity{showSortArrow("rarity", this.props.sortKey)}</td>
             <td onClick={() => this.props.toggleSort('cost')} 
-                style={{ width: '5%' }}>Cost/Starting Energy</td>
+                style={{ width: '5%' }}>Cost/Starting Energy{showSortArrow("cost", this.props.sortKey)}</td>
           </tr>
         </thead>
         <tbody>
@@ -361,6 +368,8 @@ class App extends Component {
 
   updateSearchResults() {
     let results = carddata;
+
+    // filters
     if (this.state.text > '') {
       results = results.filter(card => card.name.toLowerCase().includes(this.state.text.toLowerCase()));
     };
@@ -376,21 +385,8 @@ class App extends Component {
     if (this.state.rarities.length > 0) {
       results = results.filter(card => this.state.rarities.includes(card.rarity));
     }
+
     // sorting
-    /*
-    let field = this.state.sortBy.startsWith('^') ? this.state.sortBy.slice(1) : this.state.sortBy;
-    let compareByField = (field) => {
-      let compare = (a, b) => {
-        let value1 = a[field], value2 = b[field];
-        if (value1 > value2) return 1;
-        if (value1 < value2) return -1;
-        return 0;
-      };
-      return compare;
-    };
-    results.sort(compareByField(field));
-    if (this.state.sortBy.startsWith("^")) results.reverse(); 
-    */
     const sortKey = this.state.sortBy.startsWith("^") ? this.state.sortBy.slice(1) : this.state.sortBy;
     results = SORTS[sortKey](results);
     if (this.state.sortBy.startsWith("^")) results.reverse();
@@ -413,7 +409,8 @@ class App extends Component {
         <SearchResults cards={this.state.results} 
                        onSelectItem={this.onSelectItem}
                        isCardSelected={this.isCardSelected} 
-                       toggleSort={this.toggleSort} />
+                       toggleSort={this.toggleSort}
+                       sortKey={this.state.sortBy} />
         <footer></footer>
       </div>
     );
