@@ -7,6 +7,10 @@
 
 ### features
 
+- a few concise instructions would be helpful. e.g. click on header to sort,
+  click again to sort in reverse, click on card to see details. the filters
+  kind of speak for themselves.
+
 - later: add additional checkboxes not found in the old MNSearch?
   [ ] multi-region
   [ ] single-region   (hmm... sounds more like a set of radiobuttons)
@@ -27,7 +31,6 @@
 - it would be useful to be able to click on a checkbox's *text* to select that
   checkbox. 
   - make a custom component that does this?
-- show the number of cards found?
 
 ### display
 
