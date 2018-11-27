@@ -1,8 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 import carddata from './cards.json';
+import { sortBy } from 'lodash';
 
 carddata.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
+
+const SORTS = {
+  name: list => sortBy(list, [(card) => card.name.toLowerCase()]),
+  region: list => sortBy(list, [(card) => card.regions[0]]),
+  set: list => sortBy(list, 'set'),
+  type: list => sortBy(list, 'type'),
+  rarity: list => sortBy(list, 'rarity'),
+  cost: list => sortBy(list, 'cost'),
+};
 
 let sets = {
   "BS": "Base Set",
