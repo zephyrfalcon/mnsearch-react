@@ -5,8 +5,6 @@
 
 ### features
 
-- sort by columns
-  - need some kind of indicator for the sort order, like an arrow
 - later: add additional checkboxes not found in the old MNSearch?
   [ ] multi-region
   [ ] single-region   (hmm... sounds more like a set of radiobuttons)
@@ -28,20 +26,14 @@
 
 - if we can find icons, show the region icon?
 - same for sets
-- show an arrow (up/down) next to the field we're sorting by
+- show the sort arrow in a different color
+  - we could create a new component SortArrow for this, or something
+  - in fact, the table headers could also be their own component... but no rush :)
 
 ### misc
 
 - sorting is too slow!
   - in fact, so is everything else :(
-- how do we sort by region? this is a list that sometimes contains 2 items
-  - we could sort by the first one?
-    - this means multi-region cards no longer appear next to each other, which
-      is probably good (in this case)
-- sorting of strings (names, mostly) should be done by lowercase, so names
-  starting with "d'" don't end up at the end.
-  - but, not every field we can sort on is a string. so we cannot simply use
-    toLowerCase()
 - when sorting by region, do we put the multi-regions together? or do we just
   sort by the first region and then by original order (i.e. card name)?
   - problem is, if you do a reverse sort, the names are *also* sorted in reverse.
@@ -51,6 +43,7 @@
   - close to make invisible again
 - everything seems a little too sluggish when we're dealing with a full
   list of cards. figure out how we can improve that. 
+  - doing a build helps
 - flavor text often contains newlines, which should really be rendered as
   <br>s in HTML. 
   - maybe look at https://stackoverflow.com/questions/23616226/insert-html-with-react-variable-statements-jsx
