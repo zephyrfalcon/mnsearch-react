@@ -124,32 +124,35 @@ class QueryArea extends Component {
 class SearchResults extends Component {
   render() {
     return (
-      <table className="SearchResults-cards">
-        <thead>
-          <tr>
-            <td onClick={() => this.props.toggleSort('name')} 
-                style={{ width: '20%' }}>Name{showSortArrow("name", this.props.sortKey)}</td>
-            <td onClick={() => this.props.toggleSort('region')} 
-                style={{ width: '20%' }}>Region{showSortArrow("region", this.props.sortKey)}</td>
-            <td onClick={() => this.props.toggleSort('set')} 
-                style={{ width: '15%' }}>Set{showSortArrow("set", this.props.sortKey)}</td>
-            <td onClick={() => this.props.toggleSort('type')} 
-                style={{ width: '10%' }}>Type{showSortArrow("type", this.props.sortKey)}</td>
-            <td onClick={() => this.props.toggleSort('rarity')} 
-                style={{ width: '10%' }}>Rarity{showSortArrow("rarity", this.props.sortKey)}</td>
-            <td onClick={() => this.props.toggleSort('cost')} 
-                style={{ width: '5%' }}>Cost/Starting Energy{showSortArrow("cost", this.props.sortKey)}</td>
-          </tr>
-        </thead>
-        <tbody>
-        {this.props.cards.map((card, index) => 
-          <Card card={card} 
-                index={index}
-                onSelectItem={this.props.onSelectItem}
-                isCardSelected={this.props.isCardSelected} />
-         )}
-        </tbody>
-      </table>
+      <div className="SearchResults">
+        <div className="SearchResults-cards-found">Cards found: {this.props.cards.length}</div>
+        <table className="SearchResults-cards">
+          <thead>
+            <tr>
+              <td onClick={() => this.props.toggleSort('name')} 
+                  style={{ width: '20%' }}>Name{showSortArrow("name", this.props.sortKey)}</td>
+              <td onClick={() => this.props.toggleSort('region')} 
+                  style={{ width: '20%' }}>Region{showSortArrow("region", this.props.sortKey)}</td>
+              <td onClick={() => this.props.toggleSort('set')} 
+                  style={{ width: '15%' }}>Set{showSortArrow("set", this.props.sortKey)}</td>
+              <td onClick={() => this.props.toggleSort('type')} 
+                  style={{ width: '10%' }}>Type{showSortArrow("type", this.props.sortKey)}</td>
+              <td onClick={() => this.props.toggleSort('rarity')} 
+                  style={{ width: '10%' }}>Rarity{showSortArrow("rarity", this.props.sortKey)}</td>
+              <td onClick={() => this.props.toggleSort('cost')} 
+                  style={{ width: '5%' }}>Cost/Starting Energy{showSortArrow("cost", this.props.sortKey)}</td>
+            </tr>
+          </thead>
+          <tbody>
+          {this.props.cards.map((card, index) => 
+            <Card card={card} 
+                  index={index}
+                  onSelectItem={this.props.onSelectItem}
+                  isCardSelected={this.props.isCardSelected} />
+          )}
+          </tbody>
+        </table>
+      </div>
     );
   }
 }

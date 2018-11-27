@@ -44,17 +44,17 @@
   text-align: left;
 }
 
+.SearchResults {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .SearchResults-cards {
   border-collapse: collapse;
-  margin-left: 10px;
 }
 
-.zzzSearchResults-cards tbody tr.Card-line:nth-child(even) {
-  background: #D0D0D0;
-}
-
-.zzzSearchResults-cards tbody tr.Card-line:nth-child(odd) {
-  background: #F0F0F0;
+.SearchResults-cards-found {
+  text-align: left;
 }
 
 /* each row with search results has a top border */
