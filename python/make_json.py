@@ -76,6 +76,9 @@ for fn in yaml_files:
         counter += 1
     carddata.extend(raw_data)
 
+# sort card data by name
+carddata.sort(key=lambda c: c['name'].lower())
+
 print("Writing output file...")
 js_out_path = os.path.join(whereami, "..", "src", "cards.json")
 with open(js_out_path, 'w') as g:

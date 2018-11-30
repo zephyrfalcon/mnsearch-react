@@ -3,7 +3,7 @@ import './App.css';
 import carddata from './cards.json';
 import { sortBy } from 'lodash';
 
-carddata.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
+// carddata.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
 
 const SORTS = {
   name: list => sortBy(list, [(card) => card.name.toLowerCase()]),
