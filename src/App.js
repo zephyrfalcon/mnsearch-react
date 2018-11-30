@@ -219,6 +219,12 @@ class CardDetails extends Component {
                   <td>Card Type</td>
                   <td>{card.type}</td>
                 </tr>
+                {card.subtype &&
+                <tr>
+                  <td>Subtype</td>
+                  <td>{card.subtype}</td>
+                </tr>
+                }
                 <tr>
                   <td>Rarity</td>
                   <td>{rarities[card.rarity]}</td>
