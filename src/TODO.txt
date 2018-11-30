@@ -2,9 +2,6 @@
 
 ### data
 
-- update data so that the cards are sorted by name in cards.json, so we
-  don't need to sort them when initializing the app
-
 ### features
 
 - a few concise instructions would be helpful. e.g. click on header to sort,
@@ -22,7 +19,6 @@
   - we could also search other fields, perhaps.
 - possible filter: subtype (some cards have this)
 - in card details:
-  - show subtype, if any (e.g. Bone Grag)
   - show starting cards
   - show energize
   - there's also a shadow_play attribute
@@ -42,10 +38,6 @@
 
 ### misc
 
-- add a link 'about' or something, which brings up (makes visible) a panel
-  with information about the author, etc
-  - close to make invisible again
-
 - when sorting by region, do we put the multi-regions together? or do we just
   sort by the first region and then by original order (i.e. card name)?
   - problem is, if you do a reverse sort, the names are *also* sorted in reverse.
@@ -55,4 +47,3 @@
   - maybe look at https://stackoverflow.com/questions/23616226/insert-html-with-react-variable-statements-jsx
   - also quotes need to be kept!
 
-- add a version number somewhere
