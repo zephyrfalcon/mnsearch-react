@@ -5,6 +5,8 @@ import { sortBy } from 'lodash';
 
 // carddata.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
 
+const VERSION = "0.6";
+
 const SORTS = {
   name: list => sortBy(list, [(card) => card.name.toLowerCase()]),
   region: list => sortBy(list, [(card) => card.regions[0].toLowerCase()]),
@@ -284,6 +286,7 @@ class About extends Component {
       <div className="About">
         <a onClick={() => this.toggleExpanded()}>About...</a>
         <div className={this.state.expanded ? "visible" : "invisible"}>
+          <p><strong>Magi-Nation Search version {VERSION}</strong></p>
           <p>Magi-Nation Search was written by&nbsp;
             <a href="http://aquila.blue">Hans Nowak</a>.</p>
           <p>Source code is available on&nbsp;
