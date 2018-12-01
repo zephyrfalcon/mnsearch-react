@@ -5,7 +5,7 @@ import { sortBy } from 'lodash';
 
 // carddata.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
 
-const VERSION = "0.6";
+const VERSION = "0.7";
 
 const SORTS = {
   name: list => sortBy(list, [(card) => card.name.toLowerCase()]),
