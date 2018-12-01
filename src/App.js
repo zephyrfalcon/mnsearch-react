@@ -235,6 +235,12 @@ class CardDetails extends Component {
                   <td>{card.type === "Magi" ? "Starting Energy" : "Cost"}</td>
                   <td>{card.cost}</td>
                 </tr>
+                {card.energize &&
+                <tr>
+                  <td>Energize</td>
+                  <td>{card.energize}</td>
+                </tr>
+                }
                 {card.effects && 
                   <tr>
                     <td>Effects</td>
@@ -250,7 +256,7 @@ class CardDetails extends Component {
                     <td>Powers</td>
                     <td>
                       {card.powers.map(power =>
-                        <span><strong>Power -	{power.name}</strong>: {power.text}<br/></span>
+                        <span><strong>Power -	{power.name}</strong>: {power.cost ? <strong>{"("+power.cost+") "}</strong> : null}{power.text}<br/></span>
                       )}
                     </td>
                   </tr>
@@ -261,6 +267,10 @@ class CardDetails extends Component {
                     <td><em>{card.flavor}</em></td>
                   </tr>
                 }
+                <tr>
+                  <td>Artist(s)</td>
+                  <td>{card.artist}</td>
+                </tr>
               </tbody>
             </table>
           </div>
