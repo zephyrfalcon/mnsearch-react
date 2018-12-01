@@ -241,6 +241,12 @@ class CardDetails extends Component {
                   <td>{card.energize}</td>
                 </tr>
                 }
+                {card.starting &&
+                 <tr>
+                   <td>Starting cards</td>
+                   <td>{card.starting.join(", ")}</td>
+                 </tr>
+                }
                 {card.effects && 
                   <tr>
                     <td>Effects</td>

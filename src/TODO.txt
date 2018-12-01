@@ -46,3 +46,12 @@
   - maybe look at https://stackoverflow.com/questions/23616226/insert-html-with-react-variable-statements-jsx
   - also quotes need to be kept!
 
+- in the list of starting cards, we could make the cards clickable links,
+  that open the card in question?
+  - what do we do if the current filters don't show that card?
+  - with the current settings, it would close the original card, which
+    may be annoying.
+
+- should we provide unique URLs for each card somehow?
+  - what would they point to? separate page? or show the list with that card open?
+
