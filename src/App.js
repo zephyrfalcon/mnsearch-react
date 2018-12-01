@@ -289,6 +289,15 @@ class About extends Component {
           <p><strong>Magi-Nation Search version {VERSION}</strong></p>
           <p>Magi-Nation Search was written by&nbsp;
             <a href="http://aquila.blue">Hans Nowak</a>.</p>
+          <p>Quick instructions:
+            <ul>
+              <li>Select checkboxes to filter by region, set, etc.</li>
+              <li>Click on a card to show details.</li>
+              <li>Click on a header field to sort by that field; click again
+                on the same field for reverse sort.
+              </li>
+            </ul>
+          </p>
           <p>Source code is available on&nbsp;
             <a href="https://github.com/zephyrfalcon/mnsearch-react">Github</a>. 
             If you find bugs, or have suggestions for new features, please add an 

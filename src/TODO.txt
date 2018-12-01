@@ -4,10 +4,6 @@
 
 ### features
 
-- a few concise instructions would be helpful. e.g. click on header to sort,
-  click again to sort in reverse, click on card to see details. the filters
-  kind of speak for themselves.
-
 - later: add additional checkboxes not found in the old MNSearch?
   [ ] multi-region
   [ ] single-region   (hmm... sounds more like a set of radiobuttons)
@@ -16,6 +12,8 @@
   [ ] show cards that have ALL regions selected
 - instead of checking if a string occurs in a card's name, we could be more
   specific, i.e. check if it starts or ends with it.
+  - there could be a dropdown defaulting to "contains", but which also has
+    "starts with" and "ends with".
   - we could also search other fields, perhaps.
 - possible filter: subtype (some cards have this)
 - in card details:
@@ -35,6 +33,8 @@
 - show the sort arrow in a different color
   - we could create a new component SortArrow for this, or something
   - in fact, the table headers could also be their own component... but no rush :)
+- some effects have no name (e.g. Zyavu); in that case, don't show the "-" after
+  "Effect" in the card details.
 
 ### misc
 
