@@ -15,9 +15,7 @@
   - there could be a dropdown defaulting to "contains", but which also has
     "starts with" and "ends with".
   - we could also search other fields, perhaps.
-- possible filter: subtype (some cards have this)
 - in card details:
-  - show starting cards
   - there's also a shadow_play attribute
 - it would be useful to be able to click on a checkbox's *text* to select that
   checkbox. 
