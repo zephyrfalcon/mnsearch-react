@@ -92,12 +92,12 @@ table.SearchResults-cards {
 
 .CardDetails-image {
   float: left;
-  width: 450px;
+  width: 500px;
 }
 
 .CardDetails-text {
   float: left;
-  max-width: 50%;  /* prevent it from floating under the image? */
+  max-width: 45%;  /* prevent it from floating under the image? */
 }
 
 .CardDetails-text-table td:first-child {
