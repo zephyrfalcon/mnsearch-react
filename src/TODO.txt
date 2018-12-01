@@ -2,13 +2,13 @@
 
 ### data
 
-### features
+### filtering
 
 - later: add additional checkboxes not found in the old MNSearch?
   [ ] multi-region
   [ ] single-region   (hmm... sounds more like a set of radiobuttons)
-  [ ] include promos (but this is the same as checking PR)
-  [ ] include unreleased sets (but this is the same as checking TR)
+  [ ] EXclude promos (but what will this do if we check Promos)
+  [ ] EXclude unreleased sets (but what does this do if we check TR)
   [ ] show cards that have ALL regions selected
 - instead of checking if a string occurs in a card's name, we could be more
   specific, i.e. check if it starts or ends with it.
@@ -22,6 +22,8 @@
 - it would be useful to be able to click on a checkbox's *text* to select that
   checkbox. 
   - make a custom component that does this?
+
+### search results
 
 ### display
 

@@ -111,6 +111,15 @@ footer {
   text-align: left;
 }
 
+/*
+.About {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+}
+*/
+
 /* make this look like a link */
 .About a {
   text-decoration: underline;
@@ -120,6 +129,7 @@ footer {
 
 .visible {
   visibility: visible;
+  display: block;
 }
 
 .invisible {
