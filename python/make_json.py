@@ -9,10 +9,8 @@ import string
 import yaml
 
 whereami = os.path.dirname(os.path.abspath(__file__))
-print(whereami)
 filenames = os.listdir(whereami)
 yaml_files = [fn for fn in filenames if fn.endswith('.yaml')]
-print(yaml_files)
 
 carddata = []
 
