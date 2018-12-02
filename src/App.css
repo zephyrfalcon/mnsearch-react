@@ -128,16 +128,6 @@ footer {
   cursor: pointer;
 }
 
-.visible {
-  visibility: visible;
-  display: block;
-}
-
-.invisible {
-  visibility: hidden;
-  display: none;
-}
-
 .About div {
   margin-top: 10px;
   max-width: 50%;

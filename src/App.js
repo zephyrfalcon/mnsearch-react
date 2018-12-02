@@ -291,21 +291,11 @@ const AboutLink = (props) =>
 
 
 class About extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      expanded: false,
-    };
-    this.toggleExpanded = this.toggleExpanded.bind(this);
-  }
-  toggleExpanded() {
-    this.setState({ expanded: !this.state.expanded });
-  }
   render() {
     return (
       <div className="About">
         <a name="about"></a>
-        <div className="visible">
+        <div>
           <p><strong>Magi-Nation Search version {VERSION}</strong></p>
           <p>Magi-Nation Search was written by&nbsp;
             <a href="http://aquila.blue">Hans Nowak</a>.</p>

@@ -6,7 +6,8 @@
 
 - later: add additional checkboxes not found in the old MNSearch?
   [ ] multi-region
-  [ ] single-region   (hmm... sounds more like a set of radiobuttons)
+  [ ] single-region only (hmm... sounds more like a set of radiobuttons)
+      - doesn't really sound very useful
   [ ] EXclude promos (but what will this do if we check Promos)
   [ ] EXclude unreleased sets (but what does this do if we check TR)
   [ ] show cards that have ALL regions selected
@@ -17,6 +18,11 @@
   - we could also search other fields, perhaps.
     - it would make sense to search for effect names, since effects with the
       same names sometimes appear on different cards. (e.g. Weave)
+    - also subtypes
+    - and starting cards
+    - and card text
+    - even flavor text can be searched, like in the old MNS, but I am not sure
+      how useful this is in practice 
 - in card details:
   - there's also a shadow_play attribute
 - it would be useful to be able to click on a checkbox's *text* to select that
@@ -27,7 +33,7 @@
 
 - if certain card types are selected, maybe we can show an additional column
   in the search results. for example, if Magi is selected, we could show an
-  energize column; it would make sense to sort on that.
+  energize column; it would make sense to sort by that.
 
 ### display
 
@@ -61,11 +67,8 @@
 
 ### cleanup/refactoring
 
-- About section is now always visible, remove unnecessary expand and invisible
-  stuff
 
 ### README/instructions
 
 - In the README, add a link to some site that explains what Magi-Nation is...
   perhaps several sites
-  
