@@ -286,6 +286,10 @@ class CardDetails extends Component {
   }
 }
 
+const AboutLink = (props) => 
+  <div className="AboutLink"><a href="#about">About/Instructions</a></div>
+
+
 class About extends Component {
   constructor(props) {
     super(props);
@@ -300,8 +304,8 @@ class About extends Component {
   render() {
     return (
       <div className="About">
-        <a onClick={() => this.toggleExpanded()}>About...</a>
-        <div className={this.state.expanded ? "visible" : "invisible"}>
+        <a name="about"></a>
+        <div className="visible">
           <p><strong>Magi-Nation Search version {VERSION}</strong></p>
           <p>Magi-Nation Search was written by&nbsp;
             <a href="http://aquila.blue">Hans Nowak</a>.</p>
@@ -452,6 +456,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <AboutLink />
         <header>
           <img src="/magination-logo.jpg" alt="Magi-Nation Search" />
         </header>

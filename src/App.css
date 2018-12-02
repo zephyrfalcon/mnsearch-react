@@ -111,14 +111,11 @@ footer {
   text-align: left;
 }
 
-/*
-.About {
+.AboutLink {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: white;
+  top: 10px;
+  left: 10px;
 }
-*/
 
 /* make this look like a link */
 .About a {
