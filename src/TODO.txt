@@ -59,3 +59,13 @@
 - should we provide unique URLs for each card somehow?
   - what would they point to? separate page? or show the list with that card open?
 
+### cleanup/refactoring
+
+- About section is now always visible, remove unnecessary expand and invisible
+  stuff
+
+### README/instructions
+
+- In the README, add a link to some site that explains what Magi-Nation is...
+  perhaps several sites
+  

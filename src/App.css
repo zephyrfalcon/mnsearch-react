@@ -117,6 +117,10 @@ footer {
   left: 10px;
 }
 
+.About {
+  margin-top: 20px;
+}
+
 /* make this look like a link */
 .About a {
   text-decoration: underline;

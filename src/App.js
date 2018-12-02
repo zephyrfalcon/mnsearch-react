@@ -287,7 +287,7 @@ class CardDetails extends Component {
 }
 
 const AboutLink = (props) => 
-  <div className="AboutLink"><a href="#about">About/Instructions</a></div>
+  <div className="AboutLink"><a name="top" href="#about">About/Instructions</a></div>
 
 
 class About extends Component {
@@ -323,8 +323,9 @@ class About extends Component {
             If you find bugs, or have suggestions for new features, please add an 
             issue there.</p>
             <p>If you find Magi-Nation Search useful, please consider
-              buying me a <a href="https://ko-fi.com/zephyrfalcon">coffee</a>. :3
+              buying me a <a target="_blank" href="https://ko-fi.com/zephyrfalcon">coffee</a>. :3
             </p>
+            <p>[<a href="#top">back to top</a>]</p>
         </div>
       </div>
     );
