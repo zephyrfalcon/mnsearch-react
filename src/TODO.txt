@@ -23,9 +23,13 @@
     - and card text
     - even flavor text can be searched, like in the old MNS, but I am not sure
       how useful this is in practice 
-- in card details:
-  - there's also a shadow_play attribute
-  - also: card.alternate (e.g. Fiend of Furoks)
+
+### card details
+
+- there's also a shadow_play attribute
+- also: card.alternate (e.g. Fiend of Furoks)
+- some creatures have an energize attribute as well; show it
+  (e.g. Tropical Hyren)
 - it would be useful to be able to click on a checkbox's *text* to select that
   checkbox. 
   - make a custom component that does this?
