@@ -315,8 +315,8 @@ class About extends Component {
           </p>
           <p>Source code is available on&nbsp;
             <a href="https://github.com/zephyrfalcon/mnsearch-react">Github</a>. 
-            If you find bugs, or have suggestions for new features, please add an 
-            issue there.</p>
+            If you find bugs, or have suggestions for new features, please&nbsp;
+            <a href="https://github.com/zephyrfalcon/mnsearch-react/issues">add an issue</a> there.</p>
             <p>If you find Magi-Nation Search useful, please consider
               buying me a <a target="_blank" href="https://ko-fi.com/zephyrfalcon">coffee</a>. :3
             </p>
