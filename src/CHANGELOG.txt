@@ -1,0 +1,5 @@
+# CHANGELOG
+
+version 0.8.1:
+
+- in card details, display "{region} Shadow Magi" for Shadow Magi
