@@ -2,6 +2,15 @@
 
 ### data
 
+- add MRPs (http://bluefurok.com/MRP_index.htm)
+  (suggested by Reddit user)
+  - I will need to scrape and extract those, and provide a separate data file
+    - if it's big, probably load it on demand (i.e. when someone asks for MRP
+      data of a card) and then show it (as opposed to loading all the data when
+      the React app starts)
+    - since it's per card, I wonder if we could provide some kind of simple
+      read-only API here
+
 ### filtering
 
 - later: add additional checkboxes not found in the old MNSearch?
