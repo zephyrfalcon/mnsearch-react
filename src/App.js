@@ -307,6 +307,9 @@ class About extends Component {
           <p>Quick instructions:
             <ul>
               <li>Select checkboxes to filter by region, set, etc.</li>
+              <li>Typing in the name text field immediately filters the search results; 
+                pressing Enter is not necessary.
+              </li>
               <li>Click on a card to show details.</li>
               <li>Click on a header field to sort by that field; click again
                 on the same field for reverse sort.
