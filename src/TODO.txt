@@ -25,6 +25,7 @@
       how useful this is in practice 
 - in card details:
   - there's also a shadow_play attribute
+  - also: card.alternate (e.g. Fiend of Furoks)
 - it would be useful to be able to click on a checkbox's *text* to select that
   checkbox. 
   - make a custom component that does this?

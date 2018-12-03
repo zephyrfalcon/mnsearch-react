@@ -219,7 +219,12 @@ class CardDetails extends Component {
                 </tr>
                 <tr>
                   <td>Card Type</td>
-                  <td>{card.type}</td>
+                  <td>{card.type}&nbsp;
+                    {card.type === "Magi" && 
+                     card.regions.includes("Core") && 
+                     card.original_region && 
+                     <span className="CardDetails-shadow-magi">{card.original_region} Shadow Magi</span>}
+                  </td>
                 </tr>
                 {card.subtype &&
                 <tr>

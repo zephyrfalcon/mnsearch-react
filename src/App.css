@@ -106,6 +106,13 @@ table.SearchResults-cards {
   vertical-align: top;
 }
 
+.CardDetails-shadow-magi {
+  background-color: #77008C;
+  color: white;
+  padding: 2px;
+  font-weight: bold;
+}
+
 footer {
   margin: 10px;
   text-align: left;
