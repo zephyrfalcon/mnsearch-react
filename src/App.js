@@ -81,6 +81,20 @@ class QueryArea extends Component {
         Name contains: <input className="QueryArea-text" type="text" size="40"
                               onChange={this.props.onTextChange} />
         </div>
+        <div className="QueryArea-refined-search">
+          <select>
+            <option value="card-text">Card Text</option>
+            <option value="whole-card">Whole card</option>
+            <option value="effects">Effect(s)</option>
+            <option value="powers">Power(s)</option>
+            <option value="subtype">Subtype</option>
+            <option value="flavor-text">Flavor text</option>
+            <option value="artist">Artist(s)</option>
+          </select>
+          &nbsp;contains:&nbsp;
+          <input className="QueryArea-refined-text" type="text" size="40"
+                 onChange={() => alert("not yet implemented!")} />
+        </div>
         <div className="QueryArea-panels">
           <div className="QueryArea-regions column">
             {regions.map(region =>

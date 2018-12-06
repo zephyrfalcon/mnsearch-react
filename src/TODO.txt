@@ -19,7 +19,6 @@
       - doesn't really sound very useful
   [ ] EXclude promos (but what will this do if we check Promos)
   [ ] EXclude unreleased sets (but what does this do if we check TR)
-  [ ] show cards that have ALL regions selected
 - instead of checking if a string occurs in a card's name, we could be more
   specific, i.e. check if it starts or ends with it.
   - there could be a dropdown defaulting to "contains", but which also has
