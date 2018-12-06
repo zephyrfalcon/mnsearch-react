@@ -55,6 +55,10 @@ function cardInRegions(card, regions) {
   return card.regions.filter(region => regions.includes(region)).length > 0;
 }
 
+function cardInAllRegions(card, regions) {
+  return card.regions.filter(region => regions.includes(region)).length == regions.length;
+}
+
 function showSortArrow(field, sortKey) {
   if (field === sortKey || "^"+field === sortKey) {
     return sortKey.startsWith("^") ? "↓" : "↑";
@@ -67,6 +71,7 @@ function showSortArrow(field, sortKey) {
    - onSetChange(event)
    - onCardTypeChange(event)
    - onRarityChange(event)
+   - onAllRegionsChange(event)
 */
 class QueryArea extends Component {
   render() {
@@ -108,6 +113,11 @@ class QueryArea extends Component {
                        onChange={this.props.onRarityChange} />{rarities[rarity]}<br/>
               </div>
             )}
+          </div>
+          <div className="QueryArea-misc column">
+            <CheckBox name="all-regions" 
+                      value="all-regions" text="only cards with ALL regions selected" 
+                      onChange={this.props.onAllRegionsChange} />
           </div>
           <div className="lastcolumn">&nbsp;</div>
         </div>
@@ -294,6 +304,38 @@ class CardDetails extends Component {
 const AboutLink = (props) => 
   <div className="AboutLink"><a name="top" href="#about">About/Instructions</a></div>
 
+/* props:
+   - name
+   - value
+   - text
+   - onChange
+*/
+class CheckBox extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      checked: false,
+    };
+    this.onClick = this.onClick.bind(this);
+  };
+  onClick(event) {
+    this.input.checked = !this.input.checked;
+    this.props.onChange(event);
+  }
+  render() {
+    return (
+      <span>
+        <input type="checkbox" 
+               name={this.props.name} 
+               value={this.props.value}
+               onChange={this.props.onChange}
+               ref={elem => this.input = elem} />
+        <span onClick={this.onClick}>{this.props.text}</span>
+        <br/>
+      </span>
+    );
+  }
+}
 
 class About extends Component {
   render() {
@@ -342,6 +384,7 @@ class App extends Component {
       results: carddata,
       selected: [],
       sortBy: 'name',
+      allRegions: false,  /* only show cards with ALL regions selected */
     };
 
     // stupid binding skulduggery
@@ -350,6 +393,7 @@ class App extends Component {
     this.onSetChange = this.onSetChange.bind(this);
     this.onCardTypeChange = this.onCardTypeChange.bind(this);
     this.onRarityChange = this.onRarityChange.bind(this);
+    this.onAllRegionsChange = this.onAllRegionsChange.bind(this);
     this.onSelectItem = this.onSelectItem.bind(this);
     this.isCardSelected = this.isCardSelected.bind(this);
     this.toggleSort = this.toggleSort.bind(this);
@@ -411,6 +455,16 @@ class App extends Component {
                   () => this.updateSearchResults());
   }
 
+  onAllRegionsChange(event) {
+    let panel = event.target.parentElement.parentElement;
+    let coll = panel.getElementsByTagName('input');
+    let arr = [...coll];  // HTMLCollection -> Array
+    //let checkedRarities = arr.filter(inputElem => inputElem.checked)
+    //                         .map(inputElem => inputElem.value);
+    this.setState({ allRegions: arr[0].checked }, 
+                  () => this.updateSearchResults());
+  }
+
   // XXX for now, we can only select one card.
   onSelectItem(id) {
     if (this.state.selected.includes(id)) {
@@ -443,6 +497,9 @@ class App extends Component {
     if (this.state.rarities.length > 0) {
       results = results.filter(card => this.state.rarities.includes(card.rarity));
     }
+    if (this.state.allRegions) {
+      results = results.filter(card => cardInAllRegions(card, this.state.regions));
+    }
 
     // sorting
     const sortKey = this.state.sortBy.startsWith("^") ? this.state.sortBy.slice(1) : this.state.sortBy;
@@ -463,7 +520,8 @@ class App extends Component {
                    onRegionChange={this.onRegionChange}
                    onSetChange={this.onSetChange}
                    onCardTypeChange={this.onCardTypeChange}
-                   onRarityChange={this.onRarityChange} />
+                   onRarityChange={this.onRarityChange}
+                   onAllRegionsChange={this.onAllRegionsChange} />
         <hr />
         <SearchResults cards={this.state.results} 
                        onSelectItem={this.onSelectItem}
