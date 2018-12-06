@@ -32,6 +32,12 @@
     - and card text
     - even flavor text can be searched, like in the old MNS, but I am not sure
       how useful this is in practice 
+  - idea: put a similar layout under "name contains: [...]" that looks like
+    [content] contains [...]"
+    - this should be lined up properly, which isn't as easy as it seems :(
+      - unless I use a good old table
+    - content can be any of the stuff above (except name)
+
 
 ### card details
 
@@ -81,6 +87,7 @@
 
 ### cleanup/refactoring
 
+- if CheckBox turns out to work well, use it everywhere
 
 ### README/instructions
 
