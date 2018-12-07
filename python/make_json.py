@@ -74,6 +74,12 @@ for fn in yaml_files:
         counter += 1
     carddata.extend(raw_data)
 
+# verify some things
+print("Verifying...")
+for card in carddata:
+    assert 'artist' in card, repr(card)
+    assert type(card['artist']) == str, repr(card)
+
 # sort card data by name
 carddata.sort(key=lambda c: c['name'].lower())
 
