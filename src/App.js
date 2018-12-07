@@ -67,6 +67,7 @@ function showSortArrow(field, sortKey) {
 
 /* props:
    - onTextChange(event): callback for when text changes
+   - onRefinedTextChange(event)
    - onRegionChange(event)
    - onSetChange(event)
    - onCardTypeChange(event)
@@ -82,17 +83,19 @@ class QueryArea extends Component {
           <tr>
             <td style={{ textAlign: 'left', paddingLeft: '5px' }}>Name</td> 
             <td>contains:</td>
-            <td><input className="QueryArea-text" type="text" size="40"
+            <td><input className="QueryArea-text" type="text" size="30"
                                 onChange={this.props.onTextChange} />
             </td>
           </tr>
           <tr>
             <td>
-              <select>
+              <select className="dropdown-refined">
                 <option value="card-text">Card Text</option>
                 <option value="whole-card">Whole card</option>
-                <option value="effects">Effect(s)</option>
-                <option value="powers">Power(s)</option>
+                <option value="effect name">Effect(s)</option>
+                <option value="power-name">Power(s)</option>
+                <option value="power-text">Power text</option>
+                <option value="effect-text">Effect text</option>
                 <option value="subtype">Subtype</option>
                 <option value="flavor-text">Flavor text</option>
                 <option value="artist">Artist(s)</option>
@@ -100,8 +103,8 @@ class QueryArea extends Component {
             </td>
             <td>contains:</td>
             <td>
-                <input className="QueryArea-refined-text" type="text" size="40"
-                      onChange={() => alert("not yet implemented!")} />
+                <input className="QueryArea-refined-text" type="text" size="30"
+                      onChange={this.props.onRefinedTextChange} />
             </td>
           </tr>
         </table>
@@ -408,12 +411,15 @@ class App extends Component {
       rarities: [],
       results: carddata,
       selected: [],
+      refinedSearchField: 'card-text',
+      refinedSearchText: '',
       sortBy: 'name',
       allRegions: false,  /* only show cards with ALL regions selected */
     };
 
     // stupid binding skulduggery
     this.onTextChange = this.onTextChange.bind(this);
+    this.onRefinedTextChange = this.onRefinedTextChange.bind(this);
     this.onRegionChange = this.onRegionChange.bind(this);
     this.onSetChange = this.onSetChange.bind(this);
     this.onCardTypeChange = this.onCardTypeChange.bind(this);
@@ -438,6 +444,15 @@ class App extends Component {
     this.setState({ text: event.target.value.trim() }, 
                   () => this.updateSearchResults());
                   // callback is necessary to use the updated state
+  }
+
+  onRefinedTextChange(event) {
+    // find the dropdown
+    let dropdown = event.target.parentElement.parentElement.getElementsByTagName('select')[0];
+    //alert("I want to search [" + event.target.value + "] in [" + dropdown.value + "]!");
+    this.setState({ refinedSearchField: dropdown.value, 
+                    refinedSearchText: event.target.value },
+                  () => this.updateSearchResults());
   }
 
   onRegionChange(event) {
@@ -526,6 +541,14 @@ class App extends Component {
       results = results.filter(card => cardInAllRegions(card, this.state.regions));
     }
 
+    if (this.state.refinedSearchText) {
+      let text = this.state.refinedSearchText.toLowerCase();;
+      if (this.state.refinedSearchField == 'artist') {
+        results = results.filter(card => card.artist.toLowerCase().includes(text));
+      } else 
+        alert("not implemented yet: " + this.state.refinedSearchField);
+    }
+
     // sorting
     const sortKey = this.state.sortBy.startsWith("^") ? this.state.sortBy.slice(1) : this.state.sortBy;
     results = SORTS[sortKey](results);
@@ -542,6 +565,7 @@ class App extends Component {
           <img src="/magination-logo.jpg" alt="Magi-Nation Search" />
         </header>
         <QueryArea onTextChange={this.onTextChange}
+                   onRefinedTextChange={this.onRefinedTextChange}
                    onRegionChange={this.onRegionChange}
                    onSetChange={this.onSetChange}
                    onCardTypeChange={this.onCardTypeChange}

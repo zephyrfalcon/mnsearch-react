@@ -31,6 +31,8 @@
     - and card text
     - even flavor text can be searched, like in the old MNS, but I am not sure
       how useful this is in practice 
+  - if the refined search dropdown changes, we need to change refinedSearchField,
+    even if the text doesn't change!
 
 ### card details
 
@@ -57,6 +59,7 @@
   - in fact, the table headers could also be their own component... but no rush :)
 - some effects have no name (e.g. Zyavu); in that case, don't show the "-" after
   "Effect" in the card details.
+- when we start, set focus to name field?
 
 ### misc
 
