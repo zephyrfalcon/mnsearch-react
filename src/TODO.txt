@@ -9,7 +9,8 @@
       data of a card) and then show it (as opposed to loading all the data when
       the React app starts)
     - since it's per card, I wonder if we could provide some kind of simple
-      read-only API here
+      read-only API here (in Flask or some other lightweight system that can
+      work with Passenger on Dreamhost)
 
 ### filtering
 
