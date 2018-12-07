@@ -28716,9 +28716,7 @@
         "type": "Spell"
     },
     {
-        "artist": [
-            "Christopher"
-        ],
+        "artist": "Christopher",
         "cost": 6,
         "flavor": "\"Out here you are at the mercy of the tides.\"\n-- Mobis, to Zet\n",
         "image": "/cardimages/BS/Will_of_Orothe.jpg",
