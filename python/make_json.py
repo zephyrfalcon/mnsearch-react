@@ -82,6 +82,8 @@ for card in carddata:
     if 'effects' in card:
         assert isinstance(card['effects'], list), card
         assert all('name' in e for e in card['effects']), card
+        # some effects have no name, see e.g. Elios
+        #assert all(isinstance(e['name'], str) for e in card['effects']), card
 
 # sort card data by name
 carddata.sort(key=lambda c: c['name'].lower())

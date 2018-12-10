@@ -551,10 +551,18 @@ class App extends Component {
         results = results.filter(card => card.artist.toLowerCase().includes(text));
       }
       else if (this.state.refinedSearchField == 'card-text') {
+        // what does 'card text' mean exactly?
+        // does it include powers/effects?
+        // it definitely does NOT include flavor text...
       } 
       else if (this.state.refinedSearchField == 'whole-card') {
+        // which parts do we actually search for "whole card"?
+        // does it include flavor text? names? subtypes?
       } 
       else if (this.state.refinedSearchField == 'effect-name') {
+        results = results.filter(
+          card => card.effects && card.effects.some(
+            effect => effect.name && effect.name.toLowerCase().includes(text)));
       } 
       else if (this.state.refinedSearchField == 'effect-text') {
       } 
