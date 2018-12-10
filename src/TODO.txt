@@ -21,6 +21,8 @@
   [ ] EXclude unreleased sets (but what does this do if we check TR)
   [ ] has energize field (incl. some creatures)
       - also show this field if this filter is selected?!
+  [ ] has powers
+  [ ] has effects
 - instead of checking if a string occurs in a card's name, we could be more
   specific, i.e. check if it starts or ends with it.
   - there could be a dropdown defaulting to "contains", but which also has

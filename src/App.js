@@ -565,8 +565,14 @@ class App extends Component {
             effect => effect.name && effect.name.toLowerCase().includes(text)));
       } 
       else if (this.state.refinedSearchField == 'effect-text') {
+        results = results.filter(
+          card => card.effects && card.effects.some(
+            effect => effect.text && effect.text.toLowerCase().includes(text)));
       } 
       else if (this.state.refinedSearchField == 'power-name') {
+        results = results.filter(
+          card => card.powers && card.powers.some(
+            power => power.name && power.name.toLowerCase().includes(text)));
       } 
       else if (this.state.refinedSearchField == 'power-text') {
       } 
