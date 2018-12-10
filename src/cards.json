@@ -2041,7 +2041,6 @@
     {
         "artist": "Holmberg, Gillette",
         "cost": 4,
-        "effects": null,
         "flavor": "A flight of vemments charged Togoth, pummeling his nightmare creatures\ninto animite dust.\n",
         "image": "/cardimages/TR/Barreling_Vemment.jpg",
         "key": 885,
@@ -4430,9 +4429,7 @@
         "cost": 12,
         "effects": [
             {
-                "name": "Anti-Magic"
-            },
-            {
+                "name": "Anti-Magic",
                 "text": "Colossus may not be affected by Spells, Powers or Effects that specifically discard Creatures from play. Your Spells, Powers and Effects may not alter the amount of energy on Colossus, or prevent Colossus from losing energy.\n"
             }
         ],
@@ -23889,9 +23886,7 @@
         "cost": 12,
         "effects": [
             {
-                "name": "Backlash"
-            },
-            {
+                "name": "Backlash",
                 "text": "Whenever one of your Creatures is attacked, you may discard one energy from the attacking Creature before energy is removed.\n"
             }
         ],

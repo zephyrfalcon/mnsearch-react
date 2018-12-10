@@ -376,7 +376,7 @@
     - Shooting Star
   effects:
     - name: Backlash
-    - text: >
+      text: >
         Whenever one of your Creatures is attacked, you may discard one energy
         from the attacking Creature before energy is removed.
   flavor: |
@@ -2792,7 +2792,7 @@
   cost: 12
   effects:
     - name: Anti-Magic
-    - text: >
+      text: >
         Colossus may not be affected by Spells, Powers or Effects that
         specifically discard Creatures from play. Your Spells, Powers and
         Effects may not alter the amount of energy on Colossus, or prevent
