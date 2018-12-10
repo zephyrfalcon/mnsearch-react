@@ -566,6 +566,7 @@ class App extends Component {
         results = results.filter(card => card.subtype && card.subtype.toLowerCase().includes(text));
       } 
       else if (this.state.refinedSearchField == 'flavor-text') {
+        results = results.filter(card => card.flavor && card.flavor.toLowerCase().includes(text));
       } 
       else 
         alert("not implemented yet: " + this.state.refinedSearchField);
