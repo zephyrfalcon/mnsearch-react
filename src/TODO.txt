@@ -19,6 +19,8 @@
       - doesn't really sound very useful
   [ ] EXclude promos (but what will this do if we check Promos)
   [ ] EXclude unreleased sets (but what does this do if we check TR)
+  [ ] has energize field (incl. some creatures)
+      - also show this field if this filter is selected?!
 - instead of checking if a string occurs in a card's name, we could be more
   specific, i.e. check if it starts or ends with it.
   - there could be a dropdown defaulting to "contains", but which also has
@@ -38,6 +40,7 @@
 
 - there's also a shadow_play attribute
 - also: card.alternate (e.g. Fiend of Furoks)
+  [we could add a filter for these as well]
 - some creatures have an energize attribute as well; show it
   (e.g. Tropical Hyren)
 - it would be useful to be able to click on a checkbox's *text* to select that

@@ -68,6 +68,7 @@ function showSortArrow(field, sortKey) {
 /* props:
    - onTextChange(event): callback for when text changes
    - onRefinedTextChange(event)
+   - onRefinedFieldChange(event)
    - onRegionChange(event)
    - onSetChange(event)
    - onCardTypeChange(event)
@@ -89,16 +90,17 @@ class QueryArea extends Component {
           </tr>
           <tr>
             <td>
-              <select className="dropdown-refined">
+              <select className="dropdown-refined" 
+                      onChange={this.props.onRefinedFieldChange}>
                 <option value="card-text">Card Text</option>
                 <option value="whole-card">Whole card</option>
-                <option value="effect name">Effect(s)</option>
-                <option value="power-name">Power(s)</option>
+                <option value="effect-name">Effect name</option>
+                <option value="power-name">Power name</option>
                 <option value="power-text">Power text</option>
                 <option value="effect-text">Effect text</option>
                 <option value="subtype">Subtype</option>
                 <option value="flavor-text">Flavor text</option>
-                <option value="artist">Artist(s)</option>
+                <option value="artist">Artist</option>
               </select>
             </td>
             <td>contains:</td>
@@ -420,6 +422,7 @@ class App extends Component {
     // stupid binding skulduggery
     this.onTextChange = this.onTextChange.bind(this);
     this.onRefinedTextChange = this.onRefinedTextChange.bind(this);
+    this.onRefinedFieldChange = this.onRefinedFieldChange.bind(this);
     this.onRegionChange = this.onRegionChange.bind(this);
     this.onSetChange = this.onSetChange.bind(this);
     this.onCardTypeChange = this.onCardTypeChange.bind(this);
@@ -447,11 +450,12 @@ class App extends Component {
   }
 
   onRefinedTextChange(event) {
-    // find the dropdown
-    let dropdown = event.target.parentElement.parentElement.getElementsByTagName('select')[0];
-    //alert("I want to search [" + event.target.value + "] in [" + dropdown.value + "]!");
-    this.setState({ refinedSearchField: dropdown.value, 
-                    refinedSearchText: event.target.value },
+    this.setState({ refinedSearchText: event.target.value.trim() },
+                  () => this.updateSearchResults());
+  }
+
+  onRefinedFieldChange(event) {
+    this.setState({ refinedSearchField: event.target.value },
                   () => this.updateSearchResults());
   }
 
@@ -545,7 +549,25 @@ class App extends Component {
       let text = this.state.refinedSearchText.toLowerCase();;
       if (this.state.refinedSearchField == 'artist') {
         results = results.filter(card => card.artist.toLowerCase().includes(text));
-      } else 
+      }
+      else if (this.state.refinedSearchField == 'card-text') {
+      } 
+      else if (this.state.refinedSearchField == 'whole-card') {
+      } 
+      else if (this.state.refinedSearchField == 'effect-name') {
+      } 
+      else if (this.state.refinedSearchField == 'effect-text') {
+      } 
+      else if (this.state.refinedSearchField == 'power-name') {
+      } 
+      else if (this.state.refinedSearchField == 'power-text') {
+      } 
+      else if (this.state.refinedSearchField == 'subtype') {
+        results = results.filter(card => card.subtype && card.subtype.toLowerCase().includes(text));
+      } 
+      else if (this.state.refinedSearchField == 'flavor-text') {
+      } 
+      else 
         alert("not implemented yet: " + this.state.refinedSearchField);
     }
 
@@ -566,6 +588,7 @@ class App extends Component {
         </header>
         <QueryArea onTextChange={this.onTextChange}
                    onRefinedTextChange={this.onRefinedTextChange}
+                   onRefinedFieldChange={this.onRefinedFieldChange}
                    onRegionChange={this.onRegionChange}
                    onSetChange={this.onSetChange}
                    onCardTypeChange={this.onCardTypeChange}
