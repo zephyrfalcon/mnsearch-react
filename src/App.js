@@ -575,12 +575,17 @@ class App extends Component {
             power => power.name && power.name.toLowerCase().includes(text)));
       } 
       else if (this.state.refinedSearchField == 'power-text') {
+        results = results.filter(
+          card => card.powers && card.powers.some(
+            power => power.text && power.text.toLowerCase().includes(text)))
       } 
       else if (this.state.refinedSearchField == 'subtype') {
-        results = results.filter(card => card.subtype && card.subtype.toLowerCase().includes(text));
+        results = results.filter(
+          card => card.subtype && card.subtype.toLowerCase().includes(text));
       } 
       else if (this.state.refinedSearchField == 'flavor-text') {
-        results = results.filter(card => card.flavor && card.flavor.toLowerCase().includes(text));
+        results = results.filter(
+          card => card.flavor && card.flavor.toLowerCase().includes(text));
       } 
       else 
         alert("not implemented yet: " + this.state.refinedSearchField);
