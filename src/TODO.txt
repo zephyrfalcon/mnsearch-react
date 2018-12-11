@@ -102,3 +102,5 @@
 ### HTML/CSS 
 
 - instead of floating, we could use a flexbox for card image and details?
+- (fancy :) in card details, the name of the card could have a slight drop
+  shadow in the color of the region

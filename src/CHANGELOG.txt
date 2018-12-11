@@ -1,5 +1,17 @@
 # CHANGELOG
 
+version 0.9:
+
+- added text (other than effects/powers) to card details
+- added a number of filters for subtype, whole card, effects, powers,
+  also less-useful stuff like artists and flavor text :3
+- fixed a number of (fairly minor) bugs in the YAML source files
+- added a filter to select only the cards that have *all* the regions
+  selected (effectively an AND instead of an OR), so users can search
+  for specific multi-region cards only (and ignore single-region cards)
+- minor update to instructions
+
 version 0.8.1:
 
 - in card details, display "{region} Shadow Magi" for Shadow Magi
+
