@@ -74,6 +74,21 @@ for fn in yaml_files:
         counter += 1
     carddata.extend(raw_data)
 
+# verify some things
+print("Verifying...")
+for card in carddata:
+    assert 'artist' in card, repr(card)
+    assert type(card['artist']) == str, repr(card)
+    if 'effects' in card:
+        assert isinstance(card['effects'], list), card
+        assert all('name' in e for e in card['effects']), card
+        # some effects have no name, see e.g. Elios
+        #assert all(isinstance(e['name'], str) for e in card['effects']), card
+    if 'powers' in card:
+        assert isinstance(card['powers'], list), card
+        assert all('name' in p for p in card['powers']), card
+        assert all(isinstance(p['name'], str) for p in card['powers']), card
+
 # sort card data by name
 carddata.sort(key=lambda c: c['name'].lower())
 

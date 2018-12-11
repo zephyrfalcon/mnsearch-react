@@ -8,7 +8,6 @@
   type: Creature
   region: Arderial
   cost: 4
-  effects:
   powers:
     - name: One-Two
       cost: 1

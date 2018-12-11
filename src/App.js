@@ -56,7 +56,8 @@ function cardInRegions(card, regions) {
 }
 
 function cardInAllRegions(card, regions) {
-  return card.regions.filter(region => regions.includes(region)).length == regions.length;
+  return card.regions.filter(
+    region => regions.includes(region)).length === regions.length;
 }
 
 function showSortArrow(field, sortKey) {
@@ -65,8 +66,37 @@ function showSortArrow(field, sortKey) {
   } else return null;
 }
 
+// produce a string that contains all card text, in lowercase.
+// note: opinions may vary about what goes in here. in principle, any text
+// that contains functionality should be here.
+// in any case, flavor text is NOT considered part of it.
+const cardText = (card) => [
+  card.name,
+  card.type,
+  card.effects && card.effects.map(effect => effect.name || "").join(" "),
+  card.effects && card.effects.map(effect => effect.text || "").join(" "),
+  card.powers && card.powers.map(power => power.name || "").join(" "),
+  card.powers && card.powers.map(power => power.text || "").join(" "),
+  card.starting && card.starting.join(" "),
+  card.subtype || "",
+  card.text || "",
+  card.type === "Magi" && card.original_region && card.original_region + " Shadow Magi",
+].join(" ").toLowerCase();
+
+// everything on the card, except perhaps numbers, but including stuff that
+// does not affect functionality, like flavor text and artists
+const wholeCardText = (card) => {
+  return [cardText(card),
+    (card.flavor || ""),
+    (card.artist || ""),
+  ].join(" ").toLowerCase();
+  // what else? 
+}
+
 /* props:
    - onTextChange(event): callback for when text changes
+   - onRefinedTextChange(event)
+   - onRefinedFieldChange(event)
    - onRegionChange(event)
    - onSetChange(event)
    - onCardTypeChange(event)
@@ -78,8 +108,36 @@ class QueryArea extends Component {
     return (
       <div className="QueryArea">
         <div className="QueryArea-search">
-        Name contains: <input className="QueryArea-text" type="text" size="40"
-                              onChange={this.props.onTextChange} />
+        <table className="QueryArea-top-table">
+          <tr>
+            <td style={{ textAlign: 'left', paddingLeft: '5px' }}>Name</td> 
+            <td>contains:</td>
+            <td><input className="QueryArea-text" type="text" size="30"
+                                onChange={this.props.onTextChange} />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select className="dropdown-refined" 
+                      onChange={this.props.onRefinedFieldChange}>
+                <option value="card-text">Card Text</option>
+                <option value="whole-card">Whole card</option>
+                <option value="effect-name">Effect name</option>
+                <option value="effect-text">Effect text</option>
+                <option value="power-name">Power name</option>
+                <option value="power-text">Power text</option>
+                <option value="subtype">Subtype</option>
+                <option value="flavor-text">Flavor text</option>
+                <option value="artist">Artist</option>
+              </select>
+            </td>
+            <td>contains:</td>
+            <td>
+                <input className="QueryArea-refined-text" type="text" size="30"
+                      onChange={this.props.onRefinedTextChange} />
+            </td>
+          </tr>
+        </table>
         </div>
         <div className="QueryArea-panels">
           <div className="QueryArea-regions column">
@@ -383,12 +441,16 @@ class App extends Component {
       rarities: [],
       results: carddata,
       selected: [],
+      refinedSearchField: 'card-text',
+      refinedSearchText: '',
       sortBy: 'name',
       allRegions: false,  /* only show cards with ALL regions selected */
     };
 
     // stupid binding skulduggery
     this.onTextChange = this.onTextChange.bind(this);
+    this.onRefinedTextChange = this.onRefinedTextChange.bind(this);
+    this.onRefinedFieldChange = this.onRefinedFieldChange.bind(this);
     this.onRegionChange = this.onRegionChange.bind(this);
     this.onSetChange = this.onSetChange.bind(this);
     this.onCardTypeChange = this.onCardTypeChange.bind(this);
@@ -413,6 +475,16 @@ class App extends Component {
     this.setState({ text: event.target.value.trim() }, 
                   () => this.updateSearchResults());
                   // callback is necessary to use the updated state
+  }
+
+  onRefinedTextChange(event) {
+    this.setState({ refinedSearchText: event.target.value.trim() },
+                  () => this.updateSearchResults());
+  }
+
+  onRefinedFieldChange(event) {
+    this.setState({ refinedSearchField: event.target.value },
+                  () => this.updateSearchResults());
   }
 
   onRegionChange(event) {
@@ -501,6 +573,50 @@ class App extends Component {
       results = results.filter(card => cardInAllRegions(card, this.state.regions));
     }
 
+    if (this.state.refinedSearchText) {
+      let text = this.state.refinedSearchText.toLowerCase();;
+      if (this.state.refinedSearchField === 'artist') {
+        results = results.filter(card => card.artist.toLowerCase().includes(text));
+      }
+      else if (this.state.refinedSearchField === 'card-text') {
+        results = results.filter(card => cardText(card).includes(text));
+      } 
+      else if (this.state.refinedSearchField === 'whole-card') {
+        results = results.filter(card => wholeCardText(card).includes(text));
+      } 
+      else if (this.state.refinedSearchField === 'effect-name') {
+        results = results.filter(
+          card => card.effects && card.effects.some(
+            effect => effect.name && effect.name.toLowerCase().includes(text)));
+      } 
+      else if (this.state.refinedSearchField === 'effect-text') {
+        results = results.filter(
+          card => card.effects && card.effects.some(
+            effect => effect.text && effect.text.toLowerCase().includes(text)));
+      } 
+      else if (this.state.refinedSearchField === 'power-name') {
+        results = results.filter(
+          card => card.powers && card.powers.some(
+            power => power.name && power.name.toLowerCase().includes(text)));
+      } 
+      else if (this.state.refinedSearchField === 'power-text') {
+        results = results.filter(
+          card => card.powers && card.powers.some(
+            power => power.text && power.text.toLowerCase().includes(text)))
+      } 
+      else if (this.state.refinedSearchField === 'subtype') {
+        results = results.filter(
+          card => card.subtype && card.subtype.toLowerCase().includes(text));
+          // does not include things like "Weave Shadow Magi"
+      } 
+      else if (this.state.refinedSearchField === 'flavor-text') {
+        results = results.filter(
+          card => card.flavor && card.flavor.toLowerCase().includes(text));
+      } 
+      else 
+        alert("not implemented yet: " + this.state.refinedSearchField);
+    }
+
     // sorting
     const sortKey = this.state.sortBy.startsWith("^") ? this.state.sortBy.slice(1) : this.state.sortBy;
     results = SORTS[sortKey](results);
@@ -517,6 +633,8 @@ class App extends Component {
           <img src="/magination-logo.jpg" alt="Magi-Nation Search" />
         </header>
         <QueryArea onTextChange={this.onTextChange}
+                   onRefinedTextChange={this.onRefinedTextChange}
+                   onRefinedFieldChange={this.onRefinedFieldChange}
                    onRegionChange={this.onRegionChange}
                    onSetChange={this.onSetChange}
                    onCardTypeChange={this.onCardTypeChange}

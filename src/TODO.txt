@@ -20,7 +20,10 @@
       - doesn't really sound very useful
   [ ] EXclude promos (but what will this do if we check Promos)
   [ ] EXclude unreleased sets (but what does this do if we check TR)
-  [ ] show cards that have ALL regions selected
+  [ ] has energize field (incl. some creatures)
+      - also show this field if this filter is selected?!
+  [ ] has powers
+  [ ] has effects
 - instead of checking if a string occurs in a card's name, we could be more
   specific, i.e. check if it starts or ends with it.
   - there could be a dropdown defaulting to "contains", but which also has
@@ -33,28 +36,26 @@
     - and card text
     - even flavor text can be searched, like in the old MNS, but I am not sure
       how useful this is in practice 
-  - idea: put a similar layout under "name contains: [...]" that looks like
-    [content] contains [...]"
-    - this should be lined up properly, which isn't as easy as it seems :(
-      - unless I use a good old table
-    - content can be any of the stuff above (except name)
-
+  - if the refined search dropdown changes, we need to change refinedSearchField,
+    even if the text doesn't change!
+    - is this done? verify
 
 ### card details
 
 - there's also a shadow_play attribute
 - also: card.alternate (e.g. Fiend of Furoks)
+  [we could add a filter for these as well]
 - some creatures have an energize attribute as well; show it
   (e.g. Tropical Hyren)
 - it would be useful to be able to click on a checkbox's *text* to select that
   checkbox. 
   - make a custom component that does this?
-
-### search results
-
 - if certain card types are selected, maybe we can show an additional column
   in the search results. for example, if Magi is selected, we could show an
   energize column; it would make sense to sort by that.
+
+### search results
+
 
 ### display
 
@@ -65,6 +66,9 @@
   - in fact, the table headers could also be their own component... but no rush :)
 - some effects have no name (e.g. Zyavu); in that case, don't show the "-" after
   "Effect" in the card details.
+- when we start, set focus to name field?
+- cards like Abraxin's Crown have text that is not part of Effects or Powers.
+  we do need to show it in the card details.
 
 ### misc
 
