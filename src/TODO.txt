@@ -98,3 +98,7 @@
 
 - In the README, add a link to some site that explains what Magi-Nation is...
   perhaps several sites
+
+### HTML/CSS 
+
+- instead of floating, we could use a flexbox for card image and details?
