@@ -83,6 +83,16 @@ const cardText = (card) => [
   card.type === "Magi" && card.original_region && card.original_region + " Shadow Magi",
 ].join(" ").toLowerCase();
 
+// everything on the card, except perhaps numbers, but including stuff that
+// does not affect functionality, like flavor text and artists
+const wholeCardText = (card) => {
+  return [cardText(card),
+    (card.flavor || ""),
+    (card.artist || ""),
+  ].join(" ").toLowerCase();
+  // what else? 
+}
+
 /* props:
    - onTextChange(event): callback for when text changes
    - onRefinedTextChange(event)
@@ -569,14 +579,10 @@ class App extends Component {
         results = results.filter(card => card.artist.toLowerCase().includes(text));
       }
       else if (this.state.refinedSearchField === 'card-text') {
-        // what does 'card text' mean exactly?
-        // does it include powers/effects?
-        // it definitely does NOT include flavor text...
         results = results.filter(card => cardText(card).includes(text));
       } 
       else if (this.state.refinedSearchField === 'whole-card') {
-        // which parts do we actually search for "whole card"?
-        // does it include flavor text? names? subtypes?
+        results = results.filter(card => wholeCardText(card).includes(text));
       } 
       else if (this.state.refinedSearchField === 'effect-name') {
         results = results.filter(
@@ -601,6 +607,7 @@ class App extends Component {
       else if (this.state.refinedSearchField === 'subtype') {
         results = results.filter(
           card => card.subtype && card.subtype.toLowerCase().includes(text));
+          // does not include things like "Weave Shadow Magi"
       } 
       else if (this.state.refinedSearchField === 'flavor-text') {
         results = results.filter(
