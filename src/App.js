@@ -320,6 +320,12 @@ class CardDetails extends Component {
                    <td>{card.starting.join(", ")}</td>
                  </tr>
                 }
+                {card.text &&
+                 <tr>
+                   <td>Text</td>
+                   <td>{card.text}</td>
+                 </tr>
+                }
                 {card.effects && 
                   <tr>
                     <td>Effects</td>
