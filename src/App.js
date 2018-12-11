@@ -123,9 +123,9 @@ class QueryArea extends Component {
                 <option value="card-text">Card Text</option>
                 <option value="whole-card">Whole card</option>
                 <option value="effect-name">Effect name</option>
+                <option value="effect-text">Effect text</option>
                 <option value="power-name">Power name</option>
                 <option value="power-text">Power text</option>
-                <option value="effect-text">Effect text</option>
                 <option value="subtype">Subtype</option>
                 <option value="flavor-text">Flavor text</option>
                 <option value="artist">Artist</option>
