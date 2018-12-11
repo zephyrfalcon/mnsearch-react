@@ -45,11 +45,9 @@
 - there's also a shadow_play attribute
 - also: card.alternate (e.g. Fiend of Furoks)
   [we could add a filter for these as well]
-- some creatures have an energize attribute as well; show it
-  (e.g. Tropical Hyren)
 - it would be useful to be able to click on a checkbox's *text* to select that
   checkbox. 
-  - make a custom component that does this?
+  - <CheckBox> does this; maybe add it everywhere?
 - if certain card types are selected, maybe we can show an additional column
   in the search results. for example, if Magi is selected, we could show an
   energize column; it would make sense to sort by that.
@@ -67,8 +65,6 @@
 - some effects have no name (e.g. Zyavu); in that case, don't show the "-" after
   "Effect" in the card details.
 - when we start, set focus to name field?
-- cards like Abraxin's Crown have text that is not part of Effects or Powers.
-  we do need to show it in the card details.
 
 ### misc
 

@@ -101,6 +101,7 @@ const wholeCardText = (card) => {
    - onSetChange(event)
    - onCardTypeChange(event)
    - onRarityChange(event)
+   - onOnlyMultiRegions(event)
    - onAllRegionsChange(event)
 */
 class QueryArea extends Component {
@@ -173,6 +174,10 @@ class QueryArea extends Component {
             )}
           </div>
           <div className="QueryArea-misc column">
+            <CheckBox name="multi-regions"
+                      value="multi-regions"
+                      text="only show multi-region cards"
+                      onChange={this.props.onOnlyMultiRegions} />
             <CheckBox name="all-regions" 
                       value="all-regions" text="only cards with ALL regions selected" 
                       onChange={this.props.onAllRegionsChange} />
@@ -450,6 +455,7 @@ class App extends Component {
       refinedSearchField: 'card-text',
       refinedSearchText: '',
       sortBy: 'name',
+      onlyMultiRegions: false,
       allRegions: false,  /* only show cards with ALL regions selected */
     };
 
@@ -461,6 +467,7 @@ class App extends Component {
     this.onSetChange = this.onSetChange.bind(this);
     this.onCardTypeChange = this.onCardTypeChange.bind(this);
     this.onRarityChange = this.onRarityChange.bind(this);
+    this.onOnlyMultiRegions = this.onOnlyMultiRegions.bind(this);
     this.onAllRegionsChange = this.onAllRegionsChange.bind(this);
     this.onSelectItem = this.onSelectItem.bind(this);
     this.isCardSelected = this.isCardSelected.bind(this);
@@ -490,6 +497,11 @@ class App extends Component {
 
   onRefinedFieldChange(event) {
     this.setState({ refinedSearchField: event.target.value },
+                  () => this.updateSearchResults());
+  }
+
+  onOnlyMultiRegions(event) {
+    this.setState({ onlyMultiRegions: event.target.value },
                   () => this.updateSearchResults());
   }
 
@@ -575,6 +587,9 @@ class App extends Component {
     if (this.state.rarities.length > 0) {
       results = results.filter(card => this.state.rarities.includes(card.rarity));
     }
+    if (this.state.onlyMultiRegions) {
+      results = results.filter(card => card.regions.length > 1);
+    }
     if (this.state.allRegions) {
       results = results.filter(card => cardInAllRegions(card, this.state.regions));
     }
@@ -645,6 +660,7 @@ class App extends Component {
                    onSetChange={this.onSetChange}
                    onCardTypeChange={this.onCardTypeChange}
                    onRarityChange={this.onRarityChange}
+                   onOnlyMultiRegions={this.onOnlyMultiRegions}
                    onAllRegionsChange={this.onAllRegionsChange} />
         <hr />
         <SearchResults cards={this.state.results} 
