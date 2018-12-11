@@ -1476,7 +1476,7 @@
         "artist": "Werner, Gillette, Goodman",
         "cost": 15,
         "energize": 4,
-        "flavor": "\"When she came to us, her eyes sparkled with youth. Now her eyes spark\nwith grim determination.\"\n-- Mobis, Elder\n",
+        "flavor": "\"All's fair in war. Nothing's fair in love.\"\n-- Orlon, Friend of Wellisks\n",
         "image": "/cardimages/VS/Aula_Mindseeker_OR.jpg",
         "key": 1277,
         "name": "Aula, Mindseeker",
@@ -3388,7 +3388,7 @@
                 "text": "When you play Bulabantu, choose a Creature. Discard three energy from the chosen Creature.\n"
             }
         ],
-        "flavor": "\"Not to self: do not pick berries that stick out of sand dunes.\"\n-- Wence\n",
+        "flavor": "\"Spotted a Bulabantu.\"\n-- Paradwyn maxim meaning \"too late\"\n",
         "image": "/cardimages/VS/Bulabantu_PA.jpg",
         "key": 1285,
         "name": "Bulabantu",
@@ -3801,7 +3801,7 @@
         "artist": "Holmberg, Gillette, Goodman",
         "cost": 10,
         "energize": 7,
-        "flavor": "\"I'm the king of spades! The Shovel'n man! The Spademaster! Mr.\nDiggalicious! The Boss or Burrow!\"\n",
+        "flavor": "\"Why do you keep asking me that? Of course I can dig it!\"\n-- Gogor, to Yaki\n",
         "image": "/cardimages/VS/Celebrated_Hero_UD.jpg",
         "key": 1306,
         "name": "Celebrated Hero",
@@ -6900,7 +6900,7 @@
                 "text": "Whenever one of your other Creatures attacks, add one energy to Ember Hyren.\n"
             }
         ],
-        "flavor": "\"Our love is like a glowing ember burning bright.\"\n\"Oh, please!\"\n-- Barak and Tryn\n",
+        "flavor": "\"Are all men from Cald loud-mouthed braggarts?\"\n\"Yeah, but I'm the best.\"\n-- Tryn and Barak\n",
         "image": "/cardimages/VS/Ember_Hyren_NM.jpg",
         "key": 1257,
         "name": "Ember Hyren",
@@ -7406,7 +7406,7 @@
                 "text": "At the beginning of your turn, if you have no Creatures in play, you may discard Everburning Wick from play to choose a Creature. Discard five energy from the chosen Creature.\n"
             }
         ],
-        "flavor": "\"It gets shorter and shorter and shorter, but it doesn't ever go away.\"\n-- Valkan\n",
+        "flavor": "\"It's best to give it a wide margin.\"\n-- Zaya, Elder\n",
         "image": "/cardimages/VS/Everburning_Wick_WV.jpg",
         "key": 1328,
         "name": "Everburning Wick",
@@ -9576,7 +9576,7 @@
                 "text": "Whenever one of your Creatures defeats an opposing Creature in an attack, draw a card.\n"
             }
         ],
-        "flavor": "\"Talk to the spade...\"\n-- Gogor, Celebrated Hero\n",
+        "flavor": "\"I * my *.\"\n-- motto carved on Gogor's wall.\n",
         "image": "/cardimages/VS/Gogors_Spade_UD.jpg",
         "key": 1308,
         "name": "Gogor's Spade",
@@ -10513,7 +10513,7 @@
                 "text": "Whenever Grendile attacks a Creature, after energy is removed, discard energy from that Creature's Magi equal to the energy on Grendile.\n"
             }
         ],
-        "flavor": "\"Ice, with attitude.\"\n-- Poad, Innkeeper\n",
+        "flavor": "\"Dude, that is so cool!\"\n-- Yaki, Core Stalker\n",
         "image": "/cardimages/VS/Grendile_NM.jpg",
         "key": 1260,
         "name": "Grendile",
@@ -12047,7 +12047,7 @@
                 "text": "The first time Iceberg Hyren is attacked, you may discard one energy from your Magi. If yu do, add nine energy to Iceberg Hyren before energy is removed. This Effect cannot be copied.\n"
             }
         ],
-        "flavor": "It likes to fight foes of huge size, and has taken down some that are truly titanic.\n",
+        "flavor": "\"Who knew water could be harder than rock?\"\n-- T'lok\n",
         "image": "/cardimages/VS/Iceberg_Hyren_OR.jpg",
         "key": 1272,
         "name": "Iceberg Hyren",
@@ -14771,7 +14771,7 @@
     {
         "artist": "Werner, Gillette",
         "cost": 3,
-        "flavor": "\"...And you brilliantly found the lightning sand!\"\n-- Wence, to Zannah\n",
+        "flavor": "\"Who are you?\"\n\"No one of consequence.\"\n\"I must know...\"\n\"Get used to disappointment.\"\n-- Togoth and Rayje\n",
         "image": "/cardimages/VS/Lightning_Sand_DR.jpg",
         "key": 1161,
         "name": "Lightning Sand",
@@ -16876,7 +16876,7 @@
         "artist": "Werner, Gillette",
         "cost": 8,
         "energize": 2,
-        "flavor": "\"A boot to the head is a greeting that everyone understands.\"\n",
+        "flavor": "\"Yes friends, act now! Destroy Paradwyn! Defeat the jungle! Eliminate even\nthe toughest stain!\"\n",
         "image": "/cardimages/VS/Ninibom_CO.jpg",
         "key": 1085,
         "name": "Ninibom",
@@ -17634,7 +17634,7 @@
                 "text": "At the end of your turn, add one energy to each of your Orathans in play.\n"
             }
         ],
-        "flavor": "\"An ancient relic from a time long forgotten, legends say that it was\ncrafted by the flyers themselves and gifted to the Orothean Elder,\nHubdra.\"\n-- Mobis, Elder\n",
+        "flavor": "\"Professor of archeology, expert on the Eliwan, and... how does one say\nit? Obtainer of rare antiquities.\"\n-- Sive\n",
         "image": "/cardimages/VS/Orathan_Amulet_OR.jpg",
         "key": 1282,
         "name": "Orathan Amulet",
@@ -20340,7 +20340,7 @@
                 "text": "Rock Silth loses one less energy in attacks."
             }
         ],
-        "flavor": "\"Fire? I didn't twist any fire in there?! Who...\"\n\"Looking for me, old friend?\"\n-- Whall and ...?\n",
+        "flavor": "\"You! What are you doing here?\"\n\" Time to settle an old score... Or have you forgotten?\"\n-- Whall and ...?\n",
         "image": "/cardimages/VS/Rock_Silth_KT.jpg",
         "key": 1170,
         "name": "Rock Silth",
@@ -20577,7 +20577,7 @@
                 "text": "Rous cannot be attacked. If all of your Creatures in play are Rous, discard Rous from play.\n"
             }
         ],
-        "flavor": "\"What about the rous?\"\n-- Zannah, to Wence\n",
+        "flavor": "\"I don't believe they exist.\"\n-- Wence, to Zannah\n",
         "image": "/cardimages/VS/Rous_CO.jpg",
         "key": 1080,
         "name": "Rous",
@@ -21143,7 +21143,7 @@
                 "text": "Sandstone Hyren loses two less energy in attacks, and loses no energy from Effects during any player's Attack step.\n"
             }
         ],
-        "flavor": "\"Can't we just go around?\"\n\"Ask it and find out.\"\n-- Harror and Korremar\n",
+        "flavor": "\"Daa, Daaa, DAAA - DaDAAAA! BOM-bom BOM-bom BOM-bom BOM-bom BOM!\"\n-- Jagt, Prankster\n",
         "image": "/cardimages/VS/Sandstone_Hyren_KT.jpg",
         "key": 1172,
         "name": "Sandstone Hyren",
@@ -21193,7 +21193,7 @@
                 "text": "As you play Sandstorm Orshaa, reduce its cost by four. Sandstorm Orshaa is not considered to be in play when checking to see if your Magi is defeated, and it cannot attack Magi directly.\n"
             }
         ],
-        "flavor": "\"What I really hate is that crunchy feeling they leave in your teeth.\"\n-- Ythra\n",
+        "flavor": "\"Strange things are afoot in the d'Resh desert.\"\n-- Borse\n",
         "image": "/cardimages/VS/Sandstorm_Orshaa_DR.jpg",
         "key": 1113,
         "name": "Sandstorm Orshaa",
@@ -21335,7 +21335,7 @@
     {
         "artist": "Gillette",
         "cost": 6,
-        "flavor": "\"I am not my hyren's keeper... he is!\"\n-- Voda\n",
+        "flavor": "\"Everybody relax, I'm here. Where exactly is here, again?\"\n-- Gogor, Celebrated Hero\n",
         "image": "/cardimages/VS/Sarazen_Keeper_UD.jpg",
         "key": 1304,
         "name": "Sarazen Keeper",
@@ -25073,7 +25073,7 @@
                 "text": "When an opposing Spell or Power affects your Magi, you may discard Three Leaf Clover from play. If you do, your cards are unaffected by the Spell or Power, and you draw a card.\n"
             }
         ],
-        "flavor": "\"I can only ever find the boring old four-leaf kind.\"\n-- Kiersta\n",
+        "flavor": "\"Don't eat the clover; it's only garnish.\"\n-- Poad, Innkeeper\n",
         "image": "/cardimages/VS/Three-Leaf_Clover_WV.jpg",
         "key": 1329,
         "name": "Three-Leaf Clover",
@@ -25589,7 +25589,7 @@
                 "text": "Whenever an opposing Spell or Power removes energy from any of your other Creatures, remove the energy from Torpar instead.\n"
             }
         ],
-        "flavor": "\"It's a mobile home, Korg. Not a luxury resort!\"\n-- Olabra, The Really Greatest Elder Ever\n",
+        "flavor": "\"Hey, I'm a reasonable guy. But I've just experienced some very\nunreasonable things.\"\n-- Pok\n",
         "image": "/cardimages/VS/Torpar_PA.jpg",
         "key": 1290,
         "name": "Torpar",
@@ -25724,7 +25724,7 @@
             }
         ],
         "energize": 6,
-        "flavor": "\"He doesn't know what he's got coming. Well, I'm coming, and I'll show\nHIM!\"\n",
+        "flavor": "\"We're safe on a cliff on the side of Mt. Kybar.\"\n\"Ah. This is obviously some strange usage of the word 'safe' that I hadn't\npreviously been aware of.\"\n-- Targ'n and Gar\n",
         "image": "/cardimages/VS/Traveling_Healer_KT.jpg",
         "key": 1176,
         "name": "Traveling Healer",
@@ -25943,7 +25943,7 @@
                 "text": "Whenever Tropical Jumbor is in an attack, before energy is removed, you may move one energy between Tropical Jumbor and any one of your other Paradwyn or Weave Creatures.\n"
             }
         ],
-        "flavor": "It pounces as gracefully as a slab of granite.",
+        "flavor": "\"Jumbor speed is directly proportionate to the time before its next meal.\"\n-- Iyori\n",
         "image": "/cardimages/VS/Tropical_Jumbor_WV.jpg",
         "key": 1324,
         "name": "Tropical Jumbor",
@@ -26845,7 +26845,7 @@
     {
         "artist": "Gillette",
         "cost": "X",
-        "flavor": "\"You know, it's at times like this that I really wish I'd listened to what\nmy mother told me.\"\n\"Why? What did she tell you?\"\n\"I don't know. I didn't listen.\"\n-- Kazm and Ulk\n",
+        "flavor": "\"Underneath. Loathe it or level it.\"\n-- Morag, Executioner\n",
         "image": "/cardimages/VS/Unmake_UD.jpg",
         "key": 1313,
         "name": "Unmake",
@@ -28000,7 +28000,7 @@
                 "text": "If your Magi is Nar or Naroom, you may play Wasperine Stalker at the beginning of your Attack step. If you do, Wasperine Stalker can and must attack Magi directly this turn. When you play Wasperne Stalker, add two energy to it if your Magi is Woot!.\n"
             }
         ],
-        "flavor": "They always put a little run in their stalkings.",
+        "flavor": "\"Surrender!\"\n\"You wish to surrender to me? Very well, I accept.\"\n-- Togoth and Yaki\n",
         "image": "/cardimages/VS/Wasperine_Stalker_NM.jpg",
         "key": 1263,
         "name": "Wasperine Stalker",
@@ -28501,7 +28501,7 @@
         "artist": "Ajnin",
         "cost": 11,
         "energize": 6,
-        "flavor": "\"Minani. Why'd it have to be Minani?\"\n",
+        "flavor": "\"If you're a Weave Magi, then I'm Nagsis.\"\n-- Gia, to Wence\n",
         "image": "/cardimages/VS/Wence_the_Wanderer_WV.jpg",
         "key": 1326,
         "name": "Wence the Wanderer",
@@ -28554,7 +28554,7 @@
                 "text": "During your Energize step, if you have a Naroom Creature and a different Weave Creature in play, add two energy to your Magi.\n"
             }
         ],
-        "flavor": "\"There I was, knee-deep in bungaloos...\"\n-- Wence, Adventurer\n",
+        "flavor": "\"I'm not even supposed to be here today!\"\n-- Wence, Adventurer\n",
         "image": "/cardimages/VS/Wences_Travelog_WV.jpg",
         "key": 1330,
         "name": "Wence's Travelog",
@@ -28755,7 +28755,7 @@
                 "text": "Increase your Arderial or d'Resh Magi's Energize by two. A Magi can only be affected by one Invigorate at a time.\n"
             }
         ],
-        "flavor": "\"Anyway, the wind blows...\"\n-- Shivara, Mistress of the Winds\n",
+        "flavor": "\"We have hyren sign, the likes of which no one has ever seen.\"\n-- Drajan, Elder\n",
         "image": "/cardimages/VS/Wind_Hyren_DR.jpg",
         "key": 1125,
         "name": "Wind Hyren",

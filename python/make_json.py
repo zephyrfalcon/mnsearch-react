@@ -65,6 +65,9 @@ for fn in yaml_files:
             other_card = [c for c in raw_data if c.get('name') == card['reference']][0]
             raw_data[idx] = other_card.copy()
             raw_data[idx]['region'] = region
+            if 'flavor' in card:
+                # some multi-region cards have different flavor text
+                raw_data[idx]['flavor'] = card['flavor']
     for card in raw_data:
         card['set'] = fn[:2]
         card['key'] = counter
