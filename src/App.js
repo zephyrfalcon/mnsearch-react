@@ -56,7 +56,8 @@ function cardInRegions(card, regions) {
 }
 
 function cardInAllRegions(card, regions) {
-  return card.regions.filter(region => regions.includes(region)).length == regions.length;
+  return card.regions.filter(
+    region => regions.includes(region)).length === regions.length;
 }
 
 function showSortArrow(field, sortKey) {
@@ -64,6 +65,23 @@ function showSortArrow(field, sortKey) {
     return sortKey.startsWith("^") ? "↓" : "↑";
   } else return null;
 }
+
+// produce a string that contains all card text, in lowercase.
+// note: opinions may vary about what goes in here. in principle, any text
+// that contains functionality should be here.
+// in any case, flavor text is NOT considered part of it.
+const cardText = (card) => [
+  card.name,
+  card.type,
+  card.effects && card.effects.map(effect => effect.name || "").join(" "),
+  card.effects && card.effects.map(effect => effect.text || "").join(" "),
+  card.powers && card.powers.map(power => power.name || "").join(" "),
+  card.powers && card.powers.map(power => power.text || "").join(" "),
+  card.starting && card.starting.join(" "),
+  card.subtype || "",
+  card.text || "",
+  card.type === "Magi" && card.original_region && card.original_region + " Shadow Magi",
+].join(" ").toLowerCase();
 
 /* props:
    - onTextChange(event): callback for when text changes
@@ -547,43 +565,44 @@ class App extends Component {
 
     if (this.state.refinedSearchText) {
       let text = this.state.refinedSearchText.toLowerCase();;
-      if (this.state.refinedSearchField == 'artist') {
+      if (this.state.refinedSearchField === 'artist') {
         results = results.filter(card => card.artist.toLowerCase().includes(text));
       }
-      else if (this.state.refinedSearchField == 'card-text') {
+      else if (this.state.refinedSearchField === 'card-text') {
         // what does 'card text' mean exactly?
         // does it include powers/effects?
         // it definitely does NOT include flavor text...
+        results = results.filter(card => cardText(card).includes(text));
       } 
-      else if (this.state.refinedSearchField == 'whole-card') {
+      else if (this.state.refinedSearchField === 'whole-card') {
         // which parts do we actually search for "whole card"?
         // does it include flavor text? names? subtypes?
       } 
-      else if (this.state.refinedSearchField == 'effect-name') {
+      else if (this.state.refinedSearchField === 'effect-name') {
         results = results.filter(
           card => card.effects && card.effects.some(
             effect => effect.name && effect.name.toLowerCase().includes(text)));
       } 
-      else if (this.state.refinedSearchField == 'effect-text') {
+      else if (this.state.refinedSearchField === 'effect-text') {
         results = results.filter(
           card => card.effects && card.effects.some(
             effect => effect.text && effect.text.toLowerCase().includes(text)));
       } 
-      else if (this.state.refinedSearchField == 'power-name') {
+      else if (this.state.refinedSearchField === 'power-name') {
         results = results.filter(
           card => card.powers && card.powers.some(
             power => power.name && power.name.toLowerCase().includes(text)));
       } 
-      else if (this.state.refinedSearchField == 'power-text') {
+      else if (this.state.refinedSearchField === 'power-text') {
         results = results.filter(
           card => card.powers && card.powers.some(
             power => power.text && power.text.toLowerCase().includes(text)))
       } 
-      else if (this.state.refinedSearchField == 'subtype') {
+      else if (this.state.refinedSearchField === 'subtype') {
         results = results.filter(
           card => card.subtype && card.subtype.toLowerCase().includes(text));
       } 
-      else if (this.state.refinedSearchField == 'flavor-text') {
+      else if (this.state.refinedSearchField === 'flavor-text') {
         results = results.filter(
           card => card.flavor && card.flavor.toLowerCase().includes(text));
       } 
