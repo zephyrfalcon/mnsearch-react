@@ -5,7 +5,7 @@ import { sortBy } from 'lodash';
 
 // carddata.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
 
-const VERSION = "0.8.1";
+const VERSION = "0.9";
 
 const SORTS = {
   name: list => sortBy(list, [(card) => card.name.toLowerCase()]),
@@ -121,7 +121,6 @@ class QueryArea extends Component {
               <select className="dropdown-refined" 
                       onChange={this.props.onRefinedFieldChange}>
                 <option value="card-text">Card Text</option>
-                <option value="whole-card">Whole card</option>
                 <option value="effect-name">Effect name</option>
                 <option value="effect-text">Effect text</option>
                 <option value="power-name">Power name</option>
@@ -129,6 +128,7 @@ class QueryArea extends Component {
                 <option value="subtype">Subtype</option>
                 <option value="flavor-text">Flavor text</option>
                 <option value="artist">Artist</option>
+                <option value="whole-card">Whole card</option>
               </select>
             </td>
             <td>contains:</td>
