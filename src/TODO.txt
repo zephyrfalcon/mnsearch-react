@@ -15,7 +15,6 @@
 ### filtering
 
 - later: add additional checkboxes not found in the old MNSearch?
-  [ ] multi-region
   [ ] single-region only (hmm... sounds more like a set of radiobuttons)
       - doesn't really sound very useful
   [ ] EXclude promos (but what will this do if we check Promos)
@@ -65,6 +64,7 @@
 - some effects have no name (e.g. Zyavu); in that case, don't show the "-" after
   "Effect" in the card details.
 - when we start, set focus to name field?
+- minor: web app still has React favicon, maybe we should replace this?
 
 ### misc
 

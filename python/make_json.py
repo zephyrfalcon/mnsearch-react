@@ -74,6 +74,7 @@ for fn in yaml_files:
         card['regions'] = [s.strip() for s in card['region'].split(',') if s.strip()]
         del card['region']
         card['image'] = cardname_to_image(card)
+        card['normalized_name'] = normalize_cardname(card['name'])
         counter += 1
     carddata.extend(raw_data)
 
