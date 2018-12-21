@@ -381,7 +381,7 @@ class CardDetails extends Component {
                 </tr>
                 {this.props.hasMRPData(card) &&
                   <tr>
-                    <td colspan="2">This card has MRP data.</td>
+                    <td className="MRP" colspan="2">This card has MRP data.</td>
                   </tr>
                 }
               </tbody>

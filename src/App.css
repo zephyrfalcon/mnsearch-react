@@ -118,6 +118,10 @@ table.SearchResults-cards {
   font-weight: bold;
 }
 
+.CardDetails-text-table td.MRP {
+  font-weight: normal;
+}
+
 footer {
   margin: 10px;
   text-align: left;
