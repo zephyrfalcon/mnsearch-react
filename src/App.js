@@ -195,6 +195,7 @@ class QueryArea extends Component {
    - isCardSelected(card)
    - toggleSort(field)
    - sortKey
+   - hasMRPData(card)
 */
 class SearchResults extends Component {
   render() {
@@ -223,7 +224,8 @@ class SearchResults extends Component {
             <Card card={card} 
                   index={index}
                   onSelectItem={this.props.onSelectItem}
-                  isCardSelected={this.props.isCardSelected} />
+                  isCardSelected={this.props.isCardSelected}
+                  hasMRPData={this.props.hasMRPData} />
           )}
           </tbody>
         </table>
@@ -237,6 +239,7 @@ class SearchResults extends Component {
    - index (starting at 0)
    - onSelectItem(key)
    - isCardSelected(card)
+   - hasMRPData(card)
 */
 class Card extends Component {
   render() {
@@ -255,7 +258,7 @@ class Card extends Component {
           <td>{rarities[card.rarity]}</td>
           <td>{card.cost}</td>
         </tr>
-        {isCardSelected(card) ? <CardDetails card={card} /> : null}
+        {isCardSelected(card) ? <CardDetails card={card} hasMRPData={this.props.hasMRPData} /> : null}
       </React.Fragment>
     );
   }
@@ -263,6 +266,7 @@ class Card extends Component {
 
 /* props:
    - card
+   - hasMRPData(card)
 */
 class CardDetails extends Component {
   render() {
@@ -361,6 +365,11 @@ class CardDetails extends Component {
                   <td>Artist(s)</td>
                   <td>{card.artist}</td>
                 </tr>
+                {this.props.hasMRPData(card) &&
+                  <tr>
+                    <td colspan="2">This card has MRP data.</td>
+                  </tr>
+                }
               </tbody>
             </table>
           </div>
@@ -473,6 +482,7 @@ class App extends Component {
     this.onSelectItem = this.onSelectItem.bind(this);
     this.isCardSelected = this.isCardSelected.bind(this);
     this.toggleSort = this.toggleSort.bind(this);
+    this.hasMRPData = this.hasMRPData.bind(this);
   }
 
   componentDidMount() {
@@ -482,6 +492,10 @@ class App extends Component {
       .then(response => response.json())
       .then(result => this.setState({ MRPCards: result }))
       .catch(error => error);
+  }
+
+  hasMRPData(card) {
+    return this.state.MRPCards.includes(card.name);
   }
 
   toggleSort(field) {
@@ -677,7 +691,8 @@ class App extends Component {
                        onSelectItem={this.onSelectItem}
                        isCardSelected={this.isCardSelected} 
                        toggleSort={this.toggleSort}
-                       sortKey={this.state.sortBy} />
+                       sortKey={this.state.sortBy}
+                       hasMRPData={this.hasMRPData} />
         <footer>
           <About />
         </footer>
