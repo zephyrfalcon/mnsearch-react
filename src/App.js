@@ -457,6 +457,7 @@ class App extends Component {
       sortBy: 'name',
       onlyMultiRegions: false,
       allRegions: false,  /* only show cards with ALL regions selected */
+      MRPCards: [],
     };
 
     // stupid binding skulduggery
@@ -472,6 +473,13 @@ class App extends Component {
     this.onSelectItem = this.onSelectItem.bind(this);
     this.isCardSelected = this.isCardSelected.bind(this);
     this.toggleSort = this.toggleSort.bind(this);
+  }
+
+  componentDidMount() {
+    fetch("http://mn-search-api.pingoland.xyz/api/cards")
+      .then(response => response.json())
+      .then(result => this.setState({ MRPCards: result}))
+      .catch(error => error);
   }
 
   toggleSort(field) {
