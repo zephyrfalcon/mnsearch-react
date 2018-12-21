@@ -476,9 +476,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://mn-search-api.pingoland.xyz/api/cards")
+    // CORS is the default anyway; I'll leave this here as a reminder that
+    // it needs to be enabled on mn-search-api.pingoland.xyz.
+    fetch("http://mn-search-api.pingoland.xyz/api/cards", {mode: "cors"})
       .then(response => response.json())
-      .then(result => this.setState({ MRPCards: result}))
+      .then(result => this.setState({ MRPCards: result }))
       .catch(error => error);
   }
 
