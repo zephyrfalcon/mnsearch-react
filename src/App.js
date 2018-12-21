@@ -120,41 +120,43 @@ class QueryArea extends Component {
     return (
       <div className="QueryArea">
         <div className="QueryArea-search">
-        <table className="QueryArea-top-table">
-          <tr>
-            <td style={{ textAlign: 'left', paddingLeft: '5px' }}>Name</td> 
-            <td>contains:</td>
-            <td><input className="QueryArea-text" type="text" size="30"
-                                onChange={this.props.onTextChange} />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <select className="dropdown-refined" 
-                      onChange={this.props.onRefinedFieldChange}>
-                <option value="card-text">Card Text</option>
-                <option value="effect-name">Effect name</option>
-                <option value="effect-text">Effect text</option>
-                <option value="power-name">Power name</option>
-                <option value="power-text">Power text</option>
-                <option value="subtype">Subtype</option>
-                <option value="flavor-text">Flavor text</option>
-                <option value="artist">Artist</option>
-                <option value="whole-card">Whole card</option>
-              </select>
-            </td>
-            <td>contains:</td>
-            <td>
-                <input className="QueryArea-refined-text" type="text" size="30"
-                      onChange={this.props.onRefinedTextChange} />
-            </td>
-          </tr>
-        </table>
+          <table className="QueryArea-top-table">
+            <tbody>
+              <tr>
+                <td style={{ textAlign: 'left', paddingLeft: '5px' }}>Name</td> 
+                <td>contains:</td>
+                <td><input className="QueryArea-text" type="text" size="30"
+                                    onChange={this.props.onTextChange} />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select className="dropdown-refined" 
+                          onChange={this.props.onRefinedFieldChange}>
+                    <option value="card-text">Card Text</option>
+                    <option value="effect-name">Effect name</option>
+                    <option value="effect-text">Effect text</option>
+                    <option value="power-name">Power name</option>
+                    <option value="power-text">Power text</option>
+                    <option value="subtype">Subtype</option>
+                    <option value="flavor-text">Flavor text</option>
+                    <option value="artist">Artist</option>
+                    <option value="whole-card">Whole card</option>
+                  </select>
+                </td>
+                <td>contains:</td>
+                <td>
+                    <input className="QueryArea-refined-text" type="text" size="30"
+                          onChange={this.props.onRefinedTextChange} />
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div className="QueryArea-panels">
           <div className="QueryArea-regions column">
             {regions.map(region =>
-              <div>
+              <div key={region}>
                 <input type="checkbox" name="region" value={region}
                        onChange={this.props.onRegionChange} />{region}<br/>
               </div>
@@ -162,7 +164,7 @@ class QueryArea extends Component {
           </div>
           <div className="QueryArea-sets column">
             {Object.keys(sets).map(set =>
-              <div>
+              <div key={set}>
                 <input type="checkbox" name="set" value={set}
                        onChange={this.props.onSetChange} />{sets[set]}<br/>
               </div>
@@ -170,7 +172,7 @@ class QueryArea extends Component {
           </div>
           <div className="QueryArea-cardtypes column">
             {cardTypes.map(cardType =>
-              <div>
+              <div key={cardType}>
                 <input type="checkbox" name="cardtype" value={cardType} 
                        onChange={this.props.onCardTypeChange} />{cardType}<br/>
               </div>
@@ -178,7 +180,7 @@ class QueryArea extends Component {
           </div>
           <div className="QueryArea-rarities column">
             {Object.keys(rarities).map(rarity =>
-              <div>
+              <div key={rarity}>
                 <input type="checkbox" name="rarity" value={rarity}
                        onChange={this.props.onRarityChange} />{rarities[rarity]}<br/>
               </div>
@@ -234,6 +236,7 @@ class SearchResults extends Component {
           {this.props.cards.map((card, index) => 
             <Card card={card} 
                   index={index}
+                  key={card.key}
                   onSelectItem={this.props.onSelectItem}
                   isCardSelected={this.props.isCardSelected}
                   hasMRPData={this.props.hasMRPData} />
@@ -430,29 +433,29 @@ class About extends Component {
   render() {
     return (
       <div className="About">
-        <a name="about"></a>
+        <a name="about" />
         <div>
           <p><strong>Magi-Nation Search version {VERSION}</strong></p>
           <p>Magi-Nation Search was written by&nbsp;
             <a href="http://aquila.blue">Hans Nowak</a>.</p>
-          <p>Quick instructions:
-            <ul>
-              <li>Select checkboxes to filter by region, set, etc.</li>
-              <li>Typing in the name text field immediately filters the search results; 
-                pressing Enter is not necessary.
-              </li>
-              <li>Click on a card to show details.</li>
-              <li>Click on a header field to sort by that field; click again
-                on the same field for reverse sort.
-              </li>
-            </ul>
-          </p>
+          <p>Quick instructions:</p>
+          <ul>
+            <li>Select checkboxes to filter by region, set, etc.</li>
+            <li>Typing in the name text field immediately filters the search results; 
+              pressing Enter is not necessary.
+            </li>
+            <li>Click on a card to show details.</li>
+            <li>Click on a header field to sort by that field; click again
+              on the same field for reverse sort.
+            </li>
+          </ul>
           <p>Source code is available on&nbsp;
             <a href="https://github.com/zephyrfalcon/mnsearch-react">Github</a>. 
             If you find bugs, or have suggestions for new features, please&nbsp;
             <a href="https://github.com/zephyrfalcon/mnsearch-react/issues">add an issue</a> there.</p>
             <p>If you find Magi-Nation Search useful, please consider
-              buying me a <a target="_blank" href="https://ko-fi.com/zephyrfalcon">coffee</a>. :3
+              buying me a <a target="_blank" rel="noopener noreferrer" 
+                             href="https://ko-fi.com/zephyrfalcon">coffee</a>. :3
             </p>
             <p>[<a href="#top">back to top</a>]</p>
         </div>
