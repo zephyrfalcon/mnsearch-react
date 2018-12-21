@@ -66,6 +66,17 @@ function showSortArrow(field, sortKey) {
   } else return null;
 }
 
+function normalizeCardName(name) {
+  const keep = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 -";
+  let chars = name.split('');
+  chars = chars.filter(c => keep.includes(c));
+  chars = chars.map(c => c === ' ' ? '_' : c);
+  let s = chars.join('');
+  // kinda yucky way to remove streams of underscores:
+  for (let i=0; i<10; i++) { s = s.replace("__", "_"); }
+  return s;
+}
+
 // produce a string that contains all card text, in lowercase.
 // note: opinions may vary about what goes in here. in principle, any text
 // that contains functionality should be here.
