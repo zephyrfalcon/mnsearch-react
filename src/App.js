@@ -209,6 +209,7 @@ class QueryArea extends Component {
    - toggleSort(field)
    - sortKey
    - hasMRPData(card)
+   - getMRPData(card)
 */
 class SearchResults extends Component {
   render() {
@@ -239,7 +240,8 @@ class SearchResults extends Component {
                   key={card.key}
                   onSelectItem={this.props.onSelectItem}
                   isCardSelected={this.props.isCardSelected}
-                  hasMRPData={this.props.hasMRPData} />
+                  hasMRPData={this.props.hasMRPData}
+                  getMRPData={this.props.getMRPData} />
           )}
           </tbody>
         </table>
@@ -254,6 +256,7 @@ class SearchResults extends Component {
    - onSelectItem(key)
    - isCardSelected(card)
    - hasMRPData(card)
+   - getMRPData(card)
 */
 class Card extends Component {
   render() {
@@ -272,7 +275,10 @@ class Card extends Component {
           <td>{rarities[card.rarity]}</td>
           <td>{card.cost}</td>
         </tr>
-        {isCardSelected(card) ? <CardDetails card={card} hasMRPData={this.props.hasMRPData} /> : null}
+        {isCardSelected(card) ? 
+          <CardDetails card={card} 
+                       hasMRPData={this.props.hasMRPData}
+                       getMRPData={this.props.getMRPData} /> : null}
       </React.Fragment>
     );
   }
@@ -281,6 +287,7 @@ class Card extends Component {
 /* props:
    - card
    - hasMRPData(card)
+   - getMRPData(card)
 */
 class CardDetails extends Component {
   render() {
@@ -381,7 +388,10 @@ class CardDetails extends Component {
                 </tr>
                 {this.props.hasMRPData(card) &&
                   <tr>
-                    <td className="MRP" colspan="2">This card has MRP data.</td>
+                    <td className="MRP" colspan="2">
+                      <p>This card has MRP data.</p>
+                      <div className="MRP-text" dangerouslySetInnerHTML={{__html: this.props.getMRPData(card)}}></div>
+                    </td>
                   </tr>
                 }
               </tbody>
@@ -481,6 +491,7 @@ class App extends Component {
       onlyMultiRegions: false,
       allRegions: false,  /* only show cards with ALL regions selected */
       MRPCards: [],
+      MRPData: {},
     };
 
     // stupid binding skulduggery
@@ -497,6 +508,7 @@ class App extends Component {
     this.isCardSelected = this.isCardSelected.bind(this);
     this.toggleSort = this.toggleSort.bind(this);
     this.hasMRPData = this.hasMRPData.bind(this);
+    this.getMRPData = this.getMRPData.bind(this);
   }
 
   componentDidMount() {
@@ -510,6 +522,25 @@ class App extends Component {
 
   hasMRPData(card) {
     return this.state.MRPCards.includes(card.name);
+  }
+
+  needToFetchMRPData(card) {
+    return !(card.normalized_name in this.state.MRPData);
+  }
+
+  fetchMRPData(card) {
+    const name = card.normalized_name;
+    fetch(`http://mn-search-api.pingoland.xyz/api/cards/${name}`, {mode: "cors"})
+      .then(response => response.json())
+      .then(result => this.setState({ MRPData: { ...this.state.MRPData, [name]: result.text } }))
+      .catch(error => error);
+  }
+
+  getMRPData(card) {
+    if (this.needToFetchMRPData(card)) {
+      this.fetchMRPData(card);
+    };
+    return this.state.MRPData[card.normalized_name];
   }
 
   toggleSort(field) {
@@ -706,7 +737,8 @@ class App extends Component {
                        isCardSelected={this.isCardSelected} 
                        toggleSort={this.toggleSort}
                        sortKey={this.state.sortBy}
-                       hasMRPData={this.hasMRPData} />
+                       hasMRPData={this.hasMRPData}
+                       getMRPData={this.getMRPData} />
         <footer>
           <About />
         </footer>
@@ -716,4 +748,3 @@ class App extends Component {
 };
 
 export default App;
-export { normalizeCardName };

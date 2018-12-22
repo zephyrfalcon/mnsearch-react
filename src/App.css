@@ -122,6 +122,15 @@ table.SearchResults-cards {
   font-weight: normal;
 }
 
+.MRP-text {
+  border: 1px solid #999;
+  padding: 10px;
+}
+
+.blue {
+  color: blue;
+}
+
 footer {
   margin: 10px;
   text-align: left;
