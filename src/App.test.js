@@ -11,11 +11,4 @@ it('renders without crashing', () => {
 
 describe('helper functions', () => {
 
-  it('normalizes names properly', () => {
-    expect(normalizeCardName("Barak")).toBe("Barak");
-    expect(normalizeCardName("O'Qua")).toBe("OQua");
-    expect(normalizeCardName("Abwyn's Gift")).toBe("Abwyns_Gift");
-    expect(normalizeCardName("Ummm...NO!")).toBe("UmmmNO");
-  });
-
 });
