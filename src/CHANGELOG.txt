@@ -1,8 +1,14 @@
 # CHANGELOG
 
+version 0.10:
+
+- show MRP data
+- added text (other than effects/powers) to card details
+- fixed issue with multi-region card having different flavor text
+- added filter: only show multi-region cards
+
 version 0.9:
 
-- added text (other than effects/powers) to card details
 - added a number of filters for subtype, whole card, effects, powers,
   also less-useful stuff like artists and flavor text :3
 - fixed a number of (fairly minor) bugs in the YAML source files

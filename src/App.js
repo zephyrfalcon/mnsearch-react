@@ -478,8 +478,8 @@ class App extends Component {
       sortBy: 'name',
       onlyMultiRegions: false,
       allRegions: false,  /* only show cards with ALL regions selected */
-      MRPCards: [],
-      MRPData: {},
+      MRPCards: [],  /* cards that have MRP data */
+      MRPData: {},  /* cache for MRP data */
     };
 
     // stupid binding skulduggery
@@ -558,7 +558,7 @@ class App extends Component {
   }
 
   onOnlyMultiRegions(event) {
-    this.setState({ onlyMultiRegions: event.target.value },
+    this.setState({ onlyMultiRegions: event.target.checked },
                   () => this.updateSearchResults());
   }
 
@@ -606,9 +606,7 @@ class App extends Component {
     let panel = event.target.parentElement.parentElement;
     let coll = panel.getElementsByTagName('input');
     let arr = [...coll];  // HTMLCollection -> Array
-    //let checkedRarities = arr.filter(inputElem => inputElem.checked)
-    //                         .map(inputElem => inputElem.value);
-    this.setState({ allRegions: arr[0].checked }, 
+    this.setState({ allRegions: event.target.checked }, 
                   () => this.updateSearchResults());
   }
 
