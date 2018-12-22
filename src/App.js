@@ -476,8 +476,10 @@ class App extends Component {
       refinedSearchField: 'card-text',
       refinedSearchText: '',
       sortBy: 'name',
-      onlyMultiRegions: false,
-      allRegions: false,  /* only show cards with ALL regions selected */
+      filters: {
+        onlyMultiRegions: false,
+        allRegions: false,  /* only show cards with ALL regions selected */
+      },
       MRPCards: [],  /* cards that have MRP data */
       MRPData: {},  /* cache for MRP data */
     };
@@ -557,10 +559,6 @@ class App extends Component {
                   () => this.updateSearchResults());
   }
 
-  onOnlyMultiRegions(event) {
-    this.setState({ onlyMultiRegions: event.target.checked },
-                  () => this.updateSearchResults());
-  }
 
   onRegionChange(event) {
     let panel = event.target.parentElement.parentElement;
@@ -602,11 +600,16 @@ class App extends Component {
                   () => this.updateSearchResults());
   }
 
+  onOnlyMultiRegions(event) {
+    this.setState({ filters: { ...this.state.filters, onlyMultiRegions: event.target.checked } },
+                  () => this.updateSearchResults());
+  }
+
   onAllRegionsChange(event) {
-    let panel = event.target.parentElement.parentElement;
-    let coll = panel.getElementsByTagName('input');
-    let arr = [...coll];  // HTMLCollection -> Array
-    this.setState({ allRegions: event.target.checked }, 
+    //let panel = event.target.parentElement.parentElement;
+    //let coll = panel.getElementsByTagName('input');
+    //let arr = [...coll];  // HTMLCollection -> Array
+    this.setState({ filters: { ...this.state.filters, allRegions: event.target.checked } }, 
                   () => this.updateSearchResults());
   }
 
@@ -642,10 +645,10 @@ class App extends Component {
     if (this.state.rarities.length > 0) {
       results = results.filter(card => this.state.rarities.includes(card.rarity));
     }
-    if (this.state.onlyMultiRegions) {
+    if (this.state.filters.onlyMultiRegions) {
       results = results.filter(card => card.regions.length > 1);
     }
-    if (this.state.allRegions) {
+    if (this.state.filters.allRegions) {
       results = results.filter(card => cardInAllRegions(card, this.state.regions));
     }
 
