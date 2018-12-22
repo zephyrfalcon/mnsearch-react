@@ -509,7 +509,7 @@ class App extends Component {
   }
 
   hasMRPData(card) {
-    return this.state.MRPCards.includes(card.name);
+    return this.state.MRPCards.includes(card.normalized_name);
   }
 
   needToFetchMRPData(card) {
