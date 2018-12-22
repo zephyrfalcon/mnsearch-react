@@ -43,6 +43,14 @@
 - if certain card types are selected, maybe we can show an additional column
   in the search results. for example, if Magi is selected, we could show an
   energize column; it would make sense to sort by that.
+- about the way it is displayed:
+  find the size of the largest image and set that as the size of the leftmost
+  element (maybe with a little margin)... so an absolute size in pixels. 
+  set the rightmost element to be flexible in size (I guess with a percentage 
+  or whatever).
+  right now there is no way to guarantee that you will always see the text
+  to the right of the image. resize window or font, and it might show up under
+  it even if there's plenty of room to the right. 
 
 ### search results
 
