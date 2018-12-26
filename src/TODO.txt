@@ -87,6 +87,13 @@
 - should we provide unique URLs for each card somehow?
   - what would they point to? separate page? or show the list with that card open?
 
+- some things we iterate over still need a 'key' attribute... at least the
+  browser keeps showing annoying warnings for that... so I guess I have to add
+  reasonable keys to the few ones left, even though they're useless. (e.g. when
+  looping over effects/powers in card details... will probably have to add those
+  to JSON, since I cannot create a reliable key from the data already there.
+  no, name is not guaranteed to be unique.)
+
 ### cleanup/refactoring
 
 - if CheckBox turns out to work well, use it everywhere
@@ -95,6 +102,7 @@
 
 - In the README, add a link to some site that explains what Magi-Nation is...
   perhaps several sites
+- mention in "instructions" that MRP data comes from BlueFurok.com
 
 ### HTML/CSS 
 
