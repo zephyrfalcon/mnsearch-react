@@ -66,6 +66,8 @@
   "Effect" in the card details.
 - when we start, set focus to name field?
 - minor: web app still has React favicon, maybe we should replace this?
+- card details: the cost of powers (a number) can be displayed more like it's
+  done on the card, by using appropriate CSS
 
 ### misc
 
