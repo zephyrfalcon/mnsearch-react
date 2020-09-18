@@ -3923,7 +3923,7 @@
     - name: Demotivate
       text: >
         Once per turn, when one of your Creatures is attacked, you may have
-        the attacked Creature remove energy equal to its starting energy
+        the attacking Creature remove energy equal to its starting energy
         instead of its current energy.
   flavor: Fierce fighting power. No strings attached.
   artist: Werner, Gillette, Holmberg
