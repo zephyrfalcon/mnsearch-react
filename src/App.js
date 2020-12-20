@@ -182,6 +182,15 @@ class QueryArea extends Component {
             <CheckBox name="all-regions" 
                       value="all-regions" text="only cards with ALL regions selected" 
                       onChange={this.props.onAllRegionsChange} />
+            <RadioButtonGroup
+              className="QueryArea-mrp"
+              title="MRP data:"
+              groupName="mrp"
+              buttons={[{name: "mrp-all", text: "Show all cards"}, 
+                        {name: "mrp-only", text: "Show only cards with MRP data"}, 
+                        {name: "mrp-no", text: "Show only cards without MRP data"}]}
+              checked="mrp-all" 
+            />
           </div>
           <div className="lastcolumn">&nbsp;</div>
         </div>
@@ -427,6 +436,49 @@ class CheckBox extends Component {
   }
 }
 
+/* props:
+   - a title to be put before the list of radio buttons (optional)
+   - a list of objects {name, text} (e.g. {name: "mrp-all", text: "Show all MRP data"}
+   - the name of the radio button that is checked by default (e.g. "name")
+   - className
+   - groupName (e.g. "mrp")
+   - ...
+*/
+class RadioButtonGroup extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      checked: this.props.checked,
+    };
+    this.onChange = this.onChange.bind(this);
+  }
+  onChange(event) {
+    console.log("Clicky!", event.target);
+    console.log("event.target.value is:", event.target.value);
+    this.setState({
+      checked: event.target.value
+    });
+  }
+  render() {
+    return (
+      <div className={this.props.className}>
+        {this.props.title || ""}<br/>
+        {this.props.buttons.map((buttonInfo) => 
+          <span key={buttonInfo.name}>
+            <input type="radio" 
+              name={this.props.groupName} 
+              key={buttonInfo.name}
+              value={buttonInfo.name}
+              checked={buttonInfo.name === this.state.checked}
+              onChange={this.onChange}
+            /> {buttonInfo.text}<br/>
+          </span>
+        )}
+      </div>
+    );
+  }
+}
+
 class About extends Component {
   render() {
     return (
@@ -611,6 +663,9 @@ class App extends Component {
     //let arr = [...coll];  // HTMLCollection -> Array
     this.setState({ filters: { ...this.state.filters, allRegions: event.target.checked } }, 
                   () => this.updateSearchResults());
+  }
+
+  onMRPChange(event) {
   }
 
   // XXX for now, we can only select one card.

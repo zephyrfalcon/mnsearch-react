@@ -49,6 +49,10 @@ table.QueryArea-top-table {
   text-align: left;
 }
 
+.QueryArea-mrp {
+  margin-top: 20px;
+}
+
 .SearchResults {
   margin-left: 10px;
   margin-right: 10px;
