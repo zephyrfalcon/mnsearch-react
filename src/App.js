@@ -4,7 +4,7 @@ import carddata from './cards.json';
 import { sortBy } from 'lodash';
 
 
-const VERSION = "0.10.1";
+const VERSION = "0.10.2";
 
 const SORTS = {
   name: list => sortBy(list, [(card) => card.name.toLowerCase()]),
