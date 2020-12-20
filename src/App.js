@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import carddata from './cards.json';
+import mrpdata from './mrp.json';
 import { sortBy } from 'lodash';
 
 
@@ -48,6 +49,18 @@ let rarities = {
   "R": "Rare", 
   "P": "Promo",
 };
+
+const mrpDict = new Map();
+mrpdata.forEach(({name, text}) => mrpDict.set(name, text));
+console.log(mrpDict);
+
+function hasMRPData(card) {
+  return mrpDict.has(card.normalized_name);
+}
+
+function getMRPData(card) {
+  return mrpDict.get(card.normalized_name);
+}
 
 // return true if the card is in any of the given regions
 function cardInRegions(card, regions) {
@@ -207,8 +220,6 @@ class QueryArea extends Component {
    - isCardSelected(card)
    - toggleSort(field)
    - sortKey
-   - hasMRPData(card)
-   - getMRPData(card)
 */
 class SearchResults extends Component {
   render() {
@@ -239,8 +250,7 @@ class SearchResults extends Component {
                   key={card.key}
                   onSelectItem={this.props.onSelectItem}
                   isCardSelected={this.props.isCardSelected}
-                  hasMRPData={this.props.hasMRPData}
-                  getMRPData={this.props.getMRPData} />
+            />
           )}
           </tbody>
         </table>
@@ -254,8 +264,6 @@ class SearchResults extends Component {
    - index (starting at 0)
    - onSelectItem(key)
    - isCardSelected(card)
-   - hasMRPData(card)
-   - getMRPData(card)
 */
 class Card extends Component {
   render() {
@@ -275,9 +283,7 @@ class Card extends Component {
           <td>{card.cost}</td>
         </tr>
         {isCardSelected(card) ? 
-          <CardDetails card={card} 
-                       hasMRPData={this.props.hasMRPData}
-                       getMRPData={this.props.getMRPData} /> : null}
+          <CardDetails card={card} /> : null}
       </React.Fragment>
     );
   }
@@ -285,8 +291,6 @@ class Card extends Component {
 
 /* props:
    - card
-   - hasMRPData(card)
-   - getMRPData(card)
 */
 class CardDetails extends Component {
   render() {
@@ -385,11 +389,11 @@ class CardDetails extends Component {
                   <td>Artist(s)</td>
                   <td>{card.artist}</td>
                 </tr>
-                {this.props.hasMRPData(card) &&
+                {hasMRPData(card) &&
                   <tr>
                     <td className="MRP" colspan="2">
                       <p>This card has MRP data.</p>
-                      <div className="MRP-text" dangerouslySetInnerHTML={{__html: this.props.getMRPData(card)}}></div>
+                      <div className="MRP-text" dangerouslySetInnerHTML={{__html: getMRPData(card)}}></div>
                     </td>
                   </tr>
                 }
@@ -550,41 +554,8 @@ class App extends Component {
     this.onSelectItem = this.onSelectItem.bind(this);
     this.isCardSelected = this.isCardSelected.bind(this);
     this.toggleSort = this.toggleSort.bind(this);
-    this.hasMRPData = this.hasMRPData.bind(this);
-    this.getMRPData = this.getMRPData.bind(this);
   }
 
-  componentDidMount() {
-    // CORS is the default anyway; I'll leave this here as a reminder that
-    // it needs to be enabled on mn-search-api.pingoland.xyz.
-    fetch("http://mn-search-api.pingoland.xyz/api/cards", {mode: "cors"})
-      .then(response => response.json())
-      .then(result => this.setState({ MRPCards: result }))
-      .catch(error => error);
-  }
-
-  hasMRPData(card) {
-    return this.state.MRPCards.includes(card.normalized_name);
-  }
-
-  needToFetchMRPData(card) {
-    return !(card.normalized_name in this.state.MRPData);
-  }
-
-  fetchMRPData(card) {
-    const name = card.normalized_name;
-    fetch(`http://mn-search-api.pingoland.xyz/api/cards/${name}`, {mode: "cors"})
-      .then(response => response.json())
-      .then(result => this.setState({ MRPData: { ...this.state.MRPData, [name]: result.text } }))
-      .catch(error => error);
-  }
-
-  getMRPData(card) {
-    if (this.needToFetchMRPData(card)) {
-      this.fetchMRPData(card);
-    };
-    return this.state.MRPData[card.normalized_name];
-  }
 
   toggleSort(field) {
     let newField = field;
@@ -715,9 +686,9 @@ class App extends Component {
       results = results.filter(card => cardInAllRegions(card, this.state.regions));
     }
     if (this.state.mrpFilter === 'mrp-only') {
-      results = results.filter(card => this.hasMRPData(card));
+      results = results.filter(card => hasMRPData(card));
     } else if (this.state.mrpFilter === 'mrp-no') {
-      results = results.filter(card => !this.hasMRPData(card));
+      results = results.filter(card => !hasMRPData(card));
     }
 
     if (this.state.refinedSearchText) {
@@ -796,8 +767,7 @@ class App extends Component {
                        isCardSelected={this.isCardSelected} 
                        toggleSort={this.toggleSort}
                        sortKey={this.state.sortBy}
-                       hasMRPData={this.hasMRPData}
-                       getMRPData={this.getMRPData} />
+                       />
         <footer>
           <About />
         </footer>

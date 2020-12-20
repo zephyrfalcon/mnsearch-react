@@ -1,0 +1,518 @@
+[
+    {
+        "name": "Abwyns_Quill",
+        "text": "<p><b>Abwyn's Quill - Arderial Relic - Cost: 0 (AW)(E)</b> <br/>Effect - \n      Overwrite: <span class=\"blue\">Once per turn</span>, as a player plays a \n      Spell or uses a Power that specifies one or more regions, before any \n      choices are made, you may discard two energy from your Magi. If you do, \n      change one of the specified regions to a region of your choice. Overwrite \n      <span class=\"blue\">only affects this use</span> of the Spell or Power. \n      <br/><b>Change:</b> Overwrite can only be used once a turn. Clarified \n      duration. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> \n      Awakening</p>"
+    },
+    {
+        "name": "Alaban_Gloves",
+        "text": "<p><b>Alaban Gloves - Arderial Relic - Cost: 0 (AW)(E)</b> <br/>Power - \n      Undream: (3) Choose a Creature in play. Return the chosen Creature to its \n      owner's hand. Place that Creature's energy on its current Magi. <span class=\"blue\">If this is your Magi, you cannot add energy to your Magi beyond \n      the Creature's printed starting energy.</span> <br/><b>Change:</b> \n      Undream's text has been adjusted to proper text templating rules. \n      <br/><b>Source:</b> 2i Design Team, Rules Digest 08/30/02 \n      <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Bubble_Xyx",
+        "text": "<p><b>Bubble Xyx - Arderial/Orothe Creature - Starting Energy: 3 \n      (ND)(E)</b> <br/>Power - Burst: (2) Discard two energy from your Magi to \n      draw three cards. <span class=\"blue\">Burst may not be used the turn Bubble \n      Xyx is played.</span> <br/>STARTING: Stradus <br/><b>Change:</b> A delay of \n      one turn to use Burst, as well as making Burst unavailable to Sorreah's \n      Dream. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Nightmare's \n      Dawn</p>"
+    },
+    {
+        "name": "Cloud_Narth",
+        "text": "<p><b>Cloud Narth - Arderial Dream Creature - Starting Energy: 2 \n      (BS)(E)</b> <br/>Power - Healing Rain: Choose any one Creature or Magi in \n      play. Move <span class=\"blue\">up to two energy from Cloud Narth</span> to \n      the Chosen Creature or Magi. Discard Cloud Narth from play. <br/>Power - \n      Healing Storm: Choose any one Creature or Magi and one of your Pharans in \n      play. Move <span class=\"blue\">up to the chosen Pharan's printed starting \n      energy</span> from the Pharan to the chosen Creature or Magi. Move <span class=\"blue\">up to two energy</span> from Cloud Narth to the chosen Creature \n      or Magi. Add three energy to the chosen Creature or Magi. <span class=\"blue\">Discard both the chosen Pharan and Cloud Narth from \n      play.</span> <br/><b>Change:</b> A maximum move limit of two energy from \n      Cloud Narth has been made for Healing Rain and Healing Storm. A maximum of \n      the chosen Pharan's printed starting energy has been added for Healing \n      Storm. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Unlimited, \n      Limited</p>"
+    },
+    {
+        "name": "Cloud_Sceptre",
+        "text": "<p><b>Cloud Sceptre - Arderial Relic - Cost: 0 (BS)(E)</b> <br/>Power - \n      Mindwinds: (1) Discard <span class=\"blue\">up to five cards from your hand to \n      draw the same number of cards</span>. <br/><b>Change:</b> A maximum limit \n      of 5 cards has been set for Mindwinds. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Eclipse",
+        "text": "<p><b>Eclipse - Arderial Spell - Cost: 5 (BS)(R)</b> <br/>Choose any one \n      Magi in play. The Chosen Magi<span class=\"blue\">'s Creatures</span> cannot \n      attack during that Magi's next turn. <br/><b>Change:</b> Eclipse has been \n      clarified that it's the chosen Magi's Creatures that can not attack. \n      <br/><b>Source: </b>The Unlimited version is the MRP of Eclipse. \n      <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Eye_of_the_Storm",
+        "text": "<p><b>Eye of the Storm - Arderial Relic - Cost: 0 (BS)(E)</b> <br/>Power - \n      Storm Seeker: Roll a die. <span class=\"blue\">You cannot use other cards to \n      alter the die roll</span>. <br/>1 = Discard your hand. <br/>2, 3, 4 or 5 = \n      do nothing. <br/>6 = Draw five cards. <br/><b>Change:</b> Removal of the \n      discard/lock potential and restriction that the die roll may not be \n      altered. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Unlimited, \n      Limited</p>"
+    },
+    {
+        "name": "Grand_Epik",
+        "text": "<p><b>Grand Epik - Arderial Dream Creature - Starting Energy: 5 \n      (DE)(E)</b> <br/>Effect: Reduce your Magi's Energize by two. <br/>Effect - \n      Dream Binge: Whenever an Arderial Magi energizes, add an equal amount of \n      energy to Grand Epik. <br/><b>Change:</b> Mind Feast's name has been \n      removed and is now considered a nameless Effect. <br/><b>Source:</b> 2i \n      Design Team <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "Hurricane_Orish",
+        "text": "<p><b>Hurricane Orish - Arderial/Orothe Dream Creature - Starting Energy: \n      5 (ND)(E)</b> <br/>Effect - Spell Drain: Once per turn, when an opponent \n      plays a Relic or Spell, add three energy to your Magi. <span class=\"blue\">Only one Spell Drain may be used for each Spell or Relic \n      played.</span> <br/><b>Change:</b> An addition of only one Spell Drain can \n      trigger per Spell or Relic played. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Jlith",
+        "text": "<p><b>J'lith - Arderial Dream Creature - Starting Energy: 2 (AW, 2001 \n      Demo)(E,R)</b> <br/>Effect - Collector: Whenever any player plays a Relic, \n      <span class=\"blue\">once per turn</span>, add two energy to J'lith. \n      <br/>Effect - Coveting: If you ever have no Relics in play, discard J'lith \n      from play. <br/><b>Change:</b> Collector triggers once a turn. \n      <br/><b>Source: </b>The 2001 Arderial Demo Pack version is the MRP of \n      J'lith. <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Mask_of_Abwyn",
+        "text": "<p><b>Mask of Abwyn - Arderial Relic - Cost: 0 (BS)(R)</b> <br/><span class=\"blue\">Power</span> - Windsight: Choose any one opponent. The chosen \n      opponent shows you his or her hand. <br/><b>Change:</b> Windsight has been \n      changed from an Effect to a Power and worded appropriately. <br/><b>Source: \n      </b>The Unlimited version is the MRP of Mask of Abwyn. <br/><b>Affects:</b> \n      Limited</p>"
+    },
+    {
+        "name": "Pharan",
+        "text": "<p><b>Pharan - Arderial Dream Creature - Starting Energy: 3 (BS)(E)</b>\n<br/>Power - Healing Rain: Choose any one Creature or Magi in play. Move \n      <span class=\"blue\">up to three energy from Pharan</span> to the chosen \n      Creature or Magi. Discard Pharan from play. <br/><b>Change:</b> A maximum \n      move limit of three energy from Pharan has been made for Healing Rain \n      <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Unlimited, \n      Limited</p>"
+    },
+    {
+        "name": "Sandswirl",
+        "text": "<p><b>Sandswirl - Arderial/d'Resh Spell - Cost: X (ND)(E)</b> <br/>Choose \n      any one <span class=\"blue\">opposing</span> Creature or Magi in play. <span class=\"blue\">Attach Sandswirl to the chosen Creature or Magi.</span> For X \n      turns<span class=\"blue\">, beginning with the current turn, as long as \n      Sandswirl remains attached,</span> the chosen Creature or Magi cannot use \n      any Powers or Effects and loses one additional energy in attacks. <span class=\"blue\">After X turns have passed, discard Sandswirl from play.</span>\n<br/><b>Change:</b> Sandswirl only affects opposing Creatures. Sandswirl \n      also now attaches to the target Creature or Magi. Duration of Sandswril \n      has also been clarified. <br/><b>Source: </b>2i Design Team \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Spray_Narth",
+        "text": "<p><b>Spray Narth - Arderial/Orothe Dream Creature - Starting Energy: 3 \n      (ND)(E)</b> <br/>Effect - Congregate: As you play Spray Narth, <span class=\"blue\">if you have at least two Creatures in play, one of which is \n      Arderial and another one of which is Orothe</span>, ignore Spray Narth's \n      cost. <span class=\"blue\">You can only play one Spray Narth in this way per \n      turn.</span> <br/>Power - Healing Storm: Choose any one Creature or Magi \n      and one of your Pharans in play. Move the chosen Pharan's <span class=\"blue\">printed starting</span> energy to the chosen Creature or Magi. \n      Move <span class=\"blue\">up to three energy from</span> Spray Narth to the \n      chosen Creature or Magi. Add three energy to the chosen Creature or Magi. \n      <span class=\"blue\">Discard both the chosen Pharan and Spray Narth from \n      play.</span> <br/><b>Change:</b> Congregate now requires 2 separate \n      Creatures (one Arderial, one Orothe) to be in play, as well as only being \n      able to use Congregate once per turn. A maximum move limit of three energy \n      from Spray Narth has been made for Healing Storm. A maximum of the chosen \n      Pharan's printed starting energy has been added for Healing Storm. Discard \n      both the chosen Pharan and Spray Narth from play. <br/><b>Source:</b> 2i \n      Design Team <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Stradus",
+        "text": "<p><b>Stradus - Arderial Magi - Starting Energy/Energize: 12/5 (BS)(R)</b>\n<br/>STARTING: Lightning Hyren, Lightning, Shooting Star (Bubble Xyx) \n      <br/>Effect - <span class=\"blue\">Backlash</span>: Whenever one of your \n      Creatures is attacked, you may discard one energy from the attacking \n      Creature before energy is removed. <br/><b>Change:</b> Stradus' Effect name \n      has been changed from Defense to Backlash. <br/><b>Source: </b>The \n      Unlimited version is the MRP of Stradus. <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Tranquility",
+        "text": "<p><b>Tranquility - Arderial Spell - Cost: 2 (AW, 2001 Promo)(R)</b> Until \n      the beginning of your next turn, all Spells, Powers, and Effects that \n      <span class=\"blue\">discard energy instead discard no energy</span>. Draw one \n      additional card during your Draw Step this turn.<br/><b>Change:</b> \n      Tranquility prevents just energy discard, not the playing of Spells or use \n      of Powers or Effects. <br/><b>Source: </b>The 2001 Arderial Demo pack \n      version is the MRP of Tranquility. <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Updraft",
+        "text": "<p><b>Updraft - Arderial Spell - Cost: 1 (BS)(E)</b> <br/>Choose any one of \n      your Creatures in play. Return the chosen Creature its owner's hand. <span class=\"blue\">Add energy to your Magi equal to the Creature's printed \n      starting energy or current energy, whichever is less</span>. \n      <br/><b>Change:</b> Updraft's text has been adjusted to proper text \n      templating rules. <br/><b>Source:</b> 2i Design Team, Rules Digest 08/30/02 \n      <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Voice_of_the_Storm",
+        "text": "<p><b>Voice of the Storm - Arderial/Orothe Magi - Alternate Orthea - \n      Starting Energy/Energize: 13/5 (ND)(C)</b> <br/>STARTING: Hurricane Orish, \n      one Arderial or Orothe Relic <br/>Effect - Diplomacy: <span class=\"blue\">When \n      you play a Creature, if it is Arderial and you have an Orothe Creature in \n      play, reduce the played Creature's cost by one. Or, if the Creature played \n      is Orothe and you have an Arderial Creature in play, reduce the played \n      Creature's cost by one. Diplomacy may not reduce a Creature's cost to less \n      than one, and may not reduce its cost by more than one.</span>\n<br/><b>Change:</b> Diplomacy has been clarified to allow only a cost \n      reduction of one energy when a Creature is played and fulfills the \n      requirements for Diplomacy. <br/><b>Source: </b>Rules Digest 11/11/02 \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Warlum",
+        "text": "<p><b>Warlum - Arderial Dream Creature - Starting Energy: 3 (AW, 2001 \n      Promo)(R)</b> <br/>Power - Materialize: Choose any one player. Discard \n      Warlum from play. Search the chosen player's deck for any one Relic <span class=\"blue\">that you can normally play and play it without paying any \n      costs. Shuffle the deck. Arderial and Orothe Shadow Magi may play \n      Warlum.</span> <br/><b>Change:</b> You can only play Relics of your Magi's \n      Region or that are Universal with Materialize. <br/><b>Source:</b> The 2001 \n      Arderial Demo pack version is the MRP of Warlum. <br/><b>Affects:</b> \n      Awakening</p>"
+    },
+    {
+        "name": "Blygt",
+        "text": "<p><b>Blygt - Bograth Magi - Magnificent Remembering Guy - Starting \n      Energy/Energize: 13/5 (ND)(E)</b> <br/>STARTING: Moob, Moss Quido, Swamp \n      Weebo <br/>Power - Waking Dreams: (3) Choose up to three different Bograth \n      Creatures in your discard pile. An opposing player of your choice chooses \n      one of the three Creatures. <span class=\"blue\">Shuffle the chosen Creature \n      into your deck.</span> Play each of the other two Creatures with one \n      energy instead of their normal starting energy. Those Creatures cannot \n      attack this turn. <br/><b>Change:</b> The Creature chosen by the opposing \n      player is shuffled into the deck instead of placed back in the discard \n      pile. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Nightmare's \n      Dawn</p>"
+    },
+    {
+        "name": "Bog_Stench",
+        "text": "<p><b>Bog Stench - Bograth Spell - Cost: 1 (ND)(C)</b> <br/>Until the end \n      of your next turn, <span class=\"blue\">whenever one of your Spells, Powers, \n      or Effects counts the number of Creatures or Bograth Creatures you have in \n      play, increase the total by two</span>. <br/><b>Change:</b> Bog Stench has \n      been clarified for intent. <br/><b>Source:</b> Rules Digest 10/23/02 \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Creeping_Chill",
+        "text": "<p><b>Creeping Chill - Bograth/Kybar's Teeth Spell - Cost: 2 (ND)(E)</b>\n<br/>Until the end of your next turn, as one of your Kybar's Teeth \n      Creatures is attacked, it gains three energy <span class=\"blue\">if you \n      control at least one Bograth Creature</span> and as one of your Bograth \n      Creatures attacks, it gains three energy <span class=\"blue\">if you control \n      at least one Kybar's Teeth Creature</span>. <br/><b>Change:</b> A Kybar's \n      Teeth Creature only gains three energy, regardless of the number of \n      Bograth Creatures you have in play, when its attacked. A Bograth Creature \n      only gains three energy, regardless of the number of Kybar's Teeth \n      Creatures you have in play, when its attacked. <br/><b>Source:</b> 2i \n      Design Team, Rules Digest 3/04/03 <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Emlob",
+        "text": "<p><b>Emlob - Bograth Magi - Obsessive Detailer - Starting \n      Energy/Energize: 13/5 (ND)(C)</b> <br/>STARTING: Mist Hyren, Quido Swarm, \n      Tar Hyren <br/>Effect - Imaginary Friends: <span class=\"blue\">Whenever one of \n      your Spells, Powers, or Effects counts the number of Creatures or Bograth \n      Creatures you have in play, increase the total by three</span>. \n      <br/><b>Change:</b> Imaginary Friends has been clarified for intent. \n      <br/><b>Source:</b> Rules Digest 10/23/02 <br/><b>Affects:</b> Nightmare's \n      Dawn</p>"
+    },
+    {
+        "name": "Furlosk",
+        "text": "<p><b>Furlosk - Bograth/Naroom Dream Creature - Starting Energy: 7 \n      (Promo)(E)</b> <br/>Effect - Swamp Lore: Once per turn, when you play \n      another Bograth Creature, draw a card. <br/>Effect - Forest Power: Once per \n      turn, when you play another Naroom Creature, add two energy to your Magi. \n      <br/>Effect - Companionship: If you do not have another Bograth <span class=\"blue\">or</span> Naroom Creature in play, discard Furlosk from play. \n      <br/><b>Change:</b> Companionship now requires either a Bograth or Naroom \n      Creature to be in play instead of both. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Furlosk Limited Card</p>"
+    },
+    {
+        "name": "Moob",
+        "text": "<p><b>Moob - Bograth Dream Creature - Starting Energy: 1 (ND)(E)</b>\n<br/>Power - Retrieve: <span class=\"blue\">(3)</span> Discard Moob from play. \n      Add one energy to your Magi for Each of your Bograth Creatures in play. \n      <span class=\"blue\">Use this Power before your Attack Step.</span>\n<br/><b>Change:</b> Retrieve's Cost has been increased to 3 and can only be \n      used in the first P/R/S Step. <span class=\"blue\">Also the copy of Moob found \n      in the Bograth Starter deck (ND) is printed on a Relic template with the \n      art for Statement of Core Values.</span><br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Moss_Quido",
+        "text": "<p><b>Moss Quido - Bograth Dream Creature - Starting Energy: 3 (ND)(E)</b>\n<br/>Power - Dark Secrets: Discard Moss Quido from play. Draw cards equal \n      the number of your Bograth or Core Creatures in play, whichever is \n      greater, <span class=\"blue\">to a maximum of four</span>. Use this Power only \n      before the Attack Step. <br/><b>Change:</b> A maximum limit of four cards \n      can be drawn through Dark Secrets. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Mydra_Swarm",
+        "text": "<p><b>Mydra Swarm - Bograth/Paradwyn Spell - Cost: 2 (ND)(E)</b>\n<br/>Choose <span class=\"blue\">a Magi</span>. If you have four <span class=\"blue\">or more</span> Bograth <span class=\"blue\">and/or</span> Paradwyn \n      Creatures in play, the chosen <span class=\"blue\">Magi's</span> player cannot \n      draw any cards <span class=\"blue\">outside of their Draw Step</span> on <span class=\"blue\">their</span> next turn. <br/><b>Change:</b> If you have a \n      combination of four or more Bograth or Paradwyn Creatures, Mydra Swarm's \n      requirement is met. There must be a Magi face up to be affected by Mydra \n      Swarm. Mydra Swarm does not prevent that player from drawing cards in the \n      Draw Step. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> \n      Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Obgren",
+        "text": "<p><b>Obgren - Bograth Magi - Mistkeeper - Starting Energy/Energize: 12/6 \n      (ND)(E)</b> <br/>STARTING: Swamp Hyren, Bog Stone, Staff of Keepers \n      <br/>Effect - Delusions: <span class=\"blue\">Once per turn</span>, as you play \n      a Spell or uses a Power that specifies Bograth or Core, before any choices \n      are made, you may change one of the references to Bograth or Core to a \n      region of your choice. <br/><b>Change:</b> Delusions can only be used once \n      a turn. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Nightmare's \n      Dawn</p>"
+    },
+    {
+        "name": "Barak",
+        "text": "<p><b>Barak - Cald Magi - Starting Energy/Energize: <span class=\"blue\">17/5</span> (BS)(R)</b> <br/>STARTING: Arbolit, Lava Balamant, \n      Thermal Blast (Barak's Ring) <br/>Power - Prophecy: Look at the top <span class=\"blue\">four</span> cards of your deck. Replace them in any order you \n      wish <br/><b>Change:</b> Barak's Energize was increased to five and the \n      number of cards looked at with Prophecy is four. <br/><b>Source: </b>The \n      Unlimited version is the MRP of Barak. <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Diobor",
+        "text": "<p><b>Diobor - Cald Dream Creature - Starting Energy: 6 (BS)(R,E)</b>\n<br/>Power - Fireball: Choose any one Creature in play. Discard Diobor from \n      play. Remove two energy from the chosen Creature. <br/>Power - Energy \n      Transfer: <span class=\"blue\">Move up to six energy from Diobor</span> to \n      your Magi. <br/><b>Change:</b> A one energy cost for Fireball was removed \n      (Unlimited Print). A maximum move limit of six energy from Diobor has been \n      made for Energy Transfer (Errata). \n      <br/><b>Source: </b>2i Design Team <br/><b>Affects:</b> Unlimited, \n      Limited</p>"
+    },
+    {
+        "name": "Diomant",
+        "text": "<p><b>Diomant - Cald Dream Creature - Starting Energy: 6 (DE)(E)</b>\n<br/>Power - Flame Hunt: Choose any one Magi in play. Discard Diomant from \n      play to discard four energy from the chosen Magi. <br/>Power - Energy \n      Transfer: <span class=\"blue\">Move up to six energy from Diomant</span> to \n      your Magi. <br/><b>Change:</b> A maximum move limit of six energy from \n      Diomant has been added to Energy Transfer. <br/><b>Source:</b> 2i Design \n      Team <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "Fire_Chogo",
+        "text": "<p><b>Fire Chogo - Cald Dream Creature - Starting Energy: 2 (BS)(R)</b>\n<br/>Power - Heat Storm: Discard Fire Chogo from play to discard one energy \n      from each non-Cald Creature in play. <br/><b>Change:</b> A one energy cost \n      for Heat Storm was removed. <br/><b>Source: </b>The Unlimited version is \n      the MRP of Fire Chogo. <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Giant_Arboll",
+        "text": "<p><b>Giant Arboll - Cald Dream Creature - Starting Energy: 4 (DE)(E)</b>\n<br/>Effect - Tinder: When one of your Spells or Powers discards energy \n      from one or more opposing Creatures, add one energy to Giant Arboll. \n      <br/>Power - Healing Flame: Choose any one Creature or Magi in play. <span class=\"blue\">Move up to six energy from Giant Arboll</span> to the chosen \n      Creature or Magi. <br/><b>Change:</b> A maximum move limit of six energy \n      from Giant Arboll has been added to Healing Flame. <br/><b>Source:</b> 2i \n      Design Team <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "Kelthet",
+        "text": "<p><b>Kelthet - Cald Dream Creature - Starting Energy: 4 (BS)(R)</b>\n<br/>Power - Consume: (1) <span class=\"blue\">Choose any one of your Creatures \n      in play. Move all of the chosen Creature's energy to Kelthet</span>. \n      <br/><b>Change:</b> The energy given to Kelthet from the chosen Creature is \n      now from a Move statement. <br/><b>Source:</b> The Unlimited version is the \n      MRP of Kelthet. <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Scroll_of_Fire",
+        "text": "<p><b>Scroll of Fire - Cald Relic - Cost: 0 (BS, 2001 Demo)(R)</b>\n<br/>Effect - Pyromancy: Whenever you <span class=\"blue\">play a Spell or use \n      a Power on one of your Creatures that discards energy from an opposing \n      Creature, remove one additional energy from each of those Creature</span>. \n      <br/><b>Change:</b> It has been ruled that if one of your Spells or one of \n      your Creature's Powers affects multiple Creatures, all Creatures are \n      affected by Pyromancy. <br/><b>Source: </b>The 2001 Cald Demo version pack \n      is the MRP of Scroll of Fire. <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Spirit_of_the_Flame",
+        "text": "<p><b>Spirit of the Flame - Cald Spell - Cost: 1 (BS)(R)</b> <br/><span class=\"blue\">Choose any one Creature in play. Discard X Cald Creatures from \n      your hand. Add X energy to the chosen Creature.</span> <br/><b>Change:</b> \n      Spirit of the Flame's text was templated and clarified for intent in the \n      Unlimited print. <br/><b>Source: </b>The Unlimited version is the MRP for \n      Spirit of the Flame. <br/><b>Affects:</b>Limited</p>"
+    },
+    {
+        "name": "Syphon_Vortex",
+        "text": "<p><b>Syphon Vortex - Cald Spell - Cost: X+4 (BS, 2001 Demo)(R)</b>\n<br/>Choose any one Creature in play. <span class=\"blue\">Move X energy from \n      the chosen Creature to your Magi.</span> <br/><b>Change:</b> Clarification \n      as to how Syphon Vortex is played. <br/><b>Source: </b>The 2001 Cald Demo \n      pack version is the MRP of Syphon Vortex. <br/><b>Affects:</b> Unlimited, \n      Limited</p>"
+    },
+    {
+        "name": "Corathan",
+        "text": "<p><b>Corathan - Core Dream Creature - Starting Energy: 5 (ND)(E)</b>\n<br/>Effect - Betrayal: <span class=\"blue\">Once per turn,</span> whenever you \n      gain control of an opposing card, choose any one Core or Orothe card in \n      your discard pile and place it into your hand. <span class=\"blue\">Only one \n      Betrayal may be used for each card you gain control of.</span> <br/>Orothe \n      Magi can play Corathan. <br/><b>Change:</b> Only one Betrayal will trigger \n      per card theft. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> \n      Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Dark_Furok",
+        "text": "<p><b>Dark Furok - Core Dream Creature - Alternate Furok - Starting \n      Energy: 6 (DE Promo, DE)(C)</b> <br/>Effect - Revile: <span class=\"blue\">As</span> Dark Furok attacks and loses energy, discard half \n      that amount of energy, rounded down, from any one Creature in play. Naroom \n      Magi may play Dark Furok. <br/><b>Change:</b> Revile has been reworded to \n      the \"As\" trigger. <br/><b>Source: </b>Rules Digest 09/16/03 \n      <br/><b>Affects:</b> Naroom/Core GenCon 2001 Preview Deck, Dream's End</p>"
+    },
+    {
+        "name": "Dryte_Fiend",
+        "text": "<p><b>Dryte Fiend - Core Dream Creature - Starting Energy: 5 (AW)(C)</b>\n<br/>Effect - Condemn: At the beginning of each of your opponent's turns, \n      you may choose any one Creature in play. Until the end of that opponent's \n      turn, each time the chosen Creature loses energy <span class=\"blue\">as a \n      result of</span> Powers, Spells, or attacks, discard three energy from \n      that Creature. Cald Magi may play Dryte Fiend. <br/><b>Change:</b> \n      Clarification that energy costs to use Powers does not trigger Condemn. \n      <br/><b>Source: </b>Rules Compendium - MN Digest Links <br/><b>Affects:</b> \n      Awakening</p>"
+    },
+    {
+        "name": "Empress_Gia",
+        "text": "<p><b>Empress Gia - Core/Weave Magi - Alternate Nagsis - Starting \n      Energy/Energize: 15/5 (Promo)(C)</b> <br/>STARTING: Drush, Gia Pet, Corrupt \n      (Gia's Tome, Nagsis' Sigil, Weave Powder) <br/>Empress Gia can only play \n      Core, Weave, and Universal cards. <br/>Effect - Act Like Gia: If <span class=\"blue\">Empress Gia</span> has no Core cards in play, draw an \n      additional card at the end of each of your turns and your Weave Creatures \n      lose one less energy when attacked. <br/>Effect - Fight like Nagsis: If \n      <span class=\"blue\">Empress Gia</span> has any Core cards in play, all of \n      your Creatures may attack, even those that cannot normally attack. \n      <br/><b>Change:</b> Act like Gia and Fight like Nagsis have been clarified \n      to indicate that Empress Gia is not to be included when checking to see if \n      either Effect triggers. <br/><b>Source: </b>Rules Digest 11/04/02 \n      <br/><b>Affects:</b> Empress Gia Limited Card</p>"
+    },
+    {
+        "name": "Entomb",
+        "text": "<p><b>Entomb - Core Spell - Cost: 3 (AW)(E)</b> <br/>Name any one Spell. \n      For the rest of this game, all cards of that name are Core instead of \n      their original region. <span class=\"blue\">Entomb's text cannot be \n      altered.</span> <br/><b>Change:</b> style='color:black'&gt; Entomb's text \n      can not be affected by any other cards. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Gia_Pet",
+        "text": "<p><b>Gia Pet - Core Dream Creature - Starting Energy: 9 (Promo)(C)</b>\n<br/>Effect - Implede: All players draw one less card during their Draw \n      Step. <span class=\"blue\">Only one copy of this Effect may prevent players \n      from drawing cards.</span> <br/>Effect - Power Siphon: Choose any one \n      opposing Spell in play. Gia Pet gains energy equal to the energy cost of \n      the chosen Spell. <br/>Weave Magi may play Gia Pet. Non-Core, non-Weave \n      Magi may cannot play Gia Pet <br/><b>Change:</b> A limit as to how many \n      copies of Implede can affect all players. <br/><b>Source: </b>Rules Digest \n      08/16/02 <br/><b>Affects:</b> Gia Pet Limited Card</p>"
+    },
+    {
+        "name": "Morag",
+        "text": "<p><b>Morag - Core Magi - Starting Energy/Energize: 14/7 (AW)(E,C)</b>\n<br/>STARTING: Borgor, Shryque, Dream Rift <br/>Power - Theft: (X) Choose \n      any one <span class=\"blue\">opposing</span> Relic in play. Gain control of \n      the chosen Relic <span class=\"blue\">for X turns, beginning with the current \n      turn</span>. At the end of X turns, or if Morag is defeated, return the \n      chosen Relic to its owner's hand. <br/><b>Change:</b> Theft only works on \n      opposing Relics. Clarification as too the Relic's theft duration. \n      <br/><b>Source:</b> 2i Design Team, Rules Digest 12/13/02 \n      <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Orok",
+        "text": "<p><b>Orok - Core Dream Creature - Starting Energy: 5 (AW)(C)</b>\n<br/>Effect - <span class=\"blue\">As</span> Orok loses energy in an attack, \n      choose any one Magi in play. Discard half as much energy as Orok loses \n      from the chosen Magi, rounded down. Naroom Magi may play Orok. \n      <br/><b>Change:</b> Undermine has been reworded to the \"As\" trigger. \n      <br/><b>Source:</b> Rules Digest 09/16/03 <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Secrets_of_the_Book",
+        "text": "<p><b>Secrets of the Book - Core Relic - Cost: 0 (DE Preview, DE)(E)</b>\n<br/>Power - Secrets: (3) Choose any one opposing player. The chosen player \n      reveals his or her hand to all players. Draw one card for each Creature \n      revealed, and one card for each non-Creature Naroom card revealed, <span class=\"blue\">to a maximum of four</span>. <br/><b>Change:</b> A maximum limit \n      of four cards can be drawn through Secrets. <br/><b>Source:</b> 2i Design \n      Team <br/><b>Affects:</b> Dream's End, Naroom/Core GenCon 2001 Preview \n      Deck</p>"
+    },
+    {
+        "name": "Shadow_Cloak",
+        "text": "<p><b>Shadow Cloak - Core Relic - Cost: 0 (AW)(C)</b> <br/>Power - \n      Protection: (2) Each of your Core Creatures currently in play cannot be \n      affected by non-Core Spells and Powers until the end of your next turn. \n      You may not use <span class=\"blue\">Protection during</span> your next turn. \n      <br/><b>Change:</b> The Power Protection, and not the card Shadow Cloak, \n      can not be used on the following turn. <br/><b>Source:</b> Rules Digest \n      1/20/03 <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Shadow_Rain",
+        "text": "<p><b>Shadow Rain - Core Spell - Cost: 2 (AW)(E)</b> <br/>Choose one of \n      your Creatures in play. <span class=\"blue\">Move</span> all of the energy \n      from your Magi to the chosen Creature. At the end of your next Attack \n      step, <span class=\"blue\">move energy from the chosen Creature to your Magi \n      up to the chosen Creature's printed starting energy</span>, then draw a \n      card. <br/>Naroom Magi may play Shadow Rain. <br/><b>Change:</b> Shadow Rain \n      has been templated and a maximum limit of the chosen Creature's printed \n      starting energy has been added. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Shadow_Vinoc",
+        "text": "<p><b>Shadow Vinoc - Core Dream Creature - Starting Energy: 4 (AW)(E)</b>\n<br/>Effect - Dark Strength: When you play Shadow Vinoc, add one energy to \n      it for each <span class=\"blue\">opposing</span> Relic in play. \n      <br/><b>Change:</b> Dark Strength only works with opposing Relics. \n      <br/><b>Source: </b>2i Design Team <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Togoth",
+        "text": "<p><b>Togoth - Practitioner of Core Magics (Core Magi) - The General - \n      Starting Energy/Energize: 15/6 (ND)(C)</b> <br/>STARTING: Koil, Shadow \n      Vinoc, any one Shadow Geyser <br/>Effect - Darkest Magics: <span class=\"blue\">The first time Togoth energizes after he is revealed</span>, \n      play one Shadow Geyser from your hand ignoring all costs and requirements. \n      If Togoth is the first Magi in your stack, you may not choose to play \n      first. <br/><b>Change:</b> Clarification of Darkest Magics to prevent \n      Togoth from dropping multiple Shadow Geysers if he manages multiple \n      energizes on his first revealed turn, as well as preventing opposing \n      players from hosing Darkest Magics by choosing Togoth to go first. \n      <br/><b>Source:</b> Rules Digest 02/25/03 <br/><b>Affects:</b> Nightmare's \n      Dawn</p>"
+    },
+    {
+        "name": "Tomes_of_the_Great_Library",
+        "text": "<p><b>Tomes of the Great Library - Core/Naroom Relic - Cost: 2 (ND)(C)</b>\n<br/>Power - Research: (1) Search your deck or any opposing discard pile \n      for any one Spell. Play the chosen Spell, ignoring regional restrictions. \n      <span class=\"blue\">When that Spell leaves play, if that Spell came from your \n      deck, discard it. If it came from an opposing discard pile, shuffle it \n      into its owner's deck.</span> <br/>Effect: Tomes of the Great Library \n      cannot be discarded from play by opposing cards specifically discard \n      Relics from play. Discard Tomes of the Great Library if you Magi is not a \n      Naroom Magi or Naroom Shadow Magi. <br/>STARTING: Warrada \n      <br/><b>Change:</b> Research has been clarified to deal with Spells that \n      remain in play. <br/><b>Source: </b>Rules Digest 04/22/02 \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Habob",
+        "text": "<p><b>Habob - d'Resh Dream Creature - Recurring - Starting Energy: 5 \n      (VotS)(E)</b> <br/>ENERGIZE: 2 <br/>Effect - Serve: At the end of your turn, \n      if your Magi is d'Resh, <span class=\"blue\">you may move up to five energy \n      from Habob</span> to your Magi. <br/>When you reveal a d'Resh Magi, if you \n      have one or more Recurring cards in your discard pile, you may discard one \n      energy from your Magi to choose one recurring card in your discard pile \n      and add it to your hand. <br/><b>Change:</b> A maximum move limit of five \n      energy from Habob has been added to Serve. <br/><b>Source: </b>2i Design \n      Team <br/><b>Affects:</b> Voice of the Storms</p>"
+    },
+    {
+        "name": "Lesser_Darbok",
+        "text": "<p><b>Lesser Darbok - d'Resh Dream Creature - Starting Energy: 2 \n      (VotS)(C)</b> <br/>Effect - Defend: When you play Lesser Darbok, choose one \n      of your other Creatures in play. <span class=\"blue\">While Lesser Darbok has \n      energy, the chosen Creature cannot be attacked.</span> <br/>Effect - \n      Tangle: If Lesser Darbok is defeated while defending, attach Lesser Darbok \n      to the attacking Creature. While Lesser Darbok is attached,<span class=\"blue\"> it cannot be involved in an attack, other cards cannot affect \n      it and it cannot be discarded from play for having zero energy. The \n      Creature it is attached to</span> cannot attack. <br/>d'Resh Shadow Magi \n      can play Lesser Darbok. <br/><b>Change:</b> Defend has been clarified that \n      it works as long as Lesser Darbok has energy. Tangle has been clarified to \n      allow Lesser Darbok to act like other Creatures that attach themselves to \n      other cards. <br/><b>Source:</b> Rules Digest 05/13/03(listed as 04/09/03) \n      <br/><b>Affects:</b>Voice of the Storms</p>"
+    },
+    {
+        "name": "Mowat",
+        "text": "<p><b>Mowat - d'Resh Dream Creature - Starting Energy: 7 (VotS)(C)</b>\n<br/>Effect - Prickly: <span class=\"blue\">As</span> an opposing Creature \n      removes energy from Mowat, remove one energy from that Creature. \n      <br/>Effect - Skewer: When Mowat attacks a Creature with three energy or \n      less, Mowat loses no energy in the attack. <br/><b>Change:</b> Prickly has \n      been reworded to the \"As\" trigger. <br/><b>Source:</b> Rules Digest \n      09/16/03 <br/><b>Affects:</b>Voice of the Storms</p>"
+    },
+    {
+        "name": "Sand_Hyren",
+        "text": "<p><b>Sand Hyren - d'Resh Dream Creature - Starting Energy: 7 (ND, \n      VotS)(C,E)</b> <br/>d'Resh Shadow Magi may play Sand Hyren. <br/>Effect - \n      Light Side: Each of your starting cards cost two less energy to play<span class=\"blue\">, to a minimum of one. Only one Light Side may be used for each \n      starting card played.</span> <br/>Effect - Dark Side: Your Magi may play \n      Core cards as if they were d'Resh cards. d'Resh Shadow Magi may play Sand \n      Hyren. <br/><b>Change:</b> 'to a minimum of one' in Light Side was left off \n      when Sand Hyren was reprinted in Voice of the Storms. Light Side has been \n      clarified to correct that oversight. Light Side has been Errataed so that \n      multiple Light Sides can't stack.</p>"
+    },
+    {
+        "name": "Sand_Strands",
+        "text": "<p><b>Sand Strands - d'Resh/Weave Relic - Cost: 0 (ND)(E)</b> <br/>Power - \n      Mirage: Discard Sand Strands from play. Choose any one of your \n      non-Illusionary Creatures in play. Add energy to your Magi equal to half \n      of the chosen Creature's current energy <span class=\"blue\">, rounded \n      up</span>. <span class=\"blue\">The amount added cannot exceed half of the \n      chosen Creature's printed starting energy, rounded up</span>. As long as \n      the chosen Creature remains in play, it is Illusionary; Illusionary \n      Creatures do not count as being in play when checking to see if your Magi \n      is defeated. Illusionary Creatures cannot choose to attack Magi. \n      <br/><b>Change:</b> The energy gain from Mirage can't be more than half of \n      the chosen Creature's Printed Starting Energy, rounded up. <br/><b>Source: \n      </b>2i Design Team <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Sikra",
+        "text": "<p><b>Sikra - d'Resh/Underneath Dream Creature - <span class=\"blue\">Illusion</span> - Starting Energy: 6 (ND)(C)</b> <br/>Effect: As \n      you play Sikra, reduce its cost by three. Sikra is not considered to be in \n      play when checking to see if your Magi is defeated, and it cannot attack \n      Magi directly. <br/>Effect - Insubstantial: Sikra loses no energy from \n      opposing Spells or Powers. <br/><b>Change:</b> Sikra is templated the same \n      as other Illusion Creatures. <br/><b>Source:</b> Rules Digest 02/25/03 \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Cleansing",
+        "text": "<p><b>Cleansing - Kybar's Teeth/Underneath Spell - Cost: 1 (ND)(E)</b>\n<br/>Name any one non-Magi Core card. For the rest of this game, all cards \n      of that name are Kybar's Teeth or Underneath, your choice, instead of \n      Core. <span class=\"blue\">Cleansing's text may not be altered.</span>\n<br/>STARTING: Kazm, Ulk, Grej <br/><b>Change:</b> Cleansing's text can not \n      be affected by any other cards. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Climbing_Staff",
+        "text": "<p><b>Climbing Staff - Kybar's Teeth Relic - Cost: 0 (DE)(C)</b>\n<br/>Effect - Higher Ground: Whenever you play a Kybar's Teeth Creature, \n      add one energy to your Magi. <br/>Effect: You may discard Climbing Staff \n      from your hand or from play <span class=\"blue\">when</span> an opposing \n      Spell, Power, or Effect <span class=\"blue\">would affect only</span> your \n      Magi or only your hand. The Spell, Power, or Effect does nothing. \n      <br/><b>Change:</b> Clarification as to when you can use the nameless \n      Effect on Climbing Staff. <br/><b>Source:</b> Rules Digest 11/20/02 \n      <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "Greater_Gargagnor",
+        "text": "<p><b>Greater Gargagnor - Kybar's Teeth Dream Creature - Starting Energy: \n      10 (ND)(C)</b> <br/>Effect - Expect It: If Greater Gargagnor is discarded \n      from your hand or deck by an <span class=\"blue\">opposing Spell, Power or \n      Effect</span>, play it instead, ignoring all costs. <br/>Effect - Solid: \n      Greater Gargagnor cannot be specifically discarded from play by opposing \n      Spells. <br/>Power - Unearth: Discard a card from your hand. Search your \n      discard pile for any one Kybar's Teeth card and place it into your hand. \n      <br/>Effect - Invulnerability: Greater Gargagnor loses one less energy in \n      attacks. <br/><b>Change:</b> Expect It's text has been adjusted to proper \n      text templating rules. <br/><b>Source:</b> Rules Digest 08/30/02 \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Kybars_Echo",
+        "text": "<p><b>Kybar's Echo - Kybar's Teeth Spell - Cost: 1 (DE)(E)</b> <br/>Until \n      the end of your next turn, whenever one of your Kybar's Teeth Creatures is \n      discarded from play <span class=\"blue\">by an opposing card</span>, return it \n      to your hand instead. <br/><b>Change:</b> Only from an opponent's card will \n      one of your Kybar's Teeth Creatures return to hand. <br/><b>Source:</b> 2i \n      Design Team <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "Ullig",
+        "text": "<p><b>Ullig - Kybar's Teeth Magi - Starting Energy/Energize: 20/3 \n      (DE)(E)</b> <br/>STARTING: Darge, Ullig's Slingshot, Vertigo <br/>Effect - \n      Fearless: When Ullig's last Creature is discarded from play <span class=\"blue\">by an opposing card</span>, add four energy to Ullig. \n      <br/><b>Change:</b> Only an opponent's card will trigger Fearless. \n      <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "Blizzard_Core",
+        "text": "<p><b>Blizzard Core - Nar Relic - Cost: 5 (VotS)(E)</b> <br/>Effect - \n      Coriolis: At the beginning of your <span class=\"blue\">Energize step</span>, \n      before you energize, choose a Magi. If that Magi has no Creatures in play \n      and your Magi has more energy than the chosen Magi's starting energy, \n      discard Blizzard Core and defeat the chosen Magi. <br/><b>Change:</b> \n      Coriolis' triggering is now at the Energize Step, before you energize, \n      instead of the beginning of the turn so that Blizzard Core can't be abused \n      with Gargagnor's Perpetual Motion Effect. <br/><b>Source:</b> 2i Design \n      Team, Rules Digest 3/04/03 <br/><b>Affects:</b> Voice of the Storms</p>"
+    },
+    {
+        "name": "Arboll",
+        "text": "<p><b>Arboll - Naroom Dream Creature - Starting Energy: 3 (BS)(R)</b>\n<br/>Power - Life Channel: Choose any one Magi in play. Discard Arboll from \n      play. Add four energy to the chosen Magi. <br/><b>Change:</b> A one energy \n      cost for Life Channel was removed. <br/><b>Source: </b>The Unlimited \n      version is the MRP of Arboll. <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Furok",
+        "text": "<p><b>Furok - Naroom Dream Creature - Starting Energy: 4 (BS)(C)</b>\n<br/>Effect - Retrieve: <span class=\"blue\">As</span> a defending Creature \n      removes energy from Furok place half that energy, rounded up, back on your \n      Magi. <br/><b>Change:</b> Retrieve has been reworded to the \"As\" trigger. \n      <br/><b>Source:</b> Rules Digest 09/16/03 <br/><b>Affects:</b> Unlimited, \n      Limited</p>"
+    },
+    {
+        "name": "Hyrens_Call",
+        "text": "<p><b>Hyren's Call - Naroom Spell - Cost: 6 (BS)(E)</b> <br/>Search your \n      deck for any one hyren <span class=\"blue\">of the same region as your \n      Magi</span>. Play the hyren with full energy, ignoring all costs. The \n      hyren cannot attack this turn. Shuffle your deck. <br/><b>Change:</b> You \n      can now only get a Hyren of your Magi's Region with Hyren Call. \n      <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Unlimited, \n      Limited</p>"
+    },
+    {
+        "name": "Twee",
+        "text": "<p><b>Twee - Naroom Dream Creature - Starting Energy: 1 (BS)(E)</b>\n<br/>Effect - Regrow: <span class=\"blue\">If Twee is discarded from play, \n      retrieve the first non-Twee Creature card under Twee from your discard \n      pile and place it in your hand.</span> <br/><b>Change:</b> If Twee is \n      discarded, you have to get the first non-Twee Creature in your discard \n      pile. <br/><b>Source:</b> 2i Design Team, Rules Digest 10/07/02 - \n      Magi-Nation Yahoogroup <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Vim_and_Vigor",
+        "text": "<p><b>Vim and Vigor - Naroom Spell - Cost: 4 (DE)(E)</b> <br/>Choose <span class=\"blue\">an opposing</span> Creature in play. Move all energy above the \n      chosen Creature's starting energy to your Magi. <br/>Naroom Shadow Magi may \n      play Vim and Vigor. <br/><b>Change:</b> Vim &amp;Vigor only affects \n      Opposing Creatures. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> \n      Dream's End</p>"
+    },
+    {
+        "name": "Zannah",
+        "text": "<p><b>Zannah - Naroom Magi - Starting Energy/Energize: 14/5 (DE)(E)</b>\n<br/>STARTING: Baby Furok, Eebit, Tree Hinko <br/>Effect - Charm: On each \n      <span class=\"blue\">opposing</span> turn, the first opposing card that \n      removes energy from either only Zannah or only one of your Creatures \n      removes no energy. <br/><b>Change:</b> Only on opposing turns does Charm \n      trigger. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Dream's \n      End</p>"
+    },
+    {
+        "name": "Abaquist",
+        "text": "<p><b>Abaquist - Orothe Dream Creature - Starting Energy: 1 (BS)(R)</b>\n<br/>Power - Possess: Choose any one Creature in play with less energy than \n      Abaquist. Discard Abaquist from play. Gain control of the chosen Creature. \n      <span class=\"blue\">That Creature may not attack this turn.</span>\n<br/><b>Change:</b> An addition that the Creature stolen can not attack the \n      turn it's stolen. <br/><b>Source: </b>The Unlimited version is the MRP of \n      Abaquist. <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Arosa",
+        "text": "<p><b>Arosa - Orothe Magi - Stormkeeper - Starting Energy/Energize: 12/6 \n      (ND)(E)</b> <br/>STARTING: Abaquist, Karak Band, Submerge <br/>Effect - \n      Shell Game: At the end of your turn, you may choose one of your Creatures \n      in play and an opposing Creature in play. If you do, the two chosen \n      Creatures switch controllers. <span class=\"blue\">At the beginning of your \n      next turn</span>, return any of the chosen Creatures that are still in \n      play to their owner's control. <br/><b>Change:</b> When Shell Game is \n      finished (from end of opponent's turn to beginning of your next turn). \n      <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Blu",
+        "text": "<p><b>Blu - Orothe Magi - Starting Energy/Energize: 14/5 (BS)(R,E)</b>\n<br/>STARTING: Orathan, <span class=\"blue\">Orpus</span>, Submerge <br/>Effect \n      - Artifice: <span class=\"blue\">The first time each turn Blu plays a relic, \n      draw one card.</span> <br/><b>Change:</b> Orpus was added as a Starting \n      card in the Unlimited Print. Artifice has been reworded net him one card \n      with the first Relic he plays a turn. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Borse",
+        "text": "<p><b>Borse - Orothe Magi - Starting Energy/Energize: 12/5 (AW)(E)</b>\n<br/>STARTING: Orathan, Hubdra's Cube, Orothan Horn <br/>Power - Tinker: \n      Choose any one of your Relics in play. Discard the chosen Relic from play. \n      Reveal the top five cards of your deck to all players. <span class=\"blue\">Play one</span> of the revealed Relics, regardless of Region. \n      Place all other revealed cards into your discard pile. <br/><b>Change:</b> \n      You may only play one Relic revealed with Tinker. <br/><b>Source: </b>2i \n      Design Team <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Cawh",
+        "text": "<p><b>Cawh - Orothe Dream Creature - Starting Energy: 15 (VotS)(C)</b>\n<br/>Effect - Fearsome: Cawh looses three less energy in attacks. Other \n      cards cannot prevent Cawh from loosing energy. <br/>Effect: If Cawh is \n      discarded or returned to your hand by an opposing card while it has \n      energy, discard six energy from Cawh instead. <span class=\"blue\">Opposing \n      cards cannot make Cawh change controllers.</span> <br/>Effect: Cawh can \n      only be played during the Play Creatures step. You cannot play Creatures \n      while Cawh is in play, and you cannot play Cawh if you have other \n      Creatures in play. <br/><b>Change:</b> The first nameless Effect has been \n      clarified to allow your cards to change Cawh's controller. \n      <br/><b>Source:</b> Rules Digest 02/25/03 <br/><b>Affects:</b> Voice of the \n      Storms</p>"
+    },
+    {
+        "name": "Deep_Wellisk",
+        "text": "<p><b>Deep Wellisk - Orothe Dream Creature - Starting Energy: 4 \n      (DE)(C)</b> <br/>Effect: Deep Wellisk may not be discarded from play by \n      opposing cards while it has energy. <span class=\"blue\">Your cards cannot \n      increase Deep Wellisk's energy total.</span> <br/>Effect - Sunken Treasure: \n      Whenever another player plays a Relic from his or her hand, you may \n      discard two energy from Deep Wellisk. If you do, discard the Relic from \n      play. <br/>Orothe Shadow Magi can play Deep Wellisk. <br/><b>Change:</b> \n      style='color:black'&gt; Deep Wellisk cannot gain energy from your cards. \n      The Errata to the \n      unnamed Effect has been clarified so that any kind of Rearrange action \n      cannot add energy to Deep Wellisk. <br/><b>Source:</b> 2i Design Team, \n      Rules Digest 3/28/03 <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "Husp",
+        "text": "<p><b>Husp - Orothe Dream Creature - Starting Energy: 4 (AW)(E)</b>\n<br/>Power - Ensnare: Discard Husp from play. Search through any player's \n      deck and select up to three different cards. <span class=\"blue\">That player \n      may place one of the chosen cards back into the deck</span>. The <span class=\"blue\">other</span> chosen cards are discarded. Shuffle the deck \n      afterward. <br/><b>Change:</b> Two of the Three cards chosen by Ensnare are \n      discarded, instead of all three. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Karak",
+        "text": "<p><b>Karak - Orothe Dream Creature - Starting Energy: 5 (BS)(C)</b>\n<br/>Power - Steal: (2) Choose any one opposing Relic in play. Gain control \n      of the chosen Relic and place it under Karak. <span class=\"blue\">You may not \n      use the stolen Relic</span>, and it is unaffected by Spells, Effects, and \n      other Powers. Your opponent may not play Relics with the same name. When \n      Karak leaves play, return any Relics under Karak to their owners' hands. \n      <br/><b>Change:</b> You can not use the Relic stolen by Karak. \n      <br/><b>Source: </b>Rules Compendium - MN Digest Links <br/><b>Affects:</b> \n      Unlimited, Limited</p>"
+    },
+    {
+        "name": "Karak_Band",
+        "text": "<p><b>Karak Band - Orothe Relic - Cost: 0 (AW)(E)</b> <br/>Effect - \n      Acquisition: <span class=\"blue\">Once per turn</span>, whenever you gain \n      control of an opposing player's card, add two energy to your Magi. \n      <br/><b>Change:</b> Acquisition triggers once a turn. <br/><b>Source:</b> 2i \n      Design Team <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Karak_Necklace",
+        "text": "<p><b>Karak Necklace - Orothe Relic - Cost: 0 (DE)(E)</b> <br/>Effect - Two \n      for Me: <span class=\"blue\">Once per turn,</span> whenever you take control \n      of another player's card, draw two cards. <br/>Power - None for You: Choose \n      any one Creature in play that you own. Gain control of the chosen \n      Creature. <br/><b>Change:</b> Two for Me triggers once per turn. \n      <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "OQua",
+        "text": "<p><b>O'Qua - Orothe Magi - Starting Energy/Energize: 11/4 (BS)(R)</b>\n<br/>STARTING: Orothean Belt, Submerge, Implosion <br/>Power - Conjure: (4) \n      Search your deck for any one Orothe Creature. Play the chosen Creature \n      with four energy. <span class=\"blue\">The chosen Creature may not attack this \n      turn</span>. <br/><b>Change:</b> You may not attack with the Creature \n      played that turn with Conjure. Only Orothe Creatures can be played with \n      Conjure. <br/><b>Source: </b>The Unlimited version is the MRP of O'Qua. \n      <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Orothean_Horn",
+        "text": "<p><b>Orothean Horn - Orothe Relic - Cost: 0 (AW)(E)</b> <br/>Power - Call \n      of the Sea: Use this Power only after your Play Creatures Step, and only \n      if you have no Creatures in play. Place the top card of your deck into \n      your discard pile. If the card is a Creature, discard Orothean Horn from \n      play. Play the Creature with its starting energy, ignoring all costs. \n      <span class=\"blue\">While it remains in play, the Creature cannot \n      attack.</span><br/><b>Change:</b> A Creature played through Call of the Sea \n      can not attack. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> \n      Awakening</p>"
+    },
+    {
+        "name": "Owindas_Gift",
+        "text": "<p><b>Owinda's Gift - Orothe Spell - Cost: 3 (Promo)(E)</b> <br/>If you \n      have a Creature in play, draw <span class=\"blue\">two</span> cards. Return \n      any one of your Creatures in play to its owner's hand and discard its \n      energy. <br/><b>Change:</b> The number of cards drawn with Owinda's Gift \n      from four to two. <br/><b>Source:</b> 2i Design Team, Rules Digest 11/04/02 \n      <br/><b>Affects:</b> Owinda's Gift Limited Card</p>"
+    },
+    {
+        "name": "Phrup",
+        "text": "<p><b>Phrup - Orothe Dream Creature - Starting Energy: 1 (AW)(C)</b>\n<br/>Orothe Shadow Magi may play Phrup. <br/>Effect-Time Lapse: <span class=\"blue\">As</span> an opponent plays a card, you may discard Phrup from \n      play. If you do <span class=\"blue\">so</span>, return the card <span class=\"blue\">being played</span> to its owner's hand. <span class=\"blue\">No \n      energy costs for the card are paid (all other costs still apply)</span>. \n      Cards with the same name as the card affected by Time Lapse cannot be \n      played again this turn. <br/><b>Change:</b> style='color:black'&gt; Phrup \n      has been clarified with the 'As' wording. Costs expended for the card that \n      was affected by Time Lapse are clarified. <br/><b>Source:</b> Rules Digest \n      12/13/02 <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "River_Abaquist",
+        "text": "<p><b>River Abaquist - Orothe/Paradwyn Dream Creature - Starting Energy: 3 \n      (ND)(E)</b> <br/>Power - Possess: Discard River Abaquist from play. If your \n      Magi is Orothe or Paradwyn, choose any one opposing Creature in play with \n      less energy than the number of your Creatures or Relics in play<span class=\"blue\">, whichever is less</span>. Gain control of the chosen \n      Creature. <span class=\"blue\">The chosen Creature cannot attack this \n      turn.</span> <br/>Effect - Dreamwarp: As you play River Abaquist, increase \n      or decrease its starting energy by up to one, to a minimum starting energy \n      of one, until the end of the turn. <br/><b>Change:</b> The Creature stolen \n      with Possess can not attack the turn it's stolen. Possess also requires \n      that the lower number of either your Creatures or Relics is the basis for \n      the Creature theft. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> \n      Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Shell",
+        "text": "<p><b>Shell - Orothe Spell - Cost: 2 (DE)(E)</b> <br/>Choose an <span class=\"blue\">opposing</span> Magi. Until the end of your next turn, your \n      Orothe Creatures in play are unaffected by that <span class=\"blue\">Magi's</span> Spells and Powers. <span class=\"blue\">You cannot \n      play Shell on your next turn.</span> <br/>If an opponent's Spell, Power, or \n      Effect discards one or more cards from your hand, you may discard Shell \n      from your hand instead. If you do, discard all of that player's Relics \n      from play and cancel all ongoing effects of those cards. \n      <br/><b>Change:</b> Shell requires an opposing Magi to be in play and that \n      Magi's Spells and Powers do not affect your Orothe Creatures. Shell can \n      not be played two of your turns in a row. <br/><b>Source:</b> 2i Design \n      Team <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "Undertow",
+        "text": "<p><b>Undertow - Orothe Spell - Cost: 5 (BS)(C)</b> <br/>Choose an opposing \n      Creature. Discard the chosen Creature from play<span class=\"blue\">, but \n      shuffle it into its owner's deck instead of placing it in the discard \n      pile.</span> <br/><b>Change:</b> Undertow has been Clarified that if the \n      chosen Creature can't be discarded, it doesn't get reshuffled into it's \n      owner's deck. <br/><b>Source:</b> Rules Digest 1/10/03 <br/><b>Affects:</b> \n      Unlimited, Limited</p>"
+    },
+    {
+        "name": "Whall",
+        "text": "<p><b>Whall - Orothe Magi - Starting Energy/Energize: 10/5 (BS)(R)</b>\n<br/>STARTING: Deep Hyren, Karak, Submerge <br/>Power - Dream Twist: (5) \n      Choose any one of your Creatures in play. Discard the chosen Creature. \n      Play a Creature from your hand without paying its energy cost. Put energy \n      onto the played Creature equal to its starting energy. <span class=\"blue\">That Creature may not attack this turn</span>. \n      <br/><b>Change:</b> You may not attack with the Creature played that turn \n      with Dream Twist. <br/><b>Source:</b> The Unlimited version is the MRP of \n      Whall. <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Will_of_Orothe",
+        "text": "<p><b>Will of Orothe - Orothe Spell - Cost: 6 (BS)(E)</b> <br/><span class=\"blue\">Attach Will of Orothe to an opposing Magi.</span> <span class=\"blue\">While Will of Orothe is attached,</span> that Magi's Creatures \n      may not use Powers. During <span class=\"blue\">that Magi's</span> Attack \n      step, you choose whether or not that Magi's Creatures attack and what they \n      attack. A Creature may not attack another Creature or Magi controlled by \n      the same player. <span class=\"blue\">Discard Will of Orothe at the beginning \n      of your next turn.</span> <br/><b>Change:</b> Will of Orothe now attaches \n      to the Magi and is reworded to affect the Magi, not the affected Magi's \n      player. <br/><b>Source:</b> 2i Design Team, Rules Digest 3/04/03 \n      <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Bloom",
+        "text": "<p><b>Bloom - Paradwyn Spell - Cost: 1 (ND)(E)</b> <br/>You can only play \n      Bloom during an opponent's turn immediately after that opponent plays a \n      Spell or Relic or uses a Power, <span class=\"blue\">and all actions related \n      to that card have resolved</span>. After playing this Spell, immediately \n      use <span class=\"blue\">a Power</span> on one of your Paradwyn cards in play. \n      <br/><span class=\"blue\">Only Paradwyn and Paradwyn Shadow Magi can play \n      Bloom.</span> <br/><b>Change:</b> Clarified Bloom's timing. Removed Spells \n      from the response options. Restricted use to Paradwyn &amp; Paradwyn \n      Shadow Magi only. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> \n      Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Liriels_Cape",
+        "text": "<p><b>Liriel's Cape - Paradwyn Relic - Cost: <span class=\"blue\">2</span> (ND \n      -Foil, VotS)(E,R)</b> <br/>Effect - Dazzle: Each of your Creatures <span class=\"blue\">in play</span> with the Effect \"Dreamwarp\" <span class=\"blue\">has</span> an additional three starting energy. <br/>Power - \n      Mass Heal: <span class=\"blue\">Discard Liriel's Cape from play.</span> If \n      there is at least one opposing Creature, restore all Creatures with less \n      than their starting energy to their starting energy. <br/><b>Change:</b> \n      The discarding of Liriel's Cape now happens before the rest of Mass Heal \n      happens, instead of after. The cost of Liriel's Cape has been increased to \n      2 and the 2 energy cost for Mass Heal has been removed. Dazzle has also \n      been templated to how it is worded in VotS. Also, Liriel's Cape is still \n      considered a Paradwyn Relic, even though the non-foil VotS version is \n      printed on a Paradwyn Spell template. <br/><b>Source:</b> The VotS Version \n      is the MRP for Liriel's Cape. <br/><b>Affects:</b> Liriel's Cape Foil Card \n      - Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Rala",
+        "text": "<p><b>Rala - Paradwyn Dream Creature - Staring Energy: 4 (ND)(E)</b>\n<br/>Effect - Wild Blooming: <span class=\"blue\">Once per turn, one of your \n      Paradwyn Creatures in play may use one of its Powers a second time. None \n      of your other card effects may allow the Creature to use the Power again \n      this turn, and Wild Blooming cannot be used on Powers that have been used \n      more than once already this turn.</span> <br/>Effect - Dreamwarp: As you \n      play Rala, increase or decrease its starting energy by one, to a minimum \n      starting energy of one, until the end of the turn. <br/><b>Change:</b> Only \n      one of your Paradwyn Creatures can use one of it's Powers only twice a \n      turn with Wild Blooming. The Creature discard requirement has been \n      removed. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Nightmare's \n      Dawn</p>"
+    },
+    {
+        "name": "Rala_Tail",
+        "text": "<p><b>Rala Tail - Paradwyn Relic - Cost: 0 (ND)(E)</b> <br/>Effect - Wild \n      Blooming: <span class=\"blue\">Once per turn, one of your Paradwyn Creatures \n      in play may use one of its Powers a second time. None of your other card \n      effects may allow the Creature to use the Power again this turn, and Wild \n      Blooming cannot be used on Powers that have been used more than once \n      already this turn.</span> <br/><b>Change:</b> Only one of your Paradwyn \n      Creatures can use one of it's Powers only twice a turn with Wild Blooming. \n      <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Amulet_of_Ombor",
+        "text": "<p><b>Amulet of Ombor - Underneath Relic - Cost: 0 (BS)(C)</b> <br/><span class=\"blue\">Any time that you may play a Relic, as long as Amulet of Ombor \n      is in play, you may search your hand or deck for a Gate to Ombor and play \n      it, ignoring all costs. If you search your deck, shuffle it afterwards. \n      You cannot use this ability if you do not have a Gate to Ombor in your \n      hand or deck or if you cannot use Effects named Talisman.</span> <br/>Power \n      - Energy Boost: Roll one die. <br/>1, 2, or 3 = Your opponents add one \n      energy to each of their Creatures in play. <br/>4 or 5 - Choose any one \n      Creature in play. Add two energy to the chosen Creature. <br/>6 = Chose any \n      one Creature in play. Add four energy to the chosen Creature. \n      <br/><b>Change:</b> Adding reminder text on Amulet of Ombor to allow you to \n      play one Gate to Ombor from your hand or deck (Gate to Ombor's Effect - \n      Talisman). <br/><b>Source:</b> Rules Digest 10/7/02 <br/><b>Affects:</b> \n      Unlimited, Limited</p>"
+    },
+    {
+        "name": "Burrow",
+        "text": "<p><b>Burrow - Underneath Spell - Cost: 1+X (BS)(R)</b> <br/>Choose any one \n      of your Creatures in play. For X turns, the chosen Creature cannot attack \n      or lose more than two energy per turn from attacks or your opponents' \n      Spells and Powers. The chosen creature is considered \"burrowed.\" X \n      includes your own turns. <br/><b>Change:</b> The line of \"X cannot be more \n      than four.\" was removed. <br/><b>Source: </b>The Unlimited version is the \n      MRP of Burrow. <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Crystal_Arboll",
+        "text": "<p><b>Crystal Arboll - Underneath Dream Creature - Starting Energy: 2 \n      (BS)(R)</b> <br/>Power - Healing Light: Choose any one Creature in play. \n      Discard Crystal Arboll from play. Add two energy to the chosen Creature. \n      If the chosen Creature is Underneath, add two additional energy. \n      <br/><b>Change:</b> A one energy cost for Healing Light was removed. \n      <br/><b>Source: </b>The Unlimited Version is the MRP of Crystal Arboll. \n      <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Gruk",
+        "text": "<p><b>Gruk - Underneath Magi - Starting Energy/Energize: 13/5 (BS)(E)</b>\n<br/>STARTING: Agovo, Crystal Arboll, Gloves of Crystal (Urhail) <br/>Power \n      - Undream: (1) Choose any one of your Creatures in play. Return the chosen \n      Creature to its owner's hand. <span class=\"blue\">Add energy to Gruk equal to \n      the Creature's printed starting energy or current energy, whichever is \n      less.</span> <br/><b>Change:</b> Undream's text has been adjusted to proper \n      text templating rules. <br/><b>Source:</b> 2i Design Team, Rules Digest \n      08/30/02 <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Motashs_Staff",
+        "text": "<p><b>Motash's Staff - Underneath Relic - Cost: 0 (BS)(E)</b> <br/>Effect - \n      Dreamcatch: <span class=\"blue\">As one of your Creatures is being returned \n      its owner's hand from play by an opposing card</span>, instead <span class=\"blue\">add energy to your Magi equal to the Creature's printed \n      starting energy or current energy, whichever is less.</span>\n<br/><b>Change:</b> Dreamcatch's text has been adjusted to proper text \n      templating rules. <br/><b>Source:</b> 2i Design Team, Rules Digest 08/30/02 \n      <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Mushroom_Hyren",
+        "text": "<p><b>Mushroom Hyren - Underneath Creature - Starting Energy: 7 \n      (BS)(E)</b> <br/>Power - Sanctuary: (1) Choose any one of your Creatures in \n      play. Return the chosen Creature its owner's hand. <span class=\"blue\">Add \n      energy to your Magi equal to the Creature's printed starting energy or \n      current energy, whichever is less</span>. <br/><b>Change:</b> Sanctuary's \n      text has been adjusted to proper text templating rules. <br/><b>Source:</b> \n      2i Design Team, Rules Digest 08/30/02 <br/><b>Affects:</b> Unlimited, \n      Limited</p>"
+    },
+    {
+        "name": "Vulbor",
+        "text": "<p><b>Vulbor - Underneath Dream Creature - Starting Energy: 3 (BS)(R)</b>\n<br/>Power - Mind Shock: <span class=\"blue\">(3)</span> Choose any one player. \n      The chosen player must discard two cards of his or her choice from his or \n      her hand. <br/><b>Change:</b> Mind Shock's cost has been increased to 3 \n      energy. <br/><b>Source: </b>The Unlimited version is the MRP of Vulbor. \n      <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Book_of_Ages",
+        "text": "<p><b>Book of Ages - Universal Relic - Cost: 0 (BS)(R)</b> <br/>Power - \n      Lore: (2) <span class=\"blue\">Draw 1 card</span>. <br/><b>Change:</b> The \n      drawing of a card with Lore now occurs in either P/R/S Step rather than at \n      the end of turn. <br/><b>Source: </b>The Unlimited Version is the MRP of \n      Book of Ages. <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Colossus",
+        "text": "<p><b>Colossus - Universal Dream Creature - Starting Energy: 12 (BS, \n      AW)(R)</b> <br/>Effect - Anti-Magic: Colossus may not be affected by <span class=\"blue\">opposing</span> Spells, Powers or Effects that specifically \n      discard Creatures from play. <span class=\"blue\">Your Spells, Powers, and \n      Effects may not alter the amount of energy on Colossus,</span> or prevent \n      Colossus from losing energy. <br/><b>Change:</b> Only opposing Effects, \n      Powers, or Spells do not discard Colossus from play. Your cards can not \n      add or remove energy to Colossus or allow a Rearrange to include Colossus. \n      <br/><b>Source: </b>The version included in the Warrada/Ogar/Quade Core \n      Starter deck (AW) is the MRP of Colossus. That version was printed as if \n      it was a Base Set, Unlimited card. <br/><b>Affects:</b> Unlimited, \n      Limited</p>"
+    },
+    {
+        "name": "Dream_Balm",
+        "text": "<p><b>Dream Balm - Universal Relic - Cost: 0 (BS)(R)</b> <br/>Power - \n      Vitalize: <span class=\"blue\">(2)</span> Choose any one Creature in play with \n      less than its starting energy. Discard Dream Balm from play. Restore the \n      chosen Creature to its starting energy. <br/><b>Change:</b> Vitalize's cost \n      has been reduced to two energy. <br/><b>Source: </b>The Unlimited version \n      is the MRP of Dream Balm. <br/><b>Affects:</b> Limited</p>"
+    },
+    {
+        "name": "Dream_Channel",
+        "text": "<p><b>Dream Channel - Universal Spell - Cost: 2 (AW)(E)</b> <br/>Choose any \n      one Creature in play. Attach Dream Channel to the chosen Creature. \n      Increase your Magi's energize rate by two while Dream Channel is in play. \n      If the chosen Creature leaves play, discard Dream Channel from play. <span class=\"blue\">A Magi may only be affected by one Dream Channel at a \n      time.</span> <br/><b>Change:</b> Only one Dream Channel affects your Magi. \n      <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Elemental_Shield",
+        "text": "<p><b>Elemental Shield - Universal Spell - Cost: 1 (Promo)(E)</b>\n<br/>Choose an opposing Magi. Until the end of your next turn, your cards \n      in play are not affected by that Magi's Spells, Powers and Effects. <span class=\"blue\">You may not play Elemental Shield more than three times per \n      game.</span> <br/><b>Change:</b> Elemental Shield had been Errataed so that \n      it can be only played three times per game. <br/><b>Source: </b>Rules \n      Digest 08/08/03 <br/><b>Affects:</b> Elemental Shield Limited \n      Card</p>"
+    },
+    {
+        "name": "Inhibitor_Band",
+        "text": "<p><b>Inhibitor Band - Universal Relic - Cost: 0 (ND)(E)</b> <br/>Effect - \n      Reprise: When you play Inhibitor Band, <span class=\"blue\">discard all other \n      Universal Relics in play.</span> <br/>Effect - Universal Lock: Players \n      cannot play Universal Relics. <br/><b>Change:</b> Reprise discards all \n      Universal cards instead of returning then to hand. Universal Lock has been \n      altered to not allow any Universal Relics from coming into play while \n      Inhibitor Band is in play. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Maelstrom_Flask",
+        "text": "<p><b>Maelstrom Flask - Universal Relic - Cost: 0 (DE)(C)</b></p>"
+    },
+    {
+        "name": "Mirror_Pendant",
+        "text": "<p><b>Mirror Pendant - Universal Relic - Cost: 0 (BS)(C)</b> <br/>Power - \n      Aurareflection: Choose any one Power on your Magi. <span class=\"blue\">You \n      may</span> discard energy from your Magi equal to the chosen Power's cost, \n      and discard an additional two energy. If you do, play all actions of the \n      chosen Power. <br/><b>Change:</b> A clarification allowing you not to \n      trigger Aurareflection. <br/><b>Source:</b> Rules Compendium - MN Digest \n      Links <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Monarch_Hyren",
+        "text": "<p><b>Monarch Hyren - Universal Dream Creature - Starting Energy: 9 (DE, \n      Promo)(R)</b> <br/>Power - Command: (1) Add one energy to each of your \n      hyren in play. <br/>Power - Demand: (1) Search your deck for any one Hyren, \n      show it to your opponent, and add the chosen card to your hand. Shuffle \n      your deck. <br/><b>Change:</b> The word \"other\" has been removed from \n      Command. <br/><b>Source:</b> The Promotional, Limited version is the MRP of \n      Monarch Hyren. <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "Nightmare_Channel",
+        "text": "<p><b>Nightmare Channel - Universal Spell - Cost: 2 (AW)(E)</b> <br/>Choose \n      any one Creature and any one Magi in play. Attach Nightmare Channel to the \n      chosen Creature. Decrease the chosen Magi's energize rate by two while \n      Nightmare Channel is in play. If the chosen Creature leaves play, discard \n      Nightmare Channel from play. <span class=\"blue\">A Magi may only be affected \n      by one Nightmare Channel at a time.</span> <br/><b>Change:</b> A Magi is \n      only affected by one Nightmare Channel. <br/><b>Source:</b> 2i Design Team \n      <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Nightmares_Dawn",
+        "text": "<p><b>Nightmare's Dawn - Universal Spell - Cost: 2 (Promo)(C)</b>\n<br/><span class=\"blue\">Add five energy to each Magi whose cards in play \n      share all of their regions with their Magi.</span> <br/><b>Change:</b> \n      Clarification as to only allow Magi with cards in play that match their \n      Region, or Regions if the Magi is a dual-Region, to gain the five energy \n      given by Nightmare's Dawn. <br/><b>Source:</b> Rules Digest 10/28/02 \n      <br/><b>Affects:</b> Nightmare's Dawn Limited card</p>"
+    },
+    {
+        "name": "Rayje",
+        "text": "<p><b>Rayje - Universal Magi - Starting Energy/Energize: 15/5 \n      (ND)(C,E)</b> <br/>STARTING: Two different Universal cards (Rayje's \n      Construct) <br/>You can play with more than one copy of Rayje in you deck. \n      When you reveal Rayje, he gains all Powers and Effects on all of your \n      defeated Rayjes and any one of the following Powers or Effects until the \n      end of the game: \"Power - Aid: Move one energy from one Creature to \n      another.\", \"Effect - Lore: During you draw step, draw an additional \n      card.\", \"Effect - Defense: Whenever one of your Creatures is attacked, add \n      one energy to it before energy is removed.\", \"Effect - Wily: Once per \n      turn, instead of drawing a card, place any one <span class=\"blue\">Universal</span> Spell from your discard pile into your hand.\", \n      \"Effect - Charge: Whenever one of your Creatures attacks, add one energy \n      to it before energy is removed.\" <span class=\"blue\">Each time Rayje is \n      revealed, he may not gain more than one copy of any Power or \n      Effect.</span> <br/><b>Change:</b> Wily can only get Universal Spells. A \n      clarification stating only one copy of any of Rayje's Powers or Effects \n      may be gained. <br/><b>Source: </b>2i Design Team, Rules Digest 05/03/02, \n      pt.1 <br/><b>Affects:</b> Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Rayjes_Belt",
+        "text": "<p><b>Rayje's Belt - Universal Relic - Cost: 0 (AW, Promo)(E,R)</b>\n<br/>Power - Lockdown: Name any one Power or Effect <span class=\"blue\">on a \n      card in play</span>. Until the end of your next turn, no player may use \n      named Power or Effect <span class=\"blue\">while Rayje's Belt is in \n      play</span>. <br/><b>Change:</b> Lockdown can only work on a named Power or \n      Effect in play and if Rayje's Belt is discarded, the affected Power or \n      Effect is useable again. This errata supersedes the \n      Rayje's Belt Promotional card. <br/><b>Source: </b>2i Design Team, Rules \n      Digest 10/7/02 <br/><b>Affects:</b> Awakening, Rayje's Belt Limited \nCard</p>"
+    },
+    {
+        "name": "Rayjes_Construct",
+        "text": "<p><b>Rayje's Construct - Universal Dream Creature - Starting Energy: 12 \n      (Promo)(E)</b> <br/>Effect - Ancestral Favor: All your Spells cost one less \n      Energy to play, to a minimum of one. <br/>Power - Aurareflection: (2) Copy \n      any one Power on your Magi, paying all costs. <br/>Power - Channeling: \n      Discard two cards from your hand to add two energy to your Magi. \n      <br/>Effect - Invigorate: Increase your Magi's energize rate by one. \n      <br/>Power - Lore: (2) Draw one card. <br/>Power - Pound Pound Pound: (2) \n      Discard one Relic in play. <br/>Effect - Tinker: Whenever you play a Relic, \n      choose any one Creature in play. Add one energy to the chosen Creature. \n      <span class=\"blue\">You cannot chose any creature more than once per turn \n      with Tinker.</span> <br/>STARTING: Rayje <br/><b>Change:</b> Each Creature \n      can only be affected by Tinker once a turn. <br/><b>Source: </b>2i Design \n      Team <br/><b>Affects:</b> Rayje's Construct Limited Card</p>"
+    },
+    {
+        "name": "Relic_Mirror",
+        "text": "<p><b>Relic Mirror - Universal Relic - Cost: 0 (BS)(C)</b> <br/>Effect - \n      Trick Image: <span class=\"blue\">As an opposing Spell or Power that discards \n      Relics from play would affect one of your other Relics in play, choose one \n      of those Relics and discard Relic Mirror from play. The Spell or Power \n      does not affect the chosen Relic.</span> <br/><b>Change:</b> Trick Image \n      has been clarified to act as intended. <br/><b>Source:</b> Rules Digest \n      08/30/02 <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Ring_of_Secrets",
+        "text": "<p><b>Ring of Secrets - Universal Relic - Cost: 0 (BS)(E)</b> <br/>Effect - \n      Tinker: Whenever you play a Relic, choose any one Creature in play. Add \n      one energy to the chosen Creature. <span class=\"blue\">You cannot chose a \n      Creature more than once per turn with Tinker.</span> <br/><b>Change:</b> \n      Each Creature is affected by Tinker once a turn. <br/><b>Source:</b> 2i \n      Design Team <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Spirit_of_Rayje",
+        "text": "<p><b>Spirit of Rayje - Universal Spell - Cost: 0 (VotS)(C)</b> <br/>You \n      may <span class=\"blue\">only</span> play this card as an opposing card \n      discards all the energy from your Magi. Add three energy to your Magi. \n      This card can prevent your Magi from being defeated. <br/>You can only play \n      Spirit of Rayje three times per game. <br/><b>Change:</b> Spirit of Rayje \n      has been clarified as to when it can be played. <br/><b>Source:</b> Rules \n      Digest 1/28/03 <br/><b>Affects:</b> Voice of the Storms</p>"
+    },
+    {
+        "name": "Spectral_Shield",
+        "text": "<p><b>Spectral Shield - Universal Spell - Cost: 1 (AW)(C)</b> <br/>Until \n      the beginning of your next Turn, whenever an <span class=\"blue\">opposing \n      Spell, Power or Effect</span> forces you to discard a card from your hand, \n      draw one card afterwards. At the beginning of your next turn, draw one \n      card. <br/><b>Change:</b> Spectral Shield's text has been adjusted to \n      proper text templating rules. <br/><b>Source:</b> Rules Digest 08/30/02 \n      <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Tomorrows_Jewel",
+        "text": "<p><b>Tomorrow's Jewel - Universal Relic - Cost: 1 (DE)(E)</b> <br/>If an \n      opposing card forces you to discard Tomorrow's Jewel from your hand, you \n      may play it instead. <span class=\"blue\">Opposing cards cannot discard or \n      take control of Tomorrow's Jewel. </span><br/>Effect: Whenever an opposing \n      card forces you to discard one or more cards from your hand, you may \n      discard one energy from your Magi. If you do, the opposing card does \n      nothing. <br/>Effect - Lore: Once during your Draw step, after you draw, \n      you may discard one card from your hand. If you do, draw one card. \n      <br/><b>Change:</b> Tomorrow's Jewel may no longer be discarded from play \n      or stolen. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Dream's \n      End</p>"
+    },
+    {
+        "name": "Tony_Jones",
+        "text": "<p><b>Tony Jones - Universal Magi - Starting Energy/Energize: 10/5 \n      (Promo)(E)</b> <br/>STARTING:Any one Creature card, Furok <br/>Effect - \n      Animite Affinity: Non-Universal Creatures Tony plays cost one less energy, \n      to a minimum of one. <br/>Power - Favors: (2) Play any one Relic from your \n      hand, <span class=\"blue\">regardless of region</span>. <br/><b>Change:</b> Any \n      Relic, regardless of Region, can be played with Favors. <br/><b>Source: \n      </b>2i Design Team, Rules Compendium/Playing Cards Guide - MN Digest Links \n      <br/><b>Affects:</b> Tony Jones Limited Card</p>"
+    },
+    {
+        "name": "Tuku",
+        "text": "<p><b>Tuku - Universal Magi - Starting Energy/Energize: 12/6 \n      (Promo)(E)</b> <br/>STARTING: Colossus, Warrior's Boots <br/>Power - \n      Restrain: (2) Until the end of your next turn, no Magi can play any \n      non-Universal Relics or Spells. <span class=\"blue\">You cannot use Restrain \n      on your next turn.</span> <br/><b>Change:</b> Restrain can not be used two \n      of your turns in a row. <br/><b>Source: </b>2i Design Team \n      <br/><b>Affects:</b> Tuku Limited Card</p>"
+    },
+    {
+        "name": "UmmmNO",
+        "text": "<p><b>Ummm...NO! - Universal Spell - Cost: 4 (AW)(C)</b> <br/>Play Ummm...NO! \n      when an opponent plays a Spell that would discard one <span class=\"blue\">or \n      more</span> of your Creatures from play. Choose one of your Creatures that \n      would be discarded. The chosen Creature is not discarded by the opposing \n      Spell. You may play Ummm...NO! on your opponent's turn. <br/><b>Change:</b> \n      Ummm...NO! can be played when many of your Creatures are being discarded \n      from play by an opposing Spell. <br/><b>Source: </b>Rules Compendium - MN \n      Digest Links <br/><b>Affects:</b> Awakening</p>"
+    },
+    {
+        "name": "Warriors_Boots",
+        "text": "<p><b>Warrior's Boots - Universal Relic - Cost: 0 (BS, Promo)(R)</b>\n<br/>Power - Warpath: Discard Warrior's Boots from play. Immediately play a \n      Creature from you hand. You <span class=\"blue\">must still pay all costs for \n      the Creature</span>. <br/><b>Change:</b> Better clarification on paying all \n      costs associated with the Creature played through Warpath. \n      <br/><b>Source:</b> The Promotional, Limited version is the MRP of \n      Warrior's Boots. <br/><b>Affects:</b> Unlimited, Limited</p>"
+    },
+    {
+        "name": "Drought",
+        "text": "<p><b>Drought - Weave Spell - Cost: 2 (DE)(C)</b> <br/><span class=\"blue\">The \n      next time each player energizes, none of that players cards gains energy \n      from energizing.</span> <br/><b>Change: </b>Drought has been clarified for \n      intent. <br/><b>Source: </b>Rules Digest 09/16/03 <br/><b>Affects: \n      </b>Dream's End</p>"
+    },
+    {
+        "name": "Grass_Hyren",
+        "text": "<p><b>Grass Hyren - Weave Dream Creature - Starting Energy: 6 (DE Preview, \n      DE)(R)</b> <br/>Effect - <span class=\"blue\">Evade</span>: Whenever Grass \n      Hyren is attacked, roll a die. Grass Hyren looses that much less energy in \n      the attack. <br/>Effect - Weave: Whenever Grass Hyren attacks or is \n      attacked, before energy is removed, you may move one energy between Grass \n      Hyren and any one of your other Weave Creatures in play. \n      <br/><b>Change:</b> The first Effect was changed from Wily to Evade. \n      <br/><b>Source:</b> The Dream's End version is the MRP of Grass Hyren. \n      <br/><b>Affects:</b> Weave GenCon 2001 Preview Deck</p>"
+    },
+    {
+        "name": "Junjertug_Horn",
+        "text": "<p><b>Junjertug Horn - Weave Relic - Cost: 1 (DE Preview, DE)(R)</b>\n<br/>Power - Summon: <span class=\"blue\">Search you deck and/or discard pile \n      for any one Junjertug. Place the chosen Creature into your hand. Shuffle \n      your deck.</span> <br/><b>Change:</b> Summon was completely reworked from \n      the Weave 2001 Preview Deck to Dream's End. <br/><b>Source: </b>The Dream's \n      End version is the MRP of Junjertug Horn. <br/><b>Affects:</b> The GenCon \n      2001 Weave Preview Deck</p>"
+    },
+    {
+        "name": "Scyalla",
+        "text": "<p><b>Scyalla - Weave Magi - Weavekeeper - Starting Energy/Energize: 2/6 \n      (ND)(C)</b> <br/>STARTING: Two different non-Hyren Creatures of the same \n      type, i.e., two different Xyxes (Weave Powder) Power - Pet Project: Once \n      per game, choose any non-Hyren Creature type. Until the end of the game, \n      <span style=\"COLOR: blue\">you may play Creatures of that type as if they \n      were Weave, and</span> all Creatures of the chosen type that you play are \n      Weave Creatures instead of their original region. <br/><b>Change: \n      </b>Clarification of Pet Project to allow you to play any Creature, \n      regardless of original region, of the Creature type chosen with Pet \n      Project. <br/><b>Source: </b>Rules Digest 06/03/03 <br/><b>Affects: \n      </b>Nightmare's Dawn</p>"
+    },
+    {
+        "name": "Thresh",
+        "text": "<p><b>Thresh - Weave Dream Creature - Starting Energy: 4 (VotS)(C)</b>\n<br/><span class=\"blue\">Effect</span> - Rethresh: Whenever a Weave Card is \n      discarded from play on an opponent's turn, add one energy to Thresh. \n      <br/>Effect - Weave: Whenever Thresh is in an attack, before energy is \n      removed, you may move one energy between Thresh and one of your other \n      Weave Creatures. <br/><b>Change:</b> Rethresh is supposed to be an Effect, \n      not a Power. Thresh was misprinted. <br/><b>Source:</b> Rules Digest \n      3/04/03 <br/><b>Affects:</b> Voice of the Storms</p>"
+    },
+    {
+        "name": "Weave_Winds",
+        "text": "<p><b>Weave Winds - Weave Spell - Cost: 6 (DE)(E)</b> <br/><span class=\"blue\">Choose a Magi. On the chosen Magi's next turn, if that \n      Magi</span> has any Creatures in play, they may not play non-Weave \n      Creatures. <br/><b>Change:</b> Weave Winds only affects a single Magi. \n      <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> Dream's End</p>"
+    },
+    {
+        "name": "Weggit",
+        "text": "<p><b>Weggit - Weave Dream Creature - Starting Energy: 3 (DE)(E)</b>\n<br/>Power - Whispering Winds: Discard Weggit from play. Draw a card for \n      each <span class=\"blue\">Weave</span> Relic you have in play. <br/>Effect - \n      Weave: Whenever Weggit attacks or is attacked, before energy is removed, \n      you may move one energy between Weggit and any one of your other Weave \n      Creatures in play. <br/><b>Change:</b> Wispering Winds works with only \n      Weave Relics. <br/><b>Source:</b> 2i Design Team <br/><b>Affects:</b> \n      Dream's End</p>"
+    }
+]
