@@ -102,6 +102,7 @@ const wholeCardText = (card) => {
    - onRarityChange(event)
    - onOnlyMultiRegions(event)
    - onAllRegionsChange(event)
+   - onMRPChange(event)
 */
 class QueryArea extends Component {
   render() {
@@ -186,6 +187,7 @@ class QueryArea extends Component {
               className="QueryArea-mrp"
               title="MRP data:"
               groupName="mrp"
+              onChange={this.props.onMRPChange}
               buttons={[{name: "mrp-all", text: "Show all cards"}, 
                         {name: "mrp-only", text: "Show only cards with MRP data"}, 
                         {name: "mrp-no", text: "Show only cards without MRP data"}]}
@@ -413,7 +415,7 @@ class CheckBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checked: false,
+      checked: false,  // do we even use this? o.O
     };
     this.onClick = this.onClick.bind(this);
   };
@@ -442,7 +444,7 @@ class CheckBox extends Component {
    - the name of the radio button that is checked by default (e.g. "name")
    - className
    - groupName (e.g. "mrp")
-   - ...
+   - onChange(event)
 */
 class RadioButtonGroup extends Component {
   constructor(props) {
@@ -453,11 +455,8 @@ class RadioButtonGroup extends Component {
     this.onChange = this.onChange.bind(this);
   }
   onChange(event) {
-    console.log("Clicky!", event.target);
-    console.log("event.target.value is:", event.target.value);
-    this.setState({
-      checked: event.target.value
-    });
+    this.setState({ checked: event.target.value });
+    this.props.onChange(event);
   }
   render() {
     return (
@@ -532,6 +531,7 @@ class App extends Component {
         onlyMultiRegions: false,
         allRegions: false,  /* only show cards with ALL regions selected */
       },
+      mrpFilter: 'mrp-all',
       MRPCards: [],  /* cards that have MRP data */
       MRPData: {},  /* cache for MRP data */
     };
@@ -546,6 +546,7 @@ class App extends Component {
     this.onRarityChange = this.onRarityChange.bind(this);
     this.onOnlyMultiRegions = this.onOnlyMultiRegions.bind(this);
     this.onAllRegionsChange = this.onAllRegionsChange.bind(this);
+    this.onMRPChange = this.onMRPChange.bind(this);
     this.onSelectItem = this.onSelectItem.bind(this);
     this.isCardSelected = this.isCardSelected.bind(this);
     this.toggleSort = this.toggleSort.bind(this);
@@ -666,6 +667,13 @@ class App extends Component {
   }
 
   onMRPChange(event) {
+    //console.log("Clicky!", event.target);
+    //console.log("event.target.value is:", event.target.value);
+    //this.setState({
+    //  checked: event.target.value
+    //});
+    this.setState({ mrpFilter: event.target.value },
+                  () => this.updateSearchResults());
   }
 
   // XXX for now, we can only select one card.
@@ -705,6 +713,11 @@ class App extends Component {
     }
     if (this.state.filters.allRegions) {
       results = results.filter(card => cardInAllRegions(card, this.state.regions));
+    }
+    if (this.state.mrpFilter === 'mrp-only') {
+      results = results.filter(card => this.hasMRPData(card));
+    } else if (this.state.mrpFilter === 'mrp-no') {
+      results = results.filter(card => !this.hasMRPData(card));
     }
 
     if (this.state.refinedSearchText) {
@@ -774,7 +787,9 @@ class App extends Component {
                    onCardTypeChange={this.onCardTypeChange}
                    onRarityChange={this.onRarityChange}
                    onOnlyMultiRegions={this.onOnlyMultiRegions}
-                   onAllRegionsChange={this.onAllRegionsChange} />
+                   onAllRegionsChange={this.onAllRegionsChange} 
+                   onMRPChange={this.onMRPChange}
+        />
         <hr />
         <SearchResults cards={this.state.results} 
                        onSelectItem={this.onSelectItem}
