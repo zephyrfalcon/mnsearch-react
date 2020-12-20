@@ -51,8 +51,8 @@ let rarities = {
 };
 
 const mrpDict = new Map();
-mrpdata.forEach(({name, text}) => mrpDict.set(name, text));
-console.log(mrpDict);
+//mrpdata.forEach(({name, text}) => mrpDict.set(name, text));
+//console.log(mrpDict);
 
 function hasMRPData(card) {
   return mrpDict.has(card.normalized_name);
@@ -556,6 +556,10 @@ class App extends Component {
     this.toggleSort = this.toggleSort.bind(this);
   }
 
+  componentDidMount() {
+    mrpdata.forEach(({name, text}) => mrpDict.set(name, text));
+    console.log(mrpDict);
+  }
 
   toggleSort(field) {
     let newField = field;
