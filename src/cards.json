@@ -18553,7 +18553,7 @@
         ],
         "rarity": "P",
         "regions": [
-            "Orothe"
+            "Underneath"
         ],
         "set": "PR",
         "type": "Creature"
@@ -30148,7 +30148,7 @@
         "key": 572,
         "name": "Wudge",
         "normalized_name": "Wudge",
-        "rarity": "R",
+        "rarity": "C",
         "regions": [
             "Core"
         ],

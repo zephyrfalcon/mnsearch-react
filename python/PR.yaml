@@ -825,7 +825,7 @@
 
 - name: Ormagon
   type: Creature
-  region: Orothe
+  region: Underneath
   cost: 10
   powers:
     - name: Devastate
