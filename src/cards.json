@@ -2671,6 +2671,27 @@
         "type": "Magi"
     },
     {
+        "artist": "Holmberg",
+        "cost": 0,
+        "effects": [
+            {
+                "name": "Purity",
+                "text": "At the end of your turn, if all Spells in your discard pile are Bograth, discard all of your non-Bograth cards from play and choose an opposing Creature. If that Creature has more energy than your Magi's energize, move three energy from that Creature to your Magi.\n"
+            }
+        ],
+        "image": "/cardimages/UP/Blygts_Ring.jpg",
+        "key": 1337,
+        "name": "Blygt's Ring",
+        "normalized_name": "Blygts_Ring",
+        "rarity": "P",
+        "regions": [
+            "Bograth"
+        ],
+        "set": "UP",
+        "starting_magi": "Blygt",
+        "type": "Relic"
+    },
+    {
         "artist": "Werner, Gillette, Goodman",
         "cost": 14,
         "effects": [
@@ -3743,6 +3764,28 @@
             "Cald"
         ],
         "set": "TR",
+        "type": "Creature"
+    },
+    {
+        "artist": "Holmberg",
+        "cost": 7,
+        "flavor": "Becoming one with the treetops, the canopy hyren is unparalleled in the art of sneak attacks.\n",
+        "image": "/cardimages/UP/Canopy_Hyren.jpg",
+        "key": 1338,
+        "name": "Canopy Hyren",
+        "normalized_name": "Canopy_Hyren",
+        "powers": [
+            {
+                "cost": 3,
+                "name": "Fear",
+                "text": "Remove two energy from each Stalked Creature.\n"
+            }
+        ],
+        "rarity": "P",
+        "regions": [
+            "Paradwyn"
+        ],
+        "set": "UP",
         "type": "Creature"
     },
     {
@@ -10414,6 +10457,27 @@
             "Arderial"
         ],
         "set": "DE",
+        "type": "Creature"
+    },
+    {
+        "artist": "Holmberg",
+        "cost": 7,
+        "effects": [
+            {
+                "name": "Improved Invulnerability",
+                "text": "Granite Hyren loses three less energy in attacks.\n"
+            }
+        ],
+        "flavor": "Formed from the hardest substance in the Teeth, these hyren can take an\nincredible amount of abuse before showing signs of wear.\n",
+        "image": "/cardimages/UP/Granite_Hyren.jpg",
+        "key": 1346,
+        "name": "Granite Hyren",
+        "normalized_name": "Granite_Hyren",
+        "rarity": "P",
+        "regions": [
+            "Kybar's Teeth"
+        ],
+        "set": "UP",
         "type": "Creature"
     },
     {
@@ -23727,6 +23791,27 @@
         "type": "Creature"
     },
     {
+        "artist": "Holmberg",
+        "cost": 7,
+        "effects": [
+            {
+                "name": "Creeping Growth",
+                "text": "After Sludge Hyren attacks, add one energy to it for each Bograth Creature you control.\n"
+            }
+        ],
+        "flavor": "\"It leaches the strength from its companions to act as their battering ram.\"\n",
+        "image": "/cardimages/UP/Sludge_Hyren.jpg",
+        "key": 1339,
+        "name": "Sludge Hyren",
+        "normalized_name": "Sludge_Hyren",
+        "rarity": "P",
+        "regions": [
+            "Bograth"
+        ],
+        "set": "UP",
+        "type": "Creature"
+    },
+    {
         "artist": "Goodman",
         "cost": 4,
         "flavor": "\"You really need to give those things up. They'll ruin your lungs.\"\n-- Ahdar, Scout\n",
@@ -23771,6 +23856,28 @@
         ],
         "set": "TR",
         "text": "Naroom Shadow Magi may play Snag Arboll.",
+        "type": "Creature"
+    },
+    {
+        "artist": "Werner, Holmberg",
+        "cost": 7,
+        "flavor": "It seemed to the Shadow Magi as if the clinging barbs of the snag hyren were suddenly everywhere.\n",
+        "image": "/cardimages/UP/Snag_Hyren.jpg",
+        "key": 1340,
+        "name": "Snag Hyren",
+        "normalized_name": "Snag_Hyren",
+        "powers": [
+            {
+                "cost": 3,
+                "name": "Stumble",
+                "text": "Until the beginning of your next turn, opposing Creatures remove two less energy in attacks.\n"
+            }
+        ],
+        "rarity": "P",
+        "regions": [
+            "Weave"
+        ],
+        "set": "UP",
         "type": "Creature"
     },
     {
@@ -23968,6 +24075,32 @@
         "starting_magi": "Sorreah",
         "text": "Choose any one Power on a card that does not name the card it is printed on. X is the energy cost of the chosen Power. Sorreah's Dream copies the Power and all of its actions. All cards that affect the chosen Power also affect Sorreah's Dream.\n",
         "type": "Spell"
+    },
+    {
+        "alternate": "Sorreah",
+        "artist": "Holmberg",
+        "cost": 12,
+        "effects": [
+            {
+                "name": "Dream Block",
+                "text": "Players may not use Powers on Creatures.\n"
+            }
+        ],
+        "energize": 5,
+        "flavor": "\"His time among the Kybarites has given him a greater appreciation of brute\nstrength.\"\n-- Adis\n",
+        "image": "/cardimages/UP/Sorreah_Warrior.jpg",
+        "key": 1341,
+        "name": "Sorreah, Warrior",
+        "normalized_name": "Sorreah_Warrior",
+        "rarity": "P",
+        "regions": [
+            "Arderial"
+        ],
+        "set": "UP",
+        "starting": [
+            "[Two different Arderial Spells]"
+        ],
+        "type": "Magi"
     },
     {
         "artist": "Werner, Gillette",
@@ -26848,6 +26981,22 @@
         "type": "Creature"
     },
     {
+        "artist": "Holmberg",
+        "cost": 2,
+        "flavor": "Enviouis of Targ'n's position as Elder, T'lok betrayed the secret\nentrances to Yark Eyre to the Dark Twins. Enamoured with Warrada,\nT'lok also taught her how to control Kybar's Fang.\n",
+        "image": "/cardimages/UP/Traitors_Reach.jpg",
+        "key": 1342,
+        "name": "Traitor's Reach",
+        "normalized_name": "Traitors_Reach",
+        "rarity": "P",
+        "regions": [
+            "Universal"
+        ],
+        "set": "UP",
+        "text": "Choose a Creature and a Magi controlled by the same player. If the chosen Creature does not share a region with the chosen Magi, discard that Creature from play and remove two energy from that Magi.\n",
+        "type": "Spell"
+    },
+    {
         "artist": "Christopher, Shreve",
         "cost": 2,
         "flavor": "\"We know the calm as well as the storm.\"\n-- Jaela, Arderial Regis\n",
@@ -27543,6 +27692,28 @@
         "type": "Magi"
     },
     {
+        "artist": "Holmberg",
+        "cost": 7,
+        "flavor": "Focused freezing power in an easy to use package.\n",
+        "image": "/cardimages/UP/Tundra_Hyren.jpg",
+        "key": 1343,
+        "name": "Tundra Hyren",
+        "normalized_name": "Tundra_Hyren",
+        "powers": [
+            {
+                "cost": 3,
+                "name": "Freeze",
+                "text": "Choose an opposing Magi. That Magi's Creatures are Frozen until the beginning of your next turn. Powers of Frozen cards cost one extra energy to use.\n"
+            }
+        ],
+        "rarity": "P",
+        "regions": [
+            "Nar"
+        ],
+        "set": "UP",
+        "type": "Creature"
+    },
+    {
         "artist": "Holmberg, Gillette, Shreve",
         "cost": 1,
         "flavor": "\"When you least expect it, expect it!\"\n-- All-High King Korg, Magnificent, Illustrious, Ever-Vigilant Emperor of\n   Great and Mighty Bograth\n",
@@ -27706,6 +27877,68 @@
             "Naroom"
         ],
         "set": "BS",
+        "type": "Creature"
+    },
+    {
+        "alt_play": "d'Resh",
+        "artist": "Werner, Holmberg",
+        "cost": 7,
+        "effects": [
+            {
+                "name": "Dream Inhibitor",
+                "text": "Powers on opposing Core Creatures cost two extra energy.\n"
+            }
+        ],
+        "flavor": "After being released from their prison in d'Resh, Lanyx and Chur used their powers of corruption to taint the beauty of the desert.\n",
+        "image": "/cardimages/UP/Twilight_Mowat_CO.jpg",
+        "key": 1344,
+        "name": "Twilight Mowat",
+        "normalized_name": "Twilight_Mowat",
+        "powers": [
+            {
+                "cost": 1,
+                "name": "Dark Sands",
+                "text": "Choose an opposing Creature. That Creature is Core until the beginning of your next turn.\n"
+            }
+        ],
+        "rarity": "P",
+        "regions": [
+            "Core",
+            "d'Resh"
+        ],
+        "set": "UP",
+        "text": "Only Core and d'Resh Magi may play Twilight Mowat.",
+        "type": "Creature"
+    },
+    {
+        "alt_play": "d'Resh",
+        "artist": "Werner, Holmberg",
+        "cost": 7,
+        "effects": [
+            {
+                "name": "Dream Inhibitor",
+                "text": "Powers on opposing Core Creatures cost two extra energy.\n"
+            }
+        ],
+        "flavor": null,
+        "image": "/cardimages/UP/Twilight_Mowat_DR.jpg",
+        "key": 1345,
+        "name": "Twilight Mowat",
+        "normalized_name": "Twilight_Mowat",
+        "powers": [
+            {
+                "cost": 1,
+                "name": "Dark Sands",
+                "text": "Choose an opposing Creature. That Creature is Core until the beginning of your next turn.\n"
+            }
+        ],
+        "rarity": "P",
+        "regions": [
+            "d'Resh",
+            "Core"
+        ],
+        "set": "UP",
+        "text": "Only Core and d'Resh Magi may play Twilight Mowat.",
         "type": "Creature"
     },
     {

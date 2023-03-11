@@ -24,6 +24,7 @@ let sets = {
   "VS": "Voice of the Storms",
   "PR": "Promos",
   "TR": "Traitor's Reach",
+  "UP": "Unreleased Promos",
 };
 
 let regions = [
