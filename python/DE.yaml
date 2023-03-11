@@ -123,7 +123,7 @@
     - name: Strengthen
       text: Whenever you play a Vellup, add one energy to it.
   flavor: |
-    "You can always tell when her mind starts to 
+    "You can always tell when her mind starts to
     wander: the vellups start appearing again."
     -- Stradus, Arderial Warrior
   artist: Werner, Gillette, Goodman
@@ -135,7 +135,7 @@
   cost: 0
   effects:
     - name:
-      text: > 
+      text: >
         At the end of each of your turns, each player starting with you and
         going to the left, names one Spell. Until the end of your next turn,
         the named Spells may not be played.
@@ -171,7 +171,7 @@
     around the bearer like a cyclone.
   artist: Werner, Gillette, Goodman
   rarity: R
-       
+
 - name: Cataclysm
   type: Spell
   region: Arderial
@@ -309,7 +309,7 @@
   powers:
     - name: Suffocate
       cost: 2
-      text: > 
+      text: >
         Choose any one Creature in play. Until the start of your next turn,
         the chosen Creature removes no energy from attacking Creatures while
         it is defending.
@@ -387,12 +387,12 @@
   powers:
     - name: Thermal Blast
       cost: 2
-      text: > 
+      text: >
         Roll a die. Choose any one Creature or Magi in play. Discard energy
         equal to the die roll from the chosen Creature or Magi. If the die
         roll is two or less, discard Grega's Ring from play.
   starting_magi: Grega
-  flavor: > 
+  flavor: >
     Rumor has it she used the ring on the suitor who gave it to her.
   artist: Werner, Gillette, Goodman
   rarity: R
@@ -547,7 +547,7 @@
     You may play Naroom cards, ignoring regional restrictions and penalties.
   effects:
     - name: Devour
-      text: > 
+      text: >
         Whenever an opposing Creature is discarded from play or reduced to
         zero energy by one of your cards, draw a card.
   flavor: "I'll show you jellybeans!"
@@ -1810,7 +1810,7 @@
         hand. If your Magi is Core, the discard is random. If your Magi is
         Evu, you do not need to discard a Jellybean Counter to use this Power.
   shadow_play: Naroom
-  flavor: | 
+  flavor: |
     "I hear they're all black, now..."
     -- Eidon
   artist: Cook, Werner, Gillette, Goodman
@@ -1870,7 +1870,7 @@
   cost: 6
   powers:
     - name: Consume
-      text: > 
+      text: >
         Choose any one of your Creatures in play. Discard the chosen Creature
         from play. Draw two cards.
   text: Orothe Shadow Magi may play Deep Barl.
@@ -1955,8 +1955,8 @@
   region: Orothe
   cost: 12
   energize: 5
-  text: 
-    Starting: Two non-Universal Relics from any one region
+  starting:
+    - "[Two non-Universal Relics from any one region]"
   effects:
     - name: Obsession
       text: >
@@ -2205,7 +2205,7 @@
         restrictions. Core cards that Sorrowing Ogar plays are considered
         Underneath instead of Core.
     - name: Regret
-      text: > 
+      text: >
         All Core cards cost opposing Magi one additional energy to play.
         Sorrowing Ogar may not be played in a deck with any Core Magi.
   flavor: |
@@ -2850,7 +2850,7 @@
       text: >
         Whenever Yajo is attacked, before energy is removed, you may move one
         energy between Yajo and any one of your other Weave Creatures in play.
-  powers: 
+  powers:
     - name: Vitalize
       cost: 1
       text: >
@@ -3013,7 +3013,7 @@
   region: Weave
   cost: 10
   energize: 8
-  starting: 
+  starting:
     - "[Any one Weave Creature]"
   effects:
     - name: Vapid

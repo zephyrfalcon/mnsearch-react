@@ -1,7 +1,4 @@
-# Awakening 
-# Does not include Rock Hyren and Weave Hyren.  (These were available in AW as
-# "sneak previews" but aren't officially part of the set, the way I understand
-# it. They were released in Dream's End.)
+# Awakening
 
 #
 # Arderial
@@ -180,6 +177,8 @@
   type: Magi
   cost: 13
   energize: 5
+  starting:
+    - "[Any two Arderial Spells]"
   effects:
     - name: Suppress
       text: Effects and Powers on other Magi may not be used.
@@ -689,7 +688,7 @@
   powers:
     - name: Subvert
       cost: 6
-      text: > 
+      text: >
         Choose any one hyren in play. Gain control of the chosen hyren. That
         hyren may not attack this turn.
   flavor: One hyren to bring them all, and in the darkness bind them.
@@ -910,7 +909,7 @@
   cost: 4
   effects:
     - name: Succor
-      text: > 
+      text: >
         At the end of your Energize Steps, move two energy from your Magi to
         Vrill.
   powers:
@@ -1126,7 +1125,7 @@
     - Lesser Darbok
   powers:
     - name: Mind Shock
-      text: > 
+      text: >
         Choose any one player. Skip your Draw Step this turn. During the
         chosen player's next turn, he or she may only draw one card.
   flavor: As cold, dark, and barren as a desert at night.
@@ -1207,7 +1206,7 @@
   cost: 0
   effects:
     - name: Backlash
-      text: > 
+      text: >
         If your opponent removes Grim Goblet from play, discard your hand.
   powers:
     - name: Reap
@@ -1422,6 +1421,24 @@
     "Agram will show you the true nature of power. He is your master now."
   artist: Shreve
   rarity: C
+
+#
+# Kybar's Teeth
+
+- name: Rock Hyren
+  type: Creature
+  region: Kybar's Teeth
+  cost: 11
+  effects:
+    - name: Invulnerability
+      text: >
+        Rock Hyren loses two less energy in attacks and opposing Spells,
+        Powers and Effects that discard energy. Your Spells, Powers, and
+        other Effects may not prevent Rock Hyren from losing energy.
+  flavor: |
+    "I've heard rock is strong. Nothin' beats rock."
+  artist: Holmberg
+  rarity: R
 
 #
 # Naroom
@@ -1824,7 +1841,7 @@
         play. Reveal the top five cards of your deck to all players. Put one
         of each Relic revealed into play, regardless of region. Place all
         other revealed cards into your discard pile.
-  flavor: > 
+  flavor: >
     "I can make an energy band out of a baloo root. But sometimes I get a rod
     of coals."
   artist: Holmberg, Vega, Goodman
@@ -2368,3 +2385,21 @@
     "If we can't be safe now," replied Wence, "there won't be a 'later.'"
   artist: Christopher, Shreve
   rarity: C
+
+#
+# Weave
+
+- name: Weave Hyren
+  type: Creature
+  region: Weave
+  cost: 8
+  effects:
+    - name: Wild Growth
+      text: >
+        Once per turn, when an Effect adds energy to Weave Hyren,
+        you may choose to add one energy to each of your other Weave
+        Creatures in play.
+  flavor: |
+    "A major pain in the grass."
+  artist: Holmberg
+  rarity: R

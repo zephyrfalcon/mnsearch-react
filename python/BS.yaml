@@ -231,7 +231,7 @@
   powers:
     - name: Shockstorm
       cost: 6
-      text: > 
+      text: >
         Roll one die. Discard that much energy from each non-Xyx Creature in
         play.
   flavor: |
@@ -248,7 +248,7 @@
     - name: Gathering Clouds
       cost: 2
       text: Choose any one Xyx in play. Add four enery to the chosen Xyx.
-  flavor: | 
+  flavor: |
     To Arderians, the clouds are the seed bed and the lightning is the
     harvest.
   artist: Vega
@@ -285,7 +285,7 @@
     - Shooting Star
   effect:
     - name: Spite
-      text: > 
+      text: >
         If Jaela is defeated, discard one energy from each Creature in play.
   flavor: |
     Regis of the sky realm, she watches over her people in their isolation.
@@ -321,7 +321,7 @@
     - name: Energy Drain
       cost: 1
       text: >
-        Choose any two Creatures in play. Move one energy from one of the 
+        Choose any two Creatures in play. Move one energy from one of the
         chosen Creatures to the other chosen Creature.
   flavor: |
     "All we got now is a little energy."
@@ -423,7 +423,7 @@
         Roll one die.
         1 = Discard your hand.
         2, 3, 4 or 5 = Do nothing.
-        6 = Draw five cards, or choose any one opponent. 
+        6 = Draw five cards, or choose any one opponent.
         The chosen opponent discards his or her hand.
   flavor: |
     "In the eye of the storm, all is still... usually."
@@ -437,7 +437,7 @@
   cost: 0
   powers:
     - name: Windsight
-      text: > 
+      text: >
         Choose any one opponent. The chosen opponent shows you his or her
         hand.
   flavor: |
@@ -529,7 +529,7 @@
     by atmospheric friction."
   artist: Christopher
   rarity: C
- 
+
 - name: Storm Cloud
   region: Arderial
   type: Spell
@@ -587,7 +587,7 @@
       text: >
         Choose any one Creature in play. Discard Diobor from play. Remove two
         energy from the chosen Creature.
-    - 
+    -
       name: Energy Transfer
       cost: X
       text: Add X Energy to your Magi.
@@ -694,7 +694,7 @@
         Choose any one of your Creatures in play. Discard the chosen Creature
         from play. Discard one energy from all non-Cald Creatures and Magi in
         play.
-  flavor: > 
+  flavor: >
     Before the firestorm swept over him, Wence thought he saw a burning image
     of the creature that fueled it.
   artist: Holmberg, Vega
@@ -759,7 +759,7 @@
   cost: 4
   effects:
     - name: Battering Ram
-      text: > 
+      text: >
         When Quor attacks an opposing Creature, discard two energy from that
         Creature's Magi.
   flavor: Nothing can keep it from you.
@@ -774,7 +774,7 @@
     - name: Charge
       text: >
         When Quor Pup attacks, move up to two energy to it from your Magi.
-  flavor: > 
+  flavor: >
     Since it spits fire as it speaks, its bark is no different from its bite.
   artist: Holmberg, Vega
   rarity: U
@@ -823,7 +823,7 @@
     - Flame Geyser
   effects:
     - name: Nerve
-      text: > 
+      text: >
         If a Creature attacks Ashgar directly, draw a card before energy
         is removed.
   flavor: "I'm addicted to stress. That's the way I get things done."
@@ -922,7 +922,7 @@
   powers:
     - name: Refresh
       cost: 1
-      text: > 
+      text: >
         Choose any one Creature in play. Add two energy to the chosen
         Creature.
   flavor: He who controls the flame, controls the universe.
@@ -1099,7 +1099,7 @@
     Choose any one Creature in play. Discard X energy from the chosen
     Creature. Add X energy to your Magi.
   flavor: |
-    "Okay, you can be fancy and steal their energy. I'm just 
+    "Okay, you can be fancy and steal their energy. I'm just
     going to burn them down the traditional way."
     -- Grega, Cald Pyromancer
   artist: Christopher, Holmberg
@@ -1127,7 +1127,7 @@
   type: Creature
   powers:
     - name: Life Channel
-      text: > 
+      text: >
         Choose any one Magi in play. Discard Arboll from play. Add four energy
         to the chosen Magi.
   flavor: |
@@ -1791,7 +1791,7 @@
   cost: 8
   effects:
     - name: Feed
-      text: > 
+      text: >
         Add one energy to Megathan at the end of any turn in which Megathan
         defeated one or more Creatures.
   flavor: I will take you to your grim and watery nightmare.
@@ -2093,7 +2093,7 @@
         Choose any one Magi with no Creatures in play. Discard Hubdra's Spear
         from play. Discard all but one energy from the chosen Magi.
   flavor: |
-    "Tharik-shell points bounce off dream auras, but they 
+    "Tharik-shell points bounce off dream auras, but they
     go through Magi just fine."
     -- Blu, Vault Guardian
   artist: Holmberg, Vega, Shreve
@@ -2103,7 +2103,7 @@
   type: Relic
   region: Orothe
   cost: 0
-  effects: 
+  effects:
     - name: Hydromancy
       text: >
         Whenever you play a Spell that adds energy to a Creature in play, add

@@ -14,7 +14,7 @@
       text: >
         Choose a Creature. Remove one energy from that Creature for each
         Vemment you control.
-  text: 
+  text:
   flavor: |
     A flight of vemments charged Togoth, pummeling his nightmare creatures
     into animite dust.
@@ -944,7 +944,7 @@
     - Sandstorm Orshaa
   effects:
     - name: Spellcraft
-      text: > 
+      text: >
         Once per turn, as an opponent plays a Spell, choose an Illusion and
         add four energy to it.
   flavor: >
@@ -1352,7 +1352,7 @@
   cost: 13
   energize: 5
   starting:
-    - "[one Arctic card]"
+    - "[One Arctic card]"
   powers:
     - name: Iceberg
       cost: 0
@@ -1360,7 +1360,7 @@
         Choose a Frozen Creature you control and an opposing Creature with
         less energy. Discard both Creatures from play.
   flavor: |
-    "When Hajnyn decides to vanish, he's as hard to find as 
+    "When Hajnyn decides to vanish, he's as hard to find as
     a shadow in a storm."
     -- Ust
   artist: Holmberg
@@ -1607,7 +1607,7 @@
   powers:
     - name: Vitalize
       cost: 2
-      text: > 
+      text: >
         Choose a Creature with less than its starting energy and restore it to
         its printed starting energy.
   flavor: |
@@ -1762,8 +1762,8 @@
   cost: 13
   energize: 5
   starting:
-    - "[one Core Relic]"
-    - "[one Orothe Relic]"
+    - "[One Core Relic]"
+    - "[One Orothe Relic]"
   effects:
     - name: Desire
       text: >
@@ -1777,6 +1777,25 @@
     "Qwade, it's perfect! How do I use it?"
   artist: Holmberg
   rarity: R
+
+- name: Jaim
+  type: Magi
+  region: Orothe
+  cost: 15
+  energize: 5
+  starting:
+    - Sea Barl
+    - Hubdra's Cube
+    - Ripcurl
+  effects:
+    - name: Guardian
+      text: >
+        After an opposing card discards one or more of your Orothe Relics
+        from play, you may remove one energy from Jaim. If you do, return
+        the Relics to their owner's hand.
+  flavor: "I'm never caught unprepared when my relics are near."
+  artist: Holmberg
+  rarity: U
 
 - name: Sellia
   type: Magi
@@ -1864,7 +1883,7 @@
 - name: Ripcurl
   type: Spell
   region: Orothe
-  cost: 4 
+  cost: 4
   text: >
     Choose two opposing Creatures. Move up to four energy from the first
     Creature to the second Creature.
@@ -2066,7 +2085,7 @@
     -- Liriel, Bagala Trainer
   artist: Werner
   rarity: C
-  
+
 - name: Scarletsong Lilt
   type: Spell
   region: Paradwyn
@@ -2380,7 +2399,7 @@
   powers:
     - name: Mind Games
       cost: 1
-      text: > 
+      text: >
         Discard Ancient's Puzzlebox from play. Reveal any number of cards in
         your hand and choose a Creature. Add one energy to it for each
         Ancient's Puzzlebox you reveal. Draw a card. You may not play another
@@ -2414,10 +2433,10 @@
   text: >
     Choose a Creature and remove four energy from it. If this discards the
     Creature from play, choose up to two non-Universal Relics and discard them
-    from play. 
+    from play.
     Only Universal and Universal Shadow Magi can play Crushing Will.
   flavor: |
-    "It takes a willful man to stand alone in the Moonlands 
+    "It takes a willful man to stand alone in the Moonlands
     with no allegiances but himself."
     -- Orwin, Elder
   artist: Holmberg
@@ -2611,7 +2630,7 @@
     Move one energy from each opposing Creature to your Magi. Your Powers,
     Spells and Effects cannot increase the energy moved by Countless Blades.
   flavor: |
-    "In the Weave, each and every blade of grass is a 
+    "In the Weave, each and every blade of grass is a
     potential enemy or ally. It all depends on your perspective."
     -- Zaya, Weave Elder
   artist: Holmberg

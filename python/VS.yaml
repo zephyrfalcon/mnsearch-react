@@ -647,7 +647,7 @@
   cost: 13
   energize: 6
   starting:
-    - "[Wandering Balamant]" # in TR; never released
+    - Wandering Balamant
     - Bombard
     - Magma Armor
   effects:
@@ -883,7 +883,7 @@
   cost: 15
   energize: 6
   starting:
-    - "[one Furok]"
+    - "[One Furok]"
     - Shadow Bones
   effects:
     - name: Affinity
@@ -946,7 +946,7 @@
         energy from The Real Qwade. If you do, until the end of your turn,
         whenever you play a Creature, choose another Creature. Move on energy
         from the chosen Creature to the Creature you just played.
-  flavor: 
+  flavor:
     "I trust no one. Not even myself."
   artist: Holmberg, Gillette
   rarity: U
@@ -1918,7 +1918,7 @@
   cost: 16
   energize: 5
   starting:
-    - "[one Oracle]"
+    - "[One Oracle]"
   effects:
     - name: Glorious Prophecy
       text: >
@@ -3240,7 +3240,7 @@
   cost: 3
   subtype: Arctic
   effects:
-    - name: 
+    - name:
       text: >
         While Zyavu is in play, all Creatures in play are frozen; Powers on
         frozen cards cost one additional energy to use.
@@ -3309,7 +3309,7 @@
         At the beginning of your turn, choose an opponent. Increase your
         energize by one for each Relic the chosen opponent has in play.
     - name:
-      text: > 
+      text: >
         Each of your Non-Nar, non-Universal cards costs one additional energy
         to play.
   powers:
@@ -3684,7 +3684,7 @@
       text: >
         Reduce each Magi's Energize by the number of frozen Creatures that
         Magi has in play.
-    - name: 
+    - name:
       text: >
         If any player has no Creatures in play, discard Icy Prison from play.
   flavor: The more you grow, the tighter it seems.
@@ -4819,7 +4819,7 @@
 
 #
 # Universal
- 
+
 - name: Baby Hyren
   type: Creature
   region: Universal
@@ -5014,7 +5014,7 @@
   subtype: Weavespinner
   cost: 16
   energize: 4
-  starting: 
+  starting:
     - Sagaweave
     - Paradar
   effects:

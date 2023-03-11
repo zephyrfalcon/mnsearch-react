@@ -59,7 +59,7 @@
   cost: 2
   effects:
     - name: Scorch
-      text: > 
+      text: >
         When any player plays a Spell, you may discard Ember Vard from play.
         If you do, choose one of that player's Creatures. Discard five energy
         from the chosen Creature.
@@ -252,7 +252,7 @@
   artist: Gillette, Goodman
   rarity: P
 
-# 
+#
 # Core
 
 - name: Drush
@@ -342,7 +342,7 @@
     - "[any Core Creature]"
     - "[any Core Spell]"
   text: >
-    The Dark Twins count as two Magi for deck construction. 
+    The Dark Twins count as two Magi for deck construction.
     The Dark Twins may go first every game and, if they go first,
     they may draw up to seven starting cards. If The Dark Twins
     are defeated and your next Magi is Naroom, that Magi
@@ -817,7 +817,7 @@
         three energy from Grakanden to cancel all effects of that Spell.
         Return the Spell to that player's hand at the end of the turn.
   flavor: |
-    I've never met a mushroom that could talk, but I'd swear that thing just
+    "I've never met a mushroom that could talk, but I'd swear that thing just
     said 'NO!'"
     -- Kesia, Weaverunner
   artist: Holmberg, Cook
@@ -983,7 +983,7 @@
   cost: 15
   energize: 5
   starting:
-    - "[one creature]"
+    - "[One Creature]"
   effects:
     - name: Adapt
       text: >
@@ -1007,7 +1007,7 @@
   starting:
     - Tomorrow's Jewel
     - Beam of Light
-    - "[one creature]"
+    - "[One Creature]"
   powers:
     - name: Caffeine!
       text: >
@@ -1026,7 +1026,7 @@
   cost: 10
   energize: 5
   starting:
-    - "[any one creature card]"
+    - "[Any one Creature card]"
     - Furok
   effects:
     - name: Animite Affinity

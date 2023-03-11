@@ -22667,7 +22667,7 @@
         ],
         "set": "ND",
         "starting": [
-            "[Two different non-hyren creatures of the same type]"
+            "[Two different non-Hyren Creatures of the same type]"
         ],
         "subtype": "Weavekeeper",
         "type": "Magi"
@@ -26585,7 +26585,7 @@
         "starting": [
             "Koil",
             "Shadow Vinoc",
-            "[Any one Shadow Geyser]"
+            "[any one Shadow Geyser]"
         ],
         "subtype": "Practitioner of Core Magics -- The General",
         "type": "Magi"
@@ -26731,7 +26731,7 @@
         ],
         "set": "PR",
         "starting": [
-            "[Any one creature card]",
+            "[Any one Creature card]",
             "Furok"
         ],
         "type": "Magi"
@@ -28807,7 +28807,7 @@
         "set": "ND",
         "starting": [
             "Hurricane Orish",
-            "[One Arderial or Orothe Relic]"
+            "[one Arderial or Orothe Relic]"
         ],
         "type": "Magi"
     },
@@ -28835,7 +28835,7 @@
         "set": "ND",
         "starting": [
             "Hurricane Orish",
-            "[One Arderial or Orothe Relic]"
+            "[one Arderial or Orothe Relic]"
         ],
         "type": "Magi"
     },
