@@ -44,9 +44,9 @@ let regions = [
 
 let cardTypes = ["Creature", "Magi", "Spell", "Relic"];
 let rarities = {
-  "C": "Common", 
-  "U": "Uncommon", 
-  "R": "Rare", 
+  "C": "Common",
+  "U": "Uncommon",
+  "R": "Rare",
   "P": "Promo",
 };
 
@@ -85,6 +85,7 @@ function showSortArrow(field, sortKey) {
 const cardText = (card) => [
   card.name,
   card.type,
+  card.energize,
   card.effects && card.effects.map(effect => effect.name || "").join(" "),
   card.effects && card.effects.map(effect => effect.text || "").join(" "),
   card.powers && card.powers.map(power => power.name || "").join(" "),
@@ -102,7 +103,7 @@ const wholeCardText = (card) => {
     (card.flavor || ""),
     (card.artist || ""),
   ].join(" ").toLowerCase();
-  // what else? 
+  // what else?
 }
 
 /* props:
@@ -125,7 +126,7 @@ class QueryArea extends Component {
           <table className="QueryArea-top-table">
             <tbody>
               <tr>
-                <td style={{ textAlign: 'left', paddingLeft: '5px' }}>Name</td> 
+                <td style={{ textAlign: 'left', paddingLeft: '5px' }}>Name</td>
                 <td>contains:</td>
                 <td><input className="QueryArea-text" type="text" size="30"
                                     onChange={this.props.onTextChange} />
@@ -133,7 +134,7 @@ class QueryArea extends Component {
               </tr>
               <tr>
                 <td>
-                  <select className="dropdown-refined" 
+                  <select className="dropdown-refined"
                           onChange={this.props.onRefinedFieldChange}>
                     <option value="card-text">Card Text</option>
                     <option value="effect-name">Effect name</option>
@@ -141,6 +142,7 @@ class QueryArea extends Component {
                     <option value="power-name">Power name</option>
                     <option value="power-text">Power text</option>
                     <option value="subtype">Subtype</option>
+                    <option value="energize">Energize</option>
                     <option value="flavor-text">Flavor text</option>
                     <option value="artist">Artist</option>
                     <option value="whole-card">Whole card</option>
@@ -175,7 +177,7 @@ class QueryArea extends Component {
           <div className="QueryArea-cardtypes column">
             {cardTypes.map(cardType =>
               <div key={cardType}>
-                <input type="checkbox" name="cardtype" value={cardType} 
+                <input type="checkbox" name="cardtype" value={cardType}
                        onChange={this.props.onCardTypeChange} />{cardType}<br/>
               </div>
             )}
@@ -193,18 +195,18 @@ class QueryArea extends Component {
                       value="multi-regions"
                       text="only show multi-region cards"
                       onChange={this.props.onOnlyMultiRegions} />
-            <CheckBox name="all-regions" 
-                      value="all-regions" text="only cards with ALL regions selected" 
+            <CheckBox name="all-regions"
+                      value="all-regions" text="only cards with ALL regions selected"
                       onChange={this.props.onAllRegionsChange} />
             <RadioButtonGroup
               className="QueryArea-mrp"
               title="MRP data:"
               groupName="mrp"
               onChange={this.props.onMRPChange}
-              buttons={[{name: "mrp-all", text: "Show all cards"}, 
-                        {name: "mrp-only", text: "Show only cards with MRP data"}, 
+              buttons={[{name: "mrp-all", text: "Show all cards"},
+                        {name: "mrp-only", text: "Show only cards with MRP data"},
                         {name: "mrp-no", text: "Show only cards without MRP data"}]}
-              checked="mrp-all" 
+              checked="mrp-all"
             />
           </div>
           <div className="lastcolumn">&nbsp;</div>
@@ -229,23 +231,23 @@ class SearchResults extends Component {
         <table className="SearchResults-cards">
           <thead>
             <tr>
-              <td onClick={() => this.props.toggleSort('name')} 
+              <td onClick={() => this.props.toggleSort('name')}
                   style={{ width: '20%' }}>Name{showSortArrow("name", this.props.sortKey)}</td>
-              <td onClick={() => this.props.toggleSort('region')} 
+              <td onClick={() => this.props.toggleSort('region')}
                   style={{ width: '20%' }}>Region{showSortArrow("region", this.props.sortKey)}</td>
-              <td onClick={() => this.props.toggleSort('set')} 
+              <td onClick={() => this.props.toggleSort('set')}
                   style={{ width: '15%' }}>Set{showSortArrow("set", this.props.sortKey)}</td>
-              <td onClick={() => this.props.toggleSort('type')} 
+              <td onClick={() => this.props.toggleSort('type')}
                   style={{ width: '10%' }}>Type{showSortArrow("type", this.props.sortKey)}</td>
-              <td onClick={() => this.props.toggleSort('rarity')} 
+              <td onClick={() => this.props.toggleSort('rarity')}
                   style={{ width: '10%' }}>Rarity{showSortArrow("rarity", this.props.sortKey)}</td>
-              <td onClick={() => this.props.toggleSort('cost')} 
+              <td onClick={() => this.props.toggleSort('cost')}
                   style={{ width: '5%' }}>Cost/Starting Energy{showSortArrow("cost", this.props.sortKey)}</td>
             </tr>
           </thead>
           <tbody>
-          {this.props.cards.map((card, index) => 
-            <Card card={card} 
+          {this.props.cards.map((card, index) =>
+            <Card card={card}
                   index={index}
                   key={card.key}
                   onSelectItem={this.props.onSelectItem}
@@ -273,8 +275,8 @@ class Card extends Component {
         <tr className={"Card-line Card-line-color-"+(index % 2)}
             key={card.key} onClick={() => onSelectItem(card.key)}>
           <td>{card.name || "?!?"}</td>
-          <td>{card.regions.length > 1 ? 
-              card.regions[0] + "/" + card.regions[1] 
+          <td>{card.regions.length > 1 ?
+              card.regions[0] + "/" + card.regions[1]
               : card.regions[0]}
           </td>
           <td>{sets[card.set]}</td>
@@ -282,7 +284,7 @@ class Card extends Component {
           <td>{rarities[card.rarity]}</td>
           <td>{card.cost}</td>
         </tr>
-        {isCardSelected(card) ? 
+        {isCardSelected(card) ?
           <CardDetails card={card} /> : null}
       </React.Fragment>
     );
@@ -310,8 +312,8 @@ class CardDetails extends Component {
                 </tr>
                 <tr>
                   <td>Region(s)</td>
-                  <td>{card.regions.length === 1 ? 
-                       card.regions[0] : 
+                  <td>{card.regions.length === 1 ?
+                       card.regions[0] :
                        card.regions[0] + "/" + card.regions[1]}</td>
                 </tr>
                 <tr>
@@ -321,9 +323,9 @@ class CardDetails extends Component {
                 <tr>
                   <td>Card Type</td>
                   <td>{card.type}&nbsp;
-                    {card.type === "Magi" && 
-                     card.regions.includes("Core") && 
-                     card.original_region && 
+                    {card.type === "Magi" &&
+                     card.regions.includes("Core") &&
+                     card.original_region &&
                      <span className="CardDetails-shadow-magi">{card.original_region} Shadow Magi</span>}
                   </td>
                 </tr>
@@ -359,11 +361,11 @@ class CardDetails extends Component {
                    <td>{card.text}</td>
                  </tr>
                 }
-                {card.effects && 
+                {card.effects &&
                   <tr>
                     <td>Effects</td>
                     <td>
-                      {card.effects.map(effect => 
+                      {card.effects.map(effect =>
                         <span><strong>Effect - {effect.name}</strong>: {effect.text}<br/></span>
                       )}
                     </td>
@@ -406,7 +408,7 @@ class CardDetails extends Component {
   }
 }
 
-const AboutLink = (props) => 
+const AboutLink = (props) =>
   <div className="AboutLink"><a name="top" href="#about">About/Instructions</a></div>
 
 /* props:
@@ -430,8 +432,8 @@ class CheckBox extends Component {
   render() {
     return (
       <span>
-        <input type="checkbox" 
-               name={this.props.name} 
+        <input type="checkbox"
+               name={this.props.name}
                value={this.props.value}
                onChange={this.props.onChange}
                ref={elem => this.input = elem} />
@@ -466,10 +468,10 @@ class RadioButtonGroup extends Component {
     return (
       <div className={this.props.className}>
         {this.props.title || ""}<br/>
-        {this.props.buttons.map((buttonInfo) => 
+        {this.props.buttons.map((buttonInfo) =>
           <span key={buttonInfo.name}>
-            <input type="radio" 
-              name={this.props.groupName} 
+            <input type="radio"
+              name={this.props.groupName}
               key={buttonInfo.name}
               value={buttonInfo.name}
               checked={buttonInfo.name === this.state.checked}
@@ -494,7 +496,7 @@ class About extends Component {
           <p>Quick instructions:</p>
           <ul>
             <li>Select checkboxes to filter by region, set, etc.</li>
-            <li>Typing in the name text field immediately filters the search results; 
+            <li>Typing in the name text field immediately filters the search results;
               pressing Enter is not necessary.
             </li>
             <li>Click on a card to show details.</li>
@@ -503,11 +505,11 @@ class About extends Component {
             </li>
           </ul>
           <p>Source code is available on&nbsp;
-            <a href="https://github.com/zephyrfalcon/mnsearch-react">Github</a>. 
+            <a href="https://github.com/zephyrfalcon/mnsearch-react">Github</a>.
             If you find bugs, or have suggestions for new features, please&nbsp;
             <a href="https://github.com/zephyrfalcon/mnsearch-react/issues">add an issue</a> there.</p>
             <p>If you find Magi-Nation Search useful, please consider
-              buying me a <a target="_blank" rel="noopener noreferrer" 
+              buying me a <a target="_blank" rel="noopener noreferrer"
                              href="https://ko-fi.com/zephyrfalcon">coffee</a>. :3
             </p>
             <p>[<a href="#top">back to top</a>]</p>
@@ -572,7 +574,7 @@ class App extends Component {
   }
 
   onTextChange(event) {
-    this.setState({ text: event.target.value.trim() }, 
+    this.setState({ text: event.target.value.trim() },
                   () => this.updateSearchResults());
                   // callback is necessary to use the updated state
   }
@@ -594,7 +596,7 @@ class App extends Component {
     let arr = [...coll];  // HTMLCollection -> Array
     let checkedRegions = arr.filter(inputElem => inputElem.checked)
                             .map(inputElem => inputElem.value);
-    this.setState({ regions: checkedRegions }, 
+    this.setState({ regions: checkedRegions },
                   () => this.updateSearchResults());
   }
 
@@ -604,7 +606,7 @@ class App extends Component {
     let arr = [...coll];  // HTMLCollection -> Array
     let checkedSets = arr.filter(inputElem => inputElem.checked)
                          .map(inputElem => inputElem.value);
-    this.setState({ sets: checkedSets }, 
+    this.setState({ sets: checkedSets },
                   () => this.updateSearchResults());
   }
 
@@ -614,7 +616,7 @@ class App extends Component {
     let arr = [...coll];  // HTMLCollection -> Array
     let checkedCardTypes = arr.filter(inputElem => inputElem.checked)
                               .map(inputElem => inputElem.value);
-    this.setState({ cardTypes: checkedCardTypes }, 
+    this.setState({ cardTypes: checkedCardTypes },
                   () => this.updateSearchResults());
   }
 
@@ -624,7 +626,7 @@ class App extends Component {
     let arr = [...coll];  // HTMLCollection -> Array
     let checkedRarities = arr.filter(inputElem => inputElem.checked)
                              .map(inputElem => inputElem.value);
-    this.setState({ rarities: checkedRarities }, 
+    this.setState({ rarities: checkedRarities },
                   () => this.updateSearchResults());
   }
 
@@ -637,7 +639,7 @@ class App extends Component {
     //let panel = event.target.parentElement.parentElement;
     //let coll = panel.getElementsByTagName('input');
     //let arr = [...coll];  // HTMLCollection -> Array
-    this.setState({ filters: { ...this.state.filters, allRegions: event.target.checked } }, 
+    this.setState({ filters: { ...this.state.filters, allRegions: event.target.checked } },
                   () => this.updateSearchResults());
   }
 
@@ -702,40 +704,44 @@ class App extends Component {
       }
       else if (this.state.refinedSearchField === 'card-text') {
         results = results.filter(card => cardText(card).includes(text));
-      } 
+      }
       else if (this.state.refinedSearchField === 'whole-card') {
         results = results.filter(card => wholeCardText(card).includes(text));
-      } 
+      }
       else if (this.state.refinedSearchField === 'effect-name') {
         results = results.filter(
           card => card.effects && card.effects.some(
             effect => effect.name && effect.name.toLowerCase().includes(text)));
-      } 
+      }
       else if (this.state.refinedSearchField === 'effect-text') {
         results = results.filter(
           card => card.effects && card.effects.some(
             effect => effect.text && effect.text.toLowerCase().includes(text)));
-      } 
+      }
       else if (this.state.refinedSearchField === 'power-name') {
         results = results.filter(
           card => card.powers && card.powers.some(
             power => power.name && power.name.toLowerCase().includes(text)));
-      } 
+      }
       else if (this.state.refinedSearchField === 'power-text') {
         results = results.filter(
           card => card.powers && card.powers.some(
             power => power.text && power.text.toLowerCase().includes(text)))
-      } 
+      }
       else if (this.state.refinedSearchField === 'subtype') {
         results = results.filter(
           card => card.subtype && card.subtype.toLowerCase().includes(text));
           // does not include things like "Weave Shadow Magi"
-      } 
+      }
+      else if (this.state.refinedSearchField === 'energize') {
+        results = results.filter(
+            card => card.energize && card.energize.toString().includes(text));
+      }
       else if (this.state.refinedSearchField === 'flavor-text') {
         results = results.filter(
           card => card.flavor && card.flavor.toLowerCase().includes(text));
-      } 
-      else 
+      }
+      else
         alert("not implemented yet: " + this.state.refinedSearchField);
     }
 
@@ -762,13 +768,13 @@ class App extends Component {
                    onCardTypeChange={this.onCardTypeChange}
                    onRarityChange={this.onRarityChange}
                    onOnlyMultiRegions={this.onOnlyMultiRegions}
-                   onAllRegionsChange={this.onAllRegionsChange} 
+                   onAllRegionsChange={this.onAllRegionsChange}
                    onMRPChange={this.onMRPChange}
         />
         <hr />
-        <SearchResults cards={this.state.results} 
+        <SearchResults cards={this.state.results}
                        onSelectItem={this.onSelectItem}
-                       isCardSelected={this.isCardSelected} 
+                       isCardSelected={this.isCardSelected}
                        toggleSort={this.toggleSort}
                        sortKey={this.state.sortBy}
                        />
