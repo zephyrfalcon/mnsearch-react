@@ -1166,7 +1166,7 @@
         ],
         "set": "ND",
         "starting": [
-            "[one Jungle Stalker]",
+            "[One Jungle Stalker]",
             "Jungle Jile",
             "Stalk"
         ],
@@ -3175,9 +3175,9 @@
             "Orothe"
         ],
         "set": "DE",
-        "text": {
-            "Starting": "Two non-Universal Relics from any one region"
-        },
+        "starting": [
+            "[Two non-Universal Relics from any one region]"
+        ],
         "type": "Magi"
     },
     {
@@ -3206,8 +3206,8 @@
         ],
         "set": "TR",
         "starting": [
-            "[one Core Relic]",
-            "[one Orothe Relic]"
+            "[One Core Relic]",
+            "[One Orothe Relic]"
         ],
         "type": "Magi"
     },
@@ -5514,7 +5514,7 @@
         ],
         "set": "ND",
         "starting": [
-            "[one Jungle Stalker]",
+            "[One Jungle Stalker]",
             "Magor",
             "Stalker's Boots"
         ],
@@ -7961,7 +7961,7 @@
         ],
         "set": "VS",
         "starting": [
-            "[one Furok]",
+            "[One Furok]",
             "Shadow Bones"
         ],
         "type": "Magi"
@@ -11467,7 +11467,7 @@
         ],
         "set": "TR",
         "starting": [
-            "[one Arctic card]"
+            "[One Arctic card]"
         ],
         "type": "Magi"
     },
@@ -13538,7 +13538,7 @@
         "powers": [
             {
                 "name": "Dream Cross",
-                "text": "Choose any one of your other Creatures in play. Until the chosen Creatures leaves play, all Powers printed on the chosen Creature are also considered to be printed on K'teeb. K'teeb cannot copy a Power that it already has. All of K'teeb's Powers that reference the card that they are printed on now reference K'teeb.\n"
+                "text": "Choose any one of your other Creatures in play. Until the chosen Creature leaves play, all Powers printed on the chosen Creature are also considered to be printed on K'teeb. K'teeb cannot copy a Power that it already has. All of K'teeb's Powers that reference the card that they are printed on now reference K'teeb.\n"
             }
         ],
         "rarity": "U",
@@ -13566,7 +13566,7 @@
         "powers": [
             {
                 "name": "Dream Cross",
-                "text": "Choose any one of your other Creatures in play. Until the chosen Creatures leaves play, all Powers printed on the chosen Creature are also considered to be printed on K'teeb. K'teeb cannot copy a Power that it already has. All of K'teeb's Powers that reference the card that they are printed on now reference K'teeb.\n"
+                "text": "Choose any one of your other Creatures in play. Until the chosen Creature leaves play, all Powers printed on the chosen Creature are also considered to be printed on K'teeb. K'teeb cannot copy a Power that it already has. All of K'teeb's Powers that reference the card that they are printed on now reference K'teeb.\n"
             }
         ],
         "rarity": "U",
@@ -15309,7 +15309,7 @@
         ],
         "set": "PR",
         "starting": [
-            "[one creature]"
+            "[One creature]"
         ],
         "subtype": "Purveyor of Great Fun",
         "type": "Magi"
@@ -20487,7 +20487,7 @@
         ],
         "set": "ND",
         "starting": [
-            "[two different Universal cards]"
+            "[Two different Universal cards]"
         ],
         "text": "You can play with more than one copy of Rayje in yur deck. When you reveal Rayje, he gains all Powers and Effects on all of your defeated Rayjes and any one other of the following Powers or Effects until the end of the game: \"Power -- Aid: Move one energy from one Creature to another\", \"Effect -- Lore: During your draw step, draw an additional card\", \"Effect -- Defense: Whenever one of your Creatures is attacked, add one energy to it before energy is removed\", \"Effect -- Wily: Once per turn, instead of drawing a card, place any one Spell from your discard pile into your hand\", \"Effect -- Charge: Whenever one of your Creatures attacks, add one energy to it before energy is removed\".\n",
         "type": "Magi"
@@ -21011,7 +21011,7 @@
         ],
         "set": "VS",
         "starting": [
-            "[one Oracle]"
+            "[One Oracle]"
         ],
         "subtype": "Oracle",
         "type": "Magi"
@@ -22667,7 +22667,7 @@
         ],
         "set": "ND",
         "starting": [
-            "[two different non-hyren creatures of the same type]"
+            "[Two different non-hyren creatures of the same type]"
         ],
         "subtype": "Weavekeeper",
         "type": "Magi"
@@ -23947,6 +23947,9 @@
             "Arderial"
         ],
         "set": "AW",
+        "starting": [
+            "[Any two Arderial Spells]"
+        ],
         "type": "Magi"
     },
     {
@@ -26028,8 +26031,8 @@
         "set": "PR",
         "starting": [
             "Entomb",
-            "[any Core Creature]",
-            "[any Core Spell]"
+            "[Any Core Creature]",
+            "[Any Core Spell]"
         ],
         "text": "The Dark Twins count as two Magi for deck construction.  The Dark Twins may go first every game and, if they go first, they may draw up to seven starting cards. If The Dark Twins are defeated and your next Magi is Naroom, that Magi becomes a Naroom Shadow Magi. All rules for Shadow Magi apply to the new Magi.\n",
         "type": "Magi"
@@ -26582,7 +26585,7 @@
         "starting": [
             "Koil",
             "Shadow Vinoc",
-            "[any one Shadow Geyser]"
+            "[Any one Shadow Geyser]"
         ],
         "subtype": "Practitioner of Core Magics -- The General",
         "type": "Magi"
@@ -26696,7 +26699,7 @@
         "starting": [
             "Tomorrow's Jewel",
             "Beam of Light",
-            "[one creature]"
+            "[One creature]"
         ],
         "type": "Magi"
     },
@@ -26728,7 +26731,7 @@
         ],
         "set": "PR",
         "starting": [
-            "[any one creature card]",
+            "[Any one creature card]",
             "Furok"
         ],
         "type": "Magi"
@@ -26941,7 +26944,7 @@
         ],
         "set": "VS",
         "starting": [
-            "[Wandering Balamant]",
+            "Wandering Balamant",
             "Bombard",
             "Magma Armor"
         ],
@@ -28804,7 +28807,7 @@
         "set": "ND",
         "starting": [
             "Hurricane Orish",
-            "[one Arderial or Orothe Relic]"
+            "[One Arderial or Orothe Relic]"
         ],
         "type": "Magi"
     },
@@ -28832,7 +28835,7 @@
         "set": "ND",
         "starting": [
             "Hurricane Orish",
-            "[one Arderial or Orothe Relic]"
+            "[One Arderial or Orothe Relic]"
         ],
         "type": "Magi"
     },
