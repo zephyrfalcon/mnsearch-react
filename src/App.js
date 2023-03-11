@@ -351,8 +351,14 @@ class CardDetails extends Component {
                 }
                 {card.starting &&
                  <tr>
-                   <td>Starting cards</td>
+                   <td>Starting Cards</td>
                    <td>{card.starting.join(", ")}</td>
+                 </tr>
+                }
+                {card.starting_magi &&
+                 <tr>
+                   <td>Starting Magi</td>
+                   <td>{card.starting_magi}</td>
                  </tr>
                 }
                 {card.text &&
