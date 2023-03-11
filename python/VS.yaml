@@ -647,7 +647,7 @@
   cost: 13
   energize: 6
   starting:
-    - Wandering Balamant
+    - Wandering Balamant  # available in Traitor's Reach
     - Bombard
     - Magma Armor
   effects:

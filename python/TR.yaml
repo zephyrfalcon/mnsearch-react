@@ -215,6 +215,9 @@
   artist: Holmberg
   rarity: U
 
+#
+# Bograth
+
 - name: Black Stuff
   type: Creature
   region: Bograth
@@ -417,6 +420,9 @@
     greater purpose.
   artist: Werner, Holmberg
   rarity: C
+
+#
+# Cald
 
 - name: Caldera Aq
   type: Creature
@@ -625,6 +631,9 @@
   artist: Werner, Holmberg
   rarity: C
 
+#
+# Core
+
 - name: Dark Vellup
   type: Creature
   region: Core
@@ -819,6 +828,9 @@
     pain, then vanished in a flash of light.
   artist: Werner, Holmberg
   rarity: U
+
+#
+# d'Resh
 
 - name: Circling Darbok
   type: Creature
@@ -1024,6 +1036,9 @@
     -- Wence the Wanderer
   artist: Holmberg, Christopher
   rarity: C
+
+#
+# Kybar's Teeth
 
 - name: Bone Cragnoc
   type: Creature
@@ -1267,6 +1282,9 @@
   artist: Holmberg
   rarity: R
 
+#
+# Nar
+
 - name: Ice Vinoc
   type: Creature
   region: Nar
@@ -1461,6 +1479,9 @@
     haze of ice seemed to surround each one.
   artist: Holmberg
   rarity: C
+
+#
+# Naroom
 
 - name: Carillion Titan
   type: Creature
@@ -1676,6 +1697,9 @@
     -- Tuku
   artist: Holmberg
   rarity: C
+
+#
+# Orothe
 
 - name: Grotto Phrup
   type: Creature
@@ -1894,6 +1918,9 @@
   artist: Holmberg
   rarity: R
 
+#
+# Paradwyn
+
 - name: Jungle Eebit
   type: Creature
   region: Paradwyn
@@ -2099,6 +2126,9 @@
     distraction to foreigners.
   artist: Holmberg
   rarity: C
+
+#
+# Underneath
 
 - name: Crystal Hyren
   type: Creature
@@ -2332,6 +2362,9 @@
   artist: Holmberg, Gillette
   rarity: C
 
+#
+# Universal
+
 - name: Collosit
   type: Creature
   region: Universal
@@ -2441,6 +2474,9 @@
     -- Orwin, Elder
   artist: Holmberg
   rarity: U
+
+#
+# Weave
 
 - name: Scurrying Weggit
   type: Creature
