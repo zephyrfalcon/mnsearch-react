@@ -311,6 +311,12 @@ class CardDetails extends Component {
                   <td>Name</td>
                   <td>{card.name}</td>
                 </tr>
+                {card.alternate &&
+                <tr>
+                  <td>Alternate</td>
+                  <td>{card.alternate}</td>
+                </tr>
+                }
                 <tr>
                   <td>Region(s)</td>
                   <td>{card.regions.length === 1 ?
