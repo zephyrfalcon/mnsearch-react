@@ -13085,6 +13085,34 @@
         "type": "Magi"
     },
     {
+        "artist": "Holmberg",
+        "cost": 15,
+        "effects": [
+            {
+                "name": "Guardian",
+                "text": "After an opposing card discards one or more of your Orothe Relics from play, you may remove one energy from Jaim. If you do, return the Relics to their owner's hand.\n"
+            }
+        ],
+        "energize": 5,
+        "flavor": "\"I'm never caught unprepared when my relics are near.\"\n",
+        "image": "/cardimages/TR/Jaim.jpg",
+        "key": 1334,
+        "name": "Jaim",
+        "normalized_name": "Jaim",
+        "rarity": "U",
+        "regions": [
+            "Orothe"
+        ],
+        "set": "TR",
+        "starting": [
+            "Sea Barl",
+            "Hubdra's Cube",
+            "Ripcurl"
+        ],
+        "text": "You may not play more than two Relics per turn.\n",
+        "type": "Magi"
+    },
+    {
         "artist": "Vega, Holmberg",
         "cost": 2,
         "flavor": "Skulking in the lava pools of Cald, these creatures enjoy picking on passing Arbolits.\n",
@@ -21207,6 +21235,27 @@
             "Kybar's Teeth"
         ],
         "set": "DE",
+        "type": "Creature"
+    },
+    {
+        "artist": "Holmberg",
+        "cost": 11,
+        "effects": [
+            {
+                "name": "Invulnerability",
+                "text": "Rock Hyren loses two less energy in attacks and opposing Spells, Powers and Effects that discard energy. Your Spells, Powers, and other Effects may not prevent Rock Hyren from losing energy.\n"
+            }
+        ],
+        "flavor": "I've heard rock is strong. Nothin' beats rock.\n",
+        "image": "/cardimages/DE/Rock_Hyren.jpg",
+        "key": 1335,
+        "name": "Rock Hyren",
+        "normalized_name": "Rock_Hyren",
+        "rarity": "R",
+        "regions": [
+            "Kybar's Teeth"
+        ],
+        "set": "AW",
         "type": "Creature"
     },
     {
@@ -29363,6 +29412,27 @@
             "Weave"
         ],
         "set": "DE",
+        "type": "Creature"
+    },
+    {
+        "artist": "Holmberg",
+        "cost": 8,
+        "effects": [
+            {
+                "name": "Wild Growth",
+                "text": "Once per turn, when an Effect adds energy to Weave Hyren, you may choose to add one energy to each of your other Weave Creatures in play.\n"
+            }
+        ],
+        "flavor": "A major pain in the grass.\n",
+        "image": "/cardimages/DE/Weave_Hyren.jpg",
+        "key": 1336,
+        "name": "Weave Hyren",
+        "normalized_name": "Weave_Hyren",
+        "rarity": "R",
+        "regions": [
+            "Weave"
+        ],
+        "set": "AW",
         "type": "Creature"
     },
     {
