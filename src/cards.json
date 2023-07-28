@@ -19630,7 +19630,7 @@
         "starting": [
             "Mydra",
             "Torpar",
-            "[Pok's Circlet]"
+            "Pok's Circlet"
         ],
         "type": "Magi"
     },
@@ -22731,7 +22731,7 @@
         ],
         "set": "ND",
         "starting": [
-            "[Two different non-Hyren Creatures of the same type]"
+            "[Two different non-Hyren Creatures of the same type, i.e., two different Xyxes]"
         ],
         "subtype": "Weavekeeper",
         "type": "Magi"
@@ -26718,7 +26718,7 @@
         "starting": [
             "Koil",
             "Shadow Vinoc",
-            "[any one Shadow Geyser]"
+            "[Any one Shadow Geyser]"
         ],
         "subtype": "Practitioner of Core Magics -- The General",
         "type": "Magi"
@@ -27061,7 +27061,7 @@
         ],
         "set": "VS",
         "starting": [
-            "[Wandering Balamant]",
+            "Wandering Balamant",
             "Bombard",
             "Magma Armor"
         ],
@@ -29040,7 +29040,7 @@
         "set": "ND",
         "starting": [
             "Hurricane Orish",
-            "[one Arderial or Orothe Relic]"
+            "[One Arderial or Orothe Relic]"
         ],
         "type": "Magi"
     },
@@ -29068,7 +29068,7 @@
         "set": "ND",
         "starting": [
             "Hurricane Orish",
-            "[one Arderial or Orothe Relic]"
+            "[One Arderial or Orothe Relic]"
         ],
         "type": "Magi"
     },
