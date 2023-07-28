@@ -1,0 +1,183 @@
+# Unreleased Promos
+# There are 80 of these, but only a few have card images, so only
+# those cards will be added here.
+# https://imgur.com/a/rEpNQ
+
+#
+# Arderial
+
+- name: Sorreah, Warrior
+  type: Magi
+  region: Arderial
+  alternate: Sorreah
+  cost: 12
+  energize: 5
+  starting:
+    - "[Two different Arderial Spells]"
+  effects:
+    - name: Dream Block
+      text: >
+        Players may not use Powers on Creatures.
+  flavor: |
+    "His time among the Kybarites has given him a greater appreciation of brute
+    strength."
+    -- Adis
+  artist: Holmberg
+  rarity: P
+
+#
+# Bograth
+
+- name: Sludge Hyren
+  type: Creature
+  region: Bograth
+  cost: 7
+  effects:
+    - name: Creeping Growth
+      text: >
+        After Sludge Hyren attacks, add one energy to it for each Bograth
+        Creature you control.
+  flavor: |
+    "It leaches the strength from its companions to act as their battering ram."
+  artist: Holmberg
+  rarity: P
+
+- name: Blygt's Ring
+  type: Relic
+  region: Bograth
+  cost: 0
+  effects:
+    - name: Purity
+      text: >
+        At the end of your turn, if all Spells in your discard pile are
+        Bograth, discard all of your non-Bograth cards from play and choose
+        an opposing Creature. If that Creature has more energy than your
+        Magi's energize, move three energy from that Creature to your Magi.
+  starting_magi: Blygt
+  artist: Holmberg
+  rarity: P
+
+#
+# Core
+
+- name: Twilight Mowat
+  type: Creature
+  region: Core, d'Resh
+  cost: 7
+  powers:
+    - name: Dark Sands
+      cost: 1
+      text: >
+        Choose an opposing Creature. That Creature is Core until the beginning
+        of your next turn.
+  effects:
+    - name: Dream Inhibitor
+      text: >
+        Powers on opposing Core Creatures cost two extra energy.
+  text: Only Core and d'Resh Magi may play Twilight Mowat.
+  alt_play: d'Resh
+  flavor: >
+    After being released from their prison in d'Resh, Lanyx and Chur used
+    their powers of corruption to taint the beauty of the desert.
+  artist: Werner, Holmberg
+  rarity: P
+
+#
+# d'Resh
+
+- reference: Twilight Mowat
+  region: d'Resh, Core
+  flavor:
+  alt_play: Core
+  artist: Werner
+
+#
+# Kybar's Teeth
+
+- name: Granite Hyren
+  type: Creature
+  region: Kybar's Teeth
+  cost: 7
+  effects:
+    - name: Improved Invulnerability
+      text: >
+        Granite Hyren loses three less energy in attacks.
+  flavor: |
+    Formed from the hardest substance in the Teeth, these hyren can take an
+    incredible amount of abuse before showing signs of wear.
+  artist: Holmberg
+  rarity: P
+
+#
+# Nar
+
+- name: Tundra Hyren
+  type: Creature
+  region: Nar
+  cost: 7
+  powers:
+    - name: Freeze
+      cost: 3
+      text: >
+        Choose an opposing Magi. That Magi's Creatures are Frozen until the
+        beginning of your next turn. Powers of Frozen cards cost one extra
+        energy to use.
+  flavor: >
+    Focused freezing power in an easy to use package.
+  artist: Holmberg
+  rarity: P
+
+#
+# Paradwyn
+
+- name: Canopy Hyren
+  type: Creature
+  region: Paradwyn
+  cost: 7
+  powers:
+    - name: Fear
+      cost: 3
+      text: >
+        Remove two energy from each Stalked Creature.
+  flavor: >
+    Becoming one with the treetops, the canopy hyren is unparalleled in the
+    art of sneak attacks.
+  artist: Holmberg
+  rarity: P
+
+#
+# Universal
+
+- name: Traitor's Reach
+  type: Spell
+  region: Universal
+  cost: 2
+  text: >
+    Choose a Creature and a Magi controlled by the same player. If the
+    chosen Creature does not share a region with the chosen Magi,
+    discard that Creature from play and remove two energy from that Magi.
+  flavor: |
+    Enviouis of Targ'n's position as Elder, T'lok betrayed the secret
+    entrances to Yark Eyre to the Dark Twins. Enamoured with Warrada,
+    T'lok also taught her how to control Kybar's Fang.
+  artist: Holmberg
+  rarity: P
+
+#
+# Weave
+
+- name: Snag Hyren
+  type: Creature
+  region: Weave
+  cost: 7
+  powers:
+    - name: Stumble
+      cost: 3
+      text: >
+        Until the beginning of your next turn, opposing Creatures remove
+        two less energy in attacks.
+  flavor: >
+    It seemed to the Shadow Magi as if the clinging barbs of the snag
+    hyren were suddenly everywhere.
+  artist: Werner, Holmberg
+  rarity: P

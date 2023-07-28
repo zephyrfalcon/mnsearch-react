@@ -9,7 +9,7 @@
   cost: 3
   effects:
     - name: Charge
-      text: > 
+      text: >
         Whenever Aerial Flist attacks, add one energy to it before energy is
         removed.
     - name: Dreamwarp
@@ -627,7 +627,7 @@
       text: Add one energy to your Magi.
   effects:
     - name: Dreamwarp
-      text: > 
+      text: >
         As you play N'kala, increase or decrease its starting energy by up to
         one, to a minimum starting energy of one, until the end of the turn.
   flavor: |
@@ -1061,7 +1061,7 @@
     - Magma Jile
   effects:
     - name: Jile-treats
-      text: > 
+      text: >
         At the end of your turn, add one energy to each of your Jiles in play.
     - name: Affinity
       text: >
@@ -1337,7 +1337,7 @@
   type: Relic
   region: Bograth
   cost: 2
-  effects: 
+  effects:
     - name: Performance Art
       text: >
         At the start of each of your turn, all non-Bograth Creatures in play
@@ -1445,7 +1445,7 @@
     -- Yog, Toady in Waiting
   artist: name
   rarity: C
- 
+
 - name: Ainjer Swarm
   type: Spell
   region: Bograth
@@ -2556,7 +2556,7 @@
         it cannot attack and loses no more than two energy per turn from
         attacks and opposing Spells and Powers.
     - name: Dig Up
-      text: > 
+      text: >
         All other burrowed Creatures in play lose energy as normal in attacks.
     - name: Invulnerability
       text: Urigant loses two less energy in attacks.
@@ -2599,7 +2599,7 @@
       text: >
         Kyg'n is not defeated, even if he has no energy or Creatures in play,
         until he is directly attacked.
-    - name: 
+    - name:
       text: >
         Increase Kyg'n energize rate by the number of Creatures an opposing
         Magi of your choice has in play.
@@ -2835,7 +2835,7 @@
     - name: Dream Cross
       text: >
         Choose any one of your other Creatures in play. Until the chosen
-        Creatures leaves play, all Powers printed on the chosen Creature are
+        Creature leaves play, all Powers printed on the chosen Creature are
         also considered to be printed on K'teeb. K'teeb cannot copy a Power
         that it already has. All of K'teeb's Powers that reference the card
         that they are printed on now reference K'teeb.
@@ -3140,7 +3140,7 @@
       text: >
         As you play River Abaquist, increase or decrease its starting energy
         by up to one, to a minimum starting energy of one, until the end of
-        the turn. 
+        the turn.
   flavor: |
     "Never underestimate the power or small creatures in large groups."
     -- O'Qua, Summoner
@@ -3802,7 +3802,7 @@
   cost: 13
   energize: 5
   starting:
-    - "[one Jungle Stalker]"
+    - "[One Jungle Stalker]"
     - Jungle Jile
     - Stalk
   effects:
@@ -3849,7 +3849,7 @@
     - Tropical Rain
   effects:
     - name: Dreamwarp
-      text: > 
+      text: >
         As an opposing player plays a Creature, increase or decrease its
         starting energy by up to one until the end of the turn, to a minimum
         starting energy of one. This Effect cannot raise a Creature's starting
@@ -3867,7 +3867,7 @@
   cost: 16
   energize: 5
   starting:
-    - "[one Jungle Stalker]"
+    - "[One Jungle Stalker]"
     - Magor
     - Stalker's Boots
   effects:
@@ -4556,7 +4556,7 @@
   cost: 15
   energize: 5
   starting:
-    - "[two different Universal cards]"
+    - "[Two different Universal cards]"
   text: >
     You can play with more than one copy of Rayje in yur deck. When you reveal
     Rayje, he gains all Powers and Effects on all of your defeated Rayjes and
@@ -4711,7 +4711,7 @@
   cost: 12
   energize: 6
   starting:
-    - "[two different non-hyren creatures of the same type]"
+    - "[Two different non-Hyren Creatures of the same type]"
   powers:
     - name: Pet Project
       text: >

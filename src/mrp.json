@@ -421,7 +421,7 @@
     },
     {
         "name": "Maelstrom_Flask",
-        "text": "<p><b>Maelstrom Flask - Universal Relic - Cost: 0 (DE)(C)</b></p>"
+        "text": "<p><b>Maelstrom Flask - Universal Relic - Cost: 0 (DE)(C)</b> <br/>Power - Uncork: Discard Maelstrom Flask from play. Reveal the top four cards of your deck. You may choose any one revealed Spell. If you do, <span class=\"blue\">discard all other revealed cards and</span> play the chosen Spell for half of its energy cost, rounded up. If the chosen Spell has an X in its cost, X must equal zero. <span class=\"blue\">If you do not choose a Spell, discard all revealed cards.</span> <br/><b>Change:</b> Clarification that if you do not choose a spell to play with Uncork, all revealed cards are discarded. <br/><b>Source:</b> Rules Compendium – MN Digest Links <br/><b>Affects:</b> Dream's End</p>"
     },
     {
         "name": "Mirror_Pendant",
