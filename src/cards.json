@@ -14378,7 +14378,7 @@
         "starting": [
             "Sandstorm Orshaa",
             "Sunbeam's End",
-            "Robe of the Ages"
+            "Robes of the Ages"
         ],
         "type": "Magi"
     },
@@ -21227,10 +21227,10 @@
             }
         ],
         "flavor": "\"Ye can hear the voices of all the wizards who've worn\nit before. Ye get to draw on their leftover power, but I tell\nye, matey, it gets creepy.\"\n-- Blu, Vault Guardian\n",
-        "image": "/cardimages/BS/Robe_of_the_Ages.jpg",
+        "image": "/cardimages/BS/Robes_of_the_Ages.jpg",
         "key": 1329,
-        "name": "Robe of the Ages",
-        "normalized_name": "Robe_of_the_Ages",
+        "name": "Robes of the Ages",
+        "normalized_name": "Robes_of_the_Ages",
         "rarity": "U",
         "regions": [
             "Universal"
