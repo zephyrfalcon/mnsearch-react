@@ -25070,7 +25070,8 @@
         ],
         "set": "AW",
         "shadow_play": "Orothe",
-        "text": "Orothe Shadow Magi may play Storm of Fishes.",
+        "text": "Choose Spells or Relics. All players reveal their hands and discard all
+    cards of the chosen type shown. Orothe Shadow Magi may play Storm of Fishes.",
         "type": "Spell"
     },
     {
