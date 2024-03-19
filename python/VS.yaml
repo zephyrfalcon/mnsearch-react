@@ -2767,7 +2767,7 @@
   effects:
     - name: Magic Resistance
       text: >
-        Players must pay two additiona energy from their Magi to choose
+        Players must pay two additional energy from their Magi to choose
         Glacier Hyren for a Spell.
   powers:
     - name: Frostbite
@@ -3373,7 +3373,7 @@
       text: Opposing Relics cost two additional energy to play.
     - name:
       text: >
-        Each of your non-Nar, non-Universal cards costs one additiona energy
+        Each of your non-Nar, non-Universal cards costs one additional energy
         to play.
   flavor: >
     "I once dueled a Magi from Orothe. She was very frustrated with me for
@@ -3602,7 +3602,7 @@
     - name:
       text: >
         When Essence of Frost is in play, all cards in play are frozen; Powers
-        on frozen cards cost one additiona energy to use. Spells cost frozen
+        on frozen cards cost one additional energy to use. Spells cost frozen
         Magi one additional energy to play.
   flavor: |
     "Oooooh... pretty.."
@@ -3653,7 +3653,7 @@
     - name: Magnify
       text: >
         During your Draw step, if you have a frozen card in play, draw an
-        additiona card.
+        additional card.
   flavor: |
     "Hmmm, looks like snow."
     -- All-High King Korg, Magnificent, Illustrious, Meteorological Emperor of
