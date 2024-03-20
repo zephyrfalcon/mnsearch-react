@@ -3574,7 +3574,7 @@
     {
         "artist": "Werner, Holmberg",
         "cost": 15,
-        "effect": [
+        "effects": [
             {
                 "name": "Shiftier",
                 "text": "Your Creatures lose no energy from opposing Effects."
@@ -11266,7 +11266,7 @@
         "key": 1302,
         "name": "Gruk",
         "normalized_name": "Gruk",
-        "power": [
+        "powers": [
             {
                 "cost": 1,
                 "name": "Undream",
@@ -13081,7 +13081,7 @@
     {
         "artist": "Holmberg, Vega",
         "cost": 15,
-        "effect": [
+        "effects": [
             {
                 "name": "Spite",
                 "text": "If Jaela is defeated, discard one energy from each Creature in play.\n"
@@ -25902,7 +25902,7 @@
             "Weave"
         ],
         "set": "ND",
-        "startin": [
+        "starting": [
             "Speag",
             "Uwamar",
             "Yajo"
@@ -25931,7 +25931,7 @@
             "Paradwyn"
         ],
         "set": "ND",
-        "startin": [
+        "starting": [
             "Speag",
             "Uwamar",
             "Yajo"
