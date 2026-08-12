@@ -217,7 +217,7 @@
     },
     {
         "name": "Sand_Hyren",
-        "text": "<p><b>Sand Hyren - d'Resh Dream Creature - Starting Energy: 7 (ND, \n      VotS)(C,E)</b> <br/>d'Resh Shadow Magi may play Sand Hyren. <br/>Effect - \n      Light Side: Each of your starting cards cost two less energy to play<span class=\"blue\">, to a minimum of one. Only one Light Side may be used for each \n      starting card played.</span> <br/>Effect - Dark Side: Your Magi may play \n      Core cards as if they were d'Resh cards. d'Resh Shadow Magi may play Sand \n      Hyren. <br/><b>Change:</b> 'to a minimum of one' in Light Side was left off \n      when Sand Hyren was reprinted in Voice of the Storms. Light Side has been \n      clarified to correct that oversight. Light Side has been Errataed so that \n      multiple Light Sides can't stack.</p>"
+        "text": "<p><b>Sand Hyren - d'Resh Dream Creature - Starting Energy: 7 (ND, \n      VotS)(C,E)</b> <br/>d'Resh Shadow Magi may play Sand Hyren. <br/>Effect - \n      Light Side: Each of your starting cards cost two less energy to play<span class=\"blue\">, to a minimum of one. Only one Light Side may be used for each \n      starting card played.</span> <br/>Effect - Dark Side: Your Magi may play \n      Core cards as if they were d'Resh cards. d'Resh Shadow Magi may play Sand \n      Hyren. <br/><b>Change:</b> 'to a minimum of one' in Light Side was left off \n      when Sand Hyren was reprinted in Voice of the Storms. Light Side has been \n      clarified to correct that oversight. Light Side has been Errataed so that \n      multiple Light Sides can't stack.<br/><b>Source:</b> Rules Digest 08/08/03, Rules Digest 12/13/02, Nightmare's Dawn <br/><b>Affects:</b>Nightmare's Dawn, Voice of the Storms</p>"
     },
     {
         "name": "Sand_Strands",
@@ -421,7 +421,7 @@
     },
     {
         "name": "Maelstrom_Flask",
-        "text": "<p><b>Maelstrom Flask - Universal Relic - Cost: 0 (DE)(C)</b></p>"
+        "text": "<p><b>Maelstrom Flask - Universal Relic - Cost: 0 (DE)(C)</b> <br/>Power - Uncork: Discard Maelstrom Flask from play. Reveal the top four cards of your deck. You may choose any one revealed Spell. If you do, <span class=\"blue\">discard all other revealed cards and</span> play the chosen Spell for half of its energy cost, rounded up. If the chosen Spell has an X in its cost, X must equal zero. <span class=\"blue\">If you do not choose a Spell, discard all revealed cards.</span> <br/><b>Change:</b> Clarification that if you do not choose a spell to play with Uncork, all revealed cards are discarded. <br/><b>Source:</b> Rules Compendium – MN Digest Links <br/><b>Affects:</b> Dream's End</p>"
     },
     {
         "name": "Mirror_Pendant",
@@ -449,7 +449,7 @@
     },
     {
         "name": "Rayjes_Construct",
-        "text": "<p><b>Rayje's Construct - Universal Dream Creature - Starting Energy: 12 \n      (Promo)(E)</b> <br/>Effect - Ancestral Favor: All your Spells cost one less \n      Energy to play, to a minimum of one. <br/>Power - Aurareflection: (2) Copy \n      any one Power on your Magi, paying all costs. <br/>Power - Channeling: \n      Discard two cards from your hand to add two energy to your Magi. \n      <br/>Effect - Invigorate: Increase your Magi's energize rate by one. \n      <br/>Power - Lore: (2) Draw one card. <br/>Power - Pound Pound Pound: (2) \n      Discard one Relic in play. <br/>Effect - Tinker: Whenever you play a Relic, \n      choose any one Creature in play. Add one energy to the chosen Creature. \n      <span class=\"blue\">You cannot chose any creature more than once per turn \n      with Tinker.</span> <br/>STARTING: Rayje <br/><b>Change:</b> Each Creature \n      can only be affected by Tinker once a turn. <br/><b>Source: </b>2i Design \n      Team <br/><b>Affects:</b> Rayje's Construct Limited Card</p>"
+        "text": "<p><b>Rayje's Construct - Universal Dream Creature - Starting Energy: 12 \n      (Promo)(E)</b> <br/>Effect - Ancestral Favor: All your Spells cost one less \n      Energy to play, to a minimum of one. <br/>Power - Aurareflection: (2) Copy \n      any one Power on your Magi, paying all costs. <br/>Power - Channeling: \n      Discard two cards from your hand to add two energy to your Magi. \n      <br/>Effect - Invigorate: Increase your Magi's energize rate by one. \n      <br/>Power - Lore: (2) Draw one card. <br/>Power - Pound Pound Pound: (2) \n      Discard one Relic in play. <br/>Effect - Tinker: Whenever you play a Relic, \n      choose any one Creature in play. Add one energy to the chosen Creature. \n      <span class=\"blue\">You cannot choose any creature more than once per turn \n      with Tinker.</span> <br/>STARTING: Rayje <br/><b>Change:</b> Each Creature \n      can only be affected by Tinker once a turn. <br/><b>Source: </b>2i Design \n      Team <br/><b>Affects:</b> Rayje's Construct Limited Card</p>"
     },
     {
         "name": "Relic_Mirror",
@@ -457,7 +457,7 @@
     },
     {
         "name": "Ring_of_Secrets",
-        "text": "<p><b>Ring of Secrets - Universal Relic - Cost: 0 (BS)(E)</b> <br/>Effect - \n      Tinker: Whenever you play a Relic, choose any one Creature in play. Add \n      one energy to the chosen Creature. <span class=\"blue\">You cannot chose a \n      Creature more than once per turn with Tinker.</span> <br/><b>Change:</b> \n      Each Creature is affected by Tinker once a turn. <br/><b>Source:</b> 2i \n      Design Team <br/><b>Affects:</b> Unlimited, Limited</p>"
+        "text": "<p><b>Ring of Secrets - Universal Relic - Cost: 0 (BS)(E)</b> <br/>Effect - \n      Tinker: Whenever you play a Relic, choose any one Creature in play. Add \n      one energy to the chosen Creature. <span class=\"blue\">You cannot choose a \n      Creature more than once per turn with Tinker.</span> <br/><b>Change:</b> \n      Each Creature is affected by Tinker once a turn. <br/><b>Source:</b> 2i \n      Design Team <br/><b>Affects:</b> Unlimited, Limited</p>"
     },
     {
         "name": "Spirit_of_Rayje",

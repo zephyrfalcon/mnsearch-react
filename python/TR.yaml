@@ -14,7 +14,6 @@
       text: >
         Choose a Creature. Remove one energy from that Creature for each
         Vemment you control.
-  text: 
   flavor: |
     A flight of vemments charged Togoth, pummeling his nightmare creatures
     into animite dust.
@@ -104,7 +103,7 @@
   starting:
     - Sandstorm Orshaa
     - Sunbeam's End
-    - Robe of the Ages
+    - Robes of the Ages
   powers:
     - name: Seer
       cost: 2
@@ -214,6 +213,9 @@
     -- Jaela, Regis
   artist: Holmberg
   rarity: U
+
+#
+# Bograth
 
 - name: Black Stuff
   type: Creature
@@ -330,7 +332,7 @@
     - Ooze Arboll
     - Mirago
     - Frenzy
-  effect:
+  effects:
     - name: Shiftier
       text: Your Creatures lose no energy from opposing Effects.
   flavor: |
@@ -417,6 +419,9 @@
     greater purpose.
   artist: Werner, Holmberg
   rarity: C
+
+#
+# Cald
 
 - name: Caldera Aq
   type: Creature
@@ -562,10 +567,10 @@
       cost: 2
       text: >
         Choose an opposing Creature. Remove one energy from it for each
-        opposing Creature in play.
+        other opposing Creature in play.
   flavor: |
     "Burn, baby, burn!"
-    -- Inscription on Disc of Inferno
+    -- inscription on Disc of Inferno
   artist: Werner
   rarity: U
 
@@ -603,7 +608,7 @@
   cost: 1
   text: >
     Choose an opposing Magi and attach Singed Pride to it. After that Magi's
-    owner draws a card outside his or her Draw step, you may discard Singed
+    owner draws a card outside of his or her Draw step, you may discard Singed
     Pride from play to remove three energy from that Magi. You may not discard
     more than one Singed Pride per card drawn.
   flavor: Sometimes the price of knowledge is too high.
@@ -624,6 +629,9 @@
     -- Barak, Warlord
   artist: Werner, Holmberg
   rarity: C
+
+#
+# Core
 
 - name: Dark Vellup
   type: Creature
@@ -820,10 +828,13 @@
   artist: Werner, Holmberg
   rarity: U
 
+#
+# d'Resh
+
 - name: Circling Darbok
   type: Creature
   region: d'Resh
-  cost: 5
+  cost: 4
   powers:
     - name: Passing Shadow
       cost: 0
@@ -944,7 +955,7 @@
     - Sandstorm Orshaa
   effects:
     - name: Spellcraft
-      text: > 
+      text: >
         Once per turn, as an opponent plays a Spell, choose an Illusion and
         add four energy to it.
   flavor: >
@@ -971,7 +982,7 @@
   artist: Werner, Holmberg
   rarity: R
 
-- name: Dream Catcher
+- name: Dreamcatcher
   type: Relic
   region: d'Resh
   cost: 2
@@ -1011,7 +1022,7 @@
   artist: Holmberg, Christopher
   rarity: C
 
-- name: Sand Trap
+- name: Sandtrap
   type: Spell
   region: d'Resh
   cost: 1
@@ -1024,6 +1035,9 @@
     -- Wence the Wanderer
   artist: Holmberg, Christopher
   rarity: C
+
+#
+# Kybar's Teeth
 
 - name: Bone Cragnoc
   type: Creature
@@ -1267,6 +1281,9 @@
   artist: Holmberg
   rarity: R
 
+#
+# Nar
+
 - name: Ice Vinoc
   type: Creature
   region: Nar
@@ -1288,7 +1305,7 @@
   cost: 2
   effects:
     - name: Bury
-      text: If Polar Eebit is frozen, it only loses one energy when attacked.
+      text: If Polar Eebit is Frozen, it only loses one energy when attacked.
   flavor: >
     Laranel and her people arrived too late to help Yaki free Naroom but they
     were among the first to head for Kybar's Teeth to fight the Twins.
@@ -1352,7 +1369,7 @@
   cost: 13
   energize: 5
   starting:
-    - "[one Arctic card]"
+    - "[One Arctic card]"
   powers:
     - name: Iceberg
       cost: 0
@@ -1360,7 +1377,7 @@
         Choose a Frozen Creature you control and an opposing Creature with
         less energy. Discard both Creatures from play.
   flavor: |
-    "When Hajnyn decides to vanish, he's as hard to find as 
+    "When Hajnyn decides to vanish, he's as hard to find as
     a shadow in a storm."
     -- Ust
   artist: Holmberg
@@ -1382,7 +1399,8 @@
         player chooses one of the cards. Place that card in your hand. If
         Locke is Frozen, choose one of the remaining cards and place it in
         your hand. Discard the other cards.
-  flavor: "Bandit is such a dirty word. I prefer 'Treasure Hunter'."
+  flavor: >
+    "Bandit is such a dirty word. I prefer 'Treasure Hunter.'"
   artist: Strom, Whyrl
   rarity: U
 
@@ -1393,7 +1411,7 @@
   effects:
     - name: Waste Not
       text: >
-        At the end of each turn, each players shuffles his or her discard pile
+        At the end of each turn, each player shuffles his or her discard pile
         into his or her deck.
     - name: Want Not
       text: >
@@ -1461,6 +1479,9 @@
     haze of ice seemed to surround each one.
   artist: Holmberg
   rarity: C
+
+#
+# Naroom
 
 - name: Carillion Titan
   type: Creature
@@ -1590,7 +1611,8 @@
       text: >
         As you use a Power on a Naroom Relic, choose a Creature you control
         and add one energy to it.
-  flavor: "The more I learn, the more I need to know."
+  flavor: >
+    "The more I learn, the more I need to know."
   artist: Holmberg
   rarity: U
 
@@ -1607,7 +1629,7 @@
   powers:
     - name: Vitalize
       cost: 2
-      text: > 
+      text: >
         Choose a Creature with less than its starting energy and restore it to
         its printed starting energy.
   flavor: |
@@ -1677,6 +1699,9 @@
   artist: Holmberg
   rarity: C
 
+#
+# Orothe
+
 - name: Grotto Phrup
   type: Creature
   region: Orothe
@@ -1687,7 +1712,7 @@
       text: >
         Discard Grotto Phrup from play. Powers and Effects on opposing Relics
         currently in play may not be used until the beginning of your next
-        turn. All ongoing Effects on opposing Relics in play are cancelled.
+        turn. All ongoing Effects on opposing Relics in play are canceled.
   text: Orothe Shadow Magi may play Grotto Phrup.
   flavor: >
     Bria's phrup nullified the magic of the relics guarding Evu's study. A
@@ -1762,8 +1787,10 @@
   cost: 13
   energize: 5
   starting:
-    - "[one Core Relic]"
-    - "[one Orothe Relic]"
+    - "[One Core Relic]"
+    - "[One Orothe Relic]"
+  text: >
+    Bria, Relic Hunter may play Core Relics.
   effects:
     - name: Desire
       text: >
@@ -1777,6 +1804,28 @@
     "Qwade, it's perfect! How do I use it?"
   artist: Holmberg
   rarity: R
+
+- name: Jaim
+  type: Magi
+  region: Orothe
+  cost: 15
+  energize: 5
+  starting:
+    - Sea Barl
+    - Hubdra's Cube
+    - Ripcurl
+  text: >
+    You may not play more than two Relics per turn.
+  effects:
+    - name: Guardian
+      text: >
+        After an opposing card discards one or more of your Orothe Relics
+        from play, you may remove one energy from Jaim. If you do, return
+        the Relics to their owner's hand.
+  flavor: >
+    "I'm never caught unprepared when my relics are near."
+  artist: Holmberg
+  rarity: U
 
 - name: Sellia
   type: Magi
@@ -1793,7 +1842,8 @@
       text: >
         Choose a non-Magi card of more than one Region. Discard it from
         play.
-  flavor: "You're entering the whirl of hurt."
+  flavor: >
+    "You're entering the whirl of hurt."
   artist: Holmberg
   rarity: U
 
@@ -1864,7 +1914,7 @@
 - name: Ripcurl
   type: Spell
   region: Orothe
-  cost: 4 
+  cost: 4
   text: >
     Choose two opposing Creatures. Move up to four energy from the first
     Creature to the second Creature.
@@ -1874,6 +1924,9 @@
     "Don't worry, I've got plans for your dryte." Mobis said.
   artist: Holmberg
   rarity: R
+
+#
+# Paradwyn
 
 - name: Jungle Eebit
   type: Creature
@@ -1929,6 +1982,7 @@
 
 - name: Vine Bhatar
   type: Creature
+  subtype: Jungle Stalker
   region: Paradwyn
   cost: 3
   powers:
@@ -1980,7 +2034,8 @@
         If an opposing Spell or Power would discard one of your Creatures from
         play, you may discard one energy from Mijji. If you do, remove all but
         one energy from your Creature instead.
-  flavor: "This is my jungle, I have to defend it!"
+  flavor: |
+    "This is my jungle, I have to defend it!"
   artist: Werner
   rarity: U
 
@@ -2016,7 +2071,7 @@
     - name: Morale Boost
       text: >
         Increase your energize by one. Draw an extra card during your Draw
-        Step.
+        step.
   flavor: |
     The Scarletsong Banner brings joy for the taking.
     -- Ancient Inscription
@@ -2066,13 +2121,13 @@
     -- Liriel, Bagala Trainer
   artist: Werner
   rarity: C
-  
+
 - name: Scarletsong Lilt
   type: Spell
   region: Paradwyn
   cost: 2
   text: >
-    Choose an opposing Creature and add Scarletsong Lilt to it. As the chosen
+    Choose an opposing Creature and attach Scarletsong Lilt to it. As the chosen
     Creature loses energy in an attack, remove two energy from the Creature's
     Magi. Discard Scarletsong Lilt from play at the beginning of your turn.
   flavor: >
@@ -2080,6 +2135,9 @@
     distraction to foreigners.
   artist: Holmberg
   rarity: C
+
+#
+# Underneath
 
 - name: Crystal Hyren
   type: Creature
@@ -2313,6 +2371,9 @@
   artist: Holmberg, Gillette
   rarity: C
 
+#
+# Universal
+
 - name: Collosit
   type: Creature
   region: Universal
@@ -2333,6 +2394,7 @@
 
 - name: Hapu
   type: Creature
+  subtype: Eliwan Artifact
   region: Universal
   cost: 3
   text: >
@@ -2373,6 +2435,7 @@
 
 - name: Ancient's Puzzlebox
   type: Relic
+  subtype: Eliwan Artifact
   region: Universal
   cost: 1
   text: >
@@ -2380,7 +2443,7 @@
   powers:
     - name: Mind Games
       cost: 1
-      text: > 
+      text: >
         Discard Ancient's Puzzlebox from play. Reveal any number of cards in
         your hand and choose a Creature. Add one energy to it for each
         Ancient's Puzzlebox you reveal. Draw a card. You may not play another
@@ -2393,6 +2456,7 @@
 
 - name: Une's Scale
   type: Relic
+  subtype: Eliwan Artifact
   region: Universal
   cost: 1
   effects:
@@ -2414,14 +2478,17 @@
   text: >
     Choose a Creature and remove four energy from it. If this discards the
     Creature from play, choose up to two non-Universal Relics and discard them
-    from play. 
+    from play.
     Only Universal and Universal Shadow Magi can play Crushing Will.
   flavor: |
-    "It takes a willful man to stand alone in the Moonlands 
+    "It takes a willful man to stand alone in the Moonlands
     with no allegiances but himself."
     -- Orwin, Elder
   artist: Holmberg
   rarity: U
+
+#
+# Weave
 
 - name: Scurrying Weggit
   type: Creature
@@ -2450,14 +2517,14 @@
   effects:
     - name: Weave Strength
       text: >
-        After energy is moved to Spreag Sprouts on an opponent's turn, add one
-        energy to Spreag Sprouts.
+        After energy is moved to Speag Sprouts on an opponent's turn, add one
+        energy to Speag Sprouts.
     - name: Weave
       text: >
         As this Creature attacks or is attacked, you may move one energy
         between it and one of your other Weave Creatures.
   flavor: >
-    At a gesture from Iyori, the spreag sprouts swarmed as the core hyren dove
+    At a gesture from Iyori, the speag sprouts swarmed as the core hyren dove
     in for an attack. Weaving energy between themselves, the sprouts began to
     grow in size.
   artist: Werner, Holmberg
@@ -2517,7 +2584,8 @@
       text: >
         Search your deck for up to three cards and discard them. Shuffle your
         deck and draw a card.
-  flavor: "The tuk berries taste like tuk berries!"
+  flavor: >
+    "The tuk berries taste like tuk berries!"
   artist: Holmberg, Gillette
   rarity: U
 
@@ -2611,7 +2679,7 @@
     Move one energy from each opposing Creature to your Magi. Your Powers,
     Spells and Effects cannot increase the energy moved by Countless Blades.
   flavor: |
-    "In the Weave, each and every blade of grass is a 
+    "In the Weave, each and every blade of grass is a
     potential enemy or ally. It all depends on your perspective."
     -- Zaya, Weave Elder
   artist: Holmberg

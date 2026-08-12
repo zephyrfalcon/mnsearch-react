@@ -9,13 +9,14 @@
   cost: 3
   effects:
     - name: Charge
-      text: > 
+      text: >
         Whenever Aerial Flist attacks, add one energy to it before energy is
         removed.
     - name: Dreamwarp
       text: >
-        As you play Aerial Flist, increase or decrease its starting energy o
-        one, until the end of the turn.
+        As you play Aerial Flist, increase or decrease its starting energy
+        by up to one, to a minimum starting energy of one,
+        until the end of the turn.
   flavor: |
     "They fly like a feather and land like a rock."
     -- Wence, Adventurer
@@ -627,7 +628,7 @@
       text: Add one energy to your Magi.
   effects:
     - name: Dreamwarp
-      text: > 
+      text: >
         As you play N'kala, increase or decrease its starting energy by up to
         one, to a minimum starting energy of one, until the end of the turn.
   flavor: |
@@ -1021,7 +1022,7 @@
     - name: Discordia
       text: >
         Once per turn, when an opposing Magi plays a non-Universal Creature
-        not of their Magi's region, you may choose and discard one of the
+        not of their Magi's region, you may choose and discard one of that
         Magi's Creatures from play.
   flavor: |
     "Korg, Korg, he's our man, if he can't do it, GREAT!"
@@ -1061,7 +1062,7 @@
     - Magma Jile
   effects:
     - name: Jile-treats
-      text: > 
+      text: >
         At the end of your turn, add one energy to each of your Jiles in play.
     - name: Affinity
       text: >
@@ -1337,7 +1338,7 @@
   type: Relic
   region: Bograth
   cost: 2
-  effects: 
+  effects:
     - name: Performance Art
       text: >
         At the start of each of your turn, all non-Bograth Creatures in play
@@ -1357,14 +1358,14 @@
   region: Bograth
   cost: 0
   text: >
-    If an opposing Spell, Power or Effect causes you to discard one or more
+    If an opposing Spell, Power, or Effect causes you to discard one or more
     cards from your hand, you may discard Moob Ring from your hand or from
     play instead. If you do, until your current Magi is defeated, no opposing
     cards can cause you to discard cards from your hand.
   effects:
     - name: Martyr
       text: >
-        Whenever an opposing Spell, Power or Effect discards energy from one
+        Whenever an opposing Spell, Power, or Effect discards energy from one
         or more of your Creatures in play, you may discard any one of your
         Bograth Creatures from play. If you do, the Spell, Power, or Effect
         does nothing.
@@ -1445,7 +1446,7 @@
     -- Yog, Toady in Waiting
   artist: name
   rarity: C
- 
+
 - name: Ainjer Swarm
   type: Spell
   region: Bograth
@@ -1511,7 +1512,7 @@
   cost: 7
   text: >
     Until the end of the turn, all of your Bograth Creatures in play gain
-    "Power -- Darkness: Discard this Creature from play. Choose an opposing
+    "Power - Darkness: Discard this Creature from play. Choose an opposing
     Creature in play. Discard the chosen Creature from play. Use this Power
     only before your Attack Step."
   flavor: |
@@ -1556,7 +1557,7 @@
   text: >
     Choose any one of your Creatures in play. Discard the chosen Creature from
     play. Until the end of your next turn, all of your Creatures in play gain
-    "Effect -- Chill: Whenever this Creature attacks, it removes two
+    "Effect - Chill: Whenever this Creature attacks, it removes two
     additional energy from the defending Creature."
   flavor: |
     "It's cold in here."
@@ -1904,7 +1905,7 @@
     Once per turn, you may play any one Brushfire from your discard pile as if
     it were in your hand.
   flavor: >
-    After Agram's defeat, a fire team of Cald Magi pursued the feeling Shadow
+    After Agram's defeat, a fire team of Cald Magi pursued the fleeing Shadow
     Magi into the Weave. No one foresaw the destruction they would cause.
   artist: Werner, Gillette, Goodman
   rarity: C
@@ -2239,7 +2240,7 @@
   cost: 4
   text: >
     Choose any one Creature in play. Discard four energy from the chosen
-    Creature. If this discards the cosen Creature from play, play it as a Core
+    Creature. If this discards the chosen Creature from play, play it as a Core
     Creature with half of its starting energy, rounded up, ignoring all costs.
     That Creature cannot attack or use any of its Powers this turn.
     Shadow Magi cannot play this Spell.
@@ -2556,7 +2557,7 @@
         it cannot attack and loses no more than two energy per turn from
         attacks and opposing Spells and Powers.
     - name: Dig Up
-      text: > 
+      text: >
         All other burrowed Creatures in play lose energy as normal in attacks.
     - name: Invulnerability
       text: Urigant loses two less energy in attacks.
@@ -2599,7 +2600,7 @@
       text: >
         Kyg'n is not defeated, even if he has no energy or Creatures in play,
         until he is directly attacked.
-    - name: 
+    - name:
       text: >
         Increase Kyg'n energize rate by the number of Creatures an opposing
         Magi of your choice has in play.
@@ -2835,7 +2836,7 @@
     - name: Dream Cross
       text: >
         Choose any one of your other Creatures in play. Until the chosen
-        Creatures leaves play, all Powers printed on the chosen Creature are
+        Creature leaves play, all Powers printed on the chosen Creature are
         also considered to be printed on K'teeb. K'teeb cannot copy a Power
         that it already has. All of K'teeb's Powers that reference the card
         that they are printed on now reference K'teeb.
@@ -3027,7 +3028,7 @@
         Naroom Creatures may attack an additional time.
   starting_magi: Yaki
   flavor: |
-    "I call this move 'the aritex technique'. Properly done, there's no
+    "I call this move 'the aritex technique.' Properly done, there's no
     defense."
     -- Yaki, Tracker
   artist: Werner, Gillette
@@ -3140,7 +3141,7 @@
       text: >
         As you play River Abaquist, increase or decrease its starting energy
         by up to one, to a minimum starting energy of one, until the end of
-        the turn. 
+        the turn.
   flavor: |
     "Never underestimate the power or small creatures in large groups."
     -- O'Qua, Summoner
@@ -3268,7 +3269,7 @@
   cost: 4
   text: >
     Choose any one of your Orothe or Paradwyn Creatures in play. Until the end
-    of the turn, the chosen Creature gains the text: "Power -- Possess: Choose
+    of the turn, the chosen Creature gains the text: "Power - Possess: Choose
     any one opposing Creature in play with less energy than this Creature.
     Discard this Creature from play. Gain control of the chosen Creature. That
     Creature cannot attack this turn."
@@ -3325,7 +3326,7 @@
   powers:
     - name: Stalk
       text: >
-        Choose any opposing Creature in play. Until the end of your next turn,
+        Choose any one opposing Creature in play. Until the end of your next turn,
         the chosen Creature is stalked; whenever a stalked Creature is
         attacked, discard one energy from the stalked Creature before energy
         is removed.
@@ -3335,7 +3336,7 @@
         Whenever Bagala Hunter attacks a stalked Creature, add one energy to
         Bagala Hunter before energy is removed.
   flavor: |
-    Hunting in the jungle ush,
+    Hunting in the jungle lush,
     Creeping through the underbrush
     Until upon the prey you rush.
     It's much more fun to pounce!
@@ -3394,13 +3395,13 @@
   effects:
     - name: Weaver
       text: >
-        All of your Paradwyn Creatures gain "Effect -- Weave: Whenever this
+        All of your Paradwyn Creatures gain "Effect - Weave: Whenever this
         Creature attacks or is attacked, before energy is removed, you may
         move one energy between this Creature and any one of your other
         Paradwyn or Weave Creatures in play."
     - name: Dreamwarper
       text: >
-        All of your Weave Creatures in play and being played gain "Effect --
+        All of your Weave Creatures in play and being played gain "Effect -
         Dreamwarp: As you play this Creature, increase or decrease its
         starting energy by up to one, to a minimum starting energy of one,
         until the end of the turn."
@@ -3695,7 +3696,7 @@
   effects:
     - name: Maximum Warp
       text: >
-        Whenever one of your Creatures uses the effect 'Dreamwarp', you may
+        Whenever one of your Creatures uses the effect "Dreamwarp", you may
         Dreamwarp for an additional energy.
     - name: Dreamwarp
       text: >
@@ -3737,7 +3738,7 @@
   effects:
     - name: Dream Tap
       text: >
-        Whenever one of your other Creatures uses the Effect 'Dreamwarp', add
+        Whenever one of your other Creatures uses the Effect "Dreamwarp", add
         one energy to Vine Hyren.
     - name: Dreamwarp
       text: >
@@ -3802,7 +3803,7 @@
   cost: 13
   energize: 5
   starting:
-    - "[one Jungle Stalker]"
+    - "[One Jungle Stalker]"
     - Jungle Jile
     - Stalk
   effects:
@@ -3849,7 +3850,7 @@
     - Tropical Rain
   effects:
     - name: Dreamwarp
-      text: > 
+      text: >
         As an opposing player plays a Creature, increase or decrease its
         starting energy by up to one until the end of the turn, to a minimum
         starting energy of one. This Effect cannot raise a Creature's starting
@@ -3867,7 +3868,7 @@
   cost: 16
   energize: 5
   starting:
-    - "[one Jungle Stalker]"
+    - "[One Jungle Stalker]"
     - Magor
     - Stalker's Boots
   effects:
@@ -4025,7 +4026,7 @@
   subtype: Captain of the Guard
   cost: 15
   energize: 6
-  startin:
+  starting:
     - Speag
     - Uwamar
     - Yajo
@@ -4067,7 +4068,7 @@
   region: Paradwyn
   cost: 0
   text: >
-    If an opposing Spell, Power or Effect causes you to discard one or more
+    If an opposing Spell, Power, or Effect causes you to discard one or more
     cards from your hand, you may discard Bagala Fangs from your hand or from
     play instead. If you do, until your current Magi is defeated, no opposing
     cards can cause you to discard cards from your hand.
@@ -4187,7 +4188,7 @@
   effects:
     - name: imbue
       text: >
-        All of your Creatures in play gain "Power -- Strengthen: (1) Choose
+        All of your Creatures in play gain "Power - Strengthen: (1) Choose
         any one Creature in play. Add one energy to the chosen Creature."
   flavor: >
     The set of Vine relics was split up untold years ago, and neither Naroom
@@ -4203,7 +4204,7 @@
     - name: Stalk
       cost: 1
       text: >
-        Until the end of your next turn, whenever one of your Creatures is
+        Until the end of your turn, whenever one of your Creatures is
         attacking, the defending Creature is stalked; whenever a stalked
         Creature is attacked, discard one energy from the stalked Creature
         before energy is removed.
@@ -4556,17 +4557,17 @@
   cost: 15
   energize: 5
   starting:
-    - "[two different Universal cards]"
+    - "[Two different Universal cards]"
   text: >
-    You can play with more than one copy of Rayje in yur deck. When you reveal
+    You can play with more than one copy of Rayje in your deck. When you reveal
     Rayje, he gains all Powers and Effects on all of your defeated Rayjes and
     any one other of the following Powers or Effects until the end of the
-    game: "Power -- Aid: Move one energy from one Creature to another",
-    "Effect -- Lore: During your draw step, draw an additional card", "Effect
-    -- Defense: Whenever one of your Creatures is attacked, add one energy to
-    it before energy is removed", "Effect -- Wily: Once per turn, instead of
+    game: "Power - Aid: Move one energy from one Creature to another",
+    "Effect - Lore: During your draw step, draw an additional card", "Effect
+    - Defense: Whenever one of your Creatures is attacked, add one energy to
+    it before energy is removed", "Effect - Wily: Once per turn, instead of
     drawing a card, place any one Spell from your discard pile into your
-    hand", "Effect -- Charge: Whenever one of your Creatures attacks, add one
+    hand", "Effect - Charge: Whenever one of your Creatures attacks, add one
     energy to it before energy is removed".
   flavor: |
     "Rayje? Rayje? No, he's just a legend."
@@ -4649,7 +4650,7 @@
   effects:
     - name: Great Weave
       text: >
-        Whenever Blade Hyren attacks, you may move one enery from each of your
+        Whenever Blade Hyren attacks, you may move one energy from each of your
         other Weave Creatures in play to Blade Hyren.
     - name: Bequest
       text: >
@@ -4711,7 +4712,7 @@
   cost: 12
   energize: 6
   starting:
-    - "[two different non-hyren creatures of the same type]"
+    - "[Two different non-Hyren Creatures of the same type, i.e., two different Xyxes]"
   powers:
     - name: Pet Project
       text: >

@@ -27,7 +27,7 @@
     - and starting cards
     - and card text
     - even flavor text can be searched, like in the old MNS, but I am not sure
-      how useful this is in practice 
+      how useful this is in practice
   - if the refined search dropdown changes, we need to change refinedSearchField,
     even if the text doesn't change!
     - is this done? verify
@@ -38,19 +38,19 @@
 - also: card.alternate (e.g. Fiend of Furoks)
   [we could add a filter for these as well]
 - it would be useful to be able to click on a checkbox's *text* to select that
-  checkbox. 
+  checkbox.
   - <CheckBox> does this; maybe add it everywhere?
 - if certain card types are selected, maybe we can show an additional column
   in the search results. for example, if Magi is selected, we could show an
   energize column; it would make sense to sort by that.
 - about the way it is displayed:
   find the size of the largest image and set that as the size of the leftmost
-  element (maybe with a little margin)... so an absolute size in pixels. 
-  set the rightmost element to be flexible in size (I guess with a percentage 
+  element (maybe with a little margin)... so an absolute size in pixels.
+  set the rightmost element to be flexible in size (I guess with a percentage
   or whatever).
   right now there is no way to guarantee that you will always see the text
   to the right of the image. resize window or font, and it might show up under
-  it even if there's plenty of room to the right. 
+  it even if there's plenty of room to the right.
 
 ### search results
 
@@ -76,7 +76,7 @@
   - problem is, if you do a reverse sort, the names are *also* sorted in reverse.
 
 - flavor text often contains newlines, which should really be rendered as
-  <br>s in HTML. 
+  <br>s in HTML.
   - maybe look at https://stackoverflow.com/questions/23616226/insert-html-with-react-variable-statements-jsx
   - also quotes need to be kept!
 
@@ -106,7 +106,7 @@
   perhaps several sites
 - mention in "instructions" that MRP data comes from BlueFurok.com
 
-### HTML/CSS 
+### HTML/CSS
 
 - instead of floating, we could use a flexbox for card image and details?
 - (fancy :) in card details, the name of the card could have a slight drop

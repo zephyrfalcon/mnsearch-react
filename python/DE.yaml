@@ -100,7 +100,8 @@
         normal two.
     - name:
       text: If Elios is defeated, discard all but five cards from your hand.
-  flavor: "I'll be fine. No, really. I have it under control."
+  flavor: >
+    "I'll be fine. No, really. I have it under control."
   artist: Werner, Gillette, Goodman
   rarity: U
 
@@ -123,7 +124,7 @@
     - name: Strengthen
       text: Whenever you play a Vellup, add one energy to it.
   flavor: |
-    "You can always tell when her mind starts to 
+    "You can always tell when her mind starts to
     wander: the vellups start appearing again."
     -- Stradus, Arderial Warrior
   artist: Werner, Gillette, Goodman
@@ -135,13 +136,13 @@
   cost: 0
   effects:
     - name:
-      text: > 
+      text: >
         At the end of each of your turns, each player starting with you and
         going to the left, names one Spell. Until the end of your next turn,
         the named Spells may not be played.
     - name:
       text: >
-        All opposing Spells, Powers and Effects that reveal your hand to other
+        All opposing Spells, Powers, and Effects that reveal your hand to other
         players have no effect.
         If Eyes of Arderial is discarded from your hand by an opposing card,
         you may play it instead.
@@ -171,7 +172,7 @@
     around the bearer like a cyclone.
   artist: Werner, Gillette, Goodman
   rarity: R
-       
+
 - name: Cataclysm
   type: Spell
   region: Arderial
@@ -298,7 +299,8 @@
         turn.
   text: Cald Shadow Magi may play Silth Giant.
   shadow_play: Cald
-  flavor: "It came out of nowhere -- I just hope it went back there."
+  flavor: >
+    "It came out of nowhere -- I just hope it went back there."
   artist: Werner, Gillette, Goodman
   rarity: R
 
@@ -309,7 +311,7 @@
   powers:
     - name: Suffocate
       cost: 2
-      text: > 
+      text: >
         Choose any one Creature in play. Until the start of your next turn,
         the chosen Creature removes no energy from attacking Creatures while
         it is defending.
@@ -334,7 +336,8 @@
         Once per turn, when one of your Cald Spells or Powers discards energy
         from one or more opposing Creatures, you may add one energy to Amanax
         for each energy discarded.
-  flavor: "I feel your pain."
+  flavor: >
+    "I feel your pain."
   artist: Cook, Gillette, Holmberg
   rarity: R
 
@@ -387,12 +390,12 @@
   powers:
     - name: Thermal Blast
       cost: 2
-      text: > 
+      text: >
         Roll a die. Choose any one Creature or Magi in play. Discard energy
         equal to the die roll from the chosen Creature or Magi. If the die
         roll is two or less, discard Grega's Ring from play.
   starting_magi: Grega
-  flavor: > 
+  flavor: >
     Rumor has it she used the ring on the suitor who gave it to her.
   artist: Werner, Gillette, Goodman
   rarity: R
@@ -529,7 +532,8 @@
       text: >
         Whenever a player plays a Relic from his or her hand, discard it from
         play.
-  flavor: "I've got more rocks than you have toys."
+  flavor: >
+    "I've got more rocks than you have toys."
   artist: Werner, Gillette, Holmberg
   rarity: R
 
@@ -547,10 +551,11 @@
     You may play Naroom cards, ignoring regional restrictions and penalties.
   effects:
     - name: Devour
-      text: > 
+      text: >
         Whenever an opposing Creature is discarded from play or reduced to
         zero energy by one of your cards, draw a card.
-  flavor: "I'll show you jellybeans!"
+  flavor: >
+    "I'll show you jellybeans!"
   artist: Werner, Gillette, Goodman
   rarity: U
 
@@ -594,7 +599,8 @@
         All cards that specifically reference Core instead reference their own
         region. If a card is of multiple regions, you choose which of those
         regions to reference.
-  flavor: "Everything is part of the whole..."
+  flavor: |
+    "Everything is part of the whole..."
   artist: Werner, Gillette, Goodman
   rarity: R
 
@@ -728,7 +734,7 @@
     of your Core Relics from play. Place this Geyser on the table.
     Opponents must pay two additional energy to play or use Powers
     on Orothe and Universal relics. Whenever you play a Core Relic,
-    each of your opponent's discards one card from their hands. You
+    each of your opponents discards one card from their hands. You
     may not play another Orothe Shadow Geyser while this one is in
     play. If your Magi leaves play, you may keep all but one of your
     Shadow Geysers in play. Agram does not discard any Shadow
@@ -1281,7 +1287,8 @@
         Whenever an opposing Magi plays a Creature with starting energy less
         than the current energy of your smallest Kybar's Teeth Creature in
         play, add three energy to Kazm.
-  flavor: "You think that little guy will save you? Think again!"
+  flavor: >
+    "You think that little guy will save you? Think again!"
   artist: Werner, Gillette, Goodman
   rarity: U
 
@@ -1303,7 +1310,8 @@
         Teeth Creature with starting energy less than the discarded Creature's
         starting energy. Play the chosen Creature with its starting energy.
         That Creature may not attack this turn.
-  flavor: "Oh yeah? You and whose dream army?"
+  flavor: >
+    "Oh yeah? You and whose dream army?"
   artist: Holmberg
   rarity: R
 
@@ -1339,7 +1347,8 @@
       text: >
         Whenever your last Creature in play is discarded, add four energy to
         Ullig.
-  flavor: "A coward fears a fight. A hero fights his fear."
+  flavor: >
+    "A coward fears a fight. A hero fights his fear."
   artist: Werner, Gillette, Goodman
   rarity: U
 
@@ -1510,7 +1519,7 @@
       text: |
         Once per turn, when one of your Creatures is attacked and before
         energy is removed, you may roll one die:
-        1-2: Discard three enery from the defending Creature.
+        1-2: Discard three energy from the defending Creature.
         3-4: Discard one energy from the attacking Creature.
         5-6: Discard three energy from the attacking Creature.
              Always use this result if your Magi is Ullig.
@@ -1810,7 +1819,7 @@
         hand. If your Magi is Core, the discard is random. If your Magi is
         Evu, you do not need to discard a Jellybean Counter to use this Power.
   shadow_play: Naroom
-  flavor: | 
+  flavor: |
     "I hear they're all black, now..."
     -- Eidon
   artist: Cook, Werner, Gillette, Goodman
@@ -1870,7 +1879,7 @@
   cost: 6
   powers:
     - name: Consume
-      text: > 
+      text: >
         Choose any one of your Creatures in play. Discard the chosen Creature
         from play. Draw two cards.
   text: Orothe Shadow Magi may play Deep Barl.
@@ -1955,8 +1964,8 @@
   region: Orothe
   cost: 12
   energize: 5
-  text: 
-    Starting: Two non-Universal Relics from any one region
+  starting:
+    - "[Two non-Universal Relics from any one region]"
   effects:
     - name: Obsession
       text: >
@@ -2053,7 +2062,7 @@
     If an opponent's Power, Spell, or Effect discards one or more cards from
     your hand, you may discard Shell from your hand instead. If you do,
     discard all of that opponent's Relics in play. All ongoing Powers and
-    Effects of those Relics are cancelled.
+    Effects of those Relics are canceled.
   flavor: >
     There's safety in numbers... and behind big thick pieces of armor.
   artist: Werner, Gillette, Holmberg
@@ -2090,7 +2099,7 @@
   effects:
     - name: Anti-Magic
       text: >
-        Crystal Parmalag is not affected by opposing Spells, Powers or Effects
+        Crystal Parmalag is not affected by opposing Spells, Powers, or Effects
         that specifically discard Creatures from play. Your Spells, Powers,
         and Effects may not prevent Crystal Parmalag from losing energy.
   flavor: It's like a colossus, but with less maintenance.
@@ -2205,11 +2214,12 @@
         restrictions. Core cards that Sorrowing Ogar plays are considered
         Underneath instead of Core.
     - name: Regret
-      text: > 
+      text: >
         All Core cards cost opposing Magi one additional energy to play.
-        Sorrowing Ogar may not be played in a deck with any Core Magi.
+  text: >
+    Sorrowing Ogar may not be played in a deck with any Core Magi.
   flavor: |
-    "I-- I thought it was all a dream! What have I done?"
+    "I--I thought it was all a dream! What have I done?"
   artist: Werner, Gillette
   rarity: R
 
@@ -2363,7 +2373,7 @@
   cost: 1
   text: >
     If an opposing card causes you to discard Tomorrow's Jewel from your hand
-    or from play, you my play it instead.
+    or from play, you may play it instead.
   effects:
     - name:
       text: >
@@ -2850,7 +2860,7 @@
       text: >
         Whenever Yajo is attacked, before energy is removed, you may move one
         energy between Yajo and any one of your other Weave Creatures in play.
-  powers: 
+  powers:
     - name: Vitalize
       cost: 1
       text: >
@@ -3013,7 +3023,7 @@
   region: Weave
   cost: 10
   energize: 8
-  starting: 
+  starting:
     - "[Any one Weave Creature]"
   effects:
     - name: Vapid
@@ -3097,7 +3107,6 @@
         Each time a Creature that you own is defeated in an attack, you may
         place it under Gia's Tome instead of in the discard pile. If Gia's
         Tome is discarded from play, discard all cards under it.
-  effects:
     - name: Research
       text: >
         Once per turn, you may play a Creature from under Gia's Tome as if it
@@ -3131,7 +3140,7 @@
     - name: Bend
       cost: 1
       text: >
-        Discard one energy from any number of your Weave Creatures in play; if
+        Discard one energy from any number of your Weave Creatures in play, if
         Kesia is your Magi, may move move all energy to Kesia instead of
         discarding it. Add two energy to an equal number of other Creatures in
         play.
@@ -3314,7 +3323,7 @@
   region: Weave
   cost: 3
   text: >
-    Choose any one Weave Creature in play. Add eight enery to the chosen
+    Choose any one Weave Creature in play. Add eight energy to the chosen
     Creature. While that Creature remains in play, it may not attack or use
     Powers or Effects. When the chosen Creature is discarded from play,
     discard two cards of your choice from your hand.

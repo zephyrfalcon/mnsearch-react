@@ -1,7 +1,4 @@
-# Awakening 
-# Does not include Rock Hyren and Weave Hyren.  (These were available in AW as
-# "sneak previews" but aren't officially part of the set, the way I understand
-# it. They were released in Dream's End.)
+# Awakening
 
 #
 # Arderial
@@ -180,6 +177,8 @@
   type: Magi
   cost: 13
   energize: 5
+  starting:
+    - "[Any two Arderial Spells]"
   effects:
     - name: Suppress
       text: Effects and Powers on other Magi may not be used.
@@ -277,7 +276,7 @@
   region: Arderial
   cost: 2
   text: >
-    Until the beginning of your next turn, all Spells, Powers and Effects that
+    Until the beginning of your next turn, all Spells, Powers, and Effects that
     would discard energy may not be played. Draw one additional card during
     your Draw Step this turn.
   flavor: |
@@ -336,7 +335,7 @@
     - name: Ignite
       text: >
         While Ergar is in play, each of your Cald Creatures in play gains the
-        following text: "Power -- Spark: (1) Choose any one Creature or Magi
+        following text: "Power - Spark: (1) Choose any one Creature or Magi
         in play. Discard one energy from the chosen Creature or Magi."
   flavor: |
     "Who would you like to get blasted by today?"
@@ -427,7 +426,8 @@
       text: >
         Whenever a Cald Spell adds energy to one or more of your Creatures in
         play, instead add twice as much energy to each Creature.
-  flavor: "Step on no pets!"
+  flavor: >
+    "Step on no pets!"
   artist: Holmberg, Vega, Goodman
   rarity: U
 
@@ -446,7 +446,8 @@
       text: >
         Choose any one Creature in play with X energy. Discard the chosen
         Creature from play.
-  flavor: "They all look the same when I'm through with them."
+  flavor: >
+    "They all look the same when I'm through with them."
   artist: Holmberg, Vega, Goodman
   rarity: R
 
@@ -465,7 +466,8 @@
       text: >
         Choose any one Creature in play. Restore the chosen Creature to its
         starting energy. This Power may add or discard energy.
-  flavor: "More power to you!"
+  flavor: >
+    "More power to you!"
   artist: Holmberg, Vega, Goodman
   rarity: R
 
@@ -492,7 +494,8 @@
       text: >
         Whenever you discard all of an opposing Creature's energy with a Spell
         or Power, draw one card.
-  flavor: "You looking at me...?"
+  flavor: >
+    "You looking at me...?"
   artist: Holmberg, Gillette, Goodman
   rarity: R
 
@@ -544,14 +547,15 @@
     Creature.
     Cald Shadow Magi may play Sulfurous Spirit.
   shadow_play: Cald
-  flavor: "This is the end of you, and you."
+  flavor: >
+    "This is the end of you, and you."
   artist: Christopher, Shreve
   rarity: C
 
 - name: Wildfire
   region: Cald
   type: Spell
-  cost: 2
+  cost: 5
   text: >
     Choose any one non-Cald region. Discard two energy from each Creature in
     play of the chosen region.
@@ -689,7 +693,7 @@
   powers:
     - name: Subvert
       cost: 6
-      text: > 
+      text: >
         Choose any one hyren in play. Gain control of the chosen hyren. That
         hyren may not attack this turn.
   flavor: One hyren to bring them all, and in the darkness bind them.
@@ -705,8 +709,8 @@
       text: >
         At the beginning of each of your opponent's turns, you may choose any
         one Creature in play. Until the end of that opponent's turn, each time
-        the chosen Creature loses less energy from Powers, Spells, or attacks,
-        it loses three additional energy.
+        the chosen Creature loses energy from Powers, Spells, or attacks, it
+        loses three additional energy.
   text: Cald Magi may play Dryte Fiend.
   alt_play: Cald
   flavor: |
@@ -727,7 +731,8 @@
         of the chosen Creature. The chosen Creature may not attack this turn.
         If Gorath leaves play, return all Creatures Enslaved by Gorath to
         their owners' control.
-  flavor: "I will own all of you."
+  flavor: >
+    "I will own all of you."
   artist: Holmberg, Gillette, Goodman
   rarity: R
 
@@ -757,7 +762,8 @@
         Choose any one other Grubble in play. Discard both this Grubble and
         the chosen Grubble from play. Search your deck for any one Creature
         and play that Creature with its starting energy.
-  flavor: "The merging is complete!"
+  flavor: |
+    "The merging is complete!"
   artist: Holmberg, Vega, Goodman
   rarity: R
 
@@ -772,7 +778,7 @@
         energy from the chosen Creature.
     - name: Re-Koil
       text: >
-        If Koil is defeated in any attack, after it is discarded from play,
+        If Koil is defeated in an attack, after it is discarded from play,
         choose any one player's discard pile. Shuffle the chosen discard pile
         into its owner's deck.
   flavor: |
@@ -849,7 +855,8 @@
         1, 2 = Add five energy to Szalak.
         3, 4 = Discard Szalak from play.
         5, 6 = Add three energy to Szalak and three energy to your Magi.
-  flavor: "zzzzzMMMMMzzzzzzzzzzzMMMzMMMzzzzzzzzMMMzzzzzBOOM!"
+  flavor: >
+    "zzzzzMMMMMzzzzzzzzzzzMMMzMMMzzzzzzzzMMMzzzzzBOOM!"
   artist: Holmberg, Werner, Goodman
   rarity: C
 
@@ -910,7 +917,7 @@
   cost: 4
   effects:
     - name: Succor
-      text: > 
+      text: >
         At the end of your Energize Steps, move two energy from your Magi to
         Vrill.
   powers:
@@ -1011,7 +1018,8 @@
         Choose any one Relic in play. Gain control of the chosen Relic for
         your next X turns. At the end of X turns, or if Morag is defeated,
         return that Relic to its owner's hand.
-  flavor: "What power! It just gets stronger every time I use it!"
+  flavor: |
+    "What power! It just gets stronger every time I use it!"
   artist: Holmberg, Vega
   rarity: R
 
@@ -1049,7 +1057,8 @@
       text: >
         Whenever any player plays a Spell, you may choose any one Creature or
         Magi in play. Discard one energy from the chosen Creature or Magi.
-  flavor: "I'm a blade with which my master strikes fear."
+  flavor: >
+    "I'm a blade with which my master strikes fear."
   artist: Gillette, Vega
   rarity: R
 
@@ -1090,7 +1099,8 @@
       text: >
         At the beginning of your turn, if Warrada has no creatures in play,
         add five energy to Warrada.
-  flavor: "The Shadow sees all."
+  flavor: >
+    "The Shadow sees all."
   artist: Vega, Goodman
   rarity: U
 
@@ -1110,7 +1120,8 @@
       text: >
         Choose any two Creatures in play. Discard X energy from one of the
         chosen Creatures. Add X energy to the other chosen Creature.
-  flavor: "You think this is the real Qwade? ...It is!"
+  flavor: >
+    "You think this is the real Qwade? ...It is!"
   artist: Wood, Holmberg
   rarity: U
 
@@ -1126,7 +1137,7 @@
     - Lesser Darbok
   powers:
     - name: Mind Shock
-      text: > 
+      text: >
         Choose any one player. Skip your Draw Step this turn. During the
         chosen player's next turn, he or she may only draw one card.
   flavor: As cold, dark, and barren as a desert at night.
@@ -1149,9 +1160,10 @@
         Whenever a Creature is played, roll a die:
         1, 2, 3 = Choose any one Creature in play. Add one energy to the
         chosen Creature;
-        4, 5, 6 = Choose any one Creature in play. Discard one enery from the
+        4, 5, 6 = Choose any one Creature in play. Discard one energy from the
         chosen Creature.
-  flavor: "Ook, no, Ogar doesssn't let her petsss' dinner get away."
+  flavor: >
+    "Ook, no, Ogar doesssn't let her petsss' dinner get away."
   artist: Holmberg, Vega, Goodman
   rarity: U
 
@@ -1163,9 +1175,10 @@
     - name: Shield
       text: >
         At the beginning of each player's turn, choose any one of your
-        Creatures in play. The chosen Creature loses two less enery from each
+        Creatures in play. The chosen Creature loses two less energy from each
         attack this turn.
-  flavor: "You rang?"
+  flavor: >
+    "You rang?"
   artist: Holmberg, Vega, Werner
   rarity: C
 
@@ -1184,7 +1197,8 @@
         Choose any one Magi in play. Discard 15 Chaos Counters from Chaos
         Sphere, and discard Chaos Sphere from play. Discard from play all
         Creatures controlled by the chosen Magi.
-  flavor: "Your time is running out."
+  flavor: >
+    "Your time is running out."
   artist: Holmberg, Vega
   rarity: R
 
@@ -1207,7 +1221,7 @@
   cost: 0
   effects:
     - name: Backlash
-      text: > 
+      text: >
         If your opponent removes Grim Goblet from play, discard your hand.
   powers:
     - name: Reap
@@ -1307,7 +1321,10 @@
   text: >
     Take all Creature cards from your discard pile and shuffle them into your
     deck. Draw three cards.
-  text: Arderial Magi may play Dream Rift.
+  text: >
+    Take all Creature cards from your discard pile and shuffle them into your
+    deck. Draw three cards.
+    Arderial Magi may play Dream Rift.
   alt_play: Arderial
   flavor: The dam broke and the dreams flooded through.
   artist: Shreve
@@ -1355,9 +1372,9 @@
   type: Spell
   region: Core
   cost: 4
-  text: >
+  text: |
     All players reveal their hands and discard all Spell cards shown.
-  text: Sands of d'Resh Magi may play Mind Blank.
+    Sands of d'Resh Magi may play Mind Blank.
   alt_play: d'Resh
   flavor: You... know... not!
   artist: Gillette, Holmberg
@@ -1424,6 +1441,24 @@
   rarity: C
 
 #
+# Kybar's Teeth
+
+- name: Rock Hyren
+  type: Creature
+  region: Kybar's Teeth
+  cost: 11
+  effects:
+    - name: Invulnerability
+      text: >
+        Rock Hyren loses two less energy in attacks and opposing Spells,
+        Powers, and Effects that discard energy. Your Spells, Powers, and
+        other Effects may not prevent Rock Hyren from losing energy.
+  flavor: |
+    "I've heard rock is strong. Nothin' beats rock."
+  artist: Holmberg
+  rarity: R
+
+#
 # Naroom
 
 - name: Bikneets
@@ -1437,7 +1472,8 @@
         Choose any one Naroom Creature in play. Discard Bikneets from play.
         The chosen Creature loses no energy from opponents' attacks, Spells or
         Powers until the beginning of your next turn.
-  flavor: "Eidon's like... far out man."
+  flavor: >
+    "Eidon's like... far out man."
   artist: Vega, Goodman
   rarity: C
 
@@ -1448,7 +1484,7 @@
   effects:
     - name: Underbrush
       text: >
-        Whenever a Spell or Power adds energy to Forest Hyren, add one
+        Whenever a Spell or Power adds energy to Forest Hyren, add an
         additional energy to Forest Hyren.
   powers:
     - name: Energy Transfer
@@ -1471,7 +1507,8 @@
       cost: 2
       text: >
         Add two energy to each of your Creatures that attacked this turn.
-  flavor: "The jile roars! That means the battle is won!"
+  flavor: >
+    "The jile roars! That means the battle is won!"
   artist: Holmberg, Gillette
   rarity: C
 
@@ -1574,7 +1611,8 @@
     - name: Preserve
       cost: 2
       text: Return any one Furok from your discard pile to your hand.
-  flavor: "Happiness is a furry friend and a flock of blue birds."
+  flavor: >
+    "Happiness is a furry friend and a flock of blue birds."
   artist: Holmberg, Vega, Goodman
   rarity: R
 
@@ -1589,7 +1627,7 @@
     - Vortex of Knowledge
   powers:
     - name: Exchange
-      text: Discard any one Creature card from your hand. Draw two cards.
+      text: Discard any one Creature card from your hand. Draw one card.
     - name: Scrounge
       text: Discard any one Relic card from your hand. Draw two cards.
   flavor: >
@@ -1660,7 +1698,8 @@
     half of their starting energy, rounded up.
     Naroom Shadow Magi may play Deadfall.
   shadow_play: Naroom
-  flavor: "It's a trap!"
+  flavor: >
+    "It's a trap!"
   artist: Christopher, Shreve
   rarity: R
 
@@ -1685,7 +1724,7 @@
   text: >
     Choose any one non-Naroom Creature in play. The chosen Creature may not
     used any of its Powers or Effects until the beginning of your next turn.
-    If an opponent's Spell, Power or Effect discards Gilded Cage from your
+    If an opponent's Spell, Power, or Effect discards Gilded Cage from your
     hand, draw cards equal to the number of cards in that opponent's hand.
   flavor: A bountiful gift for those with the key.
   artist: Christopher, Shreve
@@ -1758,7 +1797,8 @@
         played again this turn.
         Orothe Shadow Magi may play Phrup.
   shadow_play: Orothe
-  flavor: "Thanks for the info. Maybe later..."
+  flavor: >
+    "Thanks for the info. Maybe later..."
   artist: Vega, Goodman
   rarity: C
 
@@ -1804,7 +1844,8 @@
         one Weethan can use Impede each turn.
         Orothe Shadow Magi may play Weethan.
   shadow_play: Orothe
-  flavor: "Hey! Stop that!"
+  flavor: >
+    "Hey! Stop that!"
   artist: Holmberg, Vega
   rarity: R
 
@@ -1824,7 +1865,7 @@
         play. Reveal the top five cards of your deck to all players. Put one
         of each Relic revealed into play, regardless of region. Place all
         other revealed cards into your discard pile.
-  flavor: > 
+  flavor: >
     "I can make an energy band out of a baloo root. But sometimes I get a rod
     of coals."
   artist: Holmberg, Vega, Goodman
@@ -1859,7 +1900,8 @@
         the most energy. If two or more Creatures are tied for the most
         energy, an opponent of your choice chooses which Creature gets the
         energy.
-  flavor: "It's out of control!"
+  flavor: >
+    "It's out of control!"
   artist: Holmberg, Vega, Goodman
   rarity: R
 
@@ -1906,7 +1948,8 @@
         discard pile. If the card is a Creture, discard Orothean Horn from
         play. Play the Creature with its starting energy, without paying any
         costs.
-  flavor: "Who is it?"
+  flavor: >
+    "Who is it?"
   artist: Werner
   rarity: R
 
@@ -1946,7 +1989,7 @@
   text: >
     Choose Spells or Relics. All players reveal their hands and discard all
     cards of the chosen type shown.
-  text: Orothe Shadow Magi may play Storm of Fishes.
+    Orothe Shadow Magi may play Storm of Fishes.
   shadow_play: Orothe
   flavor: |
     "How bad can a rain of fish be?"
@@ -2101,7 +2144,8 @@
         Choose any one Creature in play. Add one energy to the chosen
         Creature. Add two additional energy if the chosen Creature is a
         Parmalag.
-  flavor: "I'm as thick-skinned as any of my pets."
+  flavor: |
+    "I'm as thick-skinned as any of my pets."
   artist: Holmberg, Vega, Goodman
   rarity: U
 
@@ -2122,8 +2166,8 @@
         its normal starting energy. Until the beginning of your next turn, the
         Creature played is unaffected by your opponents' cards.
   flavor: >
-    And to Korremar, who helped me write this will, I leave... not a boot to
-    the head, but a rabid bisiwog, to be placed in his trousers...
+    And to Korremar, who helped me write this will, I leave . . . not a boot to
+    the head, but a rabid bisiwog, to be placed in his trousers . . .
   artist: Holmberg, Vega, Goodman
   rarity: R
 
@@ -2285,7 +2329,7 @@
         Name any one Power or Effect. Until the end of your next turn, no
         player may use the named Power or Effect.
   flavor: |
-    "And when all else fails, you can take off the belt and whip' em with it."
+    "And when all else fails, you can take off the belt and whip 'em with it."
     -- 'Rayje's Journal'
   artist: Holmberg, Gillette
   rarity: R
@@ -2314,7 +2358,8 @@
     Play "Ummm...NO!" only when an opponent plays a Spell that specifically
     discards one of your Creatures in play. Your Creature is not discarded
     from play. You may play "Ummm...NO!" during your opponents' turns.
-  flavor: "I'm sure."
+  flavor: >
+    "I'm sure."
   artist: Holmberg
   rarity: U
 
@@ -2368,3 +2413,21 @@
     "If we can't be safe now," replied Wence, "there won't be a 'later.'"
   artist: Christopher, Shreve
   rarity: C
+
+#
+# Weave
+
+- name: Weave Hyren
+  type: Creature
+  region: Weave
+  cost: 8
+  effects:
+    - name: Wild Growth
+      text: >
+        Once per turn, when an Effect adds energy to Weave Hyren,
+        you may choose to add one energy to each of your other Weave
+        Creatures in play.
+  flavor: |
+    "A major pain in the grass."
+  artist: Holmberg
+  rarity: R

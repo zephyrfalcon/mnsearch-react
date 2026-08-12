@@ -198,7 +198,7 @@
   cost: 2
   text: >
     Play an Arderial Creature from your hand with a starting energy of three
-    or less, ignorng all costs. That Creature cannot gain energy this turn.
+    or less, ignoring all costs. That Creature cannot gain energy this turn.
   flavor: |
     "One ticket for the Beatdown Express, coming up!"
     -- Kalius
@@ -296,7 +296,7 @@
     "What about the rous?"
     -- Zannah, to Wence
   artist: Werner, Gillette
-  rarity: U
+  rarity: R
 
 - name: Swamp Moga
   type: Creature
@@ -367,7 +367,7 @@
         Creatures in play than you (not counting this card), ignore Vard's
         cost.
     - name: Shifty
-      text: Vard loses no enery from opposing Effects.
+      text: Vard loses no energy from opposing Effects.
   flavor: Ever hungry, vards are drawn to concentrations of dream energy.
   artist: Werner, Gillette, Shreve
   rarity: C
@@ -647,7 +647,7 @@
   cost: 13
   energize: 6
   starting:
-    - "[Wandering Balamant]" # in TR; never released
+    - Wandering Balamant  # available in Traitor's Reach
     - Bombard
     - Magma Armor
   effects:
@@ -883,7 +883,7 @@
   cost: 15
   energize: 6
   starting:
-    - "[one Furok]"
+    - "[One Furok]"
     - Shadow Bones
   effects:
     - name: Affinity
@@ -944,9 +944,9 @@
       text: >
         At the beginning of your Play Creatures step, you may discard two
         energy from The Real Qwade. If you do, until the end of your turn,
-        whenever you play a Creature, choose another Creature. Move on energy
+        whenever you play a Creature, choose another Creature. Move one energy
         from the chosen Creature to the Creature you just played.
-  flavor: 
+  flavor: |
     "I trust no one. Not even myself."
   artist: Holmberg, Gillette
   rarity: U
@@ -1022,7 +1022,7 @@
     opponent's turn. Discard a card from your hand. When you reveal your next
     Magi, choose an opposing Creature. Gain control of the chosen Creature,
     and restore it to its starting energy. The chosen Creature becomes Core
-    instead of its original region(s), and cannot attack this turn.
+    instead of its original region(s), and cannot attack that turn.
     You can only play one Spirit Spell per Magi defeated.
   flavor: |
     "Outta my way, punk!"
@@ -1623,7 +1623,7 @@
     your discard pile, you may discard one energy from your Magi to choose one
     recurring card in your discard pile and add it to your hand.
   flavor: |
-    "Violence ripples through the sands lik currents in the ocean; like a
+    "Violence ripples through the sands like currents in the ocean; like a
     current, it always returns."
     -- Nahara, Sandkeeper
   artist: Gillette, Shreve
@@ -1638,7 +1638,7 @@
       cost: 1
       text: >
         Choose an opponent and any of that player's Creatures. Discard two
-        enery from the chosen Creature unless the chosen player discards three
+        energy from the chosen Creature unless the chosen player discards three
         energy from their Magi.
   flavor: |
     "ecks ecks ECKS!"
@@ -1792,7 +1792,7 @@
     - name: Abrade
       text: >
         Whenever an opponent uses a Power, choose one of that player's
-        Creatures. Discard one enery from the chosen Creature.
+        Creatures. Discard one energy from the chosen Creature.
     - name: Drift
       text: >
         At the beginning of your turn, move up to two energy from one of your
@@ -1918,7 +1918,7 @@
   cost: 16
   energize: 5
   starting:
-    - "[one Oracle]"
+    - "[One Oracle]"
   effects:
     - name: Glorious Prophecy
       text: >
@@ -2162,7 +2162,7 @@
   cost: 4
   text: >
     Choose an opposing Creature. Discard four energy from the chosen Creature.
-    If this discards that Creature from play, discard one energy from ech of
+    If this discards that Creature from play, discard one energy from each of
     that player's Creatures.
     Only d'Resh Magi and d'Resh Shadow Magi can play Crushing Sands.
   shadow_play: d'Resh
@@ -2596,7 +2596,7 @@
   text: >
     You may play this card only when your Kybar's Teeth Magi is defeated on an
     opponent's turn. Discard a card from your hand. When you reveal your next
-    Magi, it gains "Effect -- Tough Stuff: Whenever this Magi loses energy
+    Magi, it gains "Effect - Tough Stuff: Whenever this Magi loses energy
     from an opposing card, it loses two less energy."
     You can only play one Spirit Spell per Magi defeated.
   flavor: |
@@ -2720,7 +2720,7 @@
       text: >
         Choose a Relic in play. That Relic's player must discard one of their
         Relics from play. If the discarded Relic is not the one you chose, add
-        two enery to Frost Raxis.
+        two energy to Frost Raxis.
   flavor: |
     "Eenie, meenie, mynie --" SMASH "D'oh!"
     -- Emaya
@@ -2767,7 +2767,7 @@
   effects:
     - name: Magic Resistance
       text: >
-        Players must pay two additiona energy from their Magi to choose
+        Players must pay two additional energy from their Magi to choose
         Glacier Hyren for a Spell.
   powers:
     - name: Frostbite
@@ -2919,7 +2919,7 @@
   cost: 8
   effects:
     - name: Shared Strength
-      cost: >
+      text: >
         If your Magi's Energize is greater than each opposing Magi's, Ice
         Hyren gains ENERGIZE: 1.
     - name: Ravage
@@ -3057,7 +3057,7 @@
   effects:
     - name: Snuggles
       text: >
-        As the beginning of your turn, if your Magi is Nar, you may discard
+        At the beginning of your turn, if your Magi is Nar, you may discard
         Saitorr from play. If you do, draw a card for each energy on your Magi
         above his or her starting energy, to a maximum of five.
   flavor: >
@@ -3240,7 +3240,7 @@
   cost: 3
   subtype: Arctic
   effects:
-    - name: 
+    - name:
       text: >
         While Zyavu is in play, all Creatures in play are frozen; Powers on
         frozen cards cost one additional energy to use.
@@ -3309,14 +3309,14 @@
         At the beginning of your turn, choose an opponent. Increase your
         energize by one for each Relic the chosen opponent has in play.
     - name:
-      text: > 
+      text: >
         Each of your Non-Nar, non-Universal cards costs one additional energy
         to play.
   powers:
     - name: Improvise
       text: >
         Discard a Relic from your hand to choose a Creature. Discard two
-        energy from or add two enery to the chosen Creature.
+        energy from or add two energy to the chosen Creature.
   flavor: |
     "Oh boy! Water of life! Just what I was hoping you'd get!"
   artist: Werner, Gillette, Goodman
@@ -3373,7 +3373,7 @@
       text: Opposing Relics cost two additional energy to play.
     - name:
       text: >
-        Each of your non-Nar, non-Universal cards costs one additiona energy
+        Each of your non-Nar, non-Universal cards costs one additional energy
         to play.
   flavor: >
     "I once dueled a Magi from Orothe. She was very frustrated with me for
@@ -3601,8 +3601,8 @@
   effects:
     - name:
       text: >
-        When Essence of Frost is in play, all cards in play are frozen; Powers
-        on frozen cards cost one additiona energy to use. Spells cost frozen
+        While Essence of Frost is in play, all cards in play are frozen; Powers
+        on frozen cards cost one additional energy to use. Spells cost frozen
         Magi one additional energy to play.
   flavor: |
     "Oooooh... pretty.."
@@ -3653,7 +3653,7 @@
     - name: Magnify
       text: >
         During your Draw step, if you have a frozen card in play, draw an
-        additiona card.
+        additional card.
   flavor: |
     "Hmmm, looks like snow."
     -- All-High King Korg, Magnificent, Illustrious, Meteorological Emperor of
@@ -3684,7 +3684,7 @@
       text: >
         Reduce each Magi's Energize by the number of frozen Creatures that
         Magi has in play.
-    - name: 
+    - name:
       text: >
         If any player has no Creatures in play, discard Icy Prison from play.
   flavor: The more you grow, the tighter it seems.
@@ -3811,7 +3811,7 @@
   cost: 1
   text: >
     Attach this card to your Magi. When an opponent chooses exactly one of
-    your Nar Creatures for a Spell or Power, you may discard Refract from play
+    your Nar Creatures for a Spell or Power, you may discard Refract from play.
     If you do, the Spell or Power affects one of your Nar Creatures of your
     choice instead.
   flavor: |
@@ -3982,7 +3982,7 @@
   flavor: |
     Roasted Twunk - 5 animite
     -- From the menu at Gar's Fried Eebit Shack
-  artist: Holmberg, Boime
+  artist: Holmberg, Bolme
   rarity: C
 
 - reference: Wasperine Stalker
@@ -4119,7 +4119,7 @@
   text: >
     You may play this card only when your Naroom Magi is defeated on an
     opponent's turn. Discard a card from your hand. When you reveal your next
-    Magi, it permanently gains "Effect -- Eternal Vigor: Whenever one of your
+    Magi, it permanently gains "Effect - Eternal Vigor: Whenever one of your
     Naroom Creatures is discarded from play by an opposing card, add one
     energy to your Magi." You can only play one Spirit Spell per Magi
     defeated.
@@ -4173,7 +4173,7 @@
       text: >
         If you have at least two Sarazens in play, draw a card.
   flavor: |
-    "I am not my hyren's keeper... he is!"
+    "I am not my hyren's keeper... He is!"
     -- Voda
   artist: Gillette
   rarity: R
@@ -4253,7 +4253,7 @@
     - Coral Hyren
     - Barqua's Bubble
     - Hubdra's Chest
-  text: Brothers of Vengeance counts as two Magi.
+  text: Brothers of Vengeance count as two Magi.
   powers:
     - name: We're Back
       cost: 1
@@ -4395,7 +4395,6 @@
   type: Creature
   region: Paradwyn
   subtype: Jungle Stalker
-  subtype: Jungle Stalker
   cost: 4
   effects:
     - name: Bicker
@@ -4411,7 +4410,6 @@
 - name: Kwup
   type: Creature
   region: Paradwyn
-  subtype: Jungle Stalker
   subtype: Jungle Stalker
   cost: 4
   powers:
@@ -4528,7 +4526,7 @@
   starting:
     - Mydra
     - Torpar
-    - "[Pok's Circlet]"
+    - Pok's Circlet
   effects:
     - name: Brilliantly Absent-Minded
       text: >
@@ -4712,7 +4710,7 @@
         At the beginning of your turn, any Core Magi may discard three energy
         to discard Trogovo.
   flavor: |
-    "Great mind think a ... think a ... errrr..."
+    "Great minds think a ... think a ... errrr..."
     -- Myka
   artist: Holmberg, Gillette, Shreve
   rarity: U
@@ -4745,7 +4743,7 @@
 - reference: Gogor's Spade
   region: Underneath, Kybar's Teeth
   flavor: |
-    "I * my *."
+    "I ♥ my ♠."
     -- motto carved on Gogor's wall.
 
 - name: Trygar's Will
@@ -4786,8 +4784,8 @@
   text: >
     You may play this card only when your Underneath Magi is defeated on an
     opponent's turn. Discard a card from your hand. When you reveal your next
-    Magi, it gains "Effect -- Resilience: At the beginning of your turn, if
-    you have fewer Creatures in play than any opponent, add two enery to your
+    Magi, it gains "Effect - Resilience: At the beginning of your turn, if
+    you have fewer Creatures in play than any opponent, add two energy to your
     Magi."
     You can only play one Spirit Spell per Magi defeated.
   flavor: |
@@ -4819,7 +4817,7 @@
 
 #
 # Universal
- 
+
 - name: Baby Hyren
   type: Creature
   region: Universal
@@ -5014,7 +5012,7 @@
   subtype: Weavespinner
   cost: 16
   energize: 4
-  starting: 
+  starting:
     - Sagaweave
     - Paradar
   effects:

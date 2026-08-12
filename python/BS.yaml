@@ -174,7 +174,7 @@
         Discard Thunder Hyren from play. Add two energy to each of your hyren
         in play.
   flavor: |
-    "Send me the hyren bringing rain,
+    "Send me hyren bringing rain,
     Cleansing wounds and easing pain.
     But if with lightning storms they play,
     Keep them very far away."
@@ -191,7 +191,7 @@
         Choose any one Creature in play with three or less energy. Discard
         Thunder Vashp from play. Discard the chosen Creature from play.
   flavor: |
-    When the echoes fades, the Vashps and its victim were nowhere to be seen.
+    When the echoes fades, the Vashp and its victim were nowhere to be seen.
   artist: Holmberg, Sato
   rarity: C
 
@@ -231,7 +231,7 @@
   powers:
     - name: Shockstorm
       cost: 6
-      text: > 
+      text: >
         Roll one die. Discard that much energy from each non-Xyx Creature in
         play.
   flavor: |
@@ -247,8 +247,8 @@
   powers:
     - name: Gathering Clouds
       cost: 2
-      text: Choose any one Xyx in play. Add four enery to the chosen Xyx.
-  flavor: | 
+      text: Choose any one Xyx in play. Add four energy to the chosen Xyx.
+  flavor: |
     To Arderians, the clouds are the seed bed and the lightning is the
     harvest.
   artist: Vega
@@ -283,9 +283,9 @@
     - Xyx Elder
     - Lightning
     - Shooting Star
-  effect:
+  effects:
     - name: Spite
-      text: > 
+      text: >
         If Jaela is defeated, discard one energy from each Creature in play.
   flavor: |
     Regis of the sky realm, she watches over her people in their isolation.
@@ -304,7 +304,8 @@
   effects:
     - name: Warning
       text: If Lasada is defeated, draw three cards.
-  flavor: "If I'm not around to learn from my mistakes, someone else will be."
+  flavor: >
+    "If I'm not around to learn from my mistakes, someone else will be."
   artist: Holmberg, Vega
   rarity: U
 
@@ -321,7 +322,7 @@
     - name: Energy Drain
       cost: 1
       text: >
-        Choose any two Creatures in play. Move one energy from one of the 
+        Choose any two Creatures in play. Move one energy from one of the
         chosen Creatures to the other chosen Creature.
   flavor: |
     "All we got now is a little energy."
@@ -343,7 +344,8 @@
       text: >
         Whenever Ora plays an Arderial Creature, add one energy to that
         Creature.
-  flavor: "My Vellup is bigger than yours!"
+  flavor: >
+    "My Vellup is bigger than yours!"
   artist: Holmberg, Sato
   rarity: R
 
@@ -361,7 +363,8 @@
       text: >
         If there is no energy on Shimmer at the end of your turn, discard one
         energy from each opposing Creature in play.
-  flavor: "They feel my pain."
+  flavor: >
+    "They feel my pain."
   artist: Holmberg, Christopher
   rarity: U
 
@@ -392,7 +395,7 @@
     - name: Strengthen
       text: >
         At the beginning of your turn, choose any one Creature in play. Add
-        one enery to the chosen Creature.
+        one energy to the chosen Creature.
   flavor: |
     "The wind and his children answer to the one wearing me."
     -- Crown inscription
@@ -423,7 +426,7 @@
         Roll one die.
         1 = Discard your hand.
         2, 3, 4 or 5 = Do nothing.
-        6 = Draw five cards, or choose any one opponent. 
+        6 = Draw five cards, or choose any one opponent.
         The chosen opponent discards his or her hand.
   flavor: |
     "In the eye of the storm, all is still... usually."
@@ -437,7 +440,7 @@
   cost: 0
   powers:
     - name: Windsight
-      text: > 
+      text: >
         Choose any one opponent. The chosen opponent shows you his or her
         hand.
   flavor: |
@@ -529,7 +532,7 @@
     by atmospheric friction."
   artist: Christopher
   rarity: C
- 
+
 - name: Storm Cloud
   region: Arderial
   type: Spell
@@ -587,7 +590,7 @@
       text: >
         Choose any one Creature in play. Discard Diobor from play. Remove two
         energy from the chosen Creature.
-    - 
+    -
       name: Energy Transfer
       cost: X
       text: Add X Energy to your Magi.
@@ -620,7 +623,8 @@
       text: >
         Discard Fire Chogo from play to discard one energy from each non-Cald
         Creature in play.
-  flavor: "She's gonna blow!"
+  flavor: >
+    "She's gonna blow!"
   artist: Holmberg, Vega
   rarity: C
 
@@ -635,7 +639,8 @@
         Choose any one of your Creatures and any one of your opponents'
         Creatures in play. Discard twice your Creature's current energy from
         your opponent's Creature. Discard your chosen Creature from play.
-  flavor: "You be the ammunition this time!"
+  flavor: >
+    "You be the ammunition this time!"
   artist: Holmberg, Vega
   rarity: U
 
@@ -679,7 +684,8 @@
       text: >
         Choose any one of your Creatures in play. Move all of the chosen
         Creature's energy to Kelthet.
-  flavor: "Feed me."
+  flavor: >
+    "Feed me."
   artist: Vega
   rarity: C
 
@@ -694,7 +700,7 @@
         Choose any one of your Creatures in play. Discard the chosen Creature
         from play. Discard one energy from all non-Cald Creatures and Magi in
         play.
-  flavor: > 
+  flavor: >
     Before the firestorm swept over him, Wence thought he saw a burning image
     of the creature that fueled it.
   artist: Holmberg, Vega
@@ -759,7 +765,7 @@
   cost: 4
   effects:
     - name: Battering Ram
-      text: > 
+      text: >
         When Quor attacks an opposing Creature, discard two energy from that
         Creature's Magi.
   flavor: Nothing can keep it from you.
@@ -774,7 +780,7 @@
     - name: Charge
       text: >
         When Quor Pup attacks, move up to two energy to it from your Magi.
-  flavor: > 
+  flavor: >
     Since it spits fire as it speaks, its bark is no different from its bite.
   artist: Holmberg, Vega
   rarity: U
@@ -823,10 +829,11 @@
     - Flame Geyser
   effects:
     - name: Nerve
-      text: > 
+      text: >
         If a Creature attacks Ashgar directly, draw a card before energy
         is removed.
-  flavor: "I'm addicted to stress. That's the way I get things done."
+  flavor: >
+    "I'm addicted to stress. That's the way I get things done."
   artist: Holmberg, Vega
   rarity: R
 
@@ -865,7 +872,8 @@
        Before you draw your cards during your Draw Step, add two energy to
        your Creature with the least energy. If there is a tie, you choose
        which Creature the energy gets placed on.
-  flavor: "Feel better now? Good! Next..."
+  flavor: >
+    "Feel better now? Good! Next..."
   artist: Holmberg, Vega
   rarity: U
 
@@ -906,7 +914,8 @@
       text: >
         Choose any one Creature in play with less than its starting energy.
         Restore the chosen Creature to its starting energy.
-  flavor: "With the right fuel, any spark of life can be rekindled."
+  flavor: >
+    "With the right fuel, any spark of life can be rekindled."
   artist: Holmberg, Sato
   rarity: R
 
@@ -922,7 +931,7 @@
   powers:
     - name: Refresh
       cost: 1
-      text: > 
+      text: >
         Choose any one Creature in play. Add two energy to the chosen
         Creature.
   flavor: He who controls the flame, controls the universe.
@@ -1060,7 +1069,8 @@
   region: Cald
   cost: 1
   text: Rearrange the energy on your Creatures as you wish.
-  flavor: "One for you, fifteen for me."
+  flavor: >
+    "One for you, fifteen for me."
   artist: Christopher
   rarity: R
 
@@ -1099,7 +1109,7 @@
     Choose any one Creature in play. Discard X energy from the chosen
     Creature. Add X energy to your Magi.
   flavor: |
-    "Okay, you can be fancy and steal their energy. I'm just 
+    "Okay, you can be fancy and steal their energy. I'm just
     going to burn them down the traditional way."
     -- Grega, Cald Pyromancer
   artist: Christopher, Holmberg
@@ -1127,7 +1137,7 @@
   type: Creature
   powers:
     - name: Life Channel
-      text: > 
+      text: >
         Choose any one Magi in play. Discard Arboll from play. Add four energy
         to the chosen Magi.
   flavor: |
@@ -1496,7 +1506,8 @@
   effects:
     - name: Double Strike
       text: Each of your Creatures may attack twice each turn.
-  flavor: "This is my Hyren. He doesn't like you."
+  flavor: >
+    "This is my Hyren. He doesn't like you."
   artist: Holmberg, Vega
   rarity: U
 
@@ -1728,7 +1739,8 @@
       text: >
         Choose any one Creature in play that was attacked this turn. Discard
         the chosen Creature from play.
-  flavor: "Finish him."
+  flavor: >
+    "Finish him."
   artist: Holmberg, Vega
   rarity: C
 
@@ -1791,7 +1803,7 @@
   cost: 8
   effects:
     - name: Feed
-      text: > 
+      text: >
         Add one energy to Megathan at the end of any turn in which Megathan
         defeated one or more Creatures.
   flavor: I will take you to your grim and watery nightmare.
@@ -1839,7 +1851,8 @@
       text: >
         Discard Paralit from play. Add five energy to your Magi. Discard one
         energy from each of your Creatures in play.
-  flavor: "Must... have... energy."
+  flavor: >
+    "Must... have... energy."
   artist: Holmberg, Vega
   rarity: U
 
@@ -2038,7 +2051,8 @@
         Whenever an opposing Magi's Spell or Relic discards any amount of
         energy from Orthea, you may add that amount of energy to any one
         Orothe Creature in play.
-  flavor: "That hurt. I hope you're happy, because it's your turn."
+  flavor: >
+    "That hurt. I hope you're happy, because it's your turn."
   artist: Holmberg, Sato
   rarity: U
 
@@ -2093,7 +2107,7 @@
         Choose any one Magi with no Creatures in play. Discard Hubdra's Spear
         from play. Discard all but one energy from the chosen Magi.
   flavor: |
-    "Tharik-shell points bounce off dream auras, but they 
+    "Tharik-shell points bounce off dream auras, but they
     go through Magi just fine."
     -- Blu, Vault Guardian
   artist: Holmberg, Vega, Shreve
@@ -2103,7 +2117,7 @@
   type: Relic
   region: Orothe
   cost: 0
-  effects: 
+  effects:
     - name: Hydromancy
       text: >
         Whenever you play a Spell that adds energy to a Creature in play, add
@@ -2151,7 +2165,8 @@
   text: >
     Choose any one Magi in play. The chosen Magi cannot play any spells during
     his or her next turn.
-  flavor: "Abracadableeeeerrrrrgh!"
+  flavor: >
+    "Abracadableeeeerrrrrgh!"
   artist: Christopher
   rarity: R
 
@@ -2202,7 +2217,7 @@
   type: Spell
   cost: 8
   text: >
-    Roll one die. Discard enery equal to the die roll from each non-Orothe
+    Roll one die. Discard energy equal to the die roll from each non-Orothe
     Creature in play.
   flavor: The wind and the sea rise. Everything else goes down.
   artist: Christopher
@@ -2259,7 +2274,8 @@
   effects:
     - name: Tunneling Attack
       text: While burrowed, Bisiwog may still attack as normal.
-  flavor: "Shh. Listen. Do you hear that scratching?"
+  flavor: >
+    "Shh. Listen. Do you hear that scratching?"
   artist: Holmberg, Vega
   rarity: C
 
@@ -2333,7 +2349,8 @@
         other Creatures. Both Giant Korrit and the attacking Creature remove
         energy from the defending Creature, but Giant Korrit loses no energy
         in the attack.
-  flavor: "That's a big mushroom, all right."
+  flavor: >
+    "That's a big mushroom, all right."
   artist: Holmberg
   rarity: R
 
@@ -2394,7 +2411,8 @@
         Instead of its normal attack, Korrit can attack with one of your other
         Creatures. Both Korrit and the attacking Creature remove energy from
         the defending Creature, but Korrit loses no energy in the attack.
-  flavor: "Oh look, they want to play too."
+  flavor: >
+    "Oh look, they want to play too."
   artist: Holmberg, Vega
   rarity: U
 
@@ -2493,7 +2511,8 @@
         During your Draw Step, you may choose to add three energy to any one
         Creature, instead of drawing one of your two cards. Use this Effects
         only one per turn.
-  flavor: "Knowledge or power. Your choice."
+  flavor: >
+    "Knowledge or power. Your choice."
   artist: Holmberg, Vega, Shreve
   rarity: U
 
@@ -2526,7 +2545,7 @@
     - Agovo
     - Crystal Arboll
     - Gloves of Crystal
-  power:
+  powers:
     - name: Undream
       cost: 1
       text: >
@@ -2553,7 +2572,8 @@
       text: >
         Whenever a Creature you control in play is attacked and defeated,
         return that Creature to your hand instead of discarding it.
-  flavor: "That's not the last you'll see of him."
+  flavor: >
+    "That's not the last you'll see of him."
   artist: Vega
   rarity: R
 
@@ -2571,7 +2591,8 @@
       text: >
         Whenever one of your Creatures is attacked, add one energy to that
         Creature before energy is removed.
-  flavor: "My eyes are everywhere. Hey, you almost sat on one!"
+  flavor: >
+    "My eyes are everywhere. Hey, you almost sat on one!"
   artist: Holmberg, Vega
   rarity: U
 
@@ -2606,7 +2627,8 @@
       text: >
         At the start of your turn add one energy to each of your Korrits in
         play.
-  flavor: "Is this the first time mushrooms have had YOU for lunch?"
+  flavor: >
+    "Is this the first time mushrooms have had YOU for lunch?"
   artist: Holmberg, Vega
   rarity: R
 
@@ -2636,7 +2658,7 @@
   cost: 0
   effects:
     - name: Tunneling Attack
-      text: You burrowed Creatures may attack as normal.
+      text: Your burrowed Creatures may attack as normal.
   flavor: |
     Zed snorted. "You and what army?"
     That's when he noticed the rumbling under his feet.
@@ -2699,7 +2721,8 @@
   text: >
     Choose any one Creature in play with less than five energy. Discard the
     chosen Creature.
-  flavor: "Aieeeeeee!"
+  flavor: >
+    "Aieeeeeee!"
   artist: Christopher
   rarity: U
 
@@ -2831,7 +2854,8 @@
       text: >
         Choose any one Creature in play. Discard Baloo Root from play. Add one
         energy to the chosen Creature.
-  flavor: "IT'S GOOD FOR YOU!!!"
+  flavor: >
+    "IT'S GOOD FOR YOU!!!"
   artist: Vega
   rarity: C
 
@@ -2934,7 +2958,7 @@
     - name: Tinker
       text: >
         Whenever you play a Relic, choose any one Creature in play. Add one
-        enery to the chosen Creature.
+        energy to the chosen Creature.
   flavor: |
     "Me mates and I guard the Vault of Science, and
     the Vault returns the favor."
@@ -2942,7 +2966,7 @@
   artist: Holmberg, Vega
   rarity: U
 
-- name: Robe of the Ages
+- name: Robes of the Ages
   region: Universal
   type: Relic
   cost: 0
